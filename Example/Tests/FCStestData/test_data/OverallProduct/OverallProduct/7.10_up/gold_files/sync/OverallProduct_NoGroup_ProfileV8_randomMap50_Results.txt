@@ -1,0 +1,859 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureDevSchemaProdStringProddev1",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureDevSchemaProd2",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureDevSchemaProd3",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureDevUtilityProd4",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureProdSchemaProdUtilityProd6",
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureDevSchemaProd7",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureDevSchemaProd8",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureProdUtilityProd5",
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureProdSchemaProd9",
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.FeatureProdSchemaProd10",
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "tr.FeatureProdMTXProd11a",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXDev11b",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "tr.FeatureProdMTXProdDev11",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXDev12b",
+								"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "tr.FeatureProdMTXProd12a",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "tr.FeatureProdMTXDevProd12",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "tr.MTXProdDev13a",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "tr.MTXProdDev13b",
+						"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "tr.MTXDevProd14b",
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "tr.MTXDevProd14a",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"featureAttributes": "{\"value\":\"FeatureProdMTXConfigProd15a\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.FeatureProdMTXConfigProdDev15",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1feature1.FeatureProdMTXConfigProd15a]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"FeatureProdMTXConfigDev16b\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.FeatureProdMTXConfigDEVPROD16",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1feature1.FeatureProdMTXConfigDev16b]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureProdSchemasProdStringUtil",
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureSingleConfigFail",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureTwoConfigFail",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureTwoConfigNoDefault",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"default value\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "trDistance.FeatureProdSingleConfigFail",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"default config\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "trDistance.FeatureProdTwoConfigFail",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureProdTwoConfigNoDefault",
+				"resultTrace": "Rule was successful, but configuration failed and the feature's fallback is off. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureDevSubConfigsFailDefaultOff",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureProdSubConfigsFailDefaultOff",
+				"resultTrace": "Rule was successful, but configuration failed and the feature's fallback is off. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"default value\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "trDistance.FeatureProdSubConfigsFailDefaultOn",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureDevSubConfigsFailDefaultOn",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureDevSubConfigsFailDefaultOn2",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureDevSubConfigsFailDefaultOff2",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureProdSubConfigsFailDefaultOff2",
+				"resultTrace": "Rule was successful, but configuration failed and the feature's fallback is off. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"default value\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "trDistance.FeatureProdSubConfigsFailDefaultOn2",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureDevSubConfigsFailDefaultOff3",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureProdSubConfigsFailDefaultOff3",
+				"resultTrace": "Rule was successful, but configuration failed and the feature's fallback is off. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"default value\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "trDistance.FeatureProdSubConfigsFailDefaultOn3",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "trDistance.FeatureDevSubConfigsFailDefaultOn3",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.MTXinMTXConfigsDevDefaultOff",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.MTXinMTXConfigsDevDefaultOn",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"default value\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "tr.MTXinMTXConfigsProdDefaultOn",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "tr.MTXinMTXConfigsProdDefaultOff",
+				"resultTrace": "Rule was successful, but configuration failed and the feature's fallback is off. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.weatherSummary.pollenData[100] == \"test\"] : Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+				"type": "FEATURE"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevPass1a",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevPass1b",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": false,
+						"name": "tr.MTXinMTXFeaturesDevPass1",
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevPass2a",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevPass2b",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": false,
+						"name": "tr.MTXinMTXFeaturesDevPass2",
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesProdPass1a",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesProdPass1b",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": false,
+						"name": "tr.MTXinMTXFeaturesProdPass1",
+						"resultTrace": "Rule returned false",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"featureIsReported": false,
+										"features": [
+										],
+										"isON": true,
+										"name": "tr.MTXinMTXFeaturesProdPass2a",
+										"reportedConfigurationNames": {
+											"defaultConfiguration": true
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Configurations: [defaultConfiguration]",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesProdPass2b",
+										"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": true,
+						"name": "tr.MTXinMTXFeaturesProdPass2",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevFail1a",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevFail1b",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": false,
+						"name": "tr.MTXinMTXFeaturesDevFail1",
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevFail2a",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesDevFail2b",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": false,
+						"name": "tr.MTXinMTXFeaturesDevFail2",
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesProdFail1a",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesProdFail1b",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": false,
+						"name": "tr.MTXinMTXFeaturesProdFail1",
+						"resultTrace": "Rule returned false",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesProdFail2a",
+										"resultTrace": "Rule error; result obtained from fallback. Error trace: Javascript error: TypeError: Cannot read property \"100\" from undefined (JavaScript#1)",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "tr.MTXinMTXFeaturesProdFail2b",
+										"resultTrace": "Rule returned false",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							}
+						],
+						"isON": true,
+						"name": "tr.MTXinMTXFeaturesProdFail2",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ns1.ConfigSetFeatureOff",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ns.ConfigSetFeatureOffMIXOfConfigs",
+				"resultTrace": "Configurations: [defaultConfiguration, nsConfigSetFeatureOffMIXOfConfigs.CR2Prod, nsConfigSetFeatureOffMIXOfConfigs.CR4ProdFeatureOff]\nFeature was on, but was turned off by configuration rule (nsConfigSetFeatureOffMIXOfConfigs.CR4ProdFeatureOff)",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

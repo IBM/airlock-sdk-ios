@@ -1,0 +1,113 @@
+{
+  "testName": "NoRule",
+  "productName": "NoRule100",
+  "productId": "f5aebd83-c89f-4f0c-bc2d-f8f26bc401f9",
+  "seasonLogicalName": "7.5_up",
+  "seasonId": "d552c297-7fcd-45e6-9e8d-1e82e757435e",
+  "deviceContextFilePath": "test_data\/NoRule\/NoRule100\/7.5_up\/device_contexts\/DeviceContextV1.json",
+  "groupsFilePath": "test_data\/NoRule\/NoRule100\/7.5_up\/groups\/defaultG.json",
+  "profileFilePath": "test_data\/NoRule\/NoRule100\/7.5_up\/profiles\/ProfileV1.json",
+  "root": {
+    "features": [
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns2.Rule 1  ON",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns2.Rule 2 OFF",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+          {
+            "featureAttributes": "{}",
+            "features": [
+            ],
+            "isON": false,
+            "name": "ns2.R31 ON",
+            "resultTrace": "",
+            "type": "FEATURE"
+          },
+          {
+            "featureAttributes": "{}",
+            "features": [
+            ],
+            "isON": false,
+            "name": "ns2.R32 OFF",
+            "resultTrace": "",
+            "type": "FEATURE"
+          },
+          {
+            "featureAttributes": "{}",
+            "features": [
+            ],
+            "isON": false,
+            "name": "ns2.R33 ON",
+            "resultTrace": "",
+            "type": "FEATURE"
+          }
+        ],
+        "isON": false,
+        "name": "ns2.R3 with L2",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+          {
+            "features": [
+              {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": false,
+                "name": "ns1.R41 ON",
+                "resultTrace": "",
+                "type": "FEATURE"
+              },
+              {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": false,
+                "name": "ns1.R42 ON",
+                "resultTrace": "",
+                "type": "FEATURE"
+              },
+              {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": false,
+                "name": "ns1.R43 OFF",
+                "resultTrace": "",
+                "type": "FEATURE"
+              }
+            ],
+            "maxFeaturesOn": 1,
+            "name": "mx.aaf2fd1c-1d71-4124-bce4-5c6e284bc86e",
+            "type": "MUTUAL_EXCLUSION_GROUP"
+          }
+        ],
+        "isON": false,
+        "name": "ns1.R4 with MX",
+        "resultTrace": "",
+        "type": "FEATURE"
+      }
+    ],
+    "type": "ROOT",
+    "uniqueId": "036a3c93-f731-4480-8ef5-5e51c30faa52"
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"experiments": {
+		"experiment2.variant2": 34127,
+		"experiment2.variant3": 341616,
+		"experiments.experiment2": 948857
+	},
+	"features": {
+		"ns1.F1": 565736,
+		"ns1.F2": 549978,
+		"ns1.F3": 847562
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "name": "AirLockSDK",
+  "version": "5.0.7",
+  "summary": "An SDK to interact with the Airlock framework.",
+  "description": "An SDK to interact with the Airlock framework.",
+  "homepage": "https://github.com/TheWeatherCompany/airlock-sdk-ios/blob/master/README.md",
+  "license": {
+    "type": "PROPRIETARY",
+    "text": "(c) Copyright TWC Product and Technology LLC  2011, 2019. All rights reserved."
+  },
+  "authors": {
+    "Gil Fuchs": "gil.fuchs@weather.com",
+    "Yoav Ben-Yair": "yoav.benyair@weather.com",
+    "Elik Katz": "elik.katz@weather.com",
+    "Vladislav Rybak": "vladislav.rybak@weather.com"
+  },
+  "source": {
+    "git": "git@github.com:TheWeatherCompany/airlock-sdk-ios.git",
+    "tag": "5.0.7"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "requires_arc": true,
+  "compiler_flags": "-fmodules",
+  "source_files": "AirLockSDK/Classes/**/*.{swift,m,h}",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "resource_bundles": {
+    "AirLockSDK": [
+      "AirLockSDK/Classes/**/*.{storyboard}",
+      "AirLockSDK/Classes/images.xcassets"
+    ]
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.0.0-beta.6"
+    ],
+    "SwiftyJSON": [
+      "~> 5.0.0"
+    ]
+  }
+}

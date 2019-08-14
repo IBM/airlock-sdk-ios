@@ -1,0 +1,333 @@
+{
+	"experiment": "Experiment1",
+	"experimentList": [
+		"EXPERIMENT_Experiment1",
+		"VARIANT_Experiment1_Variant1"
+	],
+	"inputFieldsForAnalytics": [
+		"context.device.connectionType",
+		"context.device.datetime",
+		"context.device.hockeyUserID",
+		"context.device.locale",
+		"context.device.localeCountryCode",
+		"context.device.localeLanguage",
+		"context.device.osVersion",
+		"context.device.screenHeight",
+		"context.device.screenWidth",
+		"context.device.version",
+		"context.turbo.vt1dailyforecast.night.dayPartName[0]",
+		"context.userPreferences.is24HourFormat",
+		"context.userPreferences.isEasternArabicNumerals",
+		"context.userPreferences.unitsOfMeasure",
+		"context.viewedLocation.country",
+		"context.viewedLocation.lon",
+		"context.viewedLocation.region",
+		"context.weatherSummary.nearestStartPrecip.endTime",
+		"context.weatherSummary.nearestStartPrecip.imminence",
+		"context.weatherSummary.nearestStartPrecip.severity",
+		"context.weatherSummary.nearestStartPrecip.startTime",
+		"context.weatherSummary.nearestWinterStormAlert.endTime",
+		"context.weatherSummary.nearestWinterStormAlert.phenomenaCode",
+		"context.weatherSummary.nearestWinterStormAlert.severityCode",
+		"context.weatherSummary.observation.basedGPS",
+		"context.weatherSummary.observation.obsTime",
+		"context.weatherSummary.observation.skyCode",
+		"context.weatherSummary.observation.weekDay",
+		"context.weatherSummary.pollenData[0].night.daypartName",
+		"context.weatherSummary.pollenData[0].night.grassIndex",
+		"context.weatherSummary.pollenData[0].night.treeIndex"
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": true,
+				"features": [
+					{
+						"featureAttributes": "{\"StaticText\":\"This is a static text\"}",
+						"featureIsReported": true,
+						"features": [
+						],
+						"isON": true,
+						"name": "analytics.BigStates",
+						"reportedConfigurationNames": {
+							"analyticsBigStates.StaticText": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration, analyticsBigStates.StaticText]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": true,
+						"features": [
+						],
+						"isON": true,
+						"name": "analytics.WeatherData",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "airlock.Rollout Beacon",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"dvalue1\":\"defaultvalue\",\"dvalue2\":\"defaultvalue\",\"dvalue3\":\"defaultvalue\",\"value\":\"defaultvalue\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "tr.MTXinMTXConfigsProdDefaultOff",
+				"reportedConfigurationNames": {
+					"trMTXinMTXConfigsProdDefaultOff.Config2": false
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value2\":\"value2\",\"value1\":\"value12\",\"value3\":\"value3\",\"value\":\"config2a\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.FeatureProdMTXConfigProdDev15",
+				"reportedConfigurationNames": {
+					"group1feature1.FeatureProdMTXConfigProd15a": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1feature1.FeatureProdMTXConfigProd15a]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": true,
+								"features": [
+								],
+								"isON": true,
+								"name": "ns.NewFeatureInBranch",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXProd11a",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXDev11b",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx.3a05bca3-a938-49e0-acd3-927510096b2f",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "tr.FeatureProdMTXProdDev11",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"colors\":\"array was here once\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Arrays",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+					"colors": "array was here once"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"initialTitle\":\"AreyouenjoyingtheTheWeatherChannelApp?\",\"myArray\":[\"1\",\"2\"],\"positiveAnswerTitle\":\"Gladtohearit!\",\"initialNoButton\":\"NOTREALLY\",\"feedbackButton\":\"SENDFEEDBACK\",\"customValObj2\":{\"b\":\"zwt\"},\"customValObj\":{\"a\":\"abc\"},\"noOfDaysAfterYesPromptAgain\":60,\"emailSubject\":\"AndroidApp\",\"customValStr\":\"abc\",\"negativeAnswerMessage\":\"Pleasesendusfeedbacksowecanimprove\",\"feedbackEmail\":\"feedback@mail.com\",\"initialMessage\":\"\",\"noFeedbackButon\":\"NOTHANKS\",\"appStoreLink\":\"market:\\\/\\\/details?id=com.weather.Weather\",\"myArrayOfNormalObjects\":[{\"a\":1},{\"a\":2},{\"a\":3},{\"a\":4},{\"a\":5}],\"myArrayOfObjects\":[{\"a\":{\"aa\":1}},{\"b\":2},{\"c\":3},{\"d\":4},{\"e\":5}],\"rateUsButton\":\"RATEUS\",\"name\":\"AmichaiMeirCopy\",\"positiveAnswerMessage\":\"WillyousharetheloveintheGooglePlayStore?\",\"noOfDaysAfterNoPromptAgain\":90,\"negativeAnswerTitle\":\"That'snotgood\",\"customObjFromArray\":{\"a\":\"abc\"},\"initalYesButton\":\"YES\",\"noRatingButton\":\"NOTHANKS\",\"launchesUntilShow\":12}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Array3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsArray3.CR1]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\":\"FeatureInBranch1Config1\",\"colors\":[\"red\",\"green\",\"blue\",\"white\"]}",
+				"featureIsReported": true,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.FeatureInBranch1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+					"colors[0]": "red",
+					"colors[1]": "green",
+					"colors[2]": "blue",
+					"colors[3]": "white",
+					"value1": "FeatureInBranch1Config1"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsFeatureInBranch1.FeatureInBranch1Config1]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "elik.Array2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": true,
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": true,
+						"features": [
+						],
+						"isON": true,
+						"name": "ads.Main Screen Banner",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"features": [
+						],
+						"isON": false,
+						"name": "ads.Main Feed Ads",
+						"namespace": "ads",
+						"noCachedResults": false,
+						"resultTrace": "copied from defaults",
+						"type": "FEATURE",
+						"uniqueId": "4aaf38a5-7a8b-4012-a8ef-8b7102d55b89"
+					}
+				],
+				"isON": true,
+				"name": "ads.Airlock Control Over Ads",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+					{
+						"features": [
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXDev12b",
+								"namespace": "tr",
+								"noCachedResults": false,
+								"resultTrace": "copied from defaults",
+								"type": "FEATURE",
+								"uniqueId": "571701bd-2362-4517-abf7-621cb6f36f8f"
+							},
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXProd12a",
+								"namespace": "tr",
+								"noCachedResults": false,
+								"resultTrace": "copied from defaults",
+								"type": "FEATURE",
+								"uniqueId": "dc8581ea-e37a-4723-8a76-12c12558ebfa"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"type": "MUTUAL_EXCLUSION_GROUP",
+						"uniqueId": "76c22732-3bf0-4484-a8c7-304194900c50"
+					}
+				],
+				"isON": false,
+				"name": "tr.FeatureProdMTXDevProd12",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"resultTrace": "copied from defaults",
+				"type": "FEATURE",
+				"uniqueId": "596f9c9b-ab33-42ce-9c62-ddc9103440b7"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"isON": false,
+				"name": "ns.CustomArray",
+				"namespace": "ns",
+				"noCachedResults": false,
+				"resultTrace": "copied from defaults",
+				"type": "FEATURE",
+				"uniqueId": "07b15a23-163a-4829-86c7-f76baffe1a13"
+			}
+		]
+	},
+	"variant": "Variant1"
+}

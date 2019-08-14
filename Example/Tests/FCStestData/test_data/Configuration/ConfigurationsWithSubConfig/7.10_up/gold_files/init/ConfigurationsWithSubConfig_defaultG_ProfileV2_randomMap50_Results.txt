@@ -1,0 +1,66 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"value3\":\"value3\",\"value1\":\"value1\",\"value2\":\"value2\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature1.feature1.aggregate.alltrue",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature1feature1.config1, feature1feature1config1.config2, feature1feature1config1.config3]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\":\"value3\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature2.feature2.overwrite.alltrue",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature2feature2.config1, feature2feature2config1.config2, feature2feature2config1.config3]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value3\":\"value3a\",\"value1\":\"value3\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature3.feature3.false",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature3feature3false.config1, feature3feature3falseconfig1.config3]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\":\"value4\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature4.feature4.overwrite.hierarchy",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature4feature4overwritehierarchy.config1, feature4feature4overwritehierarchyconfig1.config2, feature4feature4overwritehierarchyconfig1config2.config3, feature4feature4overwritehierarchyconfig1.config4]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

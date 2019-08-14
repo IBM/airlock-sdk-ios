@@ -1,0 +1,162 @@
+{
+    "attrTypeString1": "StringValue1",
+    "attrTypeInt2": 5,
+    "attrTypeFloat3": 10.15,
+    "attrTypeBoolean4": true,
+    "attrComplex5": {
+        "property1": "value1",
+        "property2": 2,
+        "property3": false,
+        "property4": {
+            "property5": "value5"
+        }
+    },
+    "attrTypeStringNotWLed6": "notimportantvalue6",
+    "attrTypeArray70": [{
+        "property0": "value0",
+        "property01": [{
+            "property010": "value010"
+        }, {
+            "property011": "value011"
+        }]
+    }, {
+        "property1": "value1",
+        "property11": "value11",
+        "property12": "value12"
+    }, {
+        "property2": "value2"
+    }, {
+        "property3": "value3"
+    }, {
+        "property4": "value4"
+    }, {
+        "property5": "value5"
+    }, {
+        "property6": "value6"
+    }],
+    "attrTypeArray71": [{
+        "property0": "value0",
+        "property01": [{
+            "property010": "value010"
+        }, {
+            "property011": "value011"
+        }]
+    }, {
+        "property1": "value1",
+        "property11": "value11",
+        "property12": "value12"
+    }, {
+        "property2": "value2"
+    }, {
+        "property3": "value3"
+    }, {
+        "property4": "value4"
+    }, {
+        "property5": "value5"
+    }, {
+        "property6": "value6"
+    }],
+    "attrTypeArray72": [{
+        "property0": "value0",
+        "property01": [{
+            "property010": "value010"
+        }, {
+            "property011": "value011"
+        }]
+    }, {
+        "property1": "value1",
+        "property11": "value11",
+        "property12": "value12"
+    }, {
+        "property2": "value2"
+    }, {
+        "property3": "value3"
+    }, {
+        "property4": "value4"
+    }, {
+        "property5": "value5"
+    }, {
+        "property6": "value6"
+    }],
+    "attrTypeArray73": [{
+        "property0": "value0",
+        "property01": [{
+            "property010": "value010"
+        }, {
+            "property011": "value011"
+        }]
+    }, {
+        "property1": "value1",
+        "property11": "value11",
+        "property12": "value12"
+    }, {
+        "property2": "value2"
+    }, {
+        "property3": "value3"
+    }, {
+        "property4": "value4"
+    }, {
+        "property5": "value5"
+    }, {
+        "property6": "value6"
+    }],
+    "attrTypeArray74": [{
+        "property0": "value0",
+        "property01": [{
+            "property010": "value010"
+        }, {
+            "property011": "value011"
+        }]
+    }, {
+        "property1": "value1",
+        "property11": "value11",
+        "property12": "value12"
+    }, {
+        "property2": "value2"
+    }, {
+        "property3": "value3"
+    }, {
+        "property4": "value4"
+    }, {
+        "property5": "value5"
+    }, {
+        "property6": "value6"
+    }],
+    "attrTypeArray75": [{
+        "property0": "value0",
+        "property01": [{
+            "property010": "value010"
+        }, {
+            "property011": "value011"
+        }]
+    }, {
+        "property1": "value1",
+        "property11": "value11",
+        "property12": "value12"
+    }, {
+        "property2": "value2"
+    }, {
+        "property3": "value3"
+    }, {
+        "property4": "value4"
+    }, {
+        "property5": "value5"
+    }, {
+        "property6": "value6"
+    }],
+    "attrTypeArray76": [{
+            "property1": "value1"
+        },
+        {
+            "property2": "value2"
+        }, {
+            "property3": "value3"
+        }, {
+            "property4": "value4"
+        }, {
+            "property5": "value5"
+        }, {
+            "property6": "value6"
+        }
+    ]
+}

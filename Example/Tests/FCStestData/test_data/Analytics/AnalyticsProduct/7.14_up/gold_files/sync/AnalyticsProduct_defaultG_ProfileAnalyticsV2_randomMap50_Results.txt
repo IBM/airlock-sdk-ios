@@ -1,0 +1,328 @@
+{
+	"inputFieldsForAnalytics": [
+		"context.device.localeCountryCode",
+		"context.device.localeLanguage",
+		"context.device.hockeyUserID",
+		"context.device.datetime",
+		"context.device.osVersion",
+		"context.device.screenHeight",
+		"context.device.locale",
+		"context.turbo.vt1dailyforecast.night.dayPartName[0]",
+		"context.viewedLocation.country",
+		"context.weatherSummary.observation.skyCode",
+		"context.weatherSummary.observation.obsTime",
+		"context.weatherSummary.observation.weekDay",
+		"context.weatherSummary.pollenData[0].night.grassIndex",
+		"context.weatherSummary.pollenData[0].night.daypartName",
+		"context.weatherSummary.pollenData[0].night.treeIndex",
+		"context.weatherSummary.nearestWinterStormAlert.endTime",
+		"context.weatherSummary.nearestWinterStormAlert.phenomenaCode",
+		"context.weatherSummary.nearestWinterStormAlert.severityCode",
+		"context.viewedLocation.lon",
+		"context.viewedLocation.region",
+		"context.weatherSummary.observation.basedGPS",
+		"context.weatherSummary.nearestStartPrecip.severity",
+		"context.weatherSummary.nearestStartPrecip.imminence",
+		"context.weatherSummary.nearestStartPrecip.startTime",
+		"context.weatherSummary.nearestStartPrecip.endTime"
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": true,
+				"features": [
+					{
+						"featureAttributes": "{\"Temperature\":-83,\"StaticText\":\"This is a static text\",\"StateName\":\"dolore cillum et in\",\"Location\":\"-81074759,83611007\"}",
+						"featureIsReported": true,
+						"features": [
+						],
+						"isON": true,
+						"name": "analytics.BigStates",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+							"StateName": "dolore cillum et in",
+							"StaticText": "This is a static text"
+						},
+						"resultTrace": "Configurations: [defaultConfiguration, analyticsBigStates.StateName, analyticsBigStates.StaticText, analyticsBigStates.Location, analyticsBigStates.Fahrenheit]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "analytics.WeatherData",
+						"reportedConfigurationNames": {
+							"analyticsWeatherData.AddAlertData": false,
+							"analyticsWeatherData.AddViewedLocationData": false
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration.\nTrigger: context.weatherSummary !== null &&\r\ncontext.weatherSummary.dayForecast !== null &&\r\ncontext.weatherSummary.dayForecast.day !== null &&\r\ncontext.weatherSummary.dayForecast.day.precipPercentage !== null &&\r\ncontext.weatherSummary.dayForecast.day.precipType !== null &&\r\ncontext.weatherSummary.dayForecast.day.precipPercentage > 0\nAttributes: {\n\t\t\n\t\"DayPrecipPercentage\" : context.weatherSummary.dayForecast.day.precipPercentage,\n\t\t\n\t\"DayPrecipType\" : context.weatherSummary.dayForecast.day.precipType\n}\nError: com.ibm.airlock.engine.ScriptInvoker$InvokerException: Javascript error: TypeError: Cannot read property \"day\" from undefined (JavaScript trigger#1)",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "airlock.Rollout Beacon",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": true,
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "ads.Main Feed Ads",
+						"resultTrace": "Rule disabled",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": true,
+						"features": [
+						],
+						"isON": true,
+						"name": "ads.Main Screen Banner",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "ads.Airlock Control Over Ads",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"dvalue1\":\"defaultvalue\",\"dvalue2\":\"defaultvalue\",\"dvalue3\":\"defaultvalue\",\"value30\":\"value30\",\"value2\":\"value2\",\"value4\":\"value4\",\"value\":\"config2b-day\",\"value10\":\"value10\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "tr.MTXinMTXConfigsProdDefaultOff",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+					"dvalue1": "defaultvalue",
+					"dvalue2": "defaultvalue",
+					"dvalue3": "defaultvalue",
+					"value": "config2b-day",
+					"value10": "value10",
+					"value2": "value2",
+					"value30": "value30",
+					"value4": "value4"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, trMTXinMTXConfigsProdDefaultOff.Config2, trMTXinMTXConfigsProdDefaultOffConfig2.Config2b]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value2\":\"value2\",\"value1\":\"value1\",\"value3\":\"value3\",\"value\":\"config2a\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.FeatureProdMTXConfigProdDev15",
+				"reportedConfigurationNames": {
+					"group1feature1.FeatureProdMTXConfigProd15a": false
+				},
+				"reportedConfigurationValues": {
+					"value": "config2a",
+					"value1": "value1",
+					"value2": "value2",
+					"value3": "value3"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1feature1.FeatureProdMTXConfigDev15b]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": true,
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": true,
+								"features": [
+								],
+								"isON": true,
+								"name": "tr.FeatureProdMTXDev12b",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXProd12a",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx.0ed23b87-2480-4640-9f88-f4efa1d3874a",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "tr.FeatureProdMTXDevProd12",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "tr.FeatureProdMTXProd11a",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "tr.FeatureProdMTXDev11b",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx.170039ef-7f9b-4304-861c-91f54a37a12c",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "tr.FeatureProdMTXProdDev11",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"colors\":[\"red\",\"green\",\"blue\",\"white\"]}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Arrays",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+					"colors[0]": "red",
+					"colors[1]": "green",
+					"colors[2]": "blue",
+					"colors[3]": "white"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"myArray\":[\"item1\",\"item2\",\"item3\",\"item4\"],\"moreArrays\":[{\"color\":\"blue\"},{\"color\":\"red\"},{\"color\":\"white\"}]}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.CustomArray",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+					"moreArrays[0].color": "blue",
+					"moreArrays[1].color": "red",
+					"moreArrays[2].color": "white",
+					"myArray[2]": "item3"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsCustomArray.AddArray]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"complexObject\":{\"compAtt3\":3.2,\"compAtt2\":5,\"compAtt1\":\"hello\"},\"arrayAtt\":[\"value1\",\"value2\",\"value3\"],\"arrayOfObjects\":[{\"att2\":\"a0att2\",\"att1\":\"a0att1\"},{\"att2\":\"a1att2\",\"att1\":\"a1att1\"},{\"att2\":\"a2att2\",\"att1\":\"a2att1\"}],\"ArrayOfArrayOfObject\":[[{\"key1\":\"val1\",\"key0\":\"val0\"},{\"key1\":\"val11\",\"key0\":\"val01\"}],[{\"key1\":\"val1\",\"key0\":\"val0\"},{\"key1\":\"val11\",\"key0\":\"val01\"}],[{\"key1\":\"val1\",\"key0\":\"val0\"},{\"key1\":\"val11\",\"key0\":\"val01\"}]]}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "elik.Array2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+					"ArrayOfArrayOfObject[0][0].key0": "val0",
+					"ArrayOfArrayOfObject[0][1].key0": "val01",
+					"ArrayOfArrayOfObject[1][0].key0": "val0",
+					"ArrayOfArrayOfObject[1][1].key0": "val01"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, elikElik.CF1, elikElik.CF2]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"initialTitle\":\"AreyouenjoyingtheTheWeatherChannelApp?\",\"myArray\":[\"1\",\"2\"],\"positiveAnswerTitle\":\"Gladtohearit!\",\"initialNoButton\":\"NOTREALLY\",\"feedbackButton\":\"SENDFEEDBACK\",\"customValObj2\":{\"b\":\"zwt\"},\"customValObj\":{\"a\":\"abc\"},\"noOfDaysAfterYesPromptAgain\":60,\"emailSubject\":\"AndroidApp\",\"customValStr\":\"abc\",\"negativeAnswerMessage\":\"Pleasesendusfeedbacksowecanimprove\",\"feedbackEmail\":\"feedback@mail.com\",\"initialMessage\":\"\",\"noFeedbackButon\":\"NOTHANKS\",\"appStoreLink\":\"market:\\\/\\\/details?id=com.weather.Weather\",\"myArrayOfNormalObjects\":[{\"a\":1},{\"a\":2},{\"a\":3},{\"a\":4},{\"a\":5}],\"myArrayOfObjects\":[{\"a\":{\"aa\":1}},{\"b\":2},{\"c\":3},{\"d\":4},{\"e\":5}],\"rateUsButton\":\"RATEUS\",\"name\":\"AmichaiMeirCopy\",\"positiveAnswerMessage\":\"WillyousharetheloveintheGooglePlayStore?\",\"noOfDaysAfterNoPromptAgain\":90,\"negativeAnswerTitle\":\"That'snotgood\",\"customObjFromArray\":{\"a\":\"abc\"},\"initalYesButton\":\"YES\",\"noRatingButton\":\"NOTHANKS\",\"launchesUntilShow\":12}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Array3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+					"appStoreLink": "market:\/\/details?id=com.weather.Weather",
+					"customObjFromArray.a": "abc",
+					"customValObj.a": "abc",
+					"customValObj2.b": "zwt",
+					"customValStr": "abc",
+					"feedbackButton": "SENDFEEDBACK",
+					"feedbackEmail": "feedback@mail.com",
+					"myArrayOfNormalObjects[0].a": "1",
+					"myArrayOfNormalObjects[1].a": "2",
+					"myArrayOfNormalObjects[2].a": "3",
+					"myArrayOfObjects[0].a.aa": "1",
+					"myArrayOfObjects[1].b": "2",
+					"myArrayOfObjects[2].c": "3",
+					"myArray[0]": "1",
+					"myArray[1]": "2"
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsArray3.CR1]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"features": [
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isOn": false,
+			"name": "viewedLocation and userLocation",
+			"namespace": "pcc",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": false,
+			"name": "viewedLocation and not userLocation",
+			"namespace": "pcc",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isOn": false,
+			"name": "distanceKm and locale",
+			"namespace": "pcc",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isOn": false,
+			"name": "alerts phenomenaCode",
+			"namespace": "pcc",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": false,
+			"name": "lifeStyleIndices and userLocation not NY",
+			"namespace": "pcc",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isOn": false,
+			"name": "context.weatherSummary.nearestSnowAccumulation",
+			"namespace": "scp",
+			"resultTrace": "",
+			"type": "FEATURE"
+		}
+	],
+	"name": "root",
+	"type": "ROOT"
+}

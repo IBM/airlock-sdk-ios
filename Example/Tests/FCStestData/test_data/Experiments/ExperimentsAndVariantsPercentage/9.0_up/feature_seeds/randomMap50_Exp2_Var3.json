@@ -1,0 +1,17 @@
+{
+	"features": {
+		"Br1.FeatureInBranch1": 448503,
+		"br2.FeatureInBranch2": 882579,
+		"br3.FeatureInBranch3": 65341,
+		"br4.FeatureInBranch4": 318890,
+		"f1.F1": 762397
+	},
+	"experiments": {
+		"experiments.Experiment1": 500000,
+		"experiments.Experiment1.Variant1": 500000,
+		"experiments.Experiment1.Variant2": 500000,
+		"experiments.Experiment2": 132298,
+		"experiments.Experiment2.Variant3": 9128,
+		"experiments.Experiment2.Variant4": 500000
+	}
+}

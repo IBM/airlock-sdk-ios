@@ -1,0 +1,41 @@
+{
+	"experiment": "exp1",
+	"experimentList": [
+		"EXPERIMENT_exp1",
+		"VARIANT_exp1_var2"
+	],
+	"inputFieldsForAnalytics": [
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns1.f2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"isON": false,
+				"name": "ns1.f1",
+				"namespace": "ns1",
+				"noCachedResults": false,
+				"resultTrace": "copied from defaults",
+				"type": "FEATURE",
+				"uniqueId": "8ac7a313-21d4-4184-a718-ffc65263daeb"
+			}
+		]
+	},
+	"variant": "var2"
+}

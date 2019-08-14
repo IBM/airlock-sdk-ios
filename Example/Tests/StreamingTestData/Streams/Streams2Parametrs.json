@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "streams": [
+    {
+      "name": "adViewed2Variables",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0001-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "event.name === 'ad-viewed'",
+      "processor": "if (typeof (cache.sum1) === 'undefined') {cache.sum1 = 0;cache.sum2 = 0;}for (var i in events) {trace(\"successful--> \"+events[i].eventData.successful);if (events[0].eventData.successful) {cache.sum1 += 1;} else {cache.sum2 += 1;}}result = {\"sum1\":cache.sum1,\"sum2\":cache.sum2};",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 5,
+      "queueSizeKB": 1024      
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"productId": "b77ef14f-2995-4b7b-a3bb-af1e70bffa6e",
+	"productName": "NoRuleGroups",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R1 QA OFF",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "031d8325-c55c-47e4-8ffa-56ce2608d276"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R2 Dev ON",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "2f5a553a-cb74-45b0-8f1d-9b59841eb30d"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R3 QA ON",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "23df2099-568d-41b2-bfdb-825bb7f24ef1"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R4 Dev OFF",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "add14a0e-0591-4fc1-b275-f517ee35d5f4"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R5 OFF QA and Dev",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "2e7ab9f8-cccf-42c9-ba45-5add6e53f134"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R6 ON  QA and Dev",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "db86ba35-2978-49f6-a60e-f99342fb1451"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R10 ON PROD",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "34c6ccea-9f8b-4c19-9d02-e0cc79717e3d"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "R11 OFF PROD",
+				"namespace": "ns3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "e5d784b3-a6e3-4669-9c6b-b117923f40c8"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "e5817075-f26e-4583-abca-76c3dd3bd19e"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "38631676-93c8-47b7-827d-9c9ffee381c9",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2.1"
+}

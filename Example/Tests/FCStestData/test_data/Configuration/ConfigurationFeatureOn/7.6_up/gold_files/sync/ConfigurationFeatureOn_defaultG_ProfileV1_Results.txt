@@ -1,0 +1,61 @@
+{
+  "testName": "configuration",
+  "productName": "ConfigurationFeatureOn",
+  "productId": "dbb2b6d0-185a-4844-a006-872649018b9d",
+  "seasonLogicalName": "7.5_up",
+  "seasonId": "b9a4d432-6c01-4527-b96c-13e2084020e6",
+  "deviceContextFilePath": "test_data\/configuration\/ConfigurationFeatureOn\/7.5_up\/device_contexts\/DeviceContextV1.json",
+  "groupsFilePath": "test_data\/configuration\/ConfigurationFeatureOn\/7.5_up\/groups\/defaultG.json",
+  "profileFilePath": "test_data\/configuration\/ConfigurationFeatureOn\/7.5_up\/profiles\/ProfileV1.json",
+  "root": {
+    "features": [
+      {
+        "featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to hell\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":2}",
+        "features": [
+        ],
+        "isON": true,
+        "name": "cfo.turnOffNoDefault",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "cfo.turnOffWithDefaultON",
+        "resultTrace": "Rule returned false",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "cfo.turnOffOn",
+        "resultTrace": "Rule returned false",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "cfo.disabledFeature",
+        "resultTrace": "Rule disabled",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{\"icon\":\"a.jpg\",\"featureON\":true,\"text\":\"welcome to hell\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":2}",
+        "features": [
+        ],
+        "isON": true,
+        "name": "cfo.runtimeError",
+        "resultTrace": "",
+        "type": "FEATURE"
+      }
+    ],
+    "type": "ROOT",
+    "uniqueId": "94606068-8482-4985-890b-918cff1653a7"
+  }
+}

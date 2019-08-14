@@ -1,0 +1,11 @@
+{
+	"productVesrion": "0",
+	"seasonName": "AndroidFlagship.S1",
+	"features": [{
+		"name": "Multi Location Home Screen",
+		"defaultIfAirlockSystemIsDown": false,
+		"namespace": "ns1"
+	}, {
+		"name": "Video HighRes",
+		"defaultIfAirlockSystemIsDown": false,
+		"namespace": "ns1"

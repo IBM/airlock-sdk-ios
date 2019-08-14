@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/elikkatz/airlock-sdk-ios/Example/build/Debug-iphonesimulator/AirLockSDK/AirLockSDK.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/elikkatz/airlock-sdk-ios/Example/build/Pods.build/Debug-iphonesimulator/AirLockSDK.build/unextended-module.modulemap',
+    }]
+  }]
+}

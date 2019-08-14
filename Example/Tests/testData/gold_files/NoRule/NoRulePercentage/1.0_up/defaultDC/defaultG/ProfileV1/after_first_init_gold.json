@@ -1,0 +1,27 @@
+{
+    "testName": "NoRule",
+    "productName": "NoRulePercentage",
+    "productId": "7900f30b-8f47-4829-95c5-9d4d6e8564ee",
+    "seasonLogicalName": "1.0_up",
+    "seasonId": "d5b16185-57ce-4233-88ef-6a44ba4687d8",
+    "deviceContextFilePath": "test_data\/NoRule\/NoRulePercentage\/1.0_up\/device_contexts\/defaultDC.json",
+    "groupsFilePath": "test_data\/NoRule\/NoRulePercentage\/1.0_up\/groups\/defaultG.json",
+    "profileFilePath": "test_data\/NoRule\/NoRulePercentage\/1.0_up\/profiles\/ProfileV1.json",
+    "features": {
+        "ns1.r523 l3 20": false,
+        "ns1.r5 l1 50": false,
+        "ns1.r4 l1 40": false,
+        "ns1.r32 l2 30": false,
+        "ns1.r521 l3 50": false,
+        "ns1.r2 l1 60": false,
+        "ns1.r31 l2 50": false,
+        "ns1.r41 l2 30": false,
+        "ns1.r51 l2 40": false,
+        "ns1.r1 l1 100": false,
+        "ns1.r522 l3 100": false,
+        "ns1.r52 l2 40": false,
+        "ns1.r3 l1 80": false,
+        "ns1.r42 l2 20": false,
+        "ns1.r33 l2 10": false
+    }
+}

@@ -1,0 +1,80 @@
+{
+  "enabled": true,
+  "streams": [
+  {
+      "name": "adViewed1Local",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0001-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "true",
+      "processor": "if(typeof(cache.sum1) === 'undefined') {cache.sum1 = 0;}for (var i in events){cache.sum1 += 1;}result = {\"sum1\":cache.sum1};trace(\"variable sun1 = \" +result.sum1.toString())",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024      
+    },
+    {
+      "name": "adViewed2Local",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0002-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "true",
+      "processor": "1/",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024      
+    },
+    {
+      "name": "adViewed3Local",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0003-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "true",
+      "processor": "if(typeof(cache.sum1) === 'undefined') '",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024      
+    },
+    {
+      "name": "adViewed4Local",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0004-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "true",
+      "processor": "&*(&)(Q#*$^%^&@#_)(*!@#$&%^@#*!&@%^#(&*)(*@!&#_)*(()*_)@(*#^&(*^&...////\\\/\#%$&^sdfh xcpq8uwerhlkjndfjkןןך׳קרפ8%0&^@&*(&)(Q#*$^%^&@#_)(*!@#$&%^@#*!&@%^#(&*)(*@!&#_)*(()*_)@(*#^&(*^&#%$&^sdfh xcpq8uwerhlkjndfjkןןך׳קרפ8%0&^@&*(&)(Q#*$^%^&@#_)(*!@#$&%^@#*!&@%^#(&*)(*@!&#_)*(()*_)@(*#^&(*^&#%$&^sdfh xcpq8uwerhlkjndfjkןןך׳קרפ8%0&^@&*(&)(Q#*$^%^&@#_)(*!@#$&%^@#*!&@%^#(&*)(*@!&#_)*(()*_)@(*#^&(*^&#%$&^sdfh xcpq8uwerhlkjndfjkןןך׳קרפ8%0&^@&*(&)(Q#*$^%^&@#_)(*!@#$&%^@#*!&@%^#(&*)(*@!&#_)*(()*_)@(*#^&(*^&#%$&^sdfh xcpq8uwerhlkjndfjkןןך׳קרפ8%0&^@",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024      
+    },
+    {
+      "name": "adViewed5Local",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0005-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "true",
+      "_processor": "if(typeof(cache.sum1) === 'undefined') {cache.sum1 = 0;}for (var i in events){cache.sum1 += 1;}result = {\"sum1\":cache.sum1};trace(\"variable sun1 = \" +result.sum1.toString());",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024      
+    }        
+  ]
+}

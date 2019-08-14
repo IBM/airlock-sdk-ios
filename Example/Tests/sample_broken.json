@@ -1,0 +1,18 @@
+{
+	"features": [{
+		"uniqueID": "a1",
+		"name": "F1",
+		"enabled": false
+	}, {
+		"uniqueID": "a2",
+		"name": "F2",
+		"enabled": true
+	}, {
+		"uniqueID": "a3",
+		"name": "F3",
+		"enabled": false
+	},  {
+			"uniqueID": "a4",
+			"nae": "1"
+	}
+

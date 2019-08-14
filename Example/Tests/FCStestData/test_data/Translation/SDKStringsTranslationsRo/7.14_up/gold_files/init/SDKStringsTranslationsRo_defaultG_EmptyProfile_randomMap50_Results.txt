@@ -1,0 +1,76 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"Premium\":\"\\u00cenregistreaz\\u0103-te pentru a activa func\\u0163iile premium\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.Premium]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"EightFirstDaySummer\":\"Prima zi a verii\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.EightFirstDaySummer]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FiveNextHours\":\"URM\\u0102TOARELE 13 MPH]\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FiveNextHours]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FourPrecipStarting\":\"Incepe Ploaie AST\\u0102ZI\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings4",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FourPrecipStarting]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"InJuly\":\"5 iulie\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings5",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.InJuly]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

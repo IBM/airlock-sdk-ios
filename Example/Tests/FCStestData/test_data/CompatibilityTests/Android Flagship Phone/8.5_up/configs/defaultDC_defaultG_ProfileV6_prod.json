@@ -1,0 +1,12 @@
+{
+  "apiVersion":"V3.0",
+  "version":"8.5",
+  "checkOnOtherServers":false,
+  "configPath":"test_data\/CompatibilityTests\/Android Flagship Phone\/8.5_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"NoGroup.json",
+  "profileFileName":"ProfileV6.json",
+  "defaultFileName":"Android Flagship Phone__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",  
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEV3/seasons/bc479db5-ff58-4138-b5e4-a8400a1f78d5/86a253b0-5d22-4990-b0a0-4ce6fef391f0/AirlockDefaults.json"
+}

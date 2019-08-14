@@ -1,0 +1,134 @@
+{
+	"inputFieldsForAnalytics": [
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"value\":\"testing global var in rule of config rule\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.GlobalVarInRule",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsLocalVarInRule.UseGlobalVarConfig]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"testing local var in rule of config rule\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.LocalVarInRule",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsLocalVarInRule.UseLocalVarConfig]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"testing utility in rule of config rule\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.UtilityInRule",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsLocalVarInRule.UtilityInRuleConfig]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"one\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.VarInUtility",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsLocalVarInRule.VarInUtilConfig]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.ChangeVarInUtility",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"alternative one\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.UseChangedVarInUtility",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsLocalVarInRule.ChangeVarInUtilConfig]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.DefineGlobalVarInRuleOfFeature1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"Use global variable defined in the rule of Feature1 in the config of Feature2\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.UseGlobalVarinRuleOfFeature2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"myvar\":\"testing var in feature Rule1\",\"CR3\":\"Using variable varInFeatureRule1 defined in the rule of Feature1\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.UseGlobalVarIndirectlyInConfigOfFeature3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsUseGlobalVarIndirectlyInConfigOfFeature3.UseGlobalVar]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

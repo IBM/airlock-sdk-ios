@@ -1,0 +1,362 @@
+{
+	"root": {
+		"features": [
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "group1.A",
+						"resultTrace": "Rule returned false",
+						"type": "FEATURE"
+					},
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "group1.B",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "group1.C",
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "group1.D",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "group1.E",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 3,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "group2.B",
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "group2.C",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "group2.E",
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "group2.A",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "group2.D",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 3,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "group3.A",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "group3.E",
+						"resultTrace": "Rule returned false",
+						"type": "FEATURE"
+					},
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "group3.B",
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "group3.C",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "group3.D",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"maxFeaturesOn": 3,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "group4.A",
+						"resultTrace": "Rule returned false",
+						"type": "FEATURE"
+					},
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "group4.B",
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "group4.C",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "group5.A",
+						"resultTrace": "Rule returned false",
+						"type": "FEATURE"
+					},
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "group5.E",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "group5.B",
+										"resultTrace": "Rule returned false",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"featureIsReported": false,
+										"features": [
+										],
+										"isON": true,
+										"name": "group5.C",
+										"reportedConfigurationNames": {
+											"defaultConfiguration": true
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Configurations: [defaultConfiguration]",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "group5.D",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"maxFeaturesOn": 4,
+				"name": "mx",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			}
+		]
+	}
+}

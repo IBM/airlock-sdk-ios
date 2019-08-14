@@ -1,0 +1,95 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"productId": "2749cb61-1436-45d2-afdf-d866015b7971",
+	"productName": "MTXGroupingConfiguration",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature1",
+				"namespace": "group1",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "ac479777-5390-497a-b78b-be6b21291d60"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature2",
+				"namespace": "feature2",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "0a6e2f30-0a29-4313-b8a9-e148a4a292f6"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature3",
+				"namespace": "feature3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "bec424be-f165-43ff-b708-0ac90d552eba"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature4",
+				"namespace": "feature4",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "580b64ea-f9df-4a66-86d4-c911970d952a"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature5",
+				"namespace": "feature5",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "aa394b09-824c-48a3-9352-eed7a6611936"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature6",
+				"namespace": "feature6",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "bcf6c972-32ab-4ab0-986b-eb242f6e9e01"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature7",
+				"namespace": "feature7",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "71ffb351-5241-4f2e-b319-ccabeb841bd7"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "b70eee80-6648-45b9-8224-0ea7ce5d4002"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "2c09e496-00d0-4883-ba4e-7a0c5939cc05",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2.1"
+}

@@ -1,0 +1,133 @@
+{
+  "testData": {
+    "precipitationForecast": [{
+        "intensity": -87180407,
+        "severity": 99889369,
+        "eventStartLocal": "3824-03-10T23:12:59.595Z",
+        "eventEnd": -63542563,
+        "eventStart": -5821855,
+        "imminence": -84870721,
+        "eventType": -15629284,
+        "characteristic": -62116639,
+        "eventEndLocal": "3629-06-19T15:26:26.815Z"
+      },
+      {
+        "intensity": 10689987,
+        "severity": 62343872,
+        "eventStartLocal": "2893-08-06T10:03:28.255Z",
+        "eventEnd": -78347079,
+        "eventStart": -76121475,
+        "imminence": 79153950,
+        "eventType": 4730470,
+        "characteristic": 47116762,
+        "eventEndLocal": "3253-09-07T08:48:02.526Z"
+      },
+      {
+        "intensity": -43829823,
+        "severity": -50388840,
+        "eventStartLocal": "2654-10-30T03:22:18.637Z",
+        "eventEnd": 90493830,
+        "eventStart": -35806366,
+        "imminence": 70958721,
+        "eventType": 3254654,
+        "characteristic": 88567467,
+        "eventEndLocal": "2663-07-08T06:07:58.134Z"
+      },
+      {
+        "intensity": 92892962,
+        "severity": -84651169,
+        "eventStartLocal": "3295-03-17T10:43:06.189Z",
+        "eventEnd": -28299921,
+        "eventStart": -31200402,
+        "imminence": -30744062,
+        "eventType": -9084576,
+        "characteristic": 74684465,
+        "eventEndLocal": "2478-04-26T22:37:52.745Z"
+      }
+    ],
+    "dsx": {
+      "mode": "amet dolore",
+      "effectiveDateTime": "3510-11-27T03:48:01.387Z",
+      "teaserTitle": "",
+      "eventName": "nulla sit dolore"
+    }
+  },
+  "viewedLocation": {
+    "country": "CV",
+    "lon": -79869813,
+    "region": "nulla aliqua",
+    "lat": 47467163
+  },
+  "profile": {},
+  "userPreferences": {
+    "is24HourFormat": true,
+    "unitsOfMeasure": "imperial"
+  },
+  "weatherSummary": {
+    "tomorrowForecast": {
+      "night": {
+        "precipType": "rain",
+        "dayPart": "night",
+        "precipPercentage": "pr"
+      },
+      "day": {
+        "precipType": "snow",
+        "dayPart": "day",
+        "precipPercentage": "dolore dolor irure consectetur in"
+      }
+    },
+    "nearestSnowAccumulation": {
+      "dayPart": "day",
+      "snowRange": "magna nostrud labore"
+    },
+    "contentMode": {
+      "mode": "proident",
+      "effectiveDateTime": "2262-03-22T12:50:33.243Z",
+      "eventName": "ullamco voluptate"
+    },
+    "observation": {
+      "skyCode": 49734008,
+      "obsTime": "3010-05-18T16:11:07.303Z",
+      "weekDay": "Saturday",
+      "nextSunrise": "5077-08-01T23:04:19.365Z",
+      "temperature": -103,
+      "dayPart": "day",
+      "basedGPS": true,
+      "nextSunset": "2106-07-18T20:14:51.563Z",
+      "feelsLikeTemperature": -14081070
+    },
+    "nearestWinterStormAlert": {
+      "phenomenaCode": "FF",
+      "endTime": "4582-11-08T15:13:45.961Z",
+      "severityCode": -97109675,
+      "significanceCode": "A"
+    },
+    "nearestStartPrecip": {
+      "severity": -44591772,
+      "imminence": 64399883,
+      "startTime": "2565-12-17T20:53:28.759Z",
+      "endTime": "3290-06-01T20:50:55.525Z",
+      "eventType": -65055826
+    },
+    "lifeStyleIndices": {
+      "drivingDifficultyIndex": 1
+    }
+  },
+  "device": {
+    "localeCountryCode": "ST",
+    "datetime": "2938-10-23T18:13:36.210Z",
+    "screenWidth": -86293507,
+    "osVersion": "pariatur quis aliqua proident",
+    "localeLanguage": "gd",
+    "screenHeight": 18613893,
+    "locale": "da_dk",
+    "connectionType": "ullamco ea sit dolor",
+    "version": "ex ipsum sit cillum"
+  },
+  "currentLocation": {
+    "country": "NG",
+    "lon": 38778372,
+    "region": "in magna voluptate cillum",
+    "lat": -23896561
+  }
+}

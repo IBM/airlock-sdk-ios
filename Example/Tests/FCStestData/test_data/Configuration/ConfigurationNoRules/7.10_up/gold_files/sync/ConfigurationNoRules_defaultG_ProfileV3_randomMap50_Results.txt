@@ -1,0 +1,96 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to hell\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":2}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CNR.OnlyDefault",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"b.jpg\",\"text\":\"welcome to paradise\",\"title\":\"Example Schema\",\"color\":\"green\",\"alert\":true,\"background\":\"black\",\"properties\":{\"icon\":{\"type\":\"string\"},\"text\":{\"type\":\"string\"},\"color\":{\"type\":\"string\"},\"alert\":{\"type\":\"boolean\"},\"background\":{\"type\":\"string\"},\"size\":{\"minimum\":1,\"description\":\"Text size\",\"type\":\"integer\"}},\"required\":[\"color\",\"text\"],\"type\":\"object\",\"size\":1}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CNR.ConfigCompleteOverwrite",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, ConfigOverwriteDefault1CNR.CompleteOverwrite]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to hell\",\"color\":\"green\",\"alert\":false,\"background\":\"white\",\"size\":2}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CNR.ConfigOverwriteOneParam",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, ConfigOverwriteOneParamCNR.OverwriteOneParam]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to paradise\",\"color\":\"green\",\"alert\":true,\"background\":\"white\",\"size\":2}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CNR.ConfigOverwrite2Params",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, ConfigOverwrite2ParamsCNR.Overwrite2Params]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"b.jpg\",\"text\":\"welcome to hell\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":1}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CNR.ConfigOverwrite2Params2",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, ConfigOverwrite2Params2CNR.Overwrite2Params2]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to paradise\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":2}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CNR.ConfigOverwriteLastParam",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, ConfigOverwriteLastParamCNR.OverwriteLastParam]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

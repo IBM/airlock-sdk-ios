@@ -1,0 +1,31 @@
+# Exclude the build directories
+[Dd]erived[Dd]ata/*
+[Bb]uild/*
+[Ii]ntermediates
+[Aa]rtifacts
+[Aa]rchives
+
+# Exclude temp and swap files
+*~.nib
+*.swp
+*~
+
+# Exclude user interface files
+Example/AirLockSDK.xcworkspace/xcuserdata/*
+Example/AirLockSDK.xcodeproj/xcuserdata/*
+Example/Pods/Pods.xcodeproj/xcuserdata/*
+
+# Exclude User Data from Workspace and Projects
+xcuserdata
+*.xcuserdata
+*.xccheckout
+
+# Exclude AppCode Files
+.idea/*
+
+# Exclude OS X cruft
+=======
+.DS_Store
+
+# Exclude feature test configuration file changes
+Example/Tests/testData/configs/defaultConfig.json

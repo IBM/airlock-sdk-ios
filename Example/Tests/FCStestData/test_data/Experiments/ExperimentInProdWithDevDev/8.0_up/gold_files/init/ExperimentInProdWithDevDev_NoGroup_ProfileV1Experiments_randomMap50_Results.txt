@@ -1,0 +1,33 @@
+{
+	"experimentList": [
+		"EXPERIMENT_experiment1",
+		"VARIANT_experiment1_default"
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"text\":\"master\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns1.F1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ns1.F2",
+				"resultTrace": "Feature is turned off due to rollout percentage",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

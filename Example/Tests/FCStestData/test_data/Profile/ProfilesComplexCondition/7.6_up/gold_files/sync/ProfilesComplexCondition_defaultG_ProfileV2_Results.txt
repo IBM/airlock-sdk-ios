@@ -1,0 +1,70 @@
+{
+    "testName": "profile",
+    "productName": "ProfileComplexCondition",
+    "productId": "a5def9ec-b7cd-4cb4-86c0-eb6cfc81cf61",
+    "seasonLogicalName": "7.5_up",
+    "seasonId": "6409d71a-b779-4afd-a6f7-af5b4da962a0",
+    "deviceContextFilePath": "test_data\/profile\/ProfileComplexCondition\/7.5_up\/device_contexts\/DeviceContextV2.json",
+    "groupsFilePath": "test_data\/profile\/ProfileComplexCondition\/7.5_up\/groups\/defaultG.json",
+    "profileFilePath": "test_data\/profile\/ProfileComplexCondition\/7.5_up\/profiles\/ProfileV2.json",
+    "root": {
+        "features": [
+            {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": true,
+                "name": "pcc.viewedLocation and userLocation",
+                "resultTrace": "",
+                "type": "FEATURE"
+            },
+            {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": false,
+                "name": "pcc.viewedLocation and not userLocation",
+                "resultTrace": "Rule returned false",
+                "type": "FEATURE"
+            },
+            {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": true,
+                "name": "pcc.distanceKm and locale",
+                "resultTrace": "",
+                "type": "FEATURE"
+            },
+            {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": true,
+                "name": "pcc.alerts phenomenaCode",
+                "resultTrace": "",
+                "type": "FEATURE"
+            },
+            {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": false,
+                "name": "pcc.lifeStyleIndices and userLocation not NY",
+                "resultTrace": "Rule returned false",
+                "type": "FEATURE"
+            },
+            {
+                "featureAttributes": "{}",
+                "features": [
+                ],
+                "isON": true,
+                "name": "scp.context.weatherSummary.nearestSnowAccumulation",
+                "resultTrace": "",
+                "type": "FEATURE"
+            }
+        ],
+        "type": "ROOT",
+        "uniqueId": "72099a59-25cb-4894-adf0-eb0510b79c6b"
+    }
+}

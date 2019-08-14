@@ -1,0 +1,70 @@
+{
+  "testName": "configuration",
+  "productName": "ConfigurationMutualExclusion",
+  "productId": "4b851730-040f-4e34-b3a9-e1bd6d0d0178",
+  "seasonLogicalName": "7.5_up",
+  "seasonId": "098c2bec-9974-46df-8eec-25d0c09bede8",
+  "deviceContextFilePath": "test_data\/configuration\/ConfigurationMutualExclusion\/7.5_up\/device_contexts\/DeviceContextV1.json",
+  "groupsFilePath": "test_data\/configuration\/ConfigurationMutualExclusion\/7.5_up\/groups\/defaultG.json",
+  "profileFilePath": "test_data\/configuration\/ConfigurationMutualExclusion\/7.5_up\/profiles\/ProfileV1.json",
+  "root": {
+    "features": [
+      {
+        "featureAttributes": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CME.contextViewedLocationCountryNoME",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CME.contextViewedLocationCountry",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CME.contextViewedLocationCountry1",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CME.contextDeviceIL",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CME.contextDeviceIL2",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{\"title\":\"Example Schema\",\"type\":\"object\",\"properties\":{\"color\":{\"type\":\"string\"},\"size\":{\"description\":\"Text size\",\"type\":\"integer\",\"minimum\":1},\"alert\":{\"type\":\"boolean\"},\"background\":{\"type\":\"string\"},\"icon\":{\"type\":\"string\"},\"text\":{\"type\":\"string\"}}}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CME.maxFeatureOn2",
+        "resultTrace": "",
+        "type": "FEATURE"
+      }
+    ],
+    "type": "ROOT",
+    "uniqueId": "4c46e91b-825f-4db8-83a6-d44b42800642"
+  }
+}

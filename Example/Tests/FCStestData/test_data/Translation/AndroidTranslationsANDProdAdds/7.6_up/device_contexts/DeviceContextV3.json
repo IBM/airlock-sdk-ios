@@ -1,0 +1,121 @@
+{
+
+  "userPreferences": {
+    "metricSystem": true,
+    "temperature": "C",
+    "velocity": "KMH"
+  },
+
+  "viewedLocation": {
+
+    "country": "IL",
+    "region": "IL",
+    "lon": 33,
+    "lat": 43
+  },
+
+  "currentLocation": {
+
+    "country": "IL",
+    "region": "IL",
+    "lon": 50,
+    "lat": -30
+  },
+
+  "device": {
+    "datetime": "2015-03-25T18:51:04.419Z",
+    "localeCountryCode": "IL",
+    "localeLanguage": "HE",
+    "locale": "he_IL",
+    "osVersion": "9.0.3",
+    "connectionType": "3G",
+    "version": "8",
+    "screenWidth": 23,
+    "screenHeight": 50
+  },
+  "weatherSummary": {
+
+    "contentMode": {
+      "mode": "normal",
+      "effectiveDateTime": "2016-10-05T00:00:00+00:00Z",
+      "eventName": ""
+    },
+    "closestLightning": {
+
+      "distance": 3,
+      "strikeTime": "2016-03-25T18:51:04.419Z",
+      "lon": 25.34,
+      "lat": 32.56,
+      "cardinalDirection": "NE"
+    },
+    "nearestStartPrecip": {
+      "eventType": 2,
+      "imminence": 2,
+      "severity": 3,
+      "startTime": "2015-05-16T05:30:00+0600Z",
+      "endTime": "2015-05-20T05:30:00+0600Z"
+    },
+
+    "nearestWinterStormAlert": {
+      "significanceCode": "F",
+      "phenomenaCode": "IS",
+      "endTime": "2015-05-16T07:30:00+0600",
+      "severityCode": 1
+    },
+    "nearestSnowAccumulation": {
+      "snowRange": "2-3",
+      "dayPart": "day"
+    },
+    "lifeStyleIndices": {
+      "drivingDifficultyIndex": 0
+    },
+    "observation": {
+      "obsTime": "2015-03-30T16:25:00-0400",
+      "temperature": 14,
+      "feelsLikeTemperature": 19,
+      "skyCode": 3,
+      "dayPart": "night",
+      "weekDay": "Wednesday",
+      "nextSunrise": "2015-03-30T07:27:29-0400",
+      "nextSunset": "2015-03-30T19:56:05-0400"
+    },
+    "tomorrowForecast": {
+      "day": {
+        "precipPercentage": "30",
+        "precipType": "rain",
+        "dayPart": "day"
+      },
+      "night": {
+        "precipPercentage": "80",
+        "precipType": "snow",
+        "dayPart": "night"
+      }
+    }
+  },
+  "profile": {},
+
+  "testData": {
+
+    "dsx": {
+      "teaserTitle": "Mavul Hayom",
+      "mode": "normal",
+      "effectiveDateTime": "2016-10-05T00:00:00+00:00Z",
+      "eventName": "the event name"
+
+    },
+    "precipitationForecast": [{
+      "eventType": 5,
+      "eventStart": 1431732600,
+      "eventEnd": 1431739800,
+      "eventStartLocal": "2016-05-16T05:30:00+0600Z",
+      "eventEndLocal": "2015-06-16T07:30:00+0600Z",
+      "intensity": 3,
+      "severity": 3,
+      "characteristic": 1,
+      "imminence": 2
+    }]
+
+
+
+  }
+}

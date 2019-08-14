@@ -1,0 +1,37 @@
+{
+	"experiment": "exp5",
+	"experimentList": [
+		"EXPERIMENT_exp5",
+		"VARIANT_exp5_var3"
+	],
+	"inputFieldsForAnalytics": [
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ns1.f1",
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns1.f2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			}
+		]
+	},
+	"variant": "var3"
+}

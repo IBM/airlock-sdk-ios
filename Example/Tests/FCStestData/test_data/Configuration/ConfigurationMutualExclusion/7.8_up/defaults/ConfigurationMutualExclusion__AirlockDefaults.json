@@ -1,0 +1,84 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"productId": "0084e302-e7aa-4300-ad8d-9f3d88ba8531",
+	"productName": "ConfigurationMutualExclusion",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextViewedLocationCountryNoME",
+				"namespace": "CME",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "fc8157af-565b-4946-973d-6abcbee1beca"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextViewedLocationCountry",
+				"namespace": "CME",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "4919b034-0b70-4273-b259-87ab34d31b63"
+			},
+			{
+				"defaultConfiguration": "{}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextViewedLocationCountry1",
+				"namespace": "CME",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "8a8f560b-a896-4077-828c-8bd458cfc498"
+			},
+			{
+				"defaultConfiguration": "{}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextDeviceIL",
+				"namespace": "CME",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "65b550ef-62cc-4bef-b73c-3777453c4754"
+			},
+			{
+				"defaultConfiguration": "{}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextDeviceIL2",
+				"namespace": "CME",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "f15fb0af-56cb-44c1-a1a7-7bb62f3c7abd"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"title\":\"Example Schema\",\n\t\"type\":\"object\",\n\t\"properties\":{\n\t\t\"color\":{\n\t\t\t\"type\":\"string\"\n\t\t},\n\t\t\"size\":{\n\t\t\t\"description\":\"Text size\",\n\t\t\t\"type\":\"integer\",\n\t\t\t\"minimum\":1\n\t\t},\n\t\t\"alert\":{\n\t\t\t\"type\":\"boolean\"\n\t\t},\n\t\t\"background\":{\n\t\t\t\"type\":\"string\"\n\t\t},\n\t\t\"icon\":{\n\t\t\t\"type\":\"string\"\n\t\t},\n\t\t\"text\":{\n\t\t\t\"type\":\"string\"\n\t\t}\n\t}\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "maxFeatureOn2",
+				"namespace": "CME",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "a3a78ddb-9bc3-4e04-b460-a51765183697"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "f5681187-4a90-4f0d-bdad-dd84e58852af"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "bad3b4c1-03a4-485c-b5e2-a9154bf06f09",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2.1"
+}

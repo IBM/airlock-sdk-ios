@@ -1,0 +1,10 @@
+{
+  "apiVersion":"V2.1",
+  "version":"7.8",
+  "configPath":"test_data\/NoRule\/NoRuleGroups\/7.8_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"qa.json",
+  "profileFileName":"ProfileV1.json",
+  "defaultFileName":"NoRuleGroups__AirlockDefaults.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/TEST2/seasons/b77ef14f-2995-4b7b-a3bb-af1e70bffa6e/38631676-93c8-47b7-827d-9c9ffee381c9/AirlockDefaults.json"    
+}

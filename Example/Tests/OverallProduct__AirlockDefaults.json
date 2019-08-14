@@ -1,0 +1,974 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/DEV3\/",
+	"devServer": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/DEMO1\/",
+	"javascriptUtilities": "\nfunction calcDistance(coords1, coords2) {\n\tfunction toRad(x) { return x * Math.PI \/ 180; };\n\n\tvar lon1 = coords1[0]; var lat1 = coords1[1];\n\tvar lon2 = coords2[0]; var lat2 = coords2[1];\n\tvar x1 = lat2 - lat1; var dLat = toRad(x1);\n\tvar x2 = lon2 - lon1; var dLon = toRad(x2);\n\tvar a = Math.sin(dLat \/ 2) * Math.sin(dLat \/ 2) + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon \/ 2) * Math.sin(dLon \/ 2);\n\tvar c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));\n\tvar d = 6371 * c; \/\/ earth radius in km\n\n\treturn (isMetric() ? d : d \/ 1.60934);\n};\n\nfunction getLengthUnit(){\n\treturn context.userPreferences.unitsOfMeasure == \"imperial\"?\"IN\":\"CM\";\n}\n\nfunction getVelocityUnit(){\n    return context.userPreferences.unitsOfMeasure == \"metric\"?\"KMH\":\"MPH\";\n}\n\nfunction getTempratureUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"F\":\"C\";\n}\n\nfunction getPressureUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"IN\":\"MB\";\n}\n\nfunction getDistanceShortUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"FT\":\"M\";\n}\n\nfunction getDistanceUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"MI\":\"KM\";\n}\n\nfunction isMetric() {\n\tcontext.userPreferences.unitsOfMeasure == \"metric\";\n};\n\nfunction isCelsius() {\n\treturn (context.userPreferences.unitsOfMeasure == \"metric\" || context.userPreferences.unitsOfMeasure == \"hybrid\");\n};\n\nfunction isKMH() {\n\treturn context.userPreferences.unitsOfMeasure == \"metric\";\n};\n\nfunction inMiles(distance)\n{\n\treturn (isMetric() ? distance * 1.60934 : distance);\n};\n\nfunction inFahrenheit(degrees)\n{\n\treturn (isCelsius() ? (degrees - 32) \/ 1.8 : degrees);\n};\n\nfunction inMPH(speed)\n{\n\treturn (isKMH() ? speed * 1.60934 : speed);\n};\n\nfunction inInches(span)\n{\n\treturn ((context.userPreferences.unitsOfMeasure == \"metric\" || context.userPreferences.unitsOfMeasure == \"hybrid\") ? span * 2.54 : span); \/\/ to cm\n};\n\nfunction toDate(dateString)\n{\n\treturn new Date(dateString);\n};\n\nfunction translate(stringId)\n{\n\tvar stringValue = translations[stringId];\n\tif (stringValue === undefined) {\n\t\tthrow \"missing translation id: \" + stringId;\n\t}\n\n\tif (_validate_translation_)\n\t{\n\t\tvar regex = \/\\[\\[\\[(\\d+)\\]\\]\\]\/g;\n\t\tvar placeholders = [];\n\t\tvar match;\n\t\twhile (match = regex.exec(stringValue)) {\n\t\t\tplaceholders.push(match[1]);\n\t\t}\n\n\t\tfor (var n = 0; n < placeholders.length; ++n) {\n\t\t\tif (placeholders[n] < 1 || placeholders[n] >= arguments.length) {\n\t\t\t\tthrow \"translation id: \" + stringId + \" has unmatched placeholder \" + placeholders[n];\n\t\t\t}\n\t\t}\n\t}\n\n\tfor (var i = 1; i < arguments.length; ++i) {\n\t\tstringValue = stringValue.replace( \"[[[\" + i + \"]]]\", arguments[i]);\n\t}\n\treturn stringValue;\n};\n\nfunction deepFreeze(obj)\n{\n\tObject.freeze(obj);\n\tObject.getOwnPropertyNames(obj).forEach(function (prop)\t{\n\t\tif (obj.hasOwnProperty(prop) && obj[prop] !== null\n\t\t&& (typeof obj[prop] === \"object\" || typeof obj[prop] === \"function\")\n\t\t&& !Object.isFrozen(obj[prop])) {\n\t\t\tdeepFreeze(obj[prop]);\n\t\t}\n\t});\n\treturn obj;\n};\n\nfunction getHours(date){\n\treturn parseInt(date.substring(11,13));\n}\n\nfunction getMinutes(date){\n\treturn parseInt(date.substring(14,16));\n}\n\nfunction getTimeStr(date){\n\treturn date.substring(11,16);\n}\n\nfunction formatAMPM(d) {\n\t\n\tif (context.userPreferences.is24HourFormat){\n\t\treturn getTimeStr(d);\n\t}\n\tvar hours = getHours(d); \n\tvar minutes = getMinutes(d); \n\tvar ampm = hours >= 12 ? 'PM' : 'AM'; \n\thours = hours % 12; hours = hours ? hours : 12; \/\/ the hour '0' should be '12' \n\tminutes = minutes < 10 ? '0'+minutes : minutes; \n\tvar strTime = hours + ':' + minutes + ' ' + ampm; \n\treturn strTime; \n};\n\nfunction compareTime (d, str) {\n  var hours = getHours(d);\n  var minutes = getMinutes(d);\n  var target = str.split(\":\");\n  \n  var small = 0;\n  if  (hours < target[0]) {small = 1 }\n  else if (minutes < target[1]){small = 1}\n  else {small= -1};\n  \n  return small;\n};\n \nfunction deepFreeze(obj)\n{\n\tObject.freeze(obj);\n\tObject.getOwnPropertyNames(obj).forEach(function (prop)\t{\n\t\tif (obj.hasOwnProperty(prop) && obj[prop] !== null\n\t\t&& (typeof obj[prop] === \"object\" || typeof obj[prop] === \"function\")\n\t\t&& !Object.isFrozen(obj[prop])) {\n\t\t\tdeepFreeze(obj[prop]);\n\t\t}\n\t});\n\treturn obj;\n};\n\nfunction isImperial() {\n\treturn context.userPreferences.unitsOfMeasure == \"imperial\";\n};\nfunction isMetric() {\n\treturn context.userPreferences.unitsOfMeasure == \"metric\";\n};\nfunction isHybrid() {\n\treturn context.userPreferences.unitsOfMeasure == \"hybrid\";\n};\nfunction isCelsius() {\n\treturn (isMetric() || isHybrid());\n};\nfunction isKMH() {\n\treturn isMetric();\n};\n\nfunction calcDistance(coords1, coords2) {\n\tfunction toRad(x) { return x * Math.PI \/ 180; };\n\n\tvar lon1 = coords1[0]; var lat1 = coords1[1];\n\tvar lon2 = coords2[0]; var lat2 = coords2[1];\n\tvar x1 = lat2 - lat1; var dLat = toRad(x1);\n\tvar x2 = lon2 - lon1; var dLon = toRad(x2);\n\tvar a = Math.sin(dLat \/ 2) * Math.sin(dLat \/ 2) + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon \/ 2) * Math.sin(dLon \/ 2);\n\tvar c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));\n\tvar d = 6371 * c; \/\/ earth radius in km\n\n\treturn isMetric() ? d : (d \/ 1.60934);\n};\n\nfunction getLengthUnit(){ \/\/ hybrid is cm\n\tvar id = isImperial() ? \"Units.Inches\" : \"Units.CM\";\n\treturn translate(id);\n}\n\nfunction getVelocityUnit(){ \/\/ hybrid is miles\n    var id = isMetric() ? \"Units.KMH\" : \"Units.MPH\" ;\n\treturn translate(id);\n}\n\nfunction getTemperatureUnit(){ \/\/ hybrid is C\n    return isImperial() ? \"F\" : \"C\";\n}\n\nfunction getPressureUnit(){ \/\/ hybrid is MB\n    var id = isImperial() ? \"Units.InchMercury\" : \"Units.MiliBars\" ;\n\treturn translate(id);\n}\n\nfunction getDistanceShortUnit(){ \/\/ hybrid is meters\n    var id = isImperial() ? \"Units.Feet\" : \"Units.Meter\";\n\treturn translate(id);\n}\n\nfunction getDistanceUnit(){ \/\/ hybrid is miles\n    var id = isMetric() ? \"Units.KM\"  : \"Units.Miles\" ;\n\treturn translate(id);\n}\n\nfunction inMiles(distance)\n{\n\treturn (isMetric() ? distance * 1.60934 : distance);\n};\n\nfunction inFahrenheit(degrees)\n{\n\treturn (isCelsius() ? (degrees - 32) \/ 1.8 : degrees);\n};\n\nfunction inMPH(speed)\n{\n\treturn (isKMH() ? speed * 1.60934 : speed);\n};\n\nfunction inInches(span) \/\/ hybrid is cm\n{\n\treturn isImperial() ? span : span * 2.54;\n};\n\nfunction translate(stringId)\n{\n\tvar stringValue = translations[stringId];\n\tif (stringValue === undefined) {\n\t\tthrow \"missing translation id: \" + stringId;\n\t}\n\n\tif (typeof(_validate_translation_) !== \"undefined\")\n\t{\n\t\tvar regex = \/\\[\\[\\[(\\d+)\\]\\]\\]\/g;\n\t\tvar placeholders = [];\n\t\tvar match;\n\t\twhile (match = regex.exec(stringValue)) {\n\t\t\tplaceholders.push(match[1]);\n\t\t}\n\n\t\tfor (var n = 0; n < placeholders.length; ++n) {\n\t\t\tif (placeholders[n] < 1 || placeholders[n] >= arguments.length) {\n\t\t\t\tthrow \"translation id: \" + stringId + \" has unmatched placeholder \" + placeholders[n];\n\t\t\t}\n\t\t}\n\t}\n\n\tfor (var i = 1; i < arguments.length; ++i) {\n\t\tstringValue = stringValue.replace( \"[[[\" + i + \"]]]\", arguments[i]);\n\t}\n\treturn stringValue;\n};\n\n\nfunction toDate(dateString) {\n\treturn new Date(dateString);\n};\n\nfunction getHours(date){\n\treturn parseInt(date.substring(11,13),10);\n}\n\nfunction getMinutes(date){\n\treturn parseInt(date.substring(14,16),10);\n}\n\nfunction getTimeStr(date){\n\treturn date.substring(11,16);\n}\n\nfunction formatAMPM(d) {\n\t\n\tif (context.userPreferences.is24HourFormat){\n\t\treturn getTimeStr(d);\n\t}\n\tvar hours = getHours(d); \n\tvar minutes = getMinutes(d); \n\tvar ampm = hours >= 12 ? translate(\"Units.PM\") : translate(\"Units.AM\"); \n\thours = hours % 12; hours = hours ? hours : 12; \/\/ the hour '0' should be '12' \n\tminutes = minutes < 10 ? '0'+minutes : minutes; \n\tvar strTime = hours + ':' + minutes + ' ' + ampm; \n\treturn strTime; \n};\n\nfunction compareTime (d, str) {\n  var hours = getHours(d);\n  var minutes = getMinutes(d);\n  var target = str.split(\":\");\n\n  var diff = hours - target[0];\n  if (diff != 0)\n\treturn (diff < 0) ? -1 : 1;\n\n  diff = minutes - target[1];\n  return (diff == 0) ? 0 : (diff < 0 ? -1 : 1);\n};\n\n\/\/ a more extensible implementation of InMiles(), InFahrenheit() etc.\n\/\/ supply size and type of the unit (todo: use an enum object for the unit type)\nfunction Unit(amount, type)\n{\n\tswitch (type)\n\t{\n\tcase \"M\":\n\tcase \"miles\":\n\t\treturn (isMetric() || isHybrid()) ? amount * 1.60934 : amount;\n\n\tcase \"KM\":\n\tcase \"kilometers\":\n\t\treturn (isMetric() ? amount : amount \/ 1.60934);\n\n\tcase \"MPH\":\n\t\treturn (isKMH() ? amount * 1.60934 : amount);\n\n\tcase \"KMH\":\n\t\treturn (isKMH() ? amount : amount \/ 1.60934);\n\n\tcase \"I\":\n\tcase \"inches\":\n\t\treturn (isMetric() ? amount * 2.54 : amount);\n\n\tcase \"CM\":\n\tcase \"centimeters\":\n\t\treturn (isMetric() || isHybrid()) ? amount : amount \/ 2.54;\n\n\tcase \"F\":\n\tcase \"fahrenheit\":\n\t\treturn (isCelsius() ? (amount - 32) \/ 1.8 : amount);\n\n\tcase \"C\":\n\tcase \"celsius\":\n\t\treturn (isCelsius() ? amount : (amount * 1.8) + 32);\n\n\tdefault:\n\t\tthrow \"type \" + type + \" is not implemented\" ;\n\t}\n};\n",
+	"productId": "53b00ff1-7fd0-4240-b19f-28f32c4b7134",
+	"productName": "OverallProduct",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSchemaProdStringProddev1",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "81ae396f-4bd9-4e21-877d-744ae7a13144"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSchemaProd2",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "f452d651-9552-4fa1-a0b2-0f865afe35f3"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSchemaProd3",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "a3339030-b1e0-46d8-9ae5-4861b6f3d219"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevUtilityProd4",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "8398f5ad-fb4c-4047-b2d5-1153348cc2e5"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSchemaProdUtilityProd6",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "5aa467c2-426c-411e-98f5-cc798b633359"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSchemaProd7",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "7656cc61-685e-41a3-b1d1-61f6bd8c5b08"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSchemaProd8",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "0885ca24-056a-4c07-9e03-dbabf2bebce9"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdUtilityProd5",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "aea7239d-327e-4bf4-840e-c7cfc94de1b0"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSchemaProd9",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "3c2802ae-3d50-46e0-b9e5-4c9709a02c21"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSchemaProd10",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "b89193bf-688e-4259-bd17-59e9d50c283d"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+					{
+						"features": [
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"displayName": null,
+								"features": [
+								],
+								"name": "FeatureProdMTXProd11a",
+								"namespace": "tr",
+								"noCachedResults": false,
+								"type": "FEATURE",
+								"uniqueId": "3c60f582-b91d-4394-8182-76cd19538dd4"
+							},
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"displayName": null,
+								"features": [
+								],
+								"name": "FeatureProdMTXDev11b",
+								"namespace": "tr",
+								"noCachedResults": false,
+								"type": "FEATURE",
+								"uniqueId": "805a0769-aa7e-4581-99b8-a8f7bee44698"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"type": "MUTUAL_EXCLUSION_GROUP",
+						"uniqueId": "d1101735-86a9-4e9c-bc39-56688214f3f2"
+					}
+				],
+				"name": "FeatureProdMTXProdDev11",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "a2a52f13-1b68-4173-8eec-9358368d1170"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+					{
+						"features": [
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"displayName": null,
+								"features": [
+								],
+								"name": "FeatureProdMTXDev12b",
+								"namespace": "tr",
+								"noCachedResults": false,
+								"type": "FEATURE",
+								"uniqueId": "06cdfabd-237a-4be2-b9e7-430e80f02ccc"
+							},
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"displayName": null,
+								"features": [
+								],
+								"name": "FeatureProdMTXProd12a",
+								"namespace": "tr",
+								"noCachedResults": false,
+								"type": "FEATURE",
+								"uniqueId": "2319a7f0-b95c-48a3-a378-fdbfbb76a80d"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"type": "MUTUAL_EXCLUSION_GROUP",
+						"uniqueId": "597814ba-af6f-4895-a90b-d8adf795b8ed"
+					}
+				],
+				"name": "FeatureProdMTXDevProd12",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "bd434f12-1263-4451-a0fb-c7e0596f091e"
+			},
+			{
+				"features": [
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+						],
+						"name": "MTXProdDev13a",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "f93c6eef-a5ca-4ab8-aceb-16603642ee2a"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+						],
+						"name": "MTXProdDev13b",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "6e89a642-af0d-4f5b-bed7-aebbb8f244fb"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"type": "MUTUAL_EXCLUSION_GROUP",
+				"uniqueId": "104d3de7-97d5-4681-888e-cea94f2a7ad0"
+			},
+			{
+				"features": [
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+						],
+						"name": "MTXDevProd14b",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "a025073f-5950-4a6c-bb92-1cf5814514ca"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+						],
+						"name": "MTXDevProd14a",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "c9327476-7adc-460e-a2f2-bf5d3da5e9d2"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"type": "MUTUAL_EXCLUSION_GROUP",
+				"uniqueId": "02ff5e05-d759-4e1e-b481-087a42580a51"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdMTXConfigProdDev15",
+				"namespace": "group1",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "2d514c58-7c76-4c00-8475-f1105ad022ab"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdMTXConfigDEVPROD16",
+				"namespace": "group1",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "c938f4b3-d426-4f32-b6d8-065f21bc797d"
+			},
+			{
+				"defaultConfiguration": "{\"descriptor\":\"FeatureProdSchemasProdStringUtil default value\",\n\"value\": \"FeatureProdSchemasProdStringUtil default value\"}",
+				"defaultIfAirlockSystemIsDown": true,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSchemasProdStringUtil",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "5032a812-5ff2-4af1-928a-e657eb91a18e"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureSingleConfigFail",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "c5f90d79-d759-4b0b-93ff-cb2f57928761"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default config\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureTwoConfigFail",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "3d7538c4-7bef-4256-bb6e-f98f59d63049"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\": \"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureTwoConfigNoDefault",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "f003e1e8-1725-4a85-aeed-c8a3d4712806"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": true,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSingleConfigFail",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "e6444266-6ab3-4bb8-b43b-65dfcb107617"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default config\"\n}",
+				"defaultIfAirlockSystemIsDown": true,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdTwoConfigFail",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "ed445099-9695-498d-905d-07293fa513ab"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\": \"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdTwoConfigNoDefault",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "e70e848f-b1fc-4401-8c8e-d351207594d9"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSubConfigsFailDefaultOff",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "9568033d-6027-40fd-b712-917254b5b99a"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSubConfigsFailDefaultOff",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "a93b4701-a297-4b9d-9e29-613e410119a5"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": true,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSubConfigsFailDefaultOn",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "a74285ff-b22b-44b4-962f-181029b4e159"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSubConfigsFailDefaultOn",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "1fe1556c-33d6-454c-becb-6a613013f9cf"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSubConfigsFailDefaultOn2",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "6f14411a-d074-4c9c-a82a-ed28c54e7a1a"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSubConfigsFailDefaultOff2",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "61858a39-477e-4346-a8bf-c66c54c22344"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSubConfigsFailDefaultOff2",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "5106ca4e-39d3-4255-9856-183c9fece8c2"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": true,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSubConfigsFailDefaultOn2",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "c938f7d7-ffdd-4824-ad1c-aaac3fa1880e"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSubConfigsFailDefaultOff3",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "935f2de3-981a-42fc-9a38-793beaa6a4f6"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSubConfigsFailDefaultOff3",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "60891402-a4a4-4c5a-be75-c56d43b5b72e"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": true,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureProdSubConfigsFailDefaultOn3",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "c021d0a0-481a-4dc4-9451-f7faae8a5cdb"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"value\":\"default value\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "FeatureDevSubConfigsFailDefaultOn3",
+				"namespace": "trDistance",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "d786520a-02d4-4fd7-857a-7f8a6371e90e"
+			},
+			{
+				"defaultConfiguration": "{\n    \"value\":\"default value\"\t\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "MTXinMTXConfigsDevDefaultOff",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "f7f64228-1bf2-463b-a808-13b395515b2d"
+			},
+			{
+				"defaultConfiguration": "{\n    \"value\":\"default value\"\t\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "MTXinMTXConfigsDevDefaultOn",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "061769e3-c753-4749-a290-cd479af737b5"
+			},
+			{
+				"defaultConfiguration": "{\n    \"value\":\"default value\"\t\n}",
+				"defaultIfAirlockSystemIsDown": true,
+				"displayName": null,
+				"features": [
+				],
+				"name": "MTXinMTXConfigsProdDefaultOn",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "bf3f0509-d1d4-4d5f-90d9-b2e0dc63d017"
+			},
+			{
+				"defaultConfiguration": "{\n    \"value\":\"default value\"\t\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "MTXinMTXConfigsProdDefaultOff",
+				"namespace": "tr",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "1a8144b6-c055-45e5-95ab-e3658ed8ce1d"
+			},
+			{
+				"features": [
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevPass1a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "ee6d5055-f88b-4ed6-bd50-ec205183d7ed"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevPass1b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "9bf440d4-151a-40c2-a441-2bc552802128"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "50eb8463-c723-4a4c-9aea-35c028b9ca42"
+							}
+						],
+						"name": "MTXinMTXFeaturesDevPass1",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "efd8cc0a-dfbc-4dae-86cd-2322e4ee6bba"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevPass2a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "1a161fc4-9d98-4ea9-b9c2-7bc080959783"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevPass2b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "96db69f5-cc84-48fe-a66b-bf977394e263"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "db7c2c83-2e49-456e-b628-3e78cb5f4577"
+							}
+						],
+						"name": "MTXinMTXFeaturesDevPass2",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "d6be643d-a306-48c2-b72b-6955210520d9"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"type": "MUTUAL_EXCLUSION_GROUP",
+				"uniqueId": "3ac76379-c452-4daa-b9a8-5a13da30ba23"
+			},
+			{
+				"features": [
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdPass1a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "8f2de67e-97ef-41b9-a1c4-3172866443b9"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdPass1b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "f602e96b-abfa-4f9b-844a-5bbc5156c40b"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "1f86c255-7ca6-4cce-9f08-47f79ae20e3b"
+							}
+						],
+						"name": "MTXinMTXFeaturesProdPass1",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "df14dd5b-9005-4373-886f-f6fcd3b9cd88"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdPass2a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "2e3f8d02-aa72-4fba-953f-0c4c03cbe994"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdPass2b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "35c255c2-1dce-4552-a24a-e7604a0fcf16"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "910557d6-18de-4a49-a191-b708d9543736"
+							}
+						],
+						"name": "MTXinMTXFeaturesProdPass2",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "8c49fd07-8ec5-4598-bcd6-08cf6c3823c8"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"type": "MUTUAL_EXCLUSION_GROUP",
+				"uniqueId": "44a5c6ea-4dfe-4e04-bc06-98887897a007"
+			},
+			{
+				"features": [
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevFail1a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "8700452d-20de-4d7d-964a-b55312615401"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevFail1b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "fc85f969-c6b5-4214-ba66-fc17234466f6"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "bfcd12f7-59f7-4fad-bd6f-35c6b1c855bc"
+							}
+						],
+						"name": "MTXinMTXFeaturesDevFail1",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "f0b5e8b0-5e15-48e2-b93f-dc43f690c004"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevFail2a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "b770bec8-bcca-4c5b-ba40-9a42bf03ef66"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesDevFail2b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "73d94457-d6bf-4095-952d-7b59a96d85de"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "570e1506-8607-4662-8391-00357c8701f3"
+							}
+						],
+						"name": "MTXinMTXFeaturesDevFail2",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "94ac8ce6-fee0-46b7-b823-f4f3e6df5f4c"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"type": "MUTUAL_EXCLUSION_GROUP",
+				"uniqueId": "835cedd8-1d93-48a1-8150-7a4aa42157e6"
+			},
+			{
+				"features": [
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdFail1a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "15eab59e-7330-43c7-b20a-d1e21c2f1ce5"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdFail1b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "76019aa5-3d9d-493a-b12f-2d4745cf75c9"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "be082c12-f0ad-4b12-b51b-78ec93a18ed7"
+							}
+						],
+						"name": "MTXinMTXFeaturesProdFail1",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "17016591-b8fd-4481-9d72-83423605c5e0"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"displayName": null,
+						"features": [
+							{
+								"features": [
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdFail2a",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "e3336f1f-57ef-496e-9681-613838c56ac7"
+									},
+									{
+										"defaultConfiguration": null,
+										"defaultIfAirlockSystemIsDown": false,
+										"displayName": null,
+										"features": [
+										],
+										"name": "MTXinMTXFeaturesProdFail2b",
+										"namespace": "tr",
+										"noCachedResults": false,
+										"type": "FEATURE",
+										"uniqueId": "4e014c80-ae4d-4e26-893a-976e0074d385"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"type": "MUTUAL_EXCLUSION_GROUP",
+								"uniqueId": "9a2a4053-5143-48d2-84c1-66bfa9b2b214"
+							}
+						],
+						"name": "MTXinMTXFeaturesProdFail2",
+						"namespace": "tr",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "ac0fb4b5-7460-4742-9316-7d0d96674724"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"type": "MUTUAL_EXCLUSION_GROUP",
+				"uniqueId": "e2812687-b196-4445-85e8-7c0f9b95b255"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"displayName": null,
+				"features": [
+				],
+				"name": "ConfigSetFeatureOff",
+				"namespace": "ns1",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "6b56fea0-d3d8-4421-86a8-252b68496cc9"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "97c98b98-662e-4ff5-94cd-f2e6d6eadc87"
+	},
+	"s3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/DEV3\/",
+	"seasonId": "60f30b65-9dbf-4ac8-949d-757b8c70c2d6",
+	"stageServer": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/STAGE\/",
+	"supportedLanguages": [
+		"en",
+		"fr"
+	],
+	"version": "V2"
+}

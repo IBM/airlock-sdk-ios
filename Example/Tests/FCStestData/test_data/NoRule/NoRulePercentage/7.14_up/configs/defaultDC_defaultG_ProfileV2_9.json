@@ -1,0 +1,11 @@
+{
+  "apiVersion":"V3.0",
+  "version":"7.14",
+  "configPath":"test_data\/NoRule\/NoRulePercentage\/7.14_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV2.json",
+  "defaultFileName":"NoRulePercentage__AirlockDefaults.json",
+  "randomSeedFile":"randomMap9.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEVAUTH2/seasons/36a4213f-401d-4771-9330-b18bb704fad6/fdfd01d8-9e9f-4515-8bc3-85e5e7ab40a8/AirlockDefaults.json"
+}

@@ -1,0 +1,154 @@
+{
+    "notifications": [{
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c000",
+            "configuration": "{\n\t \"title\":\"test scheduled #0\",\n\t \"text\":\"this is a text for notification0\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 5,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c001",
+            "configuration": "{\n\t \"title\":\"test scheduled #1\",\n\t \"text\":\"this is a text for notification1\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 5,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c002",
+            "configuration": "{\n\t \"title\":\"test scheduled #2\",\n\t \"text\":\"this is a text for notification2\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 6,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c003",
+            "configuration": "{\n\t \"title\":\"test scheduled #3\",\n\t \"text\":\"this is a text for notification3\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 6,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c004",
+            "configuration": "{\n\t \"title\":\"test scheduled #4\",\n\t \"text\":\"this is a text for notification4\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 7,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c005",
+            "configuration": "{\n\t \"title\":\"test scheduled #5\",\n\t \"text\":\"this is a text for notification5\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 7,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c006",
+            "configuration": "{\n\t \"title\":\"test scheduled #6\",\n\t \"text\":\"this is a text for notification6\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 8,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c007",
+            "configuration": "{\n\t \"title\":\"test scheduled #7\",\n\t \"text\":\"this is a text for notification7\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 8,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c008",
+            "configuration": "{\n\t \"title\":\"test scheduled #8\",\n\t \"text\":\"this is a text for notification8\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 9,\n\t \"additionalInfo\":{}\n}"
+        },
+        {
+            "enabled": true,
+            "registrationRule": "context.param == 1",
+            "cancellationRule": "context.param == 2",
+            "internalUserGroups": [
+                "AndroidDEV"
+            ],
+            "minAppVersion": "8.0.1",
+            "name": "testCancellation",
+            "rolloutPercentage": 100.0,
+            "seasonId": "d30f6620-4d1c-48c2-a501-7d60dde35dd0",
+            "stage": "DEVELOPMENT",
+            "uniqueId": "5a3e64af-708a-4b01-9068-b6699282c009",
+            "configuration": "{\n\t \"title\":\"test scheduled #9\",\n\t \"text\":\"this is a text for notification9\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime()/1000 + 9,\n\t \"additionalInfo\":{}\n}"
+        }
+    ]
+
+}

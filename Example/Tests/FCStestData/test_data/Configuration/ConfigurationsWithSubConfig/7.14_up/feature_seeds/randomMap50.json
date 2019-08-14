@@ -1,0 +1,19 @@
+{
+	"feature1.feature1.aggregate.alltrue": 242003,
+	"feature1feature1.config1": 289289,
+	"feature1feature1config1.config2": 543526,
+	"feature1feature1config1.config3": 475653,
+	"feature2.feature2.overwrite.alltrue": 676405,
+	"feature2feature2.config1": 884423,
+	"feature2feature2config1.config2": 308644,
+	"feature2feature2config1.config3": 353414,
+	"feature3.feature3.false": 26299,
+	"feature3feature3false.config1": 419388,
+	"feature3feature3falseconfig1.config2": 95578,
+	"feature3feature3falseconfig1.config3": 336749,
+	"feature4.feature4.overwrite.hierarchy": 123727,
+	"feature4feature4overwritehierarchy.config1": 573880,
+	"feature4feature4overwritehierarchyconfig1.config2": 839677,
+	"feature4feature4overwritehierarchyconfig1.config4": 632272,
+	"feature4feature4overwritehierarchyconfig1config2.config3": 4361
+}

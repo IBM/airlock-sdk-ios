@@ -1,0 +1,73 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"productId": "1a768855-1d5d-4413-b60a-ca8c868625cd",
+	"productName": "ConfigurationFeatureOn",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "turnOffNoDefault",
+				"namespace": "cfo",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "b944141f-6c67-479f-9286-a6af57ebfbf6"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"featureON\":true,\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "turnOffWithDefaultON",
+				"namespace": "cfo",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "5ccdee59-4792-4405-9166-177690814254"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"featureON\":false,\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "turnOffOn",
+				"namespace": "cfo",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "2d1782d3-0ad4-4fdd-a193-49e7a8990afd"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "disabledFeature",
+				"namespace": "cfo",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "f8e76ef6-2f4f-4b64-ad98-5418dd839179"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"color\":\"red\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "runtimeError",
+				"namespace": "cfo",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "d6e84940-3919-4da0-a5c2-1d581d11e88e"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "abfa3a28-2891-40c1-acf5-4e9717226cf5"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "d761dc4a-e7cc-4304-9624-3971e4f288d0",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2.1"
+}

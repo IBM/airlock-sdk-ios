@@ -1,0 +1,88 @@
+{
+  "testName": "NoRule",
+  "productName": "NoRuleGroups",
+  "productId": "51682f4a-66b8-415b-8a08-43fb9502d9f4",
+  "seasonLogicalName": "7.5_up",
+  "seasonId": "535aaeee-43c9-49cb-940d-54f3e9bdfe0b",
+  "deviceContextFilePath": "test_data\/NoRule\/NoRuleGroups\/7.5_up\/device_contexts\/DeviceContextV1.json",
+  "groupsFilePath": "test_data\/NoRule\/NoRuleGroups\/7.5_up\/groups\/qa.json",
+  "profileFilePath": "test_data\/NoRule\/NoRuleGroups\/7.5_up\/profiles\/ProfileV1.json",
+  "root": {
+    "features": [
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R1 QA OFF",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R2 Dev ON",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R3 QA ON",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R4 Dev OFF",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R5 OFF QA and Dev",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R6 ON  QA and Dev",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R10 ON PROD",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "ns3.R11 OFF PROD",
+        "resultTrace": "",
+        "type": "FEATURE"
+      }
+    ],
+    "type": "ROOT",
+    "uniqueId": "d137b55f-1e28-40df-963d-696abc165d3f"
+  }
+}

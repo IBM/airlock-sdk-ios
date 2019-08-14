@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "38409168692717cfabc8ac457c156f3b"
+build_time: [1526477475, 4596000]
+inputs:
+  "/Users/elikkatz/airlock-sdk-ios/Example/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [1511875980, 0]

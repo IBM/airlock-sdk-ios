@@ -1,0 +1,9 @@
+{
+  "apiVersion":"V2",
+  "version":"7.6",
+  "configPath":"test_data\/Profile\/ProfilesComplexCondition\/7.6_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV3.json",
+  "defaultFileName":"ProfilesComplexCondition__AirlockDefaults.json"
+}

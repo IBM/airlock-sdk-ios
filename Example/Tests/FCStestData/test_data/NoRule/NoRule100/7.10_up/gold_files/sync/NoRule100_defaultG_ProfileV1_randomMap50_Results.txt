@@ -1,0 +1,139 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns2.Rule 1  ON",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ns2.Rule 2 OFF",
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "ns2.R31 ON",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "ns2.R32 OFF",
+						"resultTrace": "Rule disabled",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": false,
+						"features": [
+						],
+						"isON": true,
+						"name": "ns2.R33 ON",
+						"reportedConfigurationNames": {
+							"defaultConfiguration": true
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "ns2.R3 with L2",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "ns1.R41 ON",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "ns1.R42 ON",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "ns1.R43 OFF",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "ns1.R4 with MX",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

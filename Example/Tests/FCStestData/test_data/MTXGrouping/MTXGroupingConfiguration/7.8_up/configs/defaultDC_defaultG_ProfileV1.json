@@ -1,0 +1,10 @@
+{
+  "apiVersion":"V2.1",
+  "version":"7.8",
+  "configPath":"test_data\/MTXGrouping\/MTXGroupingConfiguration\/7.8_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV1.json",
+  "defaultFileName":"MTXGroupingConfiguration__AirlockDefaults.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/TEST2/seasons/2749cb61-1436-45d2-afdf-d866015b7971/2c09e496-00d0-4883-ba4e-7a0c5939cc05/AirlockDefaults.json"  
+}

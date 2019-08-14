@@ -1,0 +1,45 @@
+{
+   "features":[
+      {
+         "defaultIfAirlockSystemIsDown":true,
+         "name":"Multi Location Home Screen",
+         "namespace":"ns1"
+      },
+      {
+         "defaultIfAirlockSystemIsDown":false,
+         "name":"Video HighRes",
+         "namespace":"ns1"
+      },
+      {
+         "defaultIfAirlockSystemIsDown":true,
+         "name":"Video",
+         "namespace":"ns1"
+      },
+      {
+         "defaultIfAirlockSystemIsDown":false,
+         "name":"Video NextGen",
+         "namespace":"ns1"
+      },
+      {
+         "defaultIfAirlockSystemIsDown":true,
+         "name":"My Test Features One",
+         "namespace":"ns1"
+      },
+      {
+         "defaultIfAirlockSystemIsDown":true,
+         "name":"Feature name with text in another language русский",
+         "namespace":"ns1"
+      },
+      {
+         "defaultIfAirlockSystemIsDown":true,
+         "name":"_- MY fancy feature -_",
+         "namespace":"ns1"
+      },
+
+   ],
+   "s3Path":"https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/vlad\/",
+   "productId":"e2d4efc6-90cf-40f7-a4aa-323daf14e0ec",
+   "seasonId":"f96fdaa6-735c-4c07-9b3b-415af7037aab",
+   "seasonName":"AndroidFlagship.S2",
+   "productName":"Android Flagship App"
+}

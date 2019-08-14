@@ -1,0 +1,209 @@
+{
+    "demographics": {
+        "firstName": "Mary",
+        "email": "msmith@gmail.com",
+        "lastName": "Smith",
+        "ageRange": "18-24",
+        "gender": "F",
+        "dob": "1985-10-11",
+        "acceptedTerms": false
+    },
+   "preferences": {
+
+        "language": "en-us",
+
+        "locale": "en_US"
+
+    },
+
+    "settings": {
+
+        "rwi": {
+
+            "windInfluence": 0,
+
+            "precipitationInfluence": -1,
+
+            "humidityInfluence": -1,
+
+            "temperatureInfluence": 0
+
+        }
+
+    },
+
+    "watson": {},
+
+    "locations": [{
+
+        "id": "0aeaa653-d381-4277-92f4-c324b5af160f",
+
+        "doc": {
+
+            "geohash": "dn5b7k",
+
+            "loc": "USGA0345:1:US",
+
+            "coordinate": "33.82,-84.58",
+
+            "address": "",
+
+            "position": 1
+
+        }
+
+    }, {
+
+        "id": "2edf3274-39ac-4344-9901-bdce5639ad47",
+
+        "doc": {
+
+            "geohash": "dn58xp",
+
+            "loc": "USGA0274:1:US",
+
+            "coordinate": "33.88,-84.76",
+
+            "address": "",
+
+            "position": 3
+
+        }
+
+    }, {
+
+        "id": "676442ae-55ca-460d-bdda-dcc3c43377b7",
+
+        "doc": {
+
+            "geohash": "dn5btv",
+
+            "loc": "USGA0653:1:US",
+
+            "coordinate": "33.87,-84.47",
+
+            "address": "300 Interstate North Pkwy SE,Atlanta,GA,30339",
+
+            "tag": "home",
+
+            "position": 4
+
+        }
+
+    }, {
+
+        "id": "aacdfcb1-c666-443d-be0c-74e0329c7f7f",
+
+        "doc": {
+
+            "geohash": "dn5bsz",
+
+            "loc": "USGA0525:1:US",
+
+            "coordinate": "33.88,-84.51",
+
+            "address": "",
+
+            "position": 0
+
+        }
+
+    }, {
+
+        "id": "e86f3bcb-2160-4b28-ae3d-dad8b4f5573d",
+
+        "doc": {
+
+            "geohash": "dn5b9h",
+
+            "loc": "USGA0455:1:US",
+
+            "coordinate": "33.86,-84.68",
+
+            "address": "",
+
+            "position": 2
+
+        }
+
+    }],
+
+    "endpoints": [{
+
+        "id": "9f17f525f7478eb5c770dd8aebb6f0282a60724d",
+
+        "doc": {
+
+            "addr": "APA91bH7O1SUn-waGq-z8ICta13PJcrQJ34RwajsdIyD3_tXh7Rlkq3KqSugK0y0jW2Ta6UnK7acOb6cZIAC0cd7ruvr6BDv-PEwgu5kNrLIWcLd6pjmZ5PeMjahtX86zPl6sVqUEEwL",
+
+            "chan": "gcm",
+
+            "status": "enabled"
+
+        }
+
+    }, {
+
+        "id": "faEndpointSmtp",
+
+        "doc": {
+
+            "addr": "aaaaaa@gmail.com",
+
+            "chan": "smtp",
+
+            "status": "enabled"
+
+        }
+
+    }],
+
+    "purchases": [],
+
+    "userId": "9ANs9i1bG1Tuk",
+
+    "services": [{
+
+        "id": "followme-lightning/9f17f525f7478eb5c770dd8aebb6f0282a60724d",
+
+        "doc": {
+
+            "status": "enabled",
+
+            "endpoint": "9f17f525f7478eb5c770dd8aebb6f0282a60724d"
+
+        }
+
+    }, {
+
+        "id": "followme-rain/9f17f525f7478eb5c770dd8aebb6f0282a60724d",
+
+        "doc": {
+
+            "status": "enabled",
+
+            "endpoint": "9f17f525f7478eb5c770dd8aebb6f0282a60724d"
+
+        }
+
+    }, {
+
+        "id": "severe/d33407e7-25e5-46d4-bf06-71fba4217c48",
+
+        "doc": {
+
+            "threshold": "M",
+
+            "location": "676442ae-55ca-460d-bdda-dcc3c43377b7",
+
+            "status": "enabled",
+
+            "endpoint": "9f17f525f7478eb5c770dd8aebb6f0282a60724d"
+
+        }
+
+    }],
+
+    "roles": ["customer"]
+
+}

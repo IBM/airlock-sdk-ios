@@ -1,0 +1,10 @@
+{
+    "groups":   "CompatibilityTests",
+    "products": "*",
+    "seasons":  "*",
+    "configs":  "*",
+    
+    "allowedAPIVersions":"V3.0",
+    "checkProductsOnAlternativeServers": false,
+    "skipReset": false
+}

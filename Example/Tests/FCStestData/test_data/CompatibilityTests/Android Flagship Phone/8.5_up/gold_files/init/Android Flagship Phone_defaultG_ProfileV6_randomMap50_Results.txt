@@ -1,0 +1,3654 @@
+{
+	"experiment": "<none>",
+	"inputFieldsForAnalytics": [
+		"context.weatherSummary.observation.skyCode",
+		"context.weatherSummary.observation.temperature",
+		"context.weatherSummary.observation.feelsLikeTemperature",
+		"context.weatherSummary.contentMode.mode",
+		"context.weatherSummary.nearestWinterStormAlert.phenomenaCode",
+		"context.weatherSummary.nearestWinterStormAlert.severityCode",
+		"context.weatherSummary.nearestWinterStormAlert.significanceCode",
+		"context.weatherSummary.nearestStartPrecip.startTime",
+		"context.weatherSummary.nearestStartPrecip.eventType",
+		"context.weatherSummary.nearestStartPrecip.severity",
+		"context.weatherSummary.todayForecast.night.precipPercentage",
+		"context.weatherSummary.todayForecast.night.precipType",
+		"context.weatherSummary.todayForecast.day.precipType",
+		"context.weatherSummary.todayForecast.day.precipPercentage",
+		"context.weatherSummary.closestLightning.strikeTime",
+		"context.weatherSummary.closestLightning.distance",
+		"context.weatherSummary.tomorrowForecast.night.precipType",
+		"context.weatherSummary.tomorrowForecast.night.precipPercentage",
+		"context.weatherSummary.tomorrowForecast.day.precipType",
+		"context.weatherSummary.tomorrowForecast.day.precipPercentage",
+		"context.profile.settings.segmentation.avr-a",
+		"context.profile.demographics.ageRange",
+		"context.profile.demographics.gender",
+		"context.profile.demographics.dob",
+		"context.device.daysSinceAppInstall",
+		"context.app.media_source",
+		"context.app.campaign",
+		"context.app.af_status",
+		"context.profile.settings.segmentation.dwm",
+		"context.streams.GoRunUsage.label",
+		"context.streams.User_Initiated_Video_Usage.label",
+		"context.streams.Radar_Usage.label",
+		"context.streams.AllergyUsage.label",
+		"context.profile.signupDate"
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"features": [
+						],
+						"maxFeaturesOn": 12,
+						"name": "mx.48b60971-c381-4393-b3cf-5bdeae7de66d",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					},
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+									{
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Breaking NewsTEST",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "modules.Video Enabled",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "modules.Right Now",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Hourly",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Daily",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Video",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Radar Maps",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Road Conditions",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Radar DDI Combo",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.Allergy1Up",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.AllergyMaps",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.AllergyPersonalization",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "modules.Health",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Outdoor",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.News",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Lifestyle",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Breaking News",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Hurricane Central",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 14,
+										"name": "mx.02b7716c-e667-491d-8496-3f38cded3a16",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": false,
+								"name": "modules.Google modules",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+									{
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Breaking News Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "modules.Video Enabled Samsung",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "modules.Right Now Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Hourly Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Daily Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Hurricane Central Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Events Feed",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Video Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Radar Maps Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Road Conditions Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.PersonalizationSamsung",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "modules.Health Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "outdoormodule.Label Samsung",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "modules.Outdoor Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Lifestyle Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.News Samsung",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 14,
+										"name": "mx.23e9e30b-98d8-4d66-8908-2b67678ee7ca",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": false,
+								"name": "modules.Samsung modules",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+									{
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Breaking NewsTESTsmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Breaking Newssmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "modules.Video Enabledsmart",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "modules.Right Nowsmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Hourlysmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Dailysmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Radar Mapssmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Road Conditionssmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Videosmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Hurricane Centralsmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.Allergy1Upsmart",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.AllergyMapssmart",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.AllergyPersonalizationsmart",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "modules.Healthsmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Outdoorsmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Newssmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Lifestylesmart",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 14,
+										"name": "mx.a00f8f3d-6d2c-497b-88be-064e06af3b70",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": false,
+								"name": "modules.smartling modules",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx.622c1d99-5cf5-4783-8663-74c35f50cdc9",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "modules.Airlock Control Over Modules",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{\"application\":\"androidflagship\",\"version\":\"8.0.0\",\"modules\":[{\"description\":\"spotlight ad in the allergy feed\",\"id\":\"AdModule\",\"type\":\"ad\",\"adSlot\":\"weather.allergy.spotlight\"},{\"description\":\"Displays allergy index.\",\"id\":\"allergy_hero\",\"type\":\"native\",\"adSlot\":\"\"},{\"hideable\":true,\"description\":\"Displays allergy forecast.\",\"id\":\"allergy_forecast\",\"type\":\"native\",\"adSlot\":\"\"},{\"hideable\":true,\"description\":\"Displays mold slider.\",\"id\":\"mold_slider\",\"type\":\"native\",\"adSlot\":\"weather.hurricane.details\"},{\"hideable\":true,\"description\":\"Displays the allergy map.\",\"id\":\"allergy_map\",\"type\":\"native\",\"adSlot\":\"\"},{\"hideable\":true,\"description\":\"Displays the allergy tips.\",\"id\":\"allergy_tips\",\"type\":\"native\",\"adSlot\":\"\"},{\"description\":\"First ad in the allergy details feed\",\"additionalParameters\":{\"transparent\":true},\"id\":\"AdModule\",\"type\":\"ad\",\"adSlot\":\"weather.allergy.details\"}]}",
+						"features": [
+						],
+						"isON": true,
+						"name": "bespoke.Allergy",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{\"application\":\"androidflagship\",\"version\":\"6.0.0\",\"modules\":[{\"description\":\"spotlight ad in the cold and flu feed\",\"id\":\"AdModule\",\"type\":\"ad\",\"adSlot\":\"weather.cold.flu.spotlight\"},{\"description\":\"Displays cold and flu index.\",\"id\":\"cold_flu_hero\",\"type\":\"native\",\"adSlot\":\"\"},{\"description\":\"Displays cold and flu reports.\",\"id\":\"cold_flu_reports\",\"type\":\"native\",\"adSlot\":\"\"},{\"description\":\"Displays cold and flu map.\",\"id\":\"cold_flu_map\",\"type\":\"native\",\"adSlot\":\"\"},{\"hideable\":true,\"description\":\"Displays cold and flu history.\",\"id\":\"cold_flu_history\",\"type\":\"native\",\"adSlot\":\"\"},{\"description\":\"First ad in the cold and flu feed\",\"additionalParameters\":{\"transparent\":true},\"id\":\"AdModule\",\"type\":\"ad\",\"adSlot\":\"weather.cold.flu.details\"}]}",
+						"features": [
+						],
+						"isON": true,
+						"name": "bespoke.ColdFlu",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "bespoke.HealthSubmodules",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "performance.limit.weatherdata",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "performance.limit.data",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "performance.limit.location",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					}
+				],
+				"isON": false,
+				"name": "performance.Limit",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": true,
+						"name": "modules.Video Module Autoplay",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "modules.Breaking News Video Autoplay",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Rule disabled",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": true,
+						"name": "modules.Right Now Video Autoplay",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "modules.Video Autoplay",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"features": [
+					{
+						"features": [
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx.94d7f99d-6b94-4a29-816f-912e0d0980d9",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx.fdee6a5a-05b7-43c0-87c6-0e8dd55bfc95",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "analytics.BigStates",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "analytics.WeatherData",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					}
+				],
+				"isON": false,
+				"name": "airlock.Rollout Beacon",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is turned off due to rollout percentage",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": true,
+				"name": "airlock.Send Airlock Bar Data",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "analytics.SmartRatings",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is turned off due to rollout percentage",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "NavDrawer.NavDrawer",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					}
+				],
+				"isON": false,
+				"name": "Strings.AirlockedStrings",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": true,
+				"name": "CDN.ConnectionModeTest",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "typeahead.Location Search Manager Typeahead",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": true,
+								"features": [
+									{
+										"features": [
+											{
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Tablet Radar Extra Large Tile",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Tablet Video Extra Large Tile",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"maxFeaturesOn": 1,
+												"name": "mx.3eaec6b9-3f7e-4b8c-93d5-1de79485499d",
+												"type": "MUTUAL_EXCLUSION_GROUP"
+											},
+											{
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.test BN Large Video",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Alert",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Lightning",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Breaking News Video v2",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Breaking News Video",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero RadarV2",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"featureIsReported": true,
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Radar",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Precip Start ",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Precip End",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Video",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Total Solar Eclipse",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Editorial Calendar Table",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Tomorrow Forecast",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Weekend Forecast",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Hourly Forecast",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Hero Daily Forecast",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"maxFeaturesOn": 1,
+												"name": "mx.e8616ab4-4ee9-4d50-a00e-b38ba1e1e9d4",
+												"type": "MUTUAL_EXCLUSION_GROUP"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Test Fam Ch",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.test latlong",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Alert",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Breaking News Video",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Evacuation",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Real Time Lightning",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.T Storm Impacted Now",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Hurricane Storm Impacted Now",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Winter Storm Impacted Now",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Radar",
+												"reportedConfigurationNames": {
+													"headsupv2Radar.Radar Lovers Control Group": false
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Precip Start",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Precip End",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Forecasted Snow Accumulation",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Hurricane Storm Impacted Soon",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Winter Storm Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.T Storm Impact Soon",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Road Conditions",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Precip IntensityV2",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Precip Intensity",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Up Next Event",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Editorial Calendar",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Top Video LoversV2",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Top Video Lovers",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Cold and Flu",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Allergy",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.GoRun",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Boat and Beach V2",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.BoatAndBeach",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Feels Like Message",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Top VideoV2",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "headsupv2.Top VideoFix",
+														"reportedConfigurationNames": {
+															"headsupv2TopVideo.Top Video Lovers ControlFix": false
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Parent feature is off",
+														"type": "FEATURE"
+													}
+												],
+												"isON": false,
+												"name": "headsupv2.Top Video",
+												"reportedConfigurationNames": {
+													"headsupv2TopVideo.Top Video Lovers Control": false
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Tomorrow Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Weekend Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Sunrise Sunset Message",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Hourly Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsupv2.Daily Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 4,
+										"name": "mx.de3ff13d-914e-4fda-8fb1-43c65a65d8c7",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": false,
+								"name": "headsupv2.HeadsUp",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Parent feature is off",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": true,
+								"features": [
+									{
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.NoUtilityDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Breaking News VideoDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Real Time LightningDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Winter Storm Impacted NowDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.T Storm Impacted NowDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.RadarDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Precip StartDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Precip EndDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Top VideoDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Forecasted Snow AccumulationDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Winter Storm ForecastDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.T Storm Impact SoonDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Road ConditionsDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Editorial CalendarDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.AllergyDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.GoRunDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Feels Like MessageDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Tomorrow ForecastDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Weekend ForecastDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.HOURLY FORECAST TABLEDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Sunrise Sunset MessageDynamic",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.RadarDynamicNew",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 3,
+										"name": "mx.59c0161d-662a-4ce5-bec9-7671a09a4692",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": false,
+								"name": "headsup.HeadsUpDynamic",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Parent feature is off",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+									{
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Watch My Weather",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Breaking News Video",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Real Time Lightning",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Winter Storm Impacted Now",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.T Storm Impacted Now",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Radar",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Top Video",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Precip Start",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Precip End",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Forecasted Snow Accumulation",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Winter Storm Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.T Storm Impact Soon",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Road Conditions",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Editorial Calendar",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Allergy",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.GoRun",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Feels Like Message",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Tomorrow Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Weekend Forecast",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": true,
+												"features": [
+												],
+												"isON": false,
+												"name": "headsup.Sunrise Sunset Message",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 3,
+										"name": "mx.bc1e8fcb-82c3-44d9-94a5-49ed60b40e2d",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": false,
+								"name": "headsup.HeadsUp",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Parent feature is off",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "headsup.HeadsUpB",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Parent feature is off",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx.ed171a7d-7bd0-4f38-9bc7-223396acb573",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": false,
+				"name": "headsup.HeadsUpWithAB",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": true,
+				"name": "plugin.Plugin Sync",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": true,
+						"name": "Layers.WU Layers Cross Link",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{\"map_settings_dl_mapping\":{\"map_layer_preview_radar_clouds\":\"android_map_layer_preview_radar_clouds.png\",\"preview_cyclone_tracker\":\"android_preview_cyclone_tracker.png\",\"map_layer_preview_roads\":\"android_map_layer_preview_roads.png\",\"map_layer_preview_precip_48hr\":\"android_map_layer_preview_precip_48hr.png\",\"map_layer_preview_dewpoint\":\"android_map_layer_preview_dewpoint.png\",\"map_style_preview_dark\":\"android_map_style_preview_dark.jpg\",\"map_layer_preview_snowfall_24\":\"android_map_layer_preview_snowfall.png\",\"map_alert_preview_marine\":\"android_map_alert_preview_marine.png\",\"map_alert_preview_severe\":\"android_map_alert_preview_severe.png\",\"map_layer_preview_wind\":\"android_map_layer_preview_wind.png\",\"map_layer_preview_precip\":\"android_map_layer_preview_precip.png\",\"map_layer_preview_snowfall_48\":\"android_map_layer_preview_snowfall.png\",\"map_storm_cell_preview\":\"android_map_storm_cell_preview.png\",\"map_alert_preview_thunderstorm\":\"android_map_alert_preview_thunderstorm.png\",\"map_alert_preview_tropical\":\"android_map_alert_preview_tropical.png\",\"map_layer_preview_temp\":\"android_map_layer_preview_temp.png\",\"map_alert_preview_other\":\"android_map_alert_preview_other.png\",\"map_style_preview_satellite\":\"android_map_style_preview_satellite.jpg\",\"map_style_preview_light\":\"android_map_style_preview_light.jpg\",\"base_url\":\"\",\"map_alert_preview_winter\":\"android_map_alert_preview_winter.png\",\"map_layer_preview_uv\":\"android_map_layer_preview_uv.png\",\"map_alert_preview_flood\":\"android_map_alert_preview_flood.png\",\"map_layer_preview_radar\":\"android_map_layer_preview_radar.png\",\"map_layer_preview_temp_change\":\"android_map_layer_preview_temp_change.png\",\"map_layer_preview_ddi\":\"\\tandroid_map_layer_preview_ddi.png\",\"map_layer_preview_feels_like\":\"android_map_layer_preview_feels_like.png\",\"map_layer_preview_clouds\":\"android_map_layer_preview_clouds.png\"}}",
+						"features": [
+						],
+						"isON": true,
+						"name": "map.Map Settings",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "map.Map",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"features": [
+						],
+						"maxFeaturesOn": 12,
+						"name": "mx.64498194-d983-4a45-932e-da266afdda1a",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					},
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.Breaking NewsQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Video EnabledQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"isON": false,
+										"name": "modules.Right NowQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.HourlyQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.DailyQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.VideoQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.Radar MapsQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.Road ConditionsQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.NewsQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "healthmodule.Allergy1UpQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "healthmodule.AllergyMapsQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Parent feature is off",
+												"type": "FEATURE"
+											}
+										],
+										"isON": false,
+										"name": "modules.HealthQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.OutdoorQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.Hurricane CentralQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.LifestyleQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "modules.BoatQAtest",
+										"reportedConfigurationNames": {
+										},
+										"reportedConfigurationValues": {
+										},
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"isON": false,
+								"name": "modules.Google modulesQAtest",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Rule returned false",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+									{
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Breaking News SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Rule returned false",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"beacon\":\"weather:current:conditions:displayed\",\"description\":\"Displays current conditions.\",\"id\":\"current-conditions\",\"type\":\"native\",\"adSlot\":\"weather.bb\"}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "modules.Video Enabled SamsungQAtest",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Rule returned false",
+														"type": "FEATURE"
+													}
+												],
+												"isON": true,
+												"name": "modules.Right Now SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"beacon\":\"weather:hourly:displayed\",\"description\":\"Displays hourly weather information.\",\"id\":\"hourly\",\"type\":\"native\",\"adSlot\":\"weather.hourly\"}",
+												"features": [
+												],
+												"isON": true,
+												"name": "modules.Hourly SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Daily SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Rule returned false",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"hideable\":false,\"description\":\"Displays events feed information.\",\"sponsored\":false,\"id\":\"events-feed-module\",\"type\":\"native\",\"adSlot\":\"\"}",
+												"features": [
+												],
+												"isON": true,
+												"name": "modules.Events FeedQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Video SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Rule returned false",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"beacon\":\"map:map:displayed\",\"description\":\"Displays radar map.\",\"id\":\"map\",\"type\":\"native\",\"adSlot\":\"weather.maps\"}",
+												"features": [
+												],
+												"isON": true,
+												"name": "modules.Radar Maps SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"beacon\":\"map:map:displayed\",\"description\":\"Displays radar map.\",\"id\":\"driving-difficulty\",\"type\":\"native\",\"adSlot\":\"weather.maps\"}",
+												"features": [
+												],
+												"isON": true,
+												"name": "modules.Road Conditions SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.News SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Rule returned false",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Hurricane Central SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Rule returned false",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"beacon\":\"pollen:pollen:displayed\",\"description\":\"Displays health information.\",\"id\":\"health\",\"adjacentAdParameters\":{\"fam\":\"hlth,allergy\",\"ch\":\"pollencast\"},\"type\":\"native\",\"adSlot\":\"\"}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.Allergy1Up SamsungQAtest",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Rule returned false",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.AllergyMaps SamsungQAtest",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Rule returned false",
+														"type": "FEATURE"
+													},
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "healthmodule.Label SamsungQAtest",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Rule disabled",
+														"type": "FEATURE"
+													}
+												],
+												"isON": true,
+												"name": "modules.Health SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"hideable\":false,\"description\":\"Displays run weather index information.\",\"sponsored\":false,\"id\":\"outdoor\",\"type\":\"native\",\"adSlot\":\"\"}",
+												"features": [
+													{
+														"featureAttributes": "{}",
+														"features": [
+														],
+														"isON": false,
+														"name": "outdoormodule.Label SamsungQAtest",
+														"reportedConfigurationNames": {
+														},
+														"reportedConfigurationValues": {
+														},
+														"resultTrace": "Rule disabled",
+														"type": "FEATURE"
+													}
+												],
+												"isON": true,
+												"name": "modules.Outdoor SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{\"hideable\":false,\"description\":\"Displays lifestyle combo module.\",\"sponsored\":false,\"id\":\"lifestyle_combo\",\"type\":\"native\",\"adSlot\":\"\"}",
+												"features": [
+												],
+												"isON": true,
+												"name": "modules.Lifestyle SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "modules.Boat SamsungQAtest",
+												"reportedConfigurationNames": {
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Rule disabled",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 14,
+										"name": "mx.5988fc07-600e-45c1-a405-81722901aa06",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": true,
+								"name": "modules.Samsung modulesQAtest",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx.1bdeb4b5-fc81-4156-af4a-53b17f127a6f",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "modules.Airlock Control Over ModulesQAtest",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{\"adsloading\":60001,\"adsrequesting\":8001}",
+						"features": [
+						],
+						"isON": true,
+						"name": "videotimeoutvalues.timeoutvalues",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "videofeed.links",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Rule returned false",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "video.Video Logo Link",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "video.MPX Query Format",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "video.Video Activity Control",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"caption\":\"Tap for sound\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "video.Video Autoplay CTA",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, videoVideoAutoplayCTA.Basic]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"adRepeats\":2,\"adUnitPrefixes\":[{\"language\":\"en\",\"region\":\"AU\",\"adUnitPrefix\":\"\\\/7646\\\/app_android_au\\\/\"},{\"language\":\"ar\",\"region\":\"AE\",\"adUnitPrefix\":\"\\\/7646\\\/app_android_uae\\\/\"},{\"language\":\"en\",\"region\":\"US\",\"adUnitPrefix\":\"\\\/7646\\\/app_android_us\\\/\"},{\"language\":\"es\",\"region\":\"US\",\"adUnitPrefix\":\"\\\/7646\\\/app_android_us_es\\\/\"},{\"language\":\"en\",\"region\":\"GB\",\"adUnitPrefix\":\"\\\/7646\\\/app_android_uk\\\/\"},{\"language\":\"fr\",\"region\":\"FR\",\"adUnitPrefix\":\"\\\/7646\\\/app_android_fr\\\/\"},{\"language\":\"es\",\"region\":\"ES\",\"adUnitPrefix\":\"\\\/7811748\\\/twc_app_wx_android_es\\\/\"},{\"language\":\"*\",\"region\":\"DE\",\"adUnitPrefix\":\"\\\/3673\\\/m_app_droid_phone_wx\\\/\"},{\"language\":\"en\",\"region\":\"CA\",\"adUnitPrefix\":\"\\\/7326\\\/en.twc.app.android\\\/\"},{\"language\":\"*\",\"region\":\"*\",\"adUnitPrefix\":\"\\\/7646\\\/app_android_intl\\\/\"}],\"wfxUrl\":\"https:\\\/\\\/triggers.wfxtriggers.com\\\/json\\\/?resp_type=json&acctid=B88159&current=true&df=1,2,3\",\"dtbAndroidSdkTimeoutMs\":400,\"scatterShotEnabled\":true,\"adStartingPosition\":2,\"source\":\"default\",\"gpt_url\":{\"umuri\":\"umsessionkey=%%RMID%%&UMADPARAMiu=%%AdUnitPrefix%%%%AdUnitSuffix%%&UMPTPARAMcust_params=sz%3D%%SZ%%%26pos%3D%%POS%%%26tile%3D1%26cc%3D%%COUNTRY%%%26st%3D%%STATE%%%26zip%3D%%ZIP%%%26dma%3D%%DMA%%%26tmpr%3D%%TMPR%%%26tmp%3D%%TMP%%%26cnd%3D%%CONDITION%%%26locale%3D%%LOCALE%%%26ver%3D%%VER%%%26plln%3D%%PLLN%%%26wind%3D%%WIND%%%26uv%3D%%UV%%%26hmid%3D%%HUMIDITY%%%26zcs%3D%%ZCS%%%26hzcs%3D%%HZCS%%%26nzcs%3D%%NZCS%%%26sev%3D%%SEVERE%%%26bn%3D%%BREAKING%%%26a%3D%%AGE%%%26g%3D%%GENDER%%%26ppid%3D%%PPID%%%26plat%3Dwx_droid_phone%26sg%3D%%SEGMENT%%%26faud%3D%%FAUD%%%26fgeo%3D%%FGEO%%%26wfxtg%3D%%WFXTG%%%26rmid%3D%%RMID%%%26ftl%3D%%FTL%%%26hlzip%3D%%HLZIP%%%26aid%3D%%AID%%%26ct%3D%%CITY%%%26preload_partner%3D%%PRELOAD_PARTNER%%%26launch_partner%3D%%LAUNCH_PARTNER%%%26tpid%3D%%TPID%%%26fhic%3D%%FHIC%%%26floc%3D%%FLOC%%%26fltmpc%3D%%FLTMPC%%%26tmpc%3D%%TMPC%%%26lang%3D%%LANG%%&UMTP=0\",\"adurl\":\"https:\\\/\\\/pubads.g.doubleclick.net\\\/gampad\\\/adx?iu=%%AdUnitPrefix%%%%AdUnitSuffix%%&sz=320x50&d_imp=1&mob=js&m=text\\\/oml&c=%%ORD%%&t=cnd%3D%%CONDITION%%%26sev%3D%%SEVERE%%%26ftl%3D%%FTL%%%26hlzip%3D%%HLZIP%%%26h2o%3D%%H2O%%%26tmp%3D%%TMP%%%26tmpr%3D%%TMPR%%%26wind%3D%%WIND%%%26hmid%3D%%HUMIDITY%%%26uv%3D%%UV%%%26plln%3D%%PLLN%%%26cc%3D%%COUNTRY%%%26st%3D%%STATE%%%26zip%3D%%ZIP%%%26dma%3D%%DMA%%%26ct%3D%%CITY%%%26locale%3D%%LOCALE%%%26layer%3D%%LAYER%%%26ver%3D%%VER%%%26ord%3D%%ORD%%%26rmid%3D%%RMID%%%26tile%3D%%TILE%%%26vw%3D%%VIEW%%%26aid%3D%%AID%%%26pos%3D%%POS%%%26sg%3D%%SEGMENT%%%26wfxtg%3D%%WFXTG%%%26faud%3D%%FAUD%%%26fgeo%3D%%FGEO%%%26bn%3D%%BREAKING%%%26a%3D%%AGE%%%26g%3D%%GENDER%%%26ppid%3D%%PPID%%%26plat%3Dwx_droid_phone%26preload_partner%3D%%PRELOAD_PARTNER%%%26launch_partner%3D%%LAUNCH_PARTNER%%%26zcs%3D%%ZCS%%%26hzcs%3D%%HZCS%%%26nzcs%3D%%NZCS%%%26tpid%3D%%TPID%%%26fhic%3D%%FHIC%%%26floc%3D%%FLOC%%%26fltmpc%3D%%FLTMPC%%%26tmpc%3D%%TMPC%%%26lang%3D%%LANG%%%26adid%3D%%ADID%%%26cxtg%3D%%CXTG%%%26alert%3D%%ALERT%%%26env%3D%%ENV%%%26dynght%3D%%DYNGHT%%\",\"IMAVideoAdUrl\":\"https:\\\/\\\/pubads.g.doubleclick.net\\\/gampad\\\/ads?iu=%%AdUnitPrefix%%%%AdVideoUnitSuffix%%&sz=640x360&ciu_szs=320x50&env=vp&gdfp_req=1&impl=s&m_ast=vast&output=xml_vast3&c=%%ORD%%&unviewed_position_start=1&ad_rule=1&description_url=http%3A%2F%2Fwww.app.com&content_url=http%3A%2F%2Fwww.app.com&cust_params=cnd%3D%%CONDITION%%%26sev%3D%%SEVERE%%%26ftl%3D%%FTL%%%26hlzip%3D%%HLZIP%%%26tmp%3D%%TMP%%%26tmpr%3D%%TMPR%%%26wind%3D%%WIND%%%26hmid%3D%%HUMIDITY%%%26uv%3D%%UV%%%26plln%3D%%PLLN%%%26cc%3D%%COUNTRY%%%26st%3D%%STATE%%%26zip%3D%%ZIP%%%26dma%3D%%DMA%%%26ct%3D%%CITY%%%26locale%3D%%LOCALE%%%26layer%3D%%LAYER%%%26ver%3D%%VER%%%26ord%3D%%ORD%%%26rmid%3D%%RMID%%%26tile%3D1%26vw%3D%%VIEW%%%26aid%3D%%AID%%%26sg%3D%%SEGMENT%%%26wfxtg%3D%%WFXTG%%%26faud%3D%%FAUD%%%26fgeo%3D%%FGEO%%%26bn%3D%%BREAKING%%%26a%3D%%AGE%%%26g%3D%%GENDER%%%26ppid%3D%%PPID%%%26plat%3Dwx_droid_phone%26zcs%3D%%ZCS%%%26hzcs%3D%%HZCS%%%26nzcs%3D%%NZCS%%%26tpid%3D%%TPID%%%26fhic%3D%%FHIC%%%26floc%3D%%FLOC%%%26fltmpc%3D%%FLTMPC%%%26tmpc%3D%%TMPC%%%26lang%3D%%LANG%%%26lnid%3D%%LNID%%%26cmsid%3D2177%26ttid%3D%%TTID%%%26vid%3D%%TTID%%%26pos%3dWX_PRER%26h2o%3D%%H2O%%%26plist%3D%%PLIST%%%26adid%3D%%ADID%%%26cxtg%3D%%CXTG%%%26env%3D%%ENV%%%26dynght%3D%%DYNGHT%%%26ref%3D%%REF%%\"},\"commonParameters\":{\"wfxtg\":\"%%WFXTG%%\",\"cmsid\":\"%%CMSID%%\",\"fgeo\":\"%%FGEO%%\",\"cxtg\":\"%%CXTG%%\",\"tmpr\":\"%%TMPR%%\",\"nzcs\":\"%%NZCS%%\",\"launch_partner\":\"%%LAUNCH_PARTNER%%\",\"vid\":\"%%TTID%%\",\"ref\":\"$$REF$$\",\"tmp\":\"%%TMP%%\",\"tile\":\"%%TILE%%\",\"tmpc\":\"%%TMPC%%\",\"plat\":\"%%PLATFORM%%\",\"dynght\":\"$$DYNGHT$$\",\"zip\":\"%%ZIP%%\",\"tpid\":\"%%TPID%%\",\"uv\":\"%%UV%%\",\"ver\":\"%%VER%%\",\"rmid\":\"%%RMID%%\",\"faud\":\"%%FAUD%%\",\"floc\":\"%%FLOC%%\",\"ttid\":\"%%TTID%%\",\"ppid\":\"%%PPID%%\",\"lnid\":\"%%LNID%%\",\"hzcs\":\"%%HZCS%%\",\"aid\":\"%%AID%%\",\"cid\":\"%%CLARITAS%%\",\"wind\":\"%%WIND%%\",\"vw\":\"%%VIEW%%\",\"fltmpc\":\"%%FLTMPC%%\",\"plln\":\"%%PLLN%%\",\"locale\":\"%%LOCALE%%\",\"bn\":\"%%BREAKING%%\",\"layer\":\"%%LAYER%%\",\"hmid\":\"%%HUMIDITY%%\",\"plist\":\"%%PLIST%%\",\"adid\":\"%%ADID%%\",\"sg\":\"%%SEGMENT%%\",\"pos\":\"%%POS%%\",\"alert\":\"%%ALERT%%\",\"cnd\":\"%%CONDITION%%\",\"lang\":\"%%LANG%%\",\"ftl\":\"%%FTL%%\",\"ord\":\"%%ORD%%\",\"cc\":\"%%COUNTRY%%\",\"st\":\"%%STATE%%\",\"a\":\"%%AGE%%\",\"h2o\":\"%%H2O%%\",\"sev\":\"%%SEVERE%%\",\"g\":\"%%GENDER%%\",\"zcs\":\"%%ZCS%%\",\"env\":\"%%ENV%%\",\"hlzip\":\"%%HLZIP%%\",\"ct\":\"%%CITY%%\",\"fhic\":\"%%FHIC%%\",\"preload_partner\":\"%%PRELOAD_PARTNER%%\",\"dma\":\"%%DMA%%\"},\"version\":\"6.0.0\",\"application\":\"androidflagship\",\"adSlots\":[{\"slotName\":\"weather.bb\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"display\\\/bb\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\"}},{\"slotName\":\"weather.cc\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"display\\\/feed\\\/feed_0\",\"parameters\":{\"tf\":\"currentc\",\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.feed1\",\"sizes\":[\"300x250\",\"320x300\"],\"adUnitSuffix\":\"display\\\/feed\\\/feed_1\",\"parameters\":{\"tf\":\"today\",\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.feed2\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"display\\\/feed\\\/feed_2\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.feed3\",\"sizes\":[\"300x250\",\"320x300\"],\"adUnitSuffix\":\"display\\\/feed\\\/feed_3\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.feed4\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"display\\\/feed\\\/feed_4\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.feed5\",\"sizes\":[\"300x250\",\"320x300\"],\"adUnitSuffix\":\"display\\\/feed\\\/feed_5\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.maps\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/maps\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"},\"refreshInSeconds\":\"30\"},{\"slotName\":\"weather.hourly\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/hourly\",\"parameters\":{\"tf\":\"hourly\",\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"},\"refreshInSeconds\":\"30\"},{\"slotName\":\"weather.10day\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/10day\",\"parameters\":{\"tf\":\"10_day\",\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"},\"refreshInSeconds\":\"30\"},{\"slotName\":\"weather.severe\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/alerts\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.articles\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/articles\",\"dynamic\":\"true\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"},\"refreshInSeconds\":\"30\"},{\"slotName\":\"weather.breaking\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/breaking\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.alerts\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/alerts\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"checkin.history\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/checkin\\\/history\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.beach.spotlight\",\"sizes\":[\"300x33\"],\"adUnitSuffix\":\"display\\\/content\\\/boat_beach\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.beach.largeAds\",\"sizes\":[\"320x300\",\"300x250\"],\"adUnitSuffix\":\"display\\\/content\\\/boat_beach\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.pollen\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"content\\\/pollen\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.cold\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"content\\\/cold\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.run.spotlight\",\"sizes\":[\"300x33\"],\"adUnitSuffix\":\"display\\\/content\\\/running\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.run.largeAds\",\"sizes\":[\"320x300\",\"300x250\"],\"adUnitSuffix\":\"display\\\/content\\\/running\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.hurricane.feed1\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"display\\\/details\\\/hurricane\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.hurricane.spotlight\",\"sizes\":[\"300x25\"],\"adUnitSuffix\":\"display\\\/details\\\/hurricane\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.hurricane.details\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/details\\\/hc_art\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"video\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"video\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"video.global\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"video\\\/global\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"video.local\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"video\\\/local\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"video.must_see\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"video\\\/must_see\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"video.tv\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"video\\\/tv\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.allergy.spotlight\",\"sizes\":[\"300x33\"],\"adUnitSuffix\":\"display\\\/content\\\/allergy\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.allergy.details\",\"sizes\":[\"300x250\",\"320x300\"],\"adUnitSuffix\":\"display\\\/content\\\/allergy\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.cold.flu.spotlight\",\"sizes\":[\"300x33\"],\"adUnitSuffix\":\"display\\\/content\\\/flu\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.cold.flu.details\",\"sizes\":[\"300x250\",\"320x300\"],\"adUnitSuffix\":\"display\\\/content\\\/flu\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"weather.breaking.spotlight\",\"sizes\":[\"300x25\"],\"adUnitSuffix\":\"display\\\/breaking\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.ski\",\"sizes\":[\"320x50\",\"320x80\"],\"adUnitSuffix\":\"display\\\/content\\\/ski\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.ski.spotlight\",\"sizes\":[\"300x33\"],\"adUnitSuffix\":\"display\\\/content\\\/ski\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.ski.largeAds\",\"sizes\":[\"320x300\",\"300x250\"],\"adUnitSuffix\":\"display\\\/content\\\/ski\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.winterstorm.spotlight\",\"sizes\":[\"300x25\"],\"adUnitSuffix\":\"display\\\/content\\\/winter_storm_central\",\"parameters\":{\"pos\":\"app_sl\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.winterstorm.smallad\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/content\\\/winter_storm_central\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}},{\"slotName\":\"content.winterstorm.maps\",\"sizes\":[\"320x50\"],\"adUnitSuffix\":\"display\\\/content\\\/winter_storm_central\\\/maps\",\"parameters\":{\"pos\":\"top300\",\"tile\":\"1\",\"plat\":\"wx_droid_phone\"}}],\"adSlotsToPreload\":[\"weather.feed1\",\"weather.feed2\",\"weather.feed3\",\"weather.feed5\"]}",
+				"featureIsReported": true,
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "ads.vishal test feature",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "ads.AdsConfig",
+				"reportedConfigurationNames": {
+					"adsAdsConfig.Feed1 NativeAndBanner": false,
+					"adsAdsConfigNewUsers.Control": false,
+					"adsAdsConfigNewUsers.ThreeAds": false,
+					"adsAdsConfigNewUsers.TwoAds": false,
+					"adsAdsConfigNewUsers.ZeroAds": false
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"SaturationForUnselected\":0.3,\"AlphaOpacityForUnselected\":0.5,\"selectionUnderlineColor\":\"#2962A9\",\"adHocCategories\":[{\"id\":\"local\",\"label\":\"Local\"},{\"id\":\"storms\\\/hurricane\",\"label\":\"Hurricane Central\"},{\"id\":\"pl-the-ari-effect\",\"label\":\"The Ari Effect\"},{\"id\":\"breaking-news\",\"label\":\"Breaking News\"},{\"id\":\"pl-winter-storm-central\",\"label\":\"Winter Storm\"}],\"maxVideosPerCategory\":50,\"AlphaOpacityForUnselectedIcon\":0.5,\"BrightnessPercentageForUnselected\":100,\"ContrastForUnselected\":0.8,\"title\":\"Video\",\"localCategoryTitle\":\"Local\",\"defaultPlaylistId\":\"pl-editor-picks\",\"defaultColorPalette\":[\"#9575cd\",\"#5c6bc0\",\"#42a5f5\",\"#4cb6ac\",\"#80c783\",\"#aed581\"]}",
+				"features": [
+				],
+				"isON": true,
+				"name": "video.Video Categories",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, videoVideoCategories.Basic]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"user-segment-1\":\"dwm\",\"user-segment-2\":\"avr-a\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "profile.Segment Report",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, profileSegmentReport.Localytics Segments]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "healthmodule.Allergy1UpDefault",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "healthmodule.AllergyMapsDefault",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "healthmodule.AllergyPersonalizationDefault",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "healthmodule.DisableMoldHeroDial",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "test.testSegmentation",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": true,
+				"name": "ads.native",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{\"endPoint\":\"sqs.us-east-1.amazonaws.com\",\"path\":\"events_BAR_android\",\"service\":\"sqs\",\"requestMethod\":\"POST\",\"region\":\"us-east-1\",\"user\":\"events_BAR_android_writer\"}",
+						"features": [
+						],
+						"isON": true,
+						"name": "dal.LocationUpdateAws",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Configurations: [defaultConfiguration]",
+						"type": "FEATURE"
+					}
+				],
+				"isON": true,
+				"name": "dal.DalConfig",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "watson.Conversation",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "watson.voice search",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					}
+				],
+				"isON": false,
+				"name": "watson.WatsonAllFeatures",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": true,
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": true,
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "searchbar.testname",
+								"reportedConfigurationNames": {
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Parent feature is off",
+								"type": "FEATURE"
+							}
+						],
+						"isON": false,
+						"name": "searchbar.googlevoicesearch",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": true,
+						"features": [
+						],
+						"isON": false,
+						"name": "searchbar.universalsearch",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"featureIsReported": true,
+						"features": [
+						],
+						"isON": false,
+						"name": "searchbar.watsonsearch",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					}
+				],
+				"isON": false,
+				"name": "searchbar.SearchBar",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": true,
+				"name": "profile.Segment ReportTemp",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "test.JoseminaTest",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "boatbeachmodule.BoatBeachInOutdoorModule",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "temp.TempTestSegments",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "samsung.Events",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "performance.airlocksdk",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "analytics.NewRelic",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is turned off due to rollout percentage",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ads.Ad Choices",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "test.CheckNearestWinterStormAlert",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "lifestylemodule.ComboModuleDisableLegends",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "healthmodule.ComboTemporary",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"apiKey\":\"1941878e0eef4b4c81878e0eeffb4cc2\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "ApiKey.Api",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "healthmodule.EnabledNewColdAndFlu",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "test.ElikTest",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "myevents.TripAdvisor",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "myevents.Lyft",
+						"reportedConfigurationNames": {
+						},
+						"reportedConfigurationValues": {
+						},
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					}
+				],
+				"isON": false,
+				"name": "myevents.My Events",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "testXlargeBBUrlbreak.testXlargeBBUrlbreak",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"videoWidgetEnabled\":false}",
+				"features": [
+				],
+				"isON": true,
+				"name": "notification.Ongoing",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, notificationOngoingnotification.Basic]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"privacyUrl\":{\"en_US\":\"https:\\\/\\\/app.com\\\/en-US\\\/twc\\\/privacy-policy\",\"es_ES\":\"https:\\\/\\\/app.com\\\/es-ES\\\/twc\\\/privacy-policy\"}}",
+				"features": [
+				],
+				"isON": true,
+				"name": "agreements.PrivacyPolicy",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"termsOfUseUrl\":{\"en_US\":\"https:\\\/\\\/www.app.com\\\/common\\\/home\\\/legal.html\",\"es_ES\":\"https:\\\/\\\/www.app.com\\\/common\\\/home\\\/legal.html\"}}",
+				"features": [
+				],
+				"isON": true,
+				"name": "agreements.TermsOfUse",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "test.SynchTest",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			}
+		]
+	},
+	"variant": "Default"
+}

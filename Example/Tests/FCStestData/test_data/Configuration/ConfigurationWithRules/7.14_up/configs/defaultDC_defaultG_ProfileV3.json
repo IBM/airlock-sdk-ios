@@ -1,0 +1,11 @@
+{
+  "apiVersion":"V3.0",
+  "version":"7.14",
+  "configPath":"test_data\/Configuration\/ConfigurationWithRules\/7.14_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV3.json",
+  "defaultFileName":"ConfigurationWithRules__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",  
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEVAUTH2/seasons/e2eaf6b5-e2e8-4662-8099-bc267327645e/9c8f0452-64ac-43bd-856d-32ed53e70be0/AirlockDefaults.json"  
+}

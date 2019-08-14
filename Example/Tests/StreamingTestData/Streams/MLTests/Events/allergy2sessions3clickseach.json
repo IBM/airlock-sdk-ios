@@ -1,0 +1,904 @@
+{
+  "currentLocation": {
+    "timezoneOffset": 2.0,
+    "coords": {
+      "lat": 31.81660,
+      "lng": 35.20630
+    },
+    "horizAccuracy": 0,
+    "altitude": 0,
+    "vertAccuracy": 0,
+    "pressure": 932.9033203125,
+    "dateTime": 1511891592194
+  },
+  "device": {
+    "deviceType": "mobile",
+    "locale": "en_US",
+    "manufacturer": "LGE",
+    "model": "Nexus 5"
+  },
+  "endSession": 1511891591281,
+  "events": [{
+      "dateTime": 1511891548768,
+      "eventData": {
+        "foreground": true,
+        "method": "clean"
+      },
+      "name": "app-launch"
+    },
+    {
+      "dateTime": 1511891555164,
+      "eventData": {
+        "seasonId": "83b85d4f-e914-48db-b327-f839242bc7f9",
+        "dateJoinedVariant": "",
+        "context_weatherSummary_todayForecast_day_precipType": "rain",
+        "feature_headsupv2_Radar": "Off",
+        "context_weatherSummary_closestLightning_strikeTime": "null",
+        "experiment": "",
+        "feature_headsup_Precip-EndDynamic": "Off",
+        "context_weatherSummary_observation_skyCode": "34",
+        "context_weatherSummary_observation_feelsLikeTemperature": "32",
+        "context_app_af_status": "Organic",
+        "variant": "",
+        "feature_headsup_HOURLY-FORECAST-TABLEDynamic": "Off",
+        "context_weatherSummary_nearestStartPrecip_startTime": "null",
+        "context_weatherSummary_todayForecast_day_precipPercentage": "0",
+        "context_device_daysSinceAppInstall": "2",
+        "context_userLocation_country": "WE",
+        "feature_ads_AdsConfig": "On",
+        "context_app_media_source": "null",
+        "productId": "bc479db5-ff58-4138-b5e4-a8400a1f78d5",
+        "context_weatherSummary_nearestStartPrecip_severity": "null",
+        "feature_headsup_Precip-StartDynamic": "Off",
+        "context_weatherSummary_tomorrowForecast_day_precipPercentage": "20",
+        "context_app_campaign": "null",
+        "context_weatherSummary_tomorrowForecast_night_precipType": "precip",
+        "feature_headsup_Tomorrow-ForecastDynamic": "Off",
+        "context_weatherSummary_closestLightning_distance": "null",
+        "context_weatherSummary_nearestWinterStormAlert_phenomenaCode": "SC",
+        "feature_headsupv2_Top-Video": "Off",
+        "context_weatherSummary_todayForecast_night_precipType": "precip",
+        "feature_headsupv2_Top-Video-Lovers": "Off",
+        "feature_headsup_Sunrise-Sunset-Message": "Off",
+        "feature_headsupv2_HeadsUp": "On",
+        "context_profile_settings_segmentation_dwm": "2to5",
+        "context_weatherSummary_todayForecast_night_precipPercentage": "10",
+        "context_weatherSummary_contentMode_mode": "normal",
+        "airlockVersion": "V2.5",
+        "context_weatherSummary_nearestWinterStormAlert_severityCode": "4",
+        "feature_modules_Breaking-News": "Off",
+        "context_weatherSummary_nearestWinterStormAlert_significanceCode": "Y",
+        "feature_headsup_Weekend-ForecastDynamic": "Off",
+        "context_weatherSummary_nearestStartPrecip_eventType": "null",
+        "context_weatherSummary_observation_temperature": "37",
+        "context_weatherSummary_tomorrowForecast_day_precipType": "rain",
+        "feature_headsupv2_Top-Video-LoversV2": "Off",
+        "context_weatherSummary_tomorrowForecast_night_precipPercentage": "0",
+        "feature_headsupv2_Hero-Radar": "Off"
+      },
+      "name": "airlock-config"
+    },
+    {
+      "dateTime": 1511891555642,
+      "eventData": {
+        "locationId": "USMA0046:1:US"
+      },
+      "name": "location-displayed"
+    },
+    {
+      "dateTime": 1511891558963,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed1",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891559022,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed3",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891560687,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed5",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891555866,
+      "eventData": {
+        "name": "Hourly Forecast Large",
+        "type": "TABLE",
+        "pos": 1,
+        "descriptor": "NEXT FEW HOURS",
+        "value": "HOURLY"
+      },
+      "name": "tile-viewed"
+    },
+    {
+      "dateTime": 1511891555866,
+      "eventData": {
+        "name": "Sunset/Sunrise",
+        "type": "DATAPOINT",
+        "pos": 2,
+        "descriptor": "SUNSET",
+        "value": "16:13"
+      },
+      "name": "tile-viewed"
+    },
+    {
+      "dateTime": 1511891555901,
+      "eventData": {
+        "locationId": "USMA0046:1:US"
+      },
+      "name": "location-displayed"
+    },
+    {
+      "dateTime": 1511891560539,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.cc",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891569224,
+      "eventData": {
+        "name": "current-conditions"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891570065,
+      "eventData": {
+        "id": "89eb343f-c5d1-476a-b31a-ffb31d08dae0",
+        "source": "rightnow",
+        "pos": 1,
+        "playlist": "null",
+        "caption": "Sharp Shift in the Weather is Coming",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891570630,
+      "eventData": {
+        "name": "hourly"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891576081,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed2",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891574398,
+      "eventData": {
+        "id": "89eb343f-c5d1-476a-b31a-ffb31d08dae0",
+        "source": "rightnowmodel",
+        "pos": 0,
+        "playlist": "[]",
+        "playMethod": "auto",
+        "caption": "Sharp Shift in the Weather is Coming",
+        "thumbnailURL": "",
+        "adSecs": 0,
+        "contentSecs": 42,
+        "watchedSecs": 3,
+        "adWatchedSecs": 0,
+        "autoplayWatchedSecs": 3,
+        "adClicked": false
+      },
+      "name": "video-played"
+    },
+    {
+      "dateTime": 1511891574402,
+      "eventData": {
+        "name": "ten-day"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891578392,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed4",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891576281,
+      "eventData": {
+        "name": "video"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891576342,
+      "eventData": {
+        "id": "b78adedf-41af-40c6-9372-1bfe7c15062d",
+        "source": "videomodule",
+        "pos": 1,
+        "playlist": "pl-the-lift",
+        "caption": "Alarming Island of Trash Found in Caribbean",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891576342,
+      "eventData": {
+        "id": "78b31d48-fcf9-4a83-ab33-b65f744e9192",
+        "source": "videomodule",
+        "pos": 2,
+        "playlist": "pl-the-lift",
+        "caption": "\u0027Ticking Time Bomb\u0027 Threatens Island",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891576343,
+      "eventData": {
+        "id": "e95f0c8b-5f86-4bb9-9a54-cdb76374932c",
+        "source": "videomodule",
+        "pos": 3,
+        "playlist": "pl-the-lift",
+        "caption": "100\u0027 Tall Glacier in the Desert?",
+        "thumbnailURL": "0"
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891576343,
+      "eventData": {
+        "name": "hurricane"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891577004,
+      "eventData": {
+        "id": "b78adedf-41af-40c6-9372-1bfe7c15062d",
+        "source": "videomodule",
+        "pos": 0,
+        "playlist": "pl-the-lift",
+        "playMethod": "auto",
+        "caption": "Alarming Island of Trash Found in Caribbean",
+        "thumbnailURL": "",
+        "adSecs": 0,
+        "contentSecs": 44,
+        "watchedSecs": 0,
+        "adWatchedSecs": 0,
+        "autoplayWatchedSecs": 0,
+        "adClicked": false
+      },
+      "name": "video-played"
+    },
+    {
+      "dateTime": 1511891578656,
+      "eventData": {
+        "name": "news"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891578663,
+      "eventData": {
+        "id": "78160549-19d8-4b62-8c83-4e7c61093847",
+        "source": "newsmodule",
+        "pos": 2,
+        "playlist": "null",
+        "caption": "Shortening, Shifting Lake-Effect Season?",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891578664,
+      "eventData": {
+        "id": "700dc20d-1c45-4694-885e-d3cd32baeae7",
+        "source": "newsmodule",
+        "pos": 3,
+        "playlist": "null",
+        "caption": "2017 Hurricane Season\u0027s Unforgettable Moments",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891578664,
+      "eventData": {
+        "name": "lifestyle_combo"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891579644,
+      "eventData": {
+        "name": "allergy"
+      },
+      "name": "detail-viewed"
+    },
+    {
+      "dateTime": 1511891580206,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.allergy.spotlight",
+        "successful": false,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891582667,
+      "eventData": {
+        "name": "allergy",
+        "sub": "mold"
+      },
+      "name": "detail-viewed"
+    },
+    {
+      "dateTime": 1511891582780,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.allergy.spotlight",
+        "successful": false,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891584995,
+      "eventData": {
+        "name": "allergy",
+        "sub": "pollen"
+      },
+      "name": "detail-viewed"
+    },
+    {
+      "dateTime": 1511891585208,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.allergy.spotlight",
+        "successful": false,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891591233,
+      "name": "app-exit"
+    }
+  ],
+  "nameSpace": "com.weather",
+  "network": {
+    "carrier": "none",
+    "carrierNetworkClass": "unknown",
+    "networkType": "wifi"
+  },
+  "os": {
+    "platform": "android",
+    "version": "6.0"
+  },
+  "places": [{
+      "city": "Boston",
+      "country": "US",
+      "dma": "506",
+      "id": "USMA0046:1:US",
+      "state": "MA",
+      "tag": "[]",
+      "type": "saved"
+    },
+    {
+      "city": "",
+      "country": "WE",
+      "dma": "",
+      "id": "WEXX0226:1:WE",
+      "state": "",
+      "tag": "[]",
+      "type": "saved"
+    },
+    {
+      "city": "Zibo",
+      "country": "CH",
+      "dma": "",
+      "id": "CHXX0795:1:CH",
+      "state": "",
+      "tag": "[]",
+      "type": "saved"
+    }
+  ],
+  "sessionID": "d39d3ec5-6fe1-42b9-b1e4-b0198a1df11e",
+  "startSession": 1511891548787,
+  "twcRelease": {
+    "appVersion": "8.6.0",
+    "svcCommit": "dev-build"
+  },
+  "user": {
+    "id": "uUph4qYzTSWY0",
+    "installId": "8c3b5f59-c65a-4a46-a04a-9fa972008164",
+    "adId": "limited",
+    "limitedAdId": "bceb9d21-d94c-4bab-a9c6-59118b9cff65",
+    "userType": "dev",
+    "registered": false,
+    "gpsEnabled": true,
+    "followMeEnabled": true,
+    "pushAlertsEnabled": true,
+    "authenticatedUsing": "anon",
+    "entitlements": "[]"
+  }
+} {
+  "currentLocation": {
+    "timezoneOffset": 2.0,
+    "coords": {
+      "lat": 31.81660,
+      "lng": 35.20630
+    },
+    "horizAccuracy": 0,
+    "altitude": 0,
+    "vertAccuracy": 0,
+    "pressure": 932.8572998046875,
+    "dateTime": 1511891699714
+  },
+  "device": {
+    "deviceType": "mobile",
+    "locale": "en_US",
+    "manufacturer": "LGE",
+    "model": "Nexus 5"
+  },
+  "endSession": 1511891698815,
+  "events": [{
+      "dateTime": 1511891666406,
+      "eventData": {
+        "foreground": true,
+        "method": "clean"
+      },
+      "name": "app-launch"
+    },
+    {
+      "dateTime": 1511891673530,
+      "eventData": {
+        "seasonId": "83b85d4f-e914-48db-b327-f839242bc7f9",
+        "dateJoinedVariant": "",
+        "context_weatherSummary_todayForecast_day_precipType": "rain",
+        "feature_headsupv2_Radar": "Off",
+        "context_weatherSummary_closestLightning_strikeTime": "null",
+        "experiment": "",
+        "feature_headsup_Precip-EndDynamic": "Off",
+        "context_weatherSummary_observation_skyCode": "34",
+        "context_weatherSummary_observation_feelsLikeTemperature": "32",
+        "context_app_af_status": "Organic",
+        "variant": "",
+        "feature_headsup_HOURLY-FORECAST-TABLEDynamic": "Off",
+        "context_weatherSummary_nearestStartPrecip_startTime": "null",
+        "context_weatherSummary_todayForecast_day_precipPercentage": "0",
+        "context_device_daysSinceAppInstall": "2",
+        "context_userLocation_country": "WE",
+        "feature_ads_AdsConfig": "On",
+        "context_app_media_source": "null",
+        "productId": "bc479db5-ff58-4138-b5e4-a8400a1f78d5",
+        "context_weatherSummary_nearestStartPrecip_severity": "null",
+        "feature_headsup_Precip-StartDynamic": "Off",
+        "context_weatherSummary_tomorrowForecast_day_precipPercentage": "20",
+        "context_app_campaign": "null",
+        "context_weatherSummary_tomorrowForecast_night_precipType": "precip",
+        "feature_headsup_Tomorrow-ForecastDynamic": "Off",
+        "context_weatherSummary_closestLightning_distance": "null",
+        "context_weatherSummary_nearestWinterStormAlert_phenomenaCode": "SC",
+        "feature_headsupv2_Top-Video": "Off",
+        "context_weatherSummary_todayForecast_night_precipType": "precip",
+        "feature_headsupv2_Top-Video-Lovers": "Off",
+        "feature_headsup_Sunrise-Sunset-Message": "Off",
+        "feature_headsupv2_HeadsUp": "On",
+        "context_profile_settings_segmentation_dwm": "2to5",
+        "context_weatherSummary_todayForecast_night_precipPercentage": "10",
+        "context_weatherSummary_contentMode_mode": "normal",
+        "airlockVersion": "V2.5",
+        "context_weatherSummary_nearestWinterStormAlert_severityCode": "4",
+        "feature_modules_Breaking-News": "Off",
+        "context_weatherSummary_nearestWinterStormAlert_significanceCode": "Y",
+        "feature_headsup_Weekend-ForecastDynamic": "Off",
+        "context_weatherSummary_nearestStartPrecip_eventType": "null",
+        "context_weatherSummary_observation_temperature": "37",
+        "context_weatherSummary_tomorrowForecast_day_precipType": "rain",
+        "feature_headsupv2_Top-Video-LoversV2": "Off",
+        "context_weatherSummary_tomorrowForecast_night_precipPercentage": "0",
+        "feature_headsupv2_Hero-Radar": "Off"
+      },
+      "name": "airlock-config"
+    },
+    {
+      "dateTime": 1511891673825,
+      "eventData": {
+        "locationId": "USMA0046:1:US"
+      },
+      "name": "location-displayed"
+    },
+    {
+      "dateTime": 1511891678172,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed1",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891678198,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed3",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891677988,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed5",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891674187,
+      "eventData": {
+        "name": "Hourly Forecast Large",
+        "type": "TABLE",
+        "pos": 1,
+        "descriptor": "NEXT FEW HOURS",
+        "value": "HOURLY"
+      },
+      "name": "tile-viewed"
+    },
+    {
+      "dateTime": 1511891674187,
+      "eventData": {
+        "name": "Sunset/Sunrise",
+        "type": "DATAPOINT",
+        "pos": 2,
+        "descriptor": "SUNSET",
+        "value": "16:13"
+      },
+      "name": "tile-viewed"
+    },
+    {
+      "dateTime": 1511891674229,
+      "eventData": {
+        "locationId": "USMA0046:1:US"
+      },
+      "name": "location-displayed"
+    },
+    {
+      "dateTime": 1511891679360,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.cc",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891677606,
+      "eventData": {
+        "name": "current-conditions"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891677938,
+      "eventData": {
+        "id": "89eb343f-c5d1-476a-b31a-ffb31d08dae0",
+        "source": "rightnow",
+        "pos": 1,
+        "playlist": "null",
+        "caption": "Sharp Shift in the Weather is Coming",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891677939,
+      "eventData": {
+        "name": "hourly"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891681857,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed2",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891678913,
+      "eventData": {
+        "id": "89eb343f-c5d1-476a-b31a-ffb31d08dae0",
+        "source": "rightnowmodel",
+        "pos": 0,
+        "playlist": "[]",
+        "playMethod": "auto",
+        "caption": "Sharp Shift in the Weather is Coming",
+        "thumbnailURL": "",
+        "adSecs": 0,
+        "contentSecs": 42,
+        "watchedSecs": 0,
+        "adWatchedSecs": 0,
+        "autoplayWatchedSecs": 0,
+        "adClicked": false
+      },
+      "name": "video-played"
+    },
+    {
+      "dateTime": 1511891678917,
+      "eventData": {
+        "name": "ten-day"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891678917,
+      "eventData": {
+        "name": "map"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891679618,
+      "eventData": {
+        "name": "map"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891680865,
+      "eventData": {
+        "name": "video"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891681640,
+      "eventData": {
+        "id": "b78adedf-41af-40c6-9372-1bfe7c15062d",
+        "source": "videomodule",
+        "pos": 1,
+        "playlist": "pl-the-lift",
+        "caption": "Alarming Island of Trash Found in Caribbean",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891681641,
+      "eventData": {
+        "id": "78b31d48-fcf9-4a83-ab33-b65f744e9192",
+        "source": "videomodule",
+        "pos": 2,
+        "playlist": "pl-the-lift",
+        "caption": "\u0027Ticking Time Bomb\u0027 Threatens Island",
+        "thumbnailURL": "",
+        "variantId": "5a1d5ceffb8b84515de30688"
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891681641,
+      "eventData": {
+        "id": "e95f0c8b-5f86-4bb9-9a54-cdb76374932c",
+        "source": "videomodule",
+        "pos": 3,
+        "playlist": "pl-the-lift",
+        "caption": "100\u0027 Tall Glacier in the Desert?",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891684196,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.feed4",
+        "successful": true,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891683049,
+      "eventData": {
+        "id": "b78adedf-41af-40c6-9372-1bfe7c15062d",
+        "source": "videomodule",
+        "pos": 0,
+        "playlist": "pl-the-lift",
+        "playMethod": "auto",
+        "caption": "Alarming Island of Trash Found in Caribbean",
+        "thumbnailURL": "",
+        "adSecs": 0,
+        "contentSecs": 44,
+        "watchedSecs": 1,
+        "adWatchedSecs": 0,
+        "autoplayWatchedSecs": 1,
+        "adClicked": false
+      },
+      "name": "video-played"
+    },
+    {
+      "dateTime": 1511891682103,
+      "eventData": {
+        "name": "hurricane"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891683054,
+      "eventData": {
+        "name": "news"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891683643,
+      "eventData": {
+        "id": "7c279d77-8796-4e30-a939-97e80ce0da32",
+        "source": "newsmodule",
+        "pos": 1,
+        "playlist": "null",
+        "caption": "Floods, Landslides Kill 11 on Java",
+        "thumbnailURL": ""
+      },
+      "name": "content-viewed"
+    },
+    {
+      "dateTime": 1511891684925,
+      "eventData": {
+        "name": "lifestyle_combo"
+      },
+      "name": "module-viewed"
+    },
+    {
+      "dateTime": 1511891685933,
+      "eventData": {
+        "name": "allergy"
+      },
+      "name": "detail-viewed"
+    },
+    {
+      "dateTime": 1511891686564,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.allergy.spotlight",
+        "successful": false,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891689472,
+      "eventData": {
+        "name": "allergy",
+        "sub": "mold"
+      },
+      "name": "detail-viewed"
+    },
+    {
+      "dateTime": 1511891689608,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.allergy.spotlight",
+        "successful": false,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891691286,
+      "eventData": {
+        "name": "allergy",
+        "sub": "pollen"
+      },
+      "name": "detail-viewed"
+    },
+    {
+      "dateTime": 1511891691520,
+      "eventData": {
+        "clicked": false,
+        "slot": "weather.allergy.spotlight",
+        "successful": false,
+        "type": "ban"
+      },
+      "name": "ad-viewed"
+    },
+    {
+      "dateTime": 1511891698652,
+      "name": "app-exit"
+    }
+  ],
+  "nameSpace": "com.weather",
+  "network": {
+    "carrier": "none",
+    "carrierNetworkClass": "unknown",
+    "networkType": "wifi"
+  },
+  "os": {
+    "platform": "android",
+    "version": "6.0"
+  },
+  "places": [{
+      "city": "Boston",
+      "country": "US",
+      "dma": "506",
+      "id": "USMA0046:1:US",
+      "state": "MA",
+      "tag": "[]",
+      "type": "saved"
+    },
+    {
+      "city": "",
+      "country": "WE",
+      "dma": "",
+      "id": "WEXX0226:1:WE",
+      "state": "",
+      "tag": "[]",
+      "type": "saved"
+    },
+    {
+      "city": "Zibo",
+      "country": "CH",
+      "dma": "",
+      "id": "CHXX0795:1:CH",
+      "state": "",
+      "tag": "[]",
+      "type": "saved"
+    }
+  ],
+  "sessionID": "ac2f17ff-3d23-4f7a-b704-25c0a82d4436",
+  "startSession": 1511891666421,
+  "twcRelease": {
+    "appVersion": "8.6.0",
+    "svcCommit": "dev-build"
+  },
+  "user": {
+    "id": "uUph4qYzTSWY0",
+    "installId": "8c3b5f59-c65a-4a46-a04a-9fa972008164",
+    "adId": "limited",
+    "limitedAdId": "bceb9d21-d94c-4bab-a9c6-59118b9cff65",
+    "userType": "dev",
+    "registered": false,
+    "gpsEnabled": true,
+    "followMeEnabled": true,
+    "pushAlertsEnabled": true,
+    "authenticatedUsing": "anon",
+    "entitlements": "[]"
+  }
+}

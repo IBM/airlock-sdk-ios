@@ -1,0 +1,43 @@
+{
+  "testName": "configuration",
+  "productName": "ConfigurationNoRules2Configs",
+  "productId": "7ea17b76-27c6-412f-b99f-ea653f6e85c8",
+  "seasonLogicalName": "7.5_up",
+  "seasonId": "f4935e3e-4a62-4294-a376-ddd6972f316a",
+  "deviceContextFilePath": "test_data\/configuration\/ConfigurationNoRules2Configs\/7.5_up\/device_contexts\/DeviceContextV1.json",
+  "groupsFilePath": "test_data\/configuration\/ConfigurationNoRules2Configs\/7.5_up\/groups\/defaultG.json",
+  "profileFilePath": "test_data\/configuration\/ConfigurationNoRules2Configs\/7.5_up\/profiles\/ProfileV1.json",
+  "root": {
+    "features": [
+      {
+        "featureAttributes": "{\"alert\":false,\"background\":\"white\",\"color\":\"red\",\"icon\":\"a.jpg\",\"size\":2,\"text\":\"welcome to hell\"}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CNR2C.ConfigCompleteOverwrite",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{\"alert\":false,\"background\":\"white\",\"color\":\"red\",\"icon\":\"a.jpg\",\"size\":2,\"text\":\"welcome to hell\"}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CNR2C.ConfigOverwrite1Param",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{\"alert\":false,\"background\":\"white\",\"color\":\"red\",\"icon\":\"a.jpg\",\"size\":2,\"text\":\"welcome to hell\"}",
+        "features": [
+        ],
+        "isON": false,
+        "name": "CNR2C.ConfigOverwriteDifferentParam",
+        "resultTrace": "",
+        "type": "FEATURE"
+      }
+    ],
+    "type": "ROOT",
+    "uniqueId": "c2e64bfa-4fbe-40c7-b8d1-f6e130d85b96"
+  }
+}

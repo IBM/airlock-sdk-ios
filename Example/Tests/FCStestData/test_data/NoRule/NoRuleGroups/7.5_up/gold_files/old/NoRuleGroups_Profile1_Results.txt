@@ -1,0 +1,94 @@
+{
+	"features": [
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": false,
+			"name": "R1 QA OFF",
+			"namespace": "ns3",
+			"resultTrace": "Rule disabled",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": true,
+			"name": "R2 Dev ON",
+			"namespace": "ns3",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": true,
+			"name": "R3 QA ON",
+			"namespace": "ns3",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": false,
+			"name": "R4 Dev OFF",
+			"namespace": "ns3",
+			"resultTrace": "Rule disabled",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": false,
+			"name": "R5 OFF QA and Dev",
+			"namespace": "ns3",
+			"resultTrace": "Rule disabled",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": true,
+			"name": "R6 ON  QA and Dev",
+			"namespace": "ns3",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": true,
+			"name": "R10 ON PROD",
+			"namespace": "ns3",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": {
+			},
+			"features": [
+			],
+			"isON": false,
+			"name": "R11 OFF PROD",
+			"namespace": "ns3",
+			"resultTrace": "Rule disabled",
+			"type": "FEATURE"
+		}
+	],
+	"name": "root",
+	"type": "ROOT"
+}

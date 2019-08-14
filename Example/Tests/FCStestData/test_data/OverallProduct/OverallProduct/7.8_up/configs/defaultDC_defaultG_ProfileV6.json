@@ -1,0 +1,12 @@
+{
+  "apiVersion":"V2.1",
+  "version":"7.8",
+  "checkOnOtherServers":true,
+  "configPath":"test_data\/OverallProduct\/OverallProduct\/7.8_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV6.json",
+  "defaultFileName":"OverallProduct__AirlockDefaults.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/TEST2/seasons/53b00ff1-7fd0-4240-b19f-28f32c4b7134/1f36f73a-d9fc-434e-983a-bcb1b4e779a3/AirlockDefaults.json"
+    
+}

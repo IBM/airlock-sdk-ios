@@ -1,0 +1,33 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "CNR2C.ConfigCompleteOverwrite",
+				"resultTrace": "Application version is outside of feature version range",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "CNR2C.ConfigOverwrite1Param",
+				"resultTrace": "Application version is outside of feature version range",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "CNR2C.ConfigOverwriteDifferentParam",
+				"resultTrace": "Application version is outside of feature version range",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

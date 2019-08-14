@@ -1,0 +1,8 @@
+{
+  "configPath":"test_data\/NoRule\/NoRulePercentage\/1.0_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV1.json",
+  "defaultFileName":"NoRulePercentage__AirlockDefaults.json",
+  "randomNumber":50
+}

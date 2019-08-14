@@ -1,0 +1,372 @@
+{
+"root": {
+	"features": [
+		{
+			"featureAttributes": "{}",
+			"features": [
+				{
+					"features": [
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Count Down Hanukkah",
+							"resultTrace": "Rule disabled",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Breaking News Video",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Real Time Lightning",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Winter Storm Impacted Now",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Radar",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Top Video",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"icon\":{\"resourceName\":\"home_rain_icon\"},\"tiletype\":\"datapoint\",\"descriptor\":\"PRECIPITATION\",\"analyticsTileName\":\"Precip Start\",\"value\":\"19:34\",\"clickthrough\":{\"destination\":\"hourly\"}}",
+							"features": [
+							],
+							"isON": true,
+							"name": "headsup.Precip Start",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Precip End",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"icon\":{\"resourceName\":\"ic_twc_snow\"},\"tiletype\":\"datapoint\",\"descriptor\":\"ACCUMULATION\",\"analyticsTileName\":\"snow accumulation\",\"value\":\"nostrud non fugiat Units.Inches\",\"clickthrough\":{\"destination\":\"winter_storm\"}}",
+							"features": [
+							],
+							"isON": true,
+							"name": "headsup.Forecasted Snow Accumulation",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Winter Storm Forecast",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"icon\":{\"resourceName\":\"home_car_icon\"},\"tiletype\":\"datapoint\",\"descriptor\":\"ROAD CONDITIONS\",\"value\":\"FOGGY\",\"clickthrough\":{\"destination\":\"driving_condition\"}}",
+							"features": [
+							],
+							"isON": true,
+							"name": "headsup.Road Conditions",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Feels Like Message",
+							"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Tomorrow Forecast",
+							"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Weekend Forecast",
+							"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "headsup.Sunrise Sunset Message",
+							"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+							"type": "FEATURE"
+						}
+					],
+					"maxFeaturesOn": 3,
+					"name": "mx.bc332d97-29af-4410-a091-eea42040d53e",
+					"type": "MUTUAL_EXCLUSION_GROUP"
+				}
+			],
+			"isON": true,
+			"name": "headsup.HeadsUp",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": "{}",
+			"features": [
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": false,
+					"name": "ads.Main Feed Ads",
+					"resultTrace": "Rule returned false",
+					"type": "FEATURE"
+				},
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": false,
+					"name": "ads.Main Screen Banner",
+					"resultTrace": "Rule returned false",
+					"type": "FEATURE"
+				}
+			],
+			"isON": true,
+			"name": "ads.Airlock Control Over Ads",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": "{}",
+			"features": [
+				{
+					"features": [
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "modules.Breaking News",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"id\":\"current-conditions\",\"adSlot\":\"weather.bb\",\"description\":\"Displays current conditions.\",\"beacon\":\"weather:current:conditions:displayed\",\"type\":\"native\"}",
+							"features": [
+							],
+							"isON": true,
+							"name": "modules.Right Now",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"id\":\"hourly\",\"adSlot\":\"weather.hourly\",\"description\":\"Displays hourly weather information.\",\"beacon\":\"weather:hourly:displayed\",\"type\":\"native\"}",
+							"features": [
+							],
+							"isON": true,
+							"name": "modules.Hourly",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "modules.Daily",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"id\":\"video3\",\"adSlot\":\"\",\"description\":\"Displays video module with 3 thumbnails.\",\"beacon\":\"video:video:displayed\",\"type\":\"native\"}",
+							"features": [
+							],
+							"isON": true,
+							"name": "modules.Video",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"id\":\"map\",\"adSlot\":\"weather.maps\",\"description\":\"Displays radar map.\",\"beacon\":\"map:map:displayed\",\"type\":\"native\"}",
+							"features": [
+							],
+							"isON": true,
+							"name": "modules.Radar Maps",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"id\":\"driving-difficulty\",\"adSlot\":\"weather.maps\",\"description\":\"Displays radar map.\",\"beacon\":\"map:map:displayed\",\"type\":\"native\"}",
+							"features": [
+							],
+							"isON": true,
+							"name": "modules.Road Conditions",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "modules.News",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "modules.Health",
+							"resultTrace": "Rule returned false",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{\"id\":\"outdoor\",\"adSlot\":\"\",\"hideable\":false,\"description\":\"Displays run weather index information.\",\"sponsored\":false,\"type\":\"native\"}",
+							"features": [
+							],
+							"isON": true,
+							"name": "modules.Outdoor",
+							"resultTrace": "",
+							"type": "FEATURE"
+						},
+						{
+							"featureAttributes": "{}",
+							"features": [
+							],
+							"isON": false,
+							"name": "modules.Boat",
+							"resultTrace": "Rule disabled",
+							"type": "FEATURE"
+						}
+					],
+					"maxFeaturesOn": 11,
+					"name": "mx.4474eb81-8295-4a7e-abdb-c834b7b6d259",
+					"type": "MUTUAL_EXCLUSION_GROUP"
+				}
+			],
+			"isON": true,
+			"name": "modules.Airlock Control Over Modules",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": "{}",
+			"features": [
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": true,
+					"name": "bespoke.Allergy",
+					"resultTrace": "",
+					"type": "FEATURE"
+				},
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": false,
+					"name": "bespoke.ColdFlu",
+					"resultTrace": "Rule returned false",
+					"type": "FEATURE"
+				}
+			],
+			"isON": true,
+			"name": "bespoke.HealthSubmodules",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": "{}",
+			"features": [
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": false,
+					"name": "sample.ViewedCountryUS",
+					"resultTrace": "Rule returned false",
+					"type": "FEATURE"
+				},
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": true,
+					"name": "sample.ViewedCountryNonUS",
+					"resultTrace": "",
+					"type": "FEATURE"
+				},
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": false,
+					"name": "sample.ConnectionTypeWiFi",
+					"resultTrace": "Rule returned false",
+					"type": "FEATURE"
+				},
+				{
+					"featureAttributes": "{}",
+					"features": [
+					],
+					"isON": false,
+					"name": "sample.ConnectionType4G",
+					"resultTrace": "Rule returned false",
+					"type": "FEATURE"
+				}
+			],
+			"isON": true,
+			"name": "sample.Common",
+			"resultTrace": "",
+			"type": "FEATURE"
+		}
+	],
+	"type": "ROOT"
+	}
+}

@@ -1,0 +1,123 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "contentViewedModulus5.contentViewedModulus5",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"stream\":\"config3: 7\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.MTXOfConfig",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1feature1.Config3]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"stream\":\"config2: 3\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.ConfigurationsNOMTX",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1FeatureProd3Configurations1NOMTX.Config2]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"stream\":\"Config1b: 2\",\"value\":\"config1\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "tr.MTXinMTXConfigs",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, trMTXinMTXConfigsProdDefaultOff.Config1, trMTXinMTXConfigsProdDefaultOffConfig1.Config1b]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"default config\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "trDistance.FeatureTwoConfigFail",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Rule was successful, but configuration failed and was taken from fallback. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration.\nTrigger: \nif (context.weatherSummary.pollenData[100] == \"test\" && context.streams && context.streams.adViewedCounter) {true} else {false}\nAttributes: {\n\"stream\":\"config2: \" + context.streams.adViewedCounter.adViewedCount\n}\nError: com.ibm.airlock.engine.ScriptInvoker$InvokerException: Javascript rule error: TypeError: Cannot read property \"100\" from undefined (JavaScript trigger#2)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"stream\":\"config1\",\"title\":2}",
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.ConfigurationsNOMTXWithStrings",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1FeatureProd3Configurations1NOMTX.Config1WithString]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"stream\":\"using utility: 5\"}",
+				"features": [
+				],
+				"isON": true,
+				"name": "UseUtil.UseUtil",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, UseUtilUseUtil.UseUtil]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "group1.FeatureUsingGoRunTomorrowCounterFilterTrue",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "group1.FeatureUsingGoRunTomorrowCounterFilterFalse",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

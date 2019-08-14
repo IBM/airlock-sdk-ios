@@ -1,0 +1,30 @@
+{
+	"experiments": {
+		"experiments.exp0": 543970,
+		"experiments.exp0.var1": 165418,
+		"experiments.exp0.var2": 768426,
+		"experiments.exp1": 638480,
+		"experiments.exp1.var1": 306229,
+		"experiments.exp1.var2": 579609,
+		"experiments.exp2": 320371,
+		"experiments.exp2.var1": 215925,
+		"experiments.exp2.var2": 74928,
+		"experiments.exp3": 229412,
+		"experiments.exp3.var1": 903326,
+		"experiments.exp3.var2": 997536,
+		"experiments.exp4": 745408,
+		"experiments.exp4.var1": 843975,
+		"experiments.exp4.var2": 37854,
+		"experiments.exp5": 800218,
+		"experiments.exp5.var1": 221830,
+		"experiments.exp5.var2": 770600,
+		"experiments.exp5.var3": 524453,
+		"experiments.exp6": 780892,
+		"experiments.exp6.var1": 971220,
+		"experiments.exp6.var2": 992118
+	},
+	"features": {
+		"ns1.f1": 628586,
+		"ns1.f2": 873970
+	}
+}

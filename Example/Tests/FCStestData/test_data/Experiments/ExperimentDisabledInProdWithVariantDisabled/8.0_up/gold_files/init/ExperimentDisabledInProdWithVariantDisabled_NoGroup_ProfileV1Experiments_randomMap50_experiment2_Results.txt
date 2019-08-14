@@ -1,0 +1,50 @@
+{
+	"experiment": "experiment2",
+	"experimentList": [
+		"EXPERIMENT_experiment2",
+		"VARIANT_experiment2_variant3"
+	],
+	"inputFieldsForAnalytics": [
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ns1.F1",
+				"resultTrace": "Feature is turned off due to rollout percentage",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"text\":\"branch3\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns1.F3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"defaultConfiguration": "{\n\t\"text\":\"master\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"isON": false,
+				"name": "ns1.F2",
+				"namespace": "ns1",
+				"noCachedResults": false,
+				"resultTrace": "copied from defaults",
+				"type": "FEATURE",
+				"uniqueId": "0b992027-8055-429d-b791-157630f08456"
+			}
+		]
+	},
+	"variant": "variant3"
+}

@@ -1,0 +1,12 @@
+{
+  "apiVersion":"V2.5",
+  "version":"7.10",
+  "configPath":"test_data\/Analytics\/AnalyticsProduct\/7.10_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"NoGroup.json",
+  "profileFileName":"ProfileAnalyticsV1.json",
+  "defaultFileName":"AnalyticsProduct__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",
+  "checkAnalytics":true,
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/TEST2/seasons/b2c04456-3969-467d-b6c0-5949b5361a4c/b5720247-d487-4c69-a618-af451778a47e/AirlockDefaults.json"
+}

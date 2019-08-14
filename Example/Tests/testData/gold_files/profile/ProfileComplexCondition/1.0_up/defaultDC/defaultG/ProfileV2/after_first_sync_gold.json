@@ -1,0 +1,22 @@
+{
+    "testName": "profile",
+    "productName": "ProfileComplexCondition",
+    "productId": "b144d738-a939-4e47-9e40-be5d906cfe42",
+    "seasonLogicalName": "1.0_up",
+    "seasonId": "c27f5130-678b-4933-b18f-37e4e5bae873",
+    "deviceContextFilePath": "test_data\/profile\/ProfileComplexCondition\/1.0_up\/device_contexts\/defaultDC.json",
+    "groupsFilePath": "test_data\/profile\/ProfileComplexCondition\/1.0_up\/groups\/defaultG.json",
+    "profileFilePath": "test_data\/profile\/ProfileComplexCondition\/1.0_up\/profiles\/ProfileV2.json",
+    "features": {
+        "pcc.location and language": true,
+        "pcc.location and not language": false,
+        "pcc.endpoints chan": true,
+        "pcc.services and locations not us": false,
+        "pcc.services threshold": true,
+        "pcc.coordination and locate": false,
+        "pcc.agerange and language": false,
+        "pcc.nickname and services id": false,
+        "pcc.email and not language": false,
+        "pcc.demographics and location": false
+    }
+}

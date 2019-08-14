@@ -1,0 +1,84 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"productId": "6b4baadc-92e2-4cb0-aebc-314d06bea98d",
+	"productName": "ConfigurationNoRules",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": "{\n\t\"color\":\"red\",\n\t\"size\":2,\n\t\"alert\":false,\n\t\"background\":\"white\",\n\t\"icon\":\"a.jpg\",\n\t\"text\":\"welcome to hell\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "OnlyDefault",
+				"namespace": "CNR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "1c25bf72-de65-4944-8b23-8e913685d81a"
+			},
+			{
+				"defaultConfiguration": "{\"title\":\"Example Schema\",\"type\":\"object\",\"properties\":{\"color\":{\"type\":\"string\"},\"size\":{\"description\":\"Text size\",\"type\":\"integer\",\"minimum\":1},\"alert\":{\"type\":\"boolean\"},\"background\":{\"type\":\"string\"},\"icon\":{\"type\":\"string\"},\"text\":{\"type\":\"string\"}},\"required\":[\"color\",\"text\"]}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigCompleteOverwrite",
+				"namespace": "CNR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "3966b7ad-e3c6-4064-8f48-91033a51753e"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigOverwriteOneParam",
+				"namespace": "CNR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "e231f33a-c190-4bd4-95c1-5bd15d116933"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigOverwrite2Params",
+				"namespace": "CNR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "00300274-66dc-49ca-90c2-bbd2aaf3eec8"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigOverwrite2Params2",
+				"namespace": "CNR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "ed7c739e-0462-4636-8548-170227c7ed09"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigOverwriteLastParam",
+				"namespace": "CNR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "6d826b96-5d2c-4055-8a51-60ac2aabd802"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "852096bc-767a-4eee-9163-dca8f115daa0"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "55cd59d1-75f6-4ffe-b103-e6683b970d26",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2.1"
+}

@@ -1,0 +1,76 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"Premium\":\"\\u05d4\\u05d9\\u05e8\\u05e9\\u05dd \\u05db\\u05d3\\u05d9 \\u05dc\\u05d4\\u05e4\\u05e2\\u05d9\\u05dc \\u05d0\\u05ea \\u05ea\\u05db\\u05d5\\u05e0\\u05d5\\u05ea \\u05d4\\u05e4\\u05e8\\u05de\\u05d9\\u05d5\\u05dd\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.Premium]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"EightFirstDaySummer\":\"\\u05d4\\u05d9\\u05d5\\u05dd \\u05d4\\u05e8\\u05d0\\u05e9\\u05d5\\u05df \\u05e9\\u05dc \\u05d4\\u05e7\\u05d9\\u05e5\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.EightFirstDaySummer]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FiveNextHours\":\"13 \\u05de\\\"\\u05e9 \\u05d4\\u05d1\\u05d0\\u05d5\\u05ea\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FiveNextHours]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FourPrecipStarting\":\" \\u05d4\\u05d9\\u05d5\\u05dd \\u05de\\u05ea\\u05d7\\u05d9\\u05dc \\u05d2\\u05e9\\u05dd\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings4",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FourPrecipStarting]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"InJuly\":\"\\u05d1\\u05d9\\u05d5\\u05dc\\u05d9 5\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings5",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.InJuly]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

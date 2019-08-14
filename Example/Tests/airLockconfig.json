@@ -1,0 +1,24 @@
+{
+    "seasonName": "AndroidFlagship.S1_1",
+    "features": [{
+                 "name": "F1",
+                 "defaultIfAirlockSystemIsDown": false,
+                 "namespace": "ns1"
+                 }, {
+                 "name": "F2",
+                 "defaultIfAirlockSystemIsDown": true,
+                 "namespace": "ns1"
+                 }, {
+                 "name": "Video",
+                 "defaultIfAirlockSystemIsDown": false,
+                 "namespace": "ns1"
+                 }, {
+                 "name": "Video NextGen",
+                 "defaultIfAirlockSystemIsDown": false,
+                 "namespace": "ns1"
+                 }],
+    "seasonId": "e2d4efc6-90cf-40f7-a4aa-323daf14e0e3",
+    "s3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/gil\/",
+    "productName": "Android Flagship App",
+    "productId": "e2d4efc6-90cf-40f7-a4aa-323daf14e0ec"
+}

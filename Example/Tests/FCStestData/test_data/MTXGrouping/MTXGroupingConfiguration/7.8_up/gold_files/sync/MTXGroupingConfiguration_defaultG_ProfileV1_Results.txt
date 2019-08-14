@@ -1,0 +1,62 @@
+{
+	"root": {
+		"features": [{
+				"featureAttributes": "{\"value1\": \"value1\",\"value2\": \"value2\",\"value3\": \"value3\"}",
+				"features": [],
+				"isON": true,
+				"name": "group1.feature1",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\": \"value1\",\"value2\": \"value2\",\"value3\": \"value3\"}",
+				"features": [],
+				"isON": true,
+				"name": "feature2.feature2",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\": \"value1\",\"value2\": \"value2\",\"value5\": \"value5\"}",
+				"features": [],
+				"isON": true,
+				"name": "feature3.feature3",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\": \"value1\"}",
+				"features": [],
+				"isON": true,
+				"name": "feature4.feature4",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\": \"value1\",\"value2\": \"value2\",\"value4\": \"value4\"}",
+				"features": [],
+				"isON": true,
+				"name": "feature5.feature5",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\": \"value1\",\"value1a\": \"value1a\",\"value3\": \"value3\",\"value4\": \"value4\",\"value5\": \"value5\"}",
+				"features": [],
+				"isON": true,
+				"name": "feature6.feature6",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\": \"value3\"}",
+				"features": [],
+				"isON": true,
+				"name": "feature7.feature7",
+				"resultTrace": "",
+				"type": "FEATURE"
+			}
+		]
+	},
+	"type": "ROOT"
+}

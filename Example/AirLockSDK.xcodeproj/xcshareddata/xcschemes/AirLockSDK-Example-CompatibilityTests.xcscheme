@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0820"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+               BuildableName = "AirLockSDK_Example.app"
+               BlueprintName = "AirLockSDK_Example"
+               ReferencedContainer = "container:AirLockSDK.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "AirLockSDK_Tests.xctest"
+               BlueprintName = "AirLockSDK_Tests"
+               ReferencedContainer = "container:AirLockSDK.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "NO">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "AirLockSDK_Tests.xctest"
+               BlueprintName = "AirLockSDK_Tests"
+               ReferencedContainer = "container:AirLockSDK.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AirlockCalculateFeaturesFunctions">
+               </Test>
+               <Test
+                  Identifier = "AirlockCalculateStress">
+               </Test>
+               <Test
+                  Identifier = "AirlockDefaultFeaturesFunctions">
+               </Test>
+               <Test
+                  Identifier = "AirlockPullCalculateFeaturesFunctions">
+               </Test>
+               <Test
+                  Identifier = "AirlockPullFeaturesTimes">
+               </Test>
+               <Test
+                  Identifier = "AirlockPullStress">
+               </Test>
+               <Test
+                  Identifier = "AirlockSyncFeatureFunctions">
+               </Test>
+               <Test
+                  Identifier = "E2EAnalyticsTests">
+               </Test>
+               <Test
+                  Identifier = "E2EBaseTest">
+               </Test>
+               <Test
+                  Identifier = "E2ETestScenarios">
+               </Test>
+               <Test
+                  Identifier = "FunctionalityTests">
+               </Test>
+               <Test
+                  Identifier = "JSTest">
+               </Test>
+               <Test
+                  Identifier = "NegativeTests">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "503F74D41F40A8FE0068FA64"
+               BuildableName = "AirLockSDK_ExampleUITests.xctest"
+               BlueprintName = "AirLockSDK_ExampleUITests"
+               ReferencedContainer = "container:AirLockSDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "AirLockSDK_Example.app"
+            BlueprintName = "AirLockSDK_Example"
+            ReferencedContainer = "container:AirLockSDK.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "disable"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "FT_CONFIG_FILE"
+            value = "compatibilityTests.json"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "AirLockSDK_Example.app"
+            BlueprintName = "AirLockSDK_Example"
+            ReferencedContainer = "container:AirLockSDK.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "AirLockSDK_Example.app"
+            BlueprintName = "AirLockSDK_Example"
+            ReferencedContainer = "container:AirLockSDK.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

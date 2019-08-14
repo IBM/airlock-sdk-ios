@@ -1,0 +1,33 @@
+{
+	"experimentList": [
+		"EXPERIMENT_experiment1",
+		"VARIANT_experiment1_variant2"
+	],
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"text\":\"master\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns1.F1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "ns1.F2",
+				"resultTrace": "Feature is in development and the device is not associated with any of the feature's internal user groups",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

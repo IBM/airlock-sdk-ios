@@ -1,0 +1,20 @@
+{
+    "testName": "NoRule",
+    "productName": "NoRuleGroups",
+    "productId": "f92fd1c0-b1ec-4fd5-a2b0-d6b534df8daa",
+    "seasonLogicalName": "1.0_up",
+    "seasonId": "a56c8e99-bb58-4f72-9ab3-23e57ca4c77f",
+    "deviceContextFilePath": "test_data\/NoRule\/NoRuleGroups\/1.0_up\/device_contexts\/defaultDC.json",
+    "groupsFilePath": "test_data\/NoRule\/NoRuleGroups\/1.0_up\/groups\/dev.json",
+    "profileFilePath": "test_data\/NoRule\/NoRuleGroups\/1.0_up\/profiles\/ProfileV1.json",
+    "features": {
+        "ns3.r1 qa off": false,
+        "ns3.r3 qa on": false,
+        "ns3.r6 on  qa and dev": false,
+        "ns3.r4 dev off": false,
+        "ns3.r11 off prod": false,
+        "ns3.r10 on prod": false,
+        "ns3.r5 off qa and dev": false,
+        "ns3.r2 dev on": false
+    }
+}

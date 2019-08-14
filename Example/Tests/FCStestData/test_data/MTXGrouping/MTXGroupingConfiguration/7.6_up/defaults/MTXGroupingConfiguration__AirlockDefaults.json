@@ -1,0 +1,96 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2_2\/",
+	"javascriptUtilities": "\nfunction calcDistance(coords1, coords2) {\n\tfunction toRad(x) { return x * Math.PI \/ 180; };\n\n\tvar lon1 = coords1[0]; var lat1 = coords1[1];\n\tvar lon2 = coords2[0]; var lat2 = coords2[1];\n\tvar x1 = lat2 - lat1; var dLat = toRad(x1);\n\tvar x2 = lon2 - lon1; var dLon = toRad(x2);\n\tvar a = Math.sin(dLat \/ 2) * Math.sin(dLat \/ 2) + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon \/ 2) * Math.sin(dLon \/ 2);\n\tvar c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));\n\tvar d = 6371 * c; \/\/ earth radius in km\n\n\treturn (isMetric() ? d : d \/ 1.60934);\n};\n\nfunction getLengthUnit(){\n\treturn context.userPreferences.unitsOfMeasure == \"imperial\"?\"IN\":\"CM\";\n}\n\nfunction getVelocityUnit(){\n    return context.userPreferences.unitsOfMeasure == \"metric\"?\"KMH\":\"MPH\";\n}\n\nfunction getTempratureUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"F\":\"C\";\n}\n\nfunction getPressureUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"IN\":\"MB\";\n}\n\nfunction getDistanceShortUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"FT\":\"M\";\n}\n\nfunction getDistanceUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"MI\":\"KM\";\n}\n\nfunction isMetric() {\n\tcontext.userPreferences.unitsOfMeasure == \"metric\";\n};\n\nfunction isCelsius() {\n\treturn (context.userPreferences.unitsOfMeasure == \"metric\" || context.userPreferences.unitsOfMeasure == \"hybrid\");\n};\n\nfunction isKMH() {\n\treturn context.userPreferences.unitsOfMeasure == \"metric\";\n};\n\nfunction inMiles(distance)\n{\n\treturn (isMetric() ? distance * 1.60934 : distance);\n};\n\nfunction inFahrenheit(degrees)\n{\n\treturn (isCelsius() ? (degrees - 32) \/ 1.8 : degrees);\n};\n\nfunction inMPH(speed)\n{\n\treturn (isKMH() ? speed * 1.60934 : speed);\n};\n\nfunction inInches(span)\n{\n\treturn ((context.userPreferences.unitsOfMeasure == \"metric\" || context.userPreferences.unitsOfMeasure == \"hybrid\") ? span * 2.54 : span); \/\/ to cm\n};\n\nfunction toDate(dateString)\n{\n\treturn new Date(dateString);\n};\n\nfunction translate(stringId)\n{\n\tvar stringValue = translations[stringId];\n\tif (stringValue === undefined) {\n\t\tthrow \"missing translation id: \" + stringId;\n\t}\n\n\tif (_validate_translation_)\n\t{\n\t\tvar regex = \/\\[\\[\\[(\\d+)\\]\\]\\]\/g;\n\t\tvar placeholders = [];\n\t\tvar match;\n\t\twhile (match = regex.exec(stringValue)) {\n\t\t\tplaceholders.push(match[1]);\n\t\t}\n\n\t\tfor (var n = 0; n < placeholders.length; ++n) {\n\t\t\tif (placeholders[n] < 1 || placeholders[n] >= arguments.length) {\n\t\t\t\tthrow \"translation id: \" + stringId + \" has unmatched placeholder \" + placeholders[n];\n\t\t\t}\n\t\t}\n\t}\n\n\tfor (var i = 1; i < arguments.length; ++i) {\n\t\tstringValue = stringValue.replace( \"[[[\" + i + \"]]]\", arguments[i]);\n\t}\n\treturn stringValue;\n};\n\nfunction deepFreeze(obj)\n{\n\tObject.freeze(obj);\n\tObject.getOwnPropertyNames(obj).forEach(function (prop)\t{\n\t\tif (obj.hasOwnProperty(prop) && obj[prop] !== null\n\t\t&& (typeof obj[prop] === \"object\" || typeof obj[prop] === \"function\")\n\t\t&& !Object.isFrozen(obj[prop])) {\n\t\t\tdeepFreeze(obj[prop]);\n\t\t}\n\t});\n\treturn obj;\n};\n\nfunction getHours(date){\n\treturn parseInt(date.substring(11,13));\n}\n\nfunction getMinutes(date){\n\treturn parseInt(date.substring(14,16));\n}\n\nfunction getTimeStr(date){\n\treturn date.substring(11,16);\n}\n\nfunction formatAMPM(d) {\n\t\n\tif (context.userPreferences.is24HourFormat){\n\t\treturn getTimeStr(d);\n\t}\n\tvar hours = getHours(d); \n\tvar minutes = getMinutes(d); \n\tvar ampm = hours >= 12 ? 'PM' : 'AM'; \n\thours = hours % 12; hours = hours ? hours : 12; \/\/ the hour '0' should be '12' \n\tminutes = minutes < 10 ? '0'+minutes : minutes; \n\tvar strTime = hours + ':' + minutes + ' ' + ampm; \n\treturn strTime; \n};\n\nfunction compareTime (d, str) {\n  var hours = getHours(d);\n  var minutes = getMinutes(d);\n  var target = str.split(\":\");\n  \n  var small = 0;\n  if  (hours < target[0]) {small = 1 }\n  else if (minutes < target[1]){small = 1}\n  else {small= -1};\n  \n  return small;\n};\n",
+	"productId": "2749cb61-1436-45d2-afdf-d866015b7971",
+	"productName": "MTXGroupingConfiguration",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature1",
+				"namespace": "group1",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "c272a3db-11c7-4c6f-a144-3552f92a4ca9"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature2",
+				"namespace": "feature2",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "c036b978-e9f2-4834-974a-1eca40ddb174"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature3",
+				"namespace": "feature3",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "91151dea-490a-4efe-a205-11b681fe036f"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature4",
+				"namespace": "feature4",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "ee88d1fa-64ce-4345-9d11-b01fb0dcc2bc"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature5",
+				"namespace": "feature5",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "074f6e3a-692c-4e48-b39e-18695e9ed2db"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature6",
+				"namespace": "feature6",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "79fbebef-6373-4220-8d70-ed3ca532fd36"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "feature7",
+				"namespace": "feature7",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "e15493e3-c4f2-4069-afeb-699cac5567be"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "8b7f89ff-4341-4abd-a65e-4e2e58ca0517"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2_2",
+	"seasonId": "a62947a8-3e24-43bc-bb6c-55e107c123c7",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2"
+}

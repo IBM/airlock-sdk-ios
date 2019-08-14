@@ -1,0 +1,151 @@
+{
+  "testData": {
+    "precipitationForecast": [{
+        "intensity": -38786942,
+        "severity": 42526101,
+        "eventStartLocal": "3911-03-09T11:59:45.506Z",
+        "eventEnd": -20172996,
+        "eventStart": 72192901,
+        "imminence": -81272494,
+        "eventType": 17859496,
+        "characteristic": -19809694,
+        "eventEndLocal": "2381-11-09T20:30:25.634Z"
+      },
+      {
+        "intensity": 22794998,
+        "severity": 63007148,
+        "eventStartLocal": "5098-06-03T05:57:34.865Z",
+        "eventEnd": -71664652,
+        "eventStart": -49681401,
+        "imminence": -69984312,
+        "eventType": -57769224,
+        "characteristic": 50941673,
+        "eventEndLocal": "4489-07-24T23:56:52.304Z"
+      },
+      {
+        "intensity": 68974786,
+        "severity": 11035266,
+        "eventStartLocal": "2068-11-11T10:15:27.728Z",
+        "eventEnd": 39565149,
+        "eventStart": 92149600,
+        "imminence": 50832862,
+        "eventType": -42408477,
+        "characteristic": -62101014,
+        "eventEndLocal": "4337-05-09T12:27:49.414Z"
+      },
+      {
+        "intensity": 26934714,
+        "severity": 11797132,
+        "eventStartLocal": "3641-08-28T18:55:02.526Z",
+        "eventEnd": 21060105,
+        "eventStart": -67202039,
+        "imminence": 92317139,
+        "eventType": 68458403,
+        "characteristic": -1552630,
+        "eventEndLocal": "2624-10-02T05:22:48.807Z"
+      },
+      {
+        "intensity": -63946475,
+        "severity": 86013239,
+        "eventStartLocal": "2578-01-30T12:37:34.581Z",
+        "eventEnd": -90301636,
+        "eventStart": 60559774,
+        "imminence": -14671966,
+        "eventType": 9377000,
+        "characteristic": -86977838,
+        "eventEndLocal": "4401-10-15T10:21:54.980Z"
+      }
+    ],
+    "dsx": {
+      "mode": "consequat non laborum do Lorem",
+      "effectiveDateTime": "4568-05-12T15:13:44.149Z",
+      "teaserTitle": "mollit esse est nulla ut",
+      "eventName": "eiusmod adipisicing commodo"
+    }
+  },
+  "viewedLocation": {
+    "country": "US",
+    "lon": 83611007,
+    "region": "dolore cillum et in",
+    "lat": -81074759
+  },
+  "profile": {},
+  "userPreferences": {
+    "is24HourFormat": true,
+    "unitsOfMeasure": "imperial"
+  },
+  "weatherSummary": {
+    "tomorrowForecast": {
+      "night": {
+        "precipType": "rain",
+        "dayPart": "day",
+        "precipPercentage": "et dolor nisi mollit Duis"
+      },
+      "day": {
+        "precipType": "snow",
+        "dayPart": "night",
+        "precipPercentage": "laboris adipisicin"
+      }
+    },
+    "nearestSnowAccumulation": {
+      "dayPart": "night",
+      "snowRange": "culpa"
+    },
+    "contentMode": {
+      "mode": "sint tempor",
+      "effectiveDateTime": "4908-10-15T20:41:12.985Z",
+      "eventName": "adipisicing cupidatat anim"
+    },
+    "observation": {
+      "skyCode": -73295571,
+      "obsTime": "3606-03-20T22:05:28.892Z",
+      "weekDay": "Wednesday",
+      "nextSunrise": "4857-03-05T04:01:42.321Z",
+      "temperature": -83,
+      "dayPart": "day",
+      "basedGPS": true,
+      "nextSunset": "2045-06-09T09:23:09.907Z",
+      "feelsLikeTemperature": -83375469
+    },
+    "closestLightning": {
+      "distance": 86921532,
+      "cardinalDirection": "ENE",
+      "lon": -1355067,
+      "lat": 13877548,
+      "strikeTime": "3778-09-04T23:58:17.800Z"
+    },
+    "nearestWinterStormAlert": {
+      "phenomenaCode": "FF",
+      "endTime": "2236-01-21T23:39:27.338Z",
+      "severityCode": 47343195,
+      "significanceCode": "L"
+    },
+    "nearestStartPrecip": {
+      "severity": 44767725,
+      "imminence": -93318771,
+      "startTime": "3309-12-01T12:10:55.774Z",
+      "endTime": "5020-03-19T19:28:18.598Z",
+      "eventType": 26782274
+    },
+    "lifeStyleIndices": {
+      "drivingDifficultyIndex": 0
+    }
+  },
+  "device": {
+    "localeCountryCode": "NF",
+    "datetime": "2353-09-02T14:39:00.940Z",
+    "screenWidth": 47055023,
+    "osVersion": "nostrud Excepteur non sed Duis",
+    "localeLanguage": "wo",
+    "screenHeight": 9556554,
+    "locale": "fr_ca",
+    "connectionType": "anim",
+    "version": "sed esse e"
+  },
+  "currentLocation": {
+    "country": "LK",
+    "lon": -49022190,
+    "region": "irure aliqua et",
+    "lat": -97588808
+  }
+}

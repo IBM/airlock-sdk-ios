@@ -1,0 +1,282 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "ns.F1a",
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [
+						],
+						"isON": false,
+						"name": "ns.F1b",
+						"resultTrace": "Parent feature is off",
+						"type": "FEATURE"
+					}
+				],
+				"isON": false,
+				"name": "ns.F1",
+				"resultTrace": "Feature is turned off due to rollout percentage",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"features": [
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "ns.F2aa",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [
+										],
+										"isON": false,
+										"name": "ns.F2ab",
+										"resultTrace": "Parent feature is off",
+										"type": "FEATURE"
+									}
+								],
+								"isON": false,
+								"name": "ns.F2a",
+								"resultTrace": "Parent feature is off",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "ns.F2b",
+								"resultTrace": "Parent feature is off",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": false,
+				"name": "ns.F2",
+				"resultTrace": "Feature is turned off due to rollout percentage",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"features": [
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					},
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+									{
+										"features": [
+										],
+										"maxFeaturesOn": 1,
+										"name": "mx",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									},
+									{
+										"features": [
+											{
+												"featureAttributes": "{}",
+												"features": [
+												],
+												"isON": false,
+												"name": "ns.F3ab",
+												"resultTrace": "Feature is turned off due to rollout percentage",
+												"type": "FEATURE"
+											},
+											{
+												"featureAttributes": "{}",
+												"featureIsReported": false,
+												"features": [
+												],
+												"isON": true,
+												"name": "ns.F3aa",
+												"reportedConfigurationNames": {
+													"defaultConfiguration": true
+												},
+												"reportedConfigurationValues": {
+												},
+												"resultTrace": "Configurations: [defaultConfiguration]",
+												"type": "FEATURE"
+											}
+										],
+										"maxFeaturesOn": 1,
+										"name": "mx",
+										"type": "MUTUAL_EXCLUSION_GROUP"
+									}
+								],
+								"isON": true,
+								"name": "ns.F3a",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "ns.F3b",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "ns.F3",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.F4",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsF4.F4a]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.F5",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsF5.F5b]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.F6",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsF6.F6a]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.F7",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"featureIsReported": false,
+				"features": [
+					{
+						"features": [
+							{
+								"featureAttributes": "{}",
+								"featureIsReported": false,
+								"features": [
+								],
+								"isON": true,
+								"name": "ns.F8b",
+								"reportedConfigurationNames": {
+									"defaultConfiguration": true
+								},
+								"reportedConfigurationValues": {
+								},
+								"resultTrace": "Configurations: [defaultConfiguration, nsF8b.F8b1, nsF8b.F8b2]",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [
+								],
+								"isON": false,
+								"name": "ns.F8a",
+								"resultTrace": "Feature is off because another feature in its mutual exclusion group is on",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"name": "mx",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"isON": true,
+				"name": "ns.F8",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

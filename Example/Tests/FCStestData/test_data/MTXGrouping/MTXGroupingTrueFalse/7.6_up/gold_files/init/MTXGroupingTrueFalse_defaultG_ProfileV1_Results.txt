@@ -1,0 +1,256 @@
+{
+	"root": {
+		"features": [{
+				"features": [{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group1.A",
+						"resultTrace": "",
+						"type": "FEATURE"
+					},
+					{
+						"features": [{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group1.B",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group1.C",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group1.D",
+								"resultTrace": "",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx.fdcf6424-786b-4d9d-acdc-8119772bc16f",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group1.E",
+						"resultTrace": "",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 3,
+				"name": "mx.06c5b00e-d6fc-44da-8d64-e9060c16eaf2",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [{
+						"features": [{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group2.B",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group2.C",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group2.E",
+								"resultTrace": "",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx.17d6cddc-d350-4307-8fea-e8ae1f4c18cb",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group2.A",
+						"resultTrace": "",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group2.D",
+						"resultTrace": "",
+						"type": "FEATURE"
+					}
+				],
+				"maxFeaturesOn": 3,
+				"name": "mx.f65010a2-94a5-4441-9fe7-c057b178eae2",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group3.A",
+						"resultTrace": "",
+						"type": "FEATURE"
+					},
+					{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group3.E",
+						"resultTrace": "",
+						"type": "FEATURE"
+					},
+					{
+						"features": [{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group3.B",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group3.C",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group3.D",
+								"resultTrace": "",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx.8d1a4bef-9666-4f0b-9aea-e40126d47e20",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"maxFeaturesOn": 3,
+				"name": "mx.96196989-6069-4f9d-a4a2-7476340bbb7f",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group4.A",
+						"resultTrace": "",
+						"type": "FEATURE"
+					},
+					{
+						"features": [{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group4.B",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group4.C",
+								"resultTrace": "",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx.261d62a9-1ce2-402b-97cd-2ce88d50234e",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"maxFeaturesOn": 1,
+				"name": "mx.2722291b-8b0c-4639-af0c-97c8822c08af",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			},
+			{
+				"features": [{
+						"featureAttributes": "{}",
+						"features": [],
+						"isON": false,
+						"name": "group5.A",
+						"resultTrace": "",
+						"type": "FEATURE"
+					},
+					{
+						"features": [{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group5.E",
+								"resultTrace": "",
+								"type": "FEATURE"
+							},
+							{
+								"features": [{
+										"featureAttributes": "{}",
+										"features": [],
+										"isON": false,
+										"name": "group5.B",
+										"resultTrace": "",
+										"type": "FEATURE"
+									},
+									{
+										"featureAttributes": "{}",
+										"features": [],
+										"isON": false,
+										"name": "group5.C",
+										"resultTrace": "",
+										"type": "FEATURE"
+									}
+								],
+								"maxFeaturesOn": 1,
+								"name": "mx.0fc47d59-0c21-45a3-9323-d4297fc8ec53",
+								"type": "MUTUAL_EXCLUSION_GROUP"
+							},
+							{
+								"featureAttributes": "{}",
+								"features": [],
+								"isON": false,
+								"name": "group5.D",
+								"resultTrace": "",
+								"type": "FEATURE"
+							}
+						],
+						"maxFeaturesOn": 2,
+						"name": "mx.aac87d06-74cf-48fc-a670-fabbc50bbf28",
+						"type": "MUTUAL_EXCLUSION_GROUP"
+					}
+				],
+				"maxFeaturesOn": 4,
+				"name": "mx.70a880d8-3e79-419c-9d23-10984f53dd40",
+				"type": "MUTUAL_EXCLUSION_GROUP"
+			}
+		]
+	},
+	"type": "ROOT"
+}

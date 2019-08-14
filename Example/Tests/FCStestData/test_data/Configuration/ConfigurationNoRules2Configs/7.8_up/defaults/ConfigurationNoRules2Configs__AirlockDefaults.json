@@ -1,0 +1,51 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"productId": "cc5ef7a6-d2b7-4ede-8609-9f1c75c29e2a",
+	"productName": "ConfigurationNoRules2Configs",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": "{\n\t\"color\":\"red\",\n\t\"size\":2,\n\t\"alert\":false,\n\t\"background\":\"white\",\n\t\"icon\":\"a.jpg\",\n\t\"text\":\"welcome to hell\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigCompleteOverwrite",
+				"namespace": "CNR2C",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "61098f2f-f5c0-4225-8387-87f8a8372063"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigOverwrite1Param",
+				"namespace": "CNR2C",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "719bb3b2-c121-48e9-baa4-5bfc71178800"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "ConfigOverwriteDifferentParam",
+				"namespace": "CNR2C",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "c811ad37-ea5e-4bfd-ac8b-d83d1f6fb0a5"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "1ed7377f-c23f-494e-bb81-2e420824bddb"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "827b084a-192d-4891-962d-60b72a3d69d2",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2.1"
+}

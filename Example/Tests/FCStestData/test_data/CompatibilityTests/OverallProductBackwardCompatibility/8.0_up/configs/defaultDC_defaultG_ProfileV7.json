@@ -1,0 +1,12 @@
+{
+  "apiVersion":"V3.0",
+  "version":"8.0",
+  "checkOnOtherServers":false,
+  "configPath":"test_data\/CompatibilityTests\/OverallProductBackwardCompatibility\/8.0_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV7.json",
+  "defaultFileName":"OverallProduct__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",  
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEVAUTH2/seasons/53b00ff1-7fd0-4240-b19f-28f32c4b7134/b47d460a-7442-4db8-bac9-821877952738/AirlockDefaults.json"   
+}

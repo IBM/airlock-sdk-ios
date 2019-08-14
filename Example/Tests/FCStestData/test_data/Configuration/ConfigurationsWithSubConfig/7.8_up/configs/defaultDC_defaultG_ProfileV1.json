@@ -1,0 +1,10 @@
+{
+  "apiVersion":"V2.1",
+  "version":"7.8",
+  "configPath":"test_data\/Configuration\/ConfigurationsWithSubConfig\/7.8_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV1.json",
+  "defaultFileName":"ConfigurationsWithSubConfig__AirlockDefaults.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/TEST2/seasons/6f733d14-2d05-4120-a779-c5f1e5e43e55/755cb389-d59f-42ad-bdeb-afee2b520ef9/AirlockDefaults.json"  
+}

@@ -1,0 +1,111 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"value3\":\"value3\",\"value1\":\"value1\",\"value2\":\"value2\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "group1.feature1",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, group1feature1.Config1, group1feature1.Config2, group1feature1.Config3]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value3\":\"value3\",\"value1\":\"value1\",\"value2\":\"value2\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature2.feature2",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature2feature2.Config2, feature2feature2.Config3, feature2feature2.Config1]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value5\":\"value5\",\"value1\":\"value1\",\"value2\":\"value2\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature3.feature3",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature3feature3.Config1, feature3feature3.Config5, feature3feature3.Config2]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value1\":\"value1\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature4.feature4",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature4feature4.Config1]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value4\":\"value4\",\"value1\":\"value1\",\"value2\":\"value2\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature5.feature5",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature5feature5.Config1, feature5feature5.Config4, feature5feature5.Config2]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value5\":\"value5\",\"value3\":\"value3\",\"value4\":\"value4\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature6.feature6",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature6feature6.Config3, feature6feature6Config3.Config4, feature6feature6Config3.Config5]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"value\":\"value3\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "feature7.feature7",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, feature7feature7.Config1, feature7feature7.Config3]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

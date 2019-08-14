@@ -1,0 +1,169 @@
+{
+	"features": {
+		"ads.Airlock Control Over Ads": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"ads.Main Feed Ads": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"ads.Main Screen Banner": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"airlock.Rollout Beacon": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"defaultConfiguration": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"analytics.BigStates": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"analyticsBigStates.StaticText": false,
+				"defaultConfiguration": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"analytics.WeatherData": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"analyticsWeatherData.AddViewedLocationData": false,
+				"defaultConfiguration": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"elik.Array2": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"group1.FeatureProdMTXConfigProdDev15": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"defaultConfiguration": true,
+				"group1feature1.FeatureProdMTXConfigProd15a": true
+			},
+			"reportedConfigurationValues": {
+				"value": "config2a",
+				"value1": "value1",
+				"value2": "value2",
+				"value3": "value3"
+			}
+		},
+		"ns.Array3": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"defaultConfiguration": true
+			},
+			"reportedConfigurationValues": {
+				"appStoreLink": "market:\/\/details?id=com.weather.Weather",
+				"customObjFromArray.a": "abc",
+				"customValObj.a": "abc",
+				"customValObj2.b": "zwt",
+				"customValStr": "abc",
+				"feedbackButton": "SENDFEEDBACK",
+				"feedbackEmail": "feedback@mail.com",
+				"myArrayOfNormalObjects[0].a": "1",
+				"myArrayOfNormalObjects[1].a": "2",
+				"myArrayOfNormalObjects[2].a": "3",
+				"myArrayOfObjects[0].a.aa": "1",
+				"myArrayOfObjects[1].b": "2",
+				"myArrayOfObjects[2].c": "3",
+				"myArray[0]": "1",
+				"myArray[1]": "2"
+			}
+		},
+		"ns.Arrays": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"defaultConfiguration": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"ns.CustomArray": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXDev11b": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXDev12b": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXDevProd12": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXProd11a": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"defaultConfiguration": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"tr.FeatureProdMTXProd12a": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXProdDev11": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"defaultConfiguration": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"tr.MTXinMTXConfigsProdDefaultOff": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"defaultConfiguration": true,
+				"trMTXinMTXConfigsProdDefaultOff.Config2": false
+			},
+			"reportedConfigurationValues": {
+				"dvalue2": "defaultvalue",
+				"dvalue3": "defaultvalue",
+				"value": "defaultvalue"
+			}
+		}
+	},
+	"inputFieldsForAnalytics": {
+		"context.device.datetime": "2353-09-02T14:39:00.940Z",
+		"context.device.locale": "fr_ca",
+		"context.device.localeCountryCode": "NF",
+		"context.device.localeLanguage": "wo",
+		"context.device.osVersion": "nostrud Excepteur non sed Duis",
+		"context.device.screenHeight": "9556554",
+		"context.viewedLocation.country": "US",
+		"context.viewedLocation.lon": "83611007",
+		"context.viewedLocation.region": "dolore cillum et in",
+		"context.weatherSummary.nearestStartPrecip.endTime": "5020-03-19T19:28:18.598Z",
+		"context.weatherSummary.nearestStartPrecip.imminence": "-93318771",
+		"context.weatherSummary.nearestStartPrecip.severity": "44767725",
+		"context.weatherSummary.nearestStartPrecip.startTime": "3309-12-01T12:10:55.774Z",
+		"context.weatherSummary.nearestWinterStormAlert.endTime": "2236-01-21T23:39:27.338Z",
+		"context.weatherSummary.nearestWinterStormAlert.phenomenaCode": "FF",
+		"context.weatherSummary.nearestWinterStormAlert.severityCode": "47343195",
+		"context.weatherSummary.observation.basedGPS": "true",
+		"context.weatherSummary.observation.obsTime": "3606-03-20T22:05:28.892Z",
+		"context.weatherSummary.observation.skyCode": "-73295571",
+		"context.weatherSummary.observation.weekDay": "Wednesday"
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"root": {
+		"features": [{
+				"featureAttributes": "{}",
+				"features": [],
+				"isON": false,
+				"name": "group1.feature1",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [],
+				"isON": false,
+				"name": "feature2.feature2",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [],
+				"isON": false,
+				"name": "feature3.feature3",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [],
+				"isON": false,
+				"name": "feature4.feature4",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [],
+				"isON": false,
+				"name": "feature5.feature5",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [],
+				"isON": false,
+				"name": "feature6.feature6",
+				"resultTrace": "",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [],
+				"isON": false,
+				"name": "feature7.feature7",
+				"resultTrace": "",
+				"type": "FEATURE"
+			}
+		]
+	},
+	"type": "ROOT"
+}

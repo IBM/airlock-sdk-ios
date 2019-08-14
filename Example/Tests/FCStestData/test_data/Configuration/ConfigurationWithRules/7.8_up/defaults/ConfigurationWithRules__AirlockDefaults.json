@@ -1,0 +1,62 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"productId": "e2eaf6b5-e2e8-4662-8099-bc267327645e",
+	"productName": "ConfigurationWithRules",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": "{\n\t\"color\":\"red\",\n\t\"size\":2,\n\t\"alert\":false,\n\t\"background\":\"white\",\n\t\"icon\":\"a.jpg\",\n\t\"text\":\"welcome to hell\"\n}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextUserLocationRegion",
+				"namespace": "CWR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "2387f381-6c51-4dc9-8482-abc6d762c21b"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"blue\",\"size\":2,\"alert\":false,\"background\":\"red\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextWeatherLightningDistanceKm",
+				"namespace": "CWR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "39a18f57-6cb7-4967-94a9-54f16e1e5b9e"
+			},
+			{
+				"defaultConfiguration": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextWeatherDsxTeaserTitle",
+				"namespace": "CWR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "2649b98b-b626-4500-bc12-97b0049e3e77"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "contextWeatherPrecipitationForecast",
+				"namespace": "CWR",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "6ccfac67-3dd9-4066-b5b3-06ce1d555d32"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "09866ffc-52e6-408b-97c3-f0247076ab63"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "7d738f42-e953-40b7-97bb-eb0699ac85e3",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2.1"
+}

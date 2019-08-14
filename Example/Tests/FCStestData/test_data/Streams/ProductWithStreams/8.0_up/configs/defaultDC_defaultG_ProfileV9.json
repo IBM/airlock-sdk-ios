@@ -1,0 +1,12 @@
+{
+  "apiVersion":"V3.0",
+  "version":"8.0.1",
+  "checkOnOtherServers":false,
+  "configPath":"test_data\/Streams\/ProductWithStreams\/8.0_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV9.json",
+  "defaultFileName":"OverallProduct__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",  
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEV4/seasons/f8ed515e-6e10-49d4-9a46-a55d5d05e478/85b6c909-a502-40b6-84c9-e12dcae53a84/AirlockDefaults.json"
+}

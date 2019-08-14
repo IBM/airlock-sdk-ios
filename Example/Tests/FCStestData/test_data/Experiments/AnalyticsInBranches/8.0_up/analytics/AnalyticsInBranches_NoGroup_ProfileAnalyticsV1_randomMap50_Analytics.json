@@ -1,0 +1,178 @@
+{
+	"experiment": "Experiment1",
+	"experimentList": [
+		"EXPERIMENT_Experiment1",
+		"VARIANT_Experiment1_Variant1"
+	],
+	"features": {
+		"ads.Airlock Control Over Ads": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"ads.Main Feed Ads": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"ads.Main Screen Banner": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"airlock.Rollout Beacon": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"analytics.BigStates": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"analyticsBigStates.StaticText": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"analytics.WeatherData": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"elik.Array2": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"group1.FeatureProdMTXConfigProdDev15": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"group1feature1.FeatureProdMTXConfigProd15a": true
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"ns.Array3": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"ns.Arrays": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+				"colors": "array was here once"
+			}
+		},
+		"ns.CustomArray": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"ns.FeatureInBranch1": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+				"colors[0]": "red",
+				"colors[1]": "green",
+				"colors[2]": "blue",
+				"colors[3]": "white",
+				"value1": "FeatureInBranch1Config1"
+			}
+		},
+		"ns.NewFeatureInBranch": {
+			"featureIsReported": true,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"tr.FeatureProdMTXDev11b": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXDev12b": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXDevProd12": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXProd11a": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXProd12a": {
+			"featureIsReported": false,
+			"isON": false
+		},
+		"tr.FeatureProdMTXProdDev11": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+			},
+			"reportedConfigurationValues": {
+			}
+		},
+		"tr.MTXinMTXConfigsProdDefaultOff": {
+			"featureIsReported": false,
+			"isON": true,
+			"reportedConfigurationNames": {
+				"trMTXinMTXConfigsProdDefaultOff.Config2": false
+			},
+			"reportedConfigurationValues": {
+			}
+		}
+	},
+	"inputFieldsForAnalytics": {
+		"context.device.connectionType": "anim",
+		"context.device.datetime": "2353-09-02T14:39:00.940Z",
+		"context.device.locale": "fr_ca",
+		"context.device.localeCountryCode": "NF",
+		"context.device.localeLanguage": "wo",
+		"context.device.osVersion": "nostrud Excepteur non sed Duis",
+		"context.device.screenHeight": "9556554",
+		"context.device.screenWidth": "47055023",
+		"context.device.version": "sed esse e",
+		"context.userPreferences.is24HourFormat": "true",
+		"context.userPreferences.unitsOfMeasure": "metric",
+		"context.viewedLocation.country": "US",
+		"context.viewedLocation.lon": "83611007",
+		"context.viewedLocation.region": "dolore cillum et in",
+		"context.weatherSummary.nearestStartPrecip.endTime": "5020-03-19T19:28:18.598Z",
+		"context.weatherSummary.nearestStartPrecip.imminence": "-93318771",
+		"context.weatherSummary.nearestStartPrecip.severity": "44767725",
+		"context.weatherSummary.nearestStartPrecip.startTime": "3309-12-01T12:10:55.774Z",
+		"context.weatherSummary.nearestWinterStormAlert.endTime": "2236-01-21T23:39:27.338Z",
+		"context.weatherSummary.nearestWinterStormAlert.phenomenaCode": "FF",
+		"context.weatherSummary.nearestWinterStormAlert.severityCode": "47343195",
+		"context.weatherSummary.observation.basedGPS": "true",
+		"context.weatherSummary.observation.obsTime": "3606-03-20T22:05:28.892Z",
+		"context.weatherSummary.observation.skyCode": "-73295571",
+		"context.weatherSummary.observation.weekDay": "Wednesday"
+	},
+	"variant": "Variant1"
+}

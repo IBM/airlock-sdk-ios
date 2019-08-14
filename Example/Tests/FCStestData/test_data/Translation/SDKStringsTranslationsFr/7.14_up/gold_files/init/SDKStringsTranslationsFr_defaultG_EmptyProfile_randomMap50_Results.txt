@@ -1,0 +1,76 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"Premium\":\"S'inscrire pour activer des fonctionnalit\\u00e9s premium\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.Premium]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"EightFirstDaySummer\":\"Premier jour d'\\u00e9t\\u00e9\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.EightFirstDaySummer]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FiveNextHours\":\"PROCHAINES 13 MPH]\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FiveNextHours]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FourPrecipStarting\":\"D\\u00c9BUT DE Pluie AUJOURD'HUI\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings4",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FourPrecipStarting]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"InJuly\":\"5 juillet\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings5",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.InJuly]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

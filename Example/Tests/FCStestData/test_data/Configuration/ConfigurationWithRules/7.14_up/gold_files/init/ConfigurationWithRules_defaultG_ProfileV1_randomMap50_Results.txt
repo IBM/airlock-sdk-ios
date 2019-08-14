@@ -1,0 +1,60 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to hell\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":2}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CWR.contextUserLocationRegion",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to paradise\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":5}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CWR.contextWeatherLightningDistanceKm",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, contextWeatherLightningDistanceKmCWR.config]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"text\":\"welcome to hell\",\"color\":\"pink\",\"alert\":true,\"background\":\"brown\",\"size\":1}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "CWR.contextWeatherDsxTeaserTitle",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, contextWeatherDsxTeaserTitleCWR.config2]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "CWR.contextWeatherPrecipitationForecast",
+				"resultTrace": "Rule was successful, but configuration failed and the feature's fallback is off. Error trace: com.ibm.airlock.engine_dev.ClientEngine$ScriptError: Error evaluating configuration trigger [context.testData.precipitationForecast[0].eventStartLocal && context.testData.precipitationForecast[0].eventStartLocal.startsWith('2016')] : Script result is not boolean",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

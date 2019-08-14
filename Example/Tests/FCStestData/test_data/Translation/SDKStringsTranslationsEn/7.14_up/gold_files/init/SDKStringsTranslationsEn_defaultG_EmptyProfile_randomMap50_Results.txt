@@ -1,0 +1,76 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{\"Premium\":\"Sign up to activate premium features\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings1",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.Premium]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"EightFirstDaySummer\":\"The first day of summer\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings2",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.EightFirstDaySummer]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FiveNextHours\":\"NEXT 13 MPH\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings3",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FiveNextHours]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"FourPrecipStarting\":\"Rain STARTING Today\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings4",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.FourPrecipStarting]",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"InJuly\":\"5 of July\"}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "ns.Strings5",
+				"reportedConfigurationNames": {
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, nsStrings.InJuly]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

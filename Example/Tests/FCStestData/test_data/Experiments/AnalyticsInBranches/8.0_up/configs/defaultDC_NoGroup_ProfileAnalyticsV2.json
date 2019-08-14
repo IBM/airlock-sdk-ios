@@ -1,0 +1,12 @@
+{
+  "apiVersion":"V3.0",
+  "version":"8.0",
+  "configPath":"test_data\/Experiments\/AnalyticsInBranches\/8.0_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"NoGroup.json",
+  "profileFileName":"ProfileAnalyticsV2.json",
+  "defaultFileName":"AnalyticsInBranches__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",
+  "checkAnalytics":true,
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEVAUTH2/seasons/b2c04456-3969-467d-b6c0-5949b5361a4c/f595a0bb-556b-44d9-819d-871fbafb3f87/AirlockDefaults.json"
+}

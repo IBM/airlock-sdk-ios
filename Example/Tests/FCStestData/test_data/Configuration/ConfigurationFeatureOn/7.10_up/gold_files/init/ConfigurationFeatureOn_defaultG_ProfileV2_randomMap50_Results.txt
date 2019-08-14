@@ -1,0 +1,57 @@
+{
+	"root": {
+		"features": [
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "cfo.turnOffNoDefault",
+				"resultTrace": "Configurations: [defaultConfiguration, cfoturnOn.turnOff]\nFeature was on, but was turned off by configuration rule (cfoturnOn.turnOff)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "cfo.turnOffWithDefaultON",
+				"resultTrace": "Configurations: [defaultConfiguration, cfoturnOffWithDefaultON.turnOff]\nFeature was on, but was turned off by configuration rule (cfoturnOffWithDefaultON.turnOff)",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "cfo.turnOffOn",
+				"resultTrace": "Rule returned false",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{}",
+				"features": [
+				],
+				"isON": false,
+				"name": "cfo.disabledFeature",
+				"resultTrace": "Rule disabled",
+				"type": "FEATURE"
+			},
+			{
+				"featureAttributes": "{\"icon\":\"a.jpg\",\"featureON\":true,\"text\":\"welcome to hell\",\"color\":\"red\",\"alert\":false,\"background\":\"white\",\"size\":2}",
+				"featureIsReported": false,
+				"features": [
+				],
+				"isON": true,
+				"name": "cfo.runtimeError",
+				"reportedConfigurationNames": {
+					"defaultConfiguration": true
+				},
+				"reportedConfigurationValues": {
+				},
+				"resultTrace": "Configurations: [defaultConfiguration, cforuntimeError.runtimeErrorOn]",
+				"type": "FEATURE"
+			}
+		]
+	}
+}

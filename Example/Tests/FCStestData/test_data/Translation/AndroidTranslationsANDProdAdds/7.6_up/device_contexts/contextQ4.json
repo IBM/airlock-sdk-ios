@@ -1,0 +1,132 @@
+{
+  "context": {
+    "testData": {
+      "precipitationForecast": [
+        {
+          "intensity": -80183230,
+          "severity": 25384806,
+          "eventStartLocal": "4001-07-03T11:54:33.744Z",
+          "eventEnd": -13821607,
+          "eventStart": 724444,
+          "imminence": 70306047,
+          "eventType": -75361133,
+          "characteristic": 55466366,
+          "eventEndLocal": "3178-08-19T00:54:47.402Z"
+        },
+        {
+          "intensity": -4388372,
+          "severity": -25766292,
+          "eventStartLocal": "3623-10-15T05:40:10.655Z",
+          "eventEnd": -43338099,
+          "eventStart": 57302559,
+          "imminence": 69133154,
+          "eventType": -82008526,
+          "characteristic": 7141719,
+          "eventEndLocal": "3226-10-25T00:20:39.811Z"
+        },
+        {
+          "intensity": -30113645,
+          "severity": 66237906,
+          "eventStartLocal": "4593-02-05T21:47:35.593Z",
+          "eventEnd": 13266763,
+          "eventStart": 86004216,
+          "imminence": 71266729,
+          "eventType": 77450873,
+          "characteristic": -74888291,
+          "eventEndLocal": "3457-02-26T15:58:04.932Z"
+        }
+      ],
+      "dsx": {
+        "mode": "labore quis mollit esse fugiat",
+        "effectiveDateTime": "4507-07-07T15:19:21.141Z",
+        "teaserTitle": "sit ex enim",
+        "eventName": "dolore Ut cupidatat"
+      }
+    },
+    "viewedLocation": {
+      "country": "BQ",
+      "lon": -66859910,
+      "region": "enim minim id sunt",
+      "lat": 63892441
+    },
+    "profile": {},
+    "userPreferences": {
+      "is24HourFormat": false,
+      "unitsOfMeasure": "metric"
+    },
+    "weatherSummary": {
+      "tomorrowForecast": {
+        "night": {
+          "precipType": "snow",
+          "dayPart": "day",
+          "precipPercentage": "sunt"
+        },
+        "day": {
+          "precipType": "rain",
+          "dayPart": "day",
+          "precipPercentage": "voluptate"
+        }
+      },
+      "nearestSnowAccumulation": {
+        "dayPart": "night",
+        "snowRange": "aliqua nostrud incididunt culpa"
+      },
+      "contentMode": {
+        "mode": "Lorem",
+        "effectiveDateTime": "5134-10-19T01:30:06.132Z",
+        "eventName": "proident"
+      },
+      "observation": {
+        "skyCode": -34621365,
+        "obsTime": "4026-07-28T04:45:10.980Z",
+        "weekDay": "Friday",
+        "nextSunrise": "3630-03-30T14:23:31.993Z",
+        "temperature": -115,
+        "dayPart": "day",
+        "basedGPS": true,
+        "nextSunset": "2065-01-28T12:28:23.327Z",
+        "feelsLikeTemperature": -75940003
+      },
+      "closestLightning": {
+        "distance": 43500799,
+        "cardinalDirection": "SE",
+        "lon": 70695805,
+        "lat": 59856306,
+        "strikeTime": "2937-11-12T17:35:57.241Z"
+      },
+      "nearestWinterStormAlert": {
+        "phenomenaCode": "FF",
+        "endTime": "3178-06-24T21:52:55.501Z",
+        "severityCode": -20904414,
+        "significanceCode": "W"
+      },
+      "nearestStartPrecip": {
+        "severity": -99329550,
+        "imminence": -8733771,
+        "startTime": "3130-11-17T18:20:44.113Z",
+        "endTime": "4846-11-16T20:12:08.302Z",
+        "eventType": 96371662
+      },
+      "lifeStyleIndices": {
+        "drivingDifficultyIndex": 2
+      }
+    },
+    "device": {
+      "localeCountryCode": "FR",
+      "datetime": "3936-12-25T05:12:21.592Z",
+      "screenWidth": -72992202,
+      "osVersion": "dolore",
+      "localeLanguage": "fr",
+      "screenHeight": -35368899,
+      "locale": "fr_fr",
+      "connectionType": "nu",
+      "version": "exercitation"
+    },
+    "currentLocation": {
+      "country": "AT",
+      "lon": 5139186,
+      "region": "sunt enim elit irure in",
+      "lat": -32377268
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "apiVersion":"V2.5",
+  "version":"7.10",
+  "configPath":"test_data\/Configuration\/ConfigurationNoRules2Configs\/7.10_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV3.json",
+  "defaultFileName":"ConfigurationNoRules2Configs__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/TEST2/seasons/cc5ef7a6-d2b7-4ede-8609-9f1c75c29e2a/f0ecb6ee-3cf9-49a9-a6b2-88704832fbaa/AirlockDefaults.json"
+}

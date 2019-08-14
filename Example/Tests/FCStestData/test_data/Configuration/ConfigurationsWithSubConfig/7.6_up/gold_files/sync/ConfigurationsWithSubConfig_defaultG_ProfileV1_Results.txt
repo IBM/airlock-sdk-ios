@@ -1,0 +1,42 @@
+{
+	"root":{
+	"features": [
+		{
+			"featureAttributes": "{\"value1\": \"value1\",\"value2\": \"value2\",\"value3\": \"value3\"}",
+			"features": [
+			],
+			"isON": true,
+			"name": "feature1.feature1.aggregate.alltrue",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": "{\"value1\": \"value3\"}",
+			"features": [
+			],
+			"isON": true,
+			"name": "feature2.feature2.overwrite.alltrue",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": "{\"value1\": \"value3\",\"value3\": \"value3a\"}",
+			"features": [
+			],
+			"isON": true,
+			"name": "feature3.feature3.false",
+			"resultTrace": "",
+			"type": "FEATURE"
+		},
+		{
+			"featureAttributes": "{\"value1\": \"value4\"}",
+			"features": [
+			],
+			"isON": true,
+			"name": "feature4.feature4.overwrite.hierarchy",
+			"resultTrace": "",
+			"type": "FEATURE"
+		}
+	]},
+	"type": "ROOT"
+}

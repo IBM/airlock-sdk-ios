@@ -1,0 +1,11 @@
+{
+  "apiVersion":"V3.0",
+  "version":"7.14",
+  "configPath":"test_data\/Configuration\/ConfigurationMutualExclusion\/7.14_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"defaultG.json",
+  "profileFileName":"ProfileV1.json",
+  "defaultFileName":"ConfigurationMutualExclusion__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEVAUTH2/seasons/0084e302-e7aa-4300-ad8d-9f3d88ba8531/ab8a052e-8a7d-4da7-a5ba-4d1dc62df006/AirlockDefaults.json"
+}

@@ -1,0 +1,10 @@
+{
+    "groups":   "*",
+    "products": "*",
+    "seasons":  "*",
+    "configs":  "*",
+    
+    "allowedAPIVersions":"V2.5,V3.0,V4.1",
+    "checkProductsOnAlternativeServers": false,
+    "allowedLocale": "en"
+}

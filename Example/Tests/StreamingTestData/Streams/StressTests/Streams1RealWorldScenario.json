@@ -1,0 +1,20 @@
+{
+  "streams": [
+  {
+      "name": "adViewedComplexProcessor1",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0001-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "event.name === 'ad-viewed'",
+      "processor": "if(typeof(cache) === \"undefined\") {\n    cache = {};\n}\n\nif(typeof(cache.types) === \"undefined\") {\n    cache.types = {};\n    cache.types.bbg = 0;\n    cache.types.pre = 0;\n    cache.types.ban = 0;\n    cache.types.vbbg = 0;\n    cache.successful = 0;\n    cache.hasCreativeId = 0;\n    cache.total = 0;\n    cache.errors = [];\n    cache.clicked = 0;\n}\n\nfor (var ev in events) {\n    \n    var eventData = events[ev].eventData;\n    \n    cache.total += 1;\n    \n    if (typeof(eventData) === \"undefined\") {\n        cache.errors.push(\"eventData undefined for event: \" + JSON.stringify(events[ev]));\n        continue;\n    }\n    \n    if (typeof(eventData.clicked) !== \"undefined\" && eventData.clicked)\n        cache.clicked += 1;\n    if (typeof(eventData.successful) !== \"undefined\" && eventData.successful)\n        cache.successful += 1;  \n    if (typeof(eventData.type) === \"undefined\"){\n        cache.errors.push(\"eventData.type is undefined for event: \"+JSON.stringify(events[ev]));\n        continue;\n    }\n    \n    if (eventData.type === \"pre\"){\n        cache.types.pre += 1;\n    } else if (eventData.type === \"ban\") {\n        cache.types.ban += 1;\n    } else if (eventData.type === \"bbg\"){\n        cache.types.bbg += 1;\n        cache.hasCreativeId += 1;\n    } else if (eventData.type === \"vbbg\"){\n        cache.types.vbbg += 1;\n        cache.hasCreativeId += 1;\n    } else {\n        cache.errors.push(\"Unknown event type for event: \"+JSON.stringify(events[ev]));\n    }\n}\n\nresult.types = {};\nresult.types.bbg = cache.types.bbg;\nresult.types.pre = cache.types.pre;\nresult.types.ban = cache.types.ban;\nresult.types.vbbg = cache.types.vbbg;\nresult.successful = cache.successful;\nresult.hasCreateId = cache.hasCreativeId;\nresult.failed = cache.total - cache.successful;\nresult.total = cache.total;\nresult.clicked = cache.clicked;\nresult.errors = cache.errors;",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024,
+      "verbose": true      
+    }
+  ]
+}

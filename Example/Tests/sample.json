@@ -1,0 +1,31 @@
+{
+	"features": [{
+		"uniqueID": "a1",
+		"name": "F1",
+		"enabled": true
+	}, {
+		"uniqueID": "a2",
+		"name": "F2",
+		"enabled": true
+	}, {
+		"uniqueID": "a3",
+		"name": "F3",
+		"enabled": false
+	}, {
+		"uniqueID": "a4",
+		"name": "F4",
+		"enabled": true
+	}, {
+		"uniqueID": "a5",
+		"name": "F5",
+		"enabled": true
+	}, {
+		"uniqueID": "a6",
+		"name": "F6",
+		"enabled": false
+	}, {
+		"uniqueID": "a7",
+		"name": "F7",
+		"enabled": true
+	}]
+}

@@ -1,0 +1,47 @@
+{
+  "root": {
+    "features": [
+      {
+        "featureAttributes": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+        "features": [
+          
+        ],
+        "isON": false,
+        "name": "CWR.contextUserLocationRegion",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{\"color\":\"blue\",\"size\":2,\"alert\":false,\"background\":\"red\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+        "features": [
+          
+        ],
+        "isON": false,
+        "name": "CWR.contextWeatherLightningDistanceKm",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{\"color\":\"red\",\"size\":2,\"alert\":false,\"background\":\"white\",\"icon\":\"a.jpg\",\"text\":\"welcome to hell\"}",
+        "features": [
+          
+        ],
+        "isON": false,
+        "name": "CWR.contextWeatherDsxTeaserTitle",
+        "resultTrace": "",
+        "type": "FEATURE"
+      },
+      {
+        "featureAttributes": "{}",
+        "features": [
+          
+        ],
+        "isON": false,
+        "name": "CWR.contextWeatherPrecipitationForecast",
+        "resultTrace": "",
+        "type": "FEATURE"
+      }
+    ],
+    "type": "ROOT"
+  }
+}

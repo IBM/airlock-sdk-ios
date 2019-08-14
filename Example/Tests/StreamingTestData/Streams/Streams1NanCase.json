@@ -1,0 +1,35 @@
+{
+  "enabled": true,
+  "streams": [
+  {
+      "name": "adViewed1Local",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0001-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "true",
+      "processor": "if(typeof(cache.sum1) === 'undefined') {cache.sum1 = 0;}for (var i in events){cache.sum1 += 1;}result = {\"sum1\":cache.sum1};trace(\"variable sun1 = \" +result.sum1.toString())",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024      
+    },
+    {
+      "name": "adViewed2Local",
+      "stage": "DEVELOPMENT",
+      "seasonId": "f48495e0-e851-4bba-8c77-8931d044f4cb",
+      "uniqueId": "00000000-0000-0002-8c77-8931d044f4cb",
+      "internalUserGroups": ["DEV"],
+      "minAppVersion": "9.0",
+      "enabled": true,
+      "rolloutPercentage": 100,
+      "filter": "true",
+      "processor": "cache.counter = cache.counter + 1; result.videos = cache.counter",
+      "cacheSizeKB": 1024,
+      "maxQueuedEvents": 1,
+      "queueSizeKB": 1024      
+    }
+  ]
+}

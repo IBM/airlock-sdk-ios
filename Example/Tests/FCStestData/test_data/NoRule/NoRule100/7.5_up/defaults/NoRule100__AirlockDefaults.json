@@ -1,0 +1,136 @@
+{
+	"defaultLanguage": "en",
+	"devS3Path": "https:\/\/s3-eu-west-1.amazonaws.com\/airlockdev\/TEST2\/",
+	"javascriptUtilities": "\nfunction calcDistance(coords1, coords2) {\n\tfunction toRad(x) { return x * Math.PI \/ 180; };\n\n\tvar lon1 = coords1[0]; var lat1 = coords1[1];\n\tvar lon2 = coords2[0]; var lat2 = coords2[1];\n\tvar x1 = lat2 - lat1; var dLat = toRad(x1);\n\tvar x2 = lon2 - lon1; var dLon = toRad(x2);\n\tvar a = Math.sin(dLat \/ 2) * Math.sin(dLat \/ 2) + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon \/ 2) * Math.sin(dLon \/ 2);\n\tvar c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));\n\tvar d = 6371 * c; \/\/ earth radius in km\n\n\treturn (isMetric() ? d : d \/ 1.60934);\n};\n\nfunction getLengthUnit(){\n\treturn context.userPreferences.unitsOfMeasure == \"imperial\"?\"IN\":\"CM\";\n}\n\nfunction getVelocityUnit(){\n    return context.userPreferences.unitsOfMeasure == \"metric\"?\"KMH\":\"MPH\";\n}\n\nfunction getTempratureUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"F\":\"C\";\n}\n\nfunction getPressureUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"IN\":\"MB\";\n}\n\nfunction getDistanceShortUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"FT\":\"M\";\n}\n\nfunction getDistanceUnit(){\n    return context.userPreferences.unitsOfMeasure == \"imperial\"?\"MI\":\"KM\";\n}\n\nfunction isMetric() {\n\tcontext.userPreferences.unitsOfMeasure == \"metric\";\n};\n\nfunction isCelsius() {\n\treturn (context.userPreferences.unitsOfMeasure == \"metric\" || context.userPreferences.unitsOfMeasure == \"hybrid\");\n};\n\nfunction isKMH() {\n\treturn context.userPreferences.unitsOfMeasure == \"metric\";\n};\n\nfunction inMiles(distance)\n{\n\treturn (isMetric() ? distance * 1.60934 : distance);\n};\n\nfunction inFahrenheit(degrees)\n{\n\treturn (isCelsius() ? (degrees - 32) \/ 1.8 : degrees);\n};\n\nfunction inMPH(speed)\n{\n\treturn (isKMH() ? speed * 1.60934 : speed);\n};\n\nfunction inInches(span)\n{\n\treturn ((context.userPreferences.unitsOfMeasure == \"metric\" || context.userPreferences.unitsOfMeasure == \"hybrid\") ? span * 2.54 : span); \/\/ to cm\n};\n\nfunction toDate(dateString)\n{\n\treturn new Date(dateString);\n};\n\nfunction translate(stringId)\n{\n\tvar stringValue = translations[stringId];\n\tif (stringValue === undefined) {\n\t\tthrow \"missing translation id: \" + stringId;\n\t}\n\n\tif (_validate_translation_)\n\t{\n\t\tvar regex = \/\\[\\[\\[(\\d+)\\]\\]\\]\/g;\n\t\tvar placeholders = [];\n\t\tvar match;\n\t\twhile (match = regex.exec(stringValue)) {\n\t\t\tplaceholders.push(match[1]);\n\t\t}\n\n\t\tfor (var n = 0; n < placeholders.length; ++n) {\n\t\t\tif (placeholders[n] < 1 || placeholders[n] >= arguments.length) {\n\t\t\t\tthrow \"translation id: \" + stringId + \" has unmatched placeholder \" + placeholders[n];\n\t\t\t}\n\t\t}\n\t}\n\n\tfor (var i = 1; i < arguments.length; ++i) {\n\t\tstringValue = stringValue.replace( \"[[[\" + i + \"]]]\", arguments[i]);\n\t}\n\treturn stringValue;\n};\n\nfunction deepFreeze(obj)\n{\n\tObject.freeze(obj);\n\tObject.getOwnPropertyNames(obj).forEach(function (prop)\t{\n\t\tif (obj.hasOwnProperty(prop) && obj[prop] !== null\n\t\t&& (typeof obj[prop] === \"object\" || typeof obj[prop] === \"function\")\n\t\t&& !Object.isFrozen(obj[prop])) {\n\t\t\tdeepFreeze(obj[prop]);\n\t\t}\n\t});\n\treturn obj;\n};\n\nfunction getHours(date){\n\treturn parseInt(date.substring(11,13));\n}\n\nfunction getMinutes(date){\n\treturn parseInt(date.substring(14,16));\n}\n\nfunction getTimeStr(date){\n\treturn date.substring(11,16);\n}\n\nfunction formatAMPM(d) {\n\t\n\tif (context.userPreferences.is24HourFormat){\n\t\treturn getTimeStr(d);\n\t}\n\tvar hours = getHours(d); \n\tvar minutes = getMinutes(d); \n\tvar ampm = hours >= 12 ? 'PM' : 'AM'; \n\thours = hours % 12; hours = hours ? hours : 12; \/\/ the hour '0' should be '12' \n\tminutes = minutes < 10 ? '0'+minutes : minutes; \n\tvar strTime = hours + ':' + minutes + ' ' + ampm; \n\treturn strTime; \n};\n\nfunction compareTime (d, str) {\n  var hours = getHours(d);\n  var minutes = getMinutes(d);\n  var target = str.split(\":\");\n  \n  var small = 0;\n  if  (hours < target[0]) {small = 1 }\n  else if (minutes < target[1]){small = 1}\n  else {small= -1};\n  \n  return small;\n};\n",
+	"productId": "b71e00fb-2830-44b9-87a5-da3176d67e05",
+	"productName": "NoRule100",
+	"root": {
+		"features": [
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "Rule 1  ON",
+				"namespace": "ns2",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "f5875420-011b-42ca-a43d-649a7e796307"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+				],
+				"name": "Rule 2 OFF",
+				"namespace": "ns2",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "75d6f6c8-cda2-48c7-8536-2119145d1f89"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"features": [
+						],
+						"name": "R31 ON",
+						"namespace": "ns2",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "37fa03a4-35ee-4878-bbc8-f071ee273268"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"features": [
+						],
+						"name": "R32 OFF",
+						"namespace": "ns2",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "6c20b895-2979-4f04-98a5-3b0290fb376c"
+					},
+					{
+						"defaultConfiguration": null,
+						"defaultIfAirlockSystemIsDown": false,
+						"features": [
+						],
+						"name": "R33 ON",
+						"namespace": "ns2",
+						"noCachedResults": false,
+						"type": "FEATURE",
+						"uniqueId": "9b10cb0d-2294-4b0d-949d-d543fdd06d01"
+					}
+				],
+				"name": "R3 with L2",
+				"namespace": "ns2",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "49d432b0-8860-4391-8a35-b956a55e3493"
+			},
+			{
+				"defaultConfiguration": null,
+				"defaultIfAirlockSystemIsDown": false,
+				"features": [
+					{
+						"features": [
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"features": [
+								],
+								"name": "R41 ON",
+								"namespace": "ns1",
+								"noCachedResults": false,
+								"type": "FEATURE",
+								"uniqueId": "6abdf3a5-a3f1-4006-b65d-0ed03c31d324"
+							},
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"features": [
+								],
+								"name": "R42 ON",
+								"namespace": "ns1",
+								"noCachedResults": false,
+								"type": "FEATURE",
+								"uniqueId": "2ffb60a2-a2ca-4ff2-9f88-7f53a46d866a"
+							},
+							{
+								"defaultConfiguration": null,
+								"defaultIfAirlockSystemIsDown": false,
+								"features": [
+								],
+								"name": "R43 OFF",
+								"namespace": "ns1",
+								"noCachedResults": false,
+								"type": "FEATURE",
+								"uniqueId": "8725205e-0fd0-465f-9827-4caa78e3abc7"
+							}
+						],
+						"maxFeaturesOn": 1,
+						"type": "MUTUAL_EXCLUSION_GROUP",
+						"uniqueId": "46a01fff-7294-46e0-890b-22096a199410"
+					}
+				],
+				"name": "R4 with MX",
+				"namespace": "ns1",
+				"noCachedResults": false,
+				"type": "FEATURE",
+				"uniqueId": "90666300-416d-48aa-8744-05192be9282a"
+			}
+		],
+		"type": "ROOT",
+		"uniqueId": "38e579a8-36bd-4016-8df0-c2f6afbce308"
+	},
+	"s3Path": "https:\/\/airlockdev.s3-eu-west-1.amazonaws.com\/TEST2",
+	"seasonId": "11a14048-13ab-46a1-8ac7-b3d3b16c0ba6",
+	"supportedLanguages": [
+		"en"
+	],
+	"version": "V2"
+}

@@ -1,0 +1,11 @@
+{
+  "apiVersion":"V3.0",
+  "version":"8.0",
+  "configPath":"test_data\/Experiments\/ExperimentDisabledInProdWithVariantDisabled\/8.0_up\/",
+  "deviceContextFileName":"defaultDC.json",
+  "groupsFileName":"NoGroup.json",
+  "profileFileName":"ProfileV1Experiments.json",
+  "defaultFileName":"ExperimentDisabledInProdWithVariantDisabled__AirlockDefaults.json",
+  "randomSeedFile":"randomMap50.json",
+  "defaultFileURL":"https://s3-eu-west-1.amazonaws.com/airlockdev/DEVAUTH2/seasons/52853b18-6e6c-4813-9345-4a7388b5e08b/4e7164b6-9665-427e-971b-f53319b12316/AirlockDefaults.json"
+}

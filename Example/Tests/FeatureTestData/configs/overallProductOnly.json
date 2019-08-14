@@ -1,0 +1,10 @@
+{
+    "groups":   "*",
+    "products": "OverallProduct",
+    "seasons":  "*",
+    "configs":  "*",
+    
+    "allowedAPIVersions":"V2.5",
+    "checkProductsOnAlternativeServers": true,
+    "skipReset": false
+}

@@ -1,0 +1,21 @@
+{
+	"CME.contextDeviceIL": 940255,
+	"CME.contextDeviceIL2": 958146,
+	"CME.contextViewedLocationCountry": 299102,
+	"CME.contextViewedLocationCountry1": 851362,
+	"CME.contextViewedLocationCountryNoME": 571616,
+	"CME.maxFeatureOn2": 365709,
+	"contextDeviceIL2CME.distanceKm2": 370601,
+	"contextDeviceIL2CME.distanceMiles2": 538190,
+	"contextDeviceILCME.distanceKm": 965524,
+	"contextDeviceILCME.distanceMiles": 529509,
+	"contextViewedLocationCountry1CME.alerts.phenomenaCode": 349935,
+	"contextViewedLocationCountry1CME.lifeStyleIndices": 854162,
+	"contextViewedLocationCountryCME.AZ": 584634,
+	"contextViewedLocationCountryCME.AZ1": 344256,
+	"contextViewedLocationCountryCME.NY1": 570784,
+	"contextViewedLocationCountryCME.US": 138389,
+	"maxFeatureOn2CME.config1": 125376,
+	"maxFeatureOn2CME.config2": 993136,
+	"maxFeatureOn2CME.config3": 398145
+}

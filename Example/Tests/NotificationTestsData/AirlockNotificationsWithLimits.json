@@ -1,0 +1,136 @@
+{
+	"configurationSchema": {
+		"$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+		"properties": {
+			"notification": {
+				"properties": {
+					"actions": {
+						"type": "array"
+					},
+					"additionalInfo": {
+						"type": "object"
+					},
+					"dueDate": {
+						"minimum": 0,
+						"type": "integer"
+					},
+					"sound": {
+						"type": "string"
+					},
+					"text": {
+						"type": "string"
+					},
+					"thumbnail": {
+						"type": "string"
+					},
+					"title": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"title"
+				],
+				"type": "object"
+			}
+		},
+		"required": [
+			"notification"
+		],
+		"type": "object"
+	},
+	"lastModified": 1515079052916,
+	"notifications": [
+		{
+			"cancellationRule": {
+				"ruleString": "false"
+			},
+			"configuration": "{\"notification\":{\n\t \"title\":\"test scheduled #1\",\n\t \"text\":\"this is a text for notification0\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime() + 100,\n\t \"additionalInfo\":{}\n}}",
+			"creationDate": 1511358282560,
+			"creator": "Esteban Zia",
+			"description": "",
+			"displayName": null,
+			"enabled": true,
+			"internalUserGroups": ["DEV", "AndroidDEV"],
+			"lastModified": 1515339534222,
+			"maxNotifications": 3,
+			"minAppVersion": "8.0",
+			"minInterval": 0,
+			"name": "notification 1",
+			"owner": null,
+			"registrationRule": {
+				"ruleString": "true"
+			},
+			"rolloutPercentage": 100.0,
+			"seasonId": "cbe433fa-bfaa-4fd9-af14-0eb367e272b3",
+			"stage": "DEVELOPMENT",
+			"uniqueId": "945e696f-380f-497b-a2dd-4c2342d1f839"
+		},
+		{
+			"cancellationRule": {
+				"ruleString": "false"
+			},
+			"configuration": "{\"notification\":{\n\t \"title\":\"test scheduled #2\",\n\t \"text\":\"this is a text for notification0\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime() + 100,\n\t \"additionalInfo\":{}\n}}",
+			"creationDate": 1512317614621,
+			"creator": "Esteban Zia",
+			"description": "",
+			"displayName": null,
+			"enabled": true,
+			"internalUserGroups": ["DEV"
+			],
+			"lastModified": 1512317614621,
+			"maxNotifications": 5,
+			"minAppVersion": "8.0",
+			"minInterval": -1,
+			"name": "notification 2",
+			"owner": null,
+			"registrationRule": {
+				"ruleString": "true"
+			},
+			"rolloutPercentage": 100.0,
+			"seasonId": "cbe433fa-bfaa-4fd9-af14-0eb367e272b3",
+			"stage": "DEVELOPMENT",
+			"uniqueId": "c97bdd2a-03e9-45aa-8f43-2318f3806c12"
+		},
+		{
+			"cancellationRule": {
+				"ruleString": "false"
+			},
+			"configuration": "{\"notification\":{\n\t \"title\":\"test scheduled #3\",\n\t \"text\":\"this is a text for notification0\",\n\t \"deepLink\":\"driveReminder\",\n\t\"sound\":\"\",\n\t\"thumbnail\":\"\",\n\t\"dueDate\":new Date().getTime() + 100,\n\t \"additionalInfo\":{}\n}}",
+			"creationDate": 1512317631898,
+			"creator": "Esteban Zia",
+			"description": "",
+			"displayName": null,
+			"enabled": false,
+			"internalUserGroups": [
+			],
+			"lastModified": 1512317631898,
+			"maxNotifications": -1,
+			"minAppVersion": "8.1",
+			"minInterval": -1,
+			"name": "notification 3",
+			"owner": null,
+			"registrationRule": {
+				"ruleString": "false"
+			},
+			"rolloutPercentage": 100.0,
+			"seasonId": "cbe433fa-bfaa-4fd9-af14-0eb367e272b3",
+			"stage": "DEVELOPMENT",
+			"uniqueId": "5be2bd7c-603d-4092-bd05-196d1dcfb6b1"
+		}
+	],
+	"notificationsLimitations": [
+		{
+			"maxNotifications": 10,
+			"minInterval": 10080
+		},
+		{
+			"maxNotifications": 4,
+			"minInterval": 1440
+		},
+		{
+			"maxNotifications": 300,
+			"minInterval": -1
+		}
+	],
+	"seasonId": "cbe433fa-bfaa-4fd9-af14-0eb367e272b3"
+}
