@@ -5,7 +5,6 @@
 //  Created by Gil Fuchs on 24/12/2019.
 //
 import Foundation
-import Airlytics
 import SwiftyJSON
 
 class Airlytics {
@@ -59,7 +58,6 @@ class Airlytics {
     }
 	
 	private(set) internal var isLoaded: Bool
-    private(set) internal var environments: [EnvironmentTag:[ALEnvironment]]
     private(set) internal var appGroupId: String?
     
     static func initialize() {
@@ -67,7 +65,6 @@ class Airlytics {
 
     init() {
         isLoaded = true
-        environments = [:]
         appGroupId = nil
     }
 
@@ -76,10 +73,6 @@ class Airlytics {
     
     internal func getCurrentEnvironmentsTag() -> EnvironmentTag{
         return .Prod
-    }
-    
-    private func getCurrentEnvironments() -> [ALEnvironment] {
-        return []
     }
 	
     func moveToDevUser() {

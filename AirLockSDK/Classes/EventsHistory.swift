@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Airlytics
 import JavaScriptCore
 import SwiftyJSON
 

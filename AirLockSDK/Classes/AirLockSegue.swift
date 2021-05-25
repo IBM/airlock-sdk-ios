@@ -84,8 +84,7 @@ public class AirLockSegue : NSObject {
             dest.delegate = del
             break
         case .airlytics:
-            guard let dest:AirlyticsTableViewController = vc as? AirlyticsTableViewController else { return }
-            dest.delegate = del
+            
             break
 		case .eventsHistory:
 			guard let _ = vc as? EventsHistoryTableViewController else { return }
