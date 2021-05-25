@@ -24,8 +24,9 @@
 
 import Foundation
 
+/// Internal type which encapsulates a `MultipartFormData` upload.
 final class MultipartUpload {
-    lazy var result = AFResult { try build() }
+    lazy var result = Result { try build() }
 
     let isInBackgroundSession: Bool
     let multipartFormData: MultipartFormData
@@ -40,7 +41,7 @@ final class MultipartUpload {
         self.isInBackgroundSession = isInBackgroundSession
         self.encodingMemoryThreshold = encodingMemoryThreshold
         self.request = request
-        self.fileManager =  multipartFormData.fileManager
+        fileManager = multipartFormData.fileManager
         self.multipartFormData = multipartFormData
     }
 
@@ -66,6 +67,7 @@ final class MultipartUpload {
             } catch {
                 // Cleanup after attempted write if it fails.
                 try? fileManager.removeItem(at: fileURL)
+                throw error
             }
 
             uploadable = .file(fileURL, shouldRemove: true)
@@ -77,10 +79,10 @@ final class MultipartUpload {
 
 extension MultipartUpload: UploadConvertible {
     func asURLRequest() throws -> URLRequest {
-        return try result.get().request
+        try result.get().request
     }
 
     func createUploadable() throws -> UploadRequest.Uploadable {
-        return try result.get().uploadable
+        try result.get().uploadable
     }
 }

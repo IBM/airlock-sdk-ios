@@ -14,6 +14,8 @@ class FeatureChildrenOrderTableViewController: UITableViewController {
     var data:cellData? = nil
     var delegate: DebugScreenDelegate? = nil
     
+    let defaultLabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title  = "Children Order"
@@ -57,9 +59,9 @@ class FeatureChildrenOrderTableViewController: UITableViewController {
             cell?.detailTextLabel?.text = "weight: " + self.getWeightByFeatureName(name: c.name, parent: f).description
             
             if (c.isOn()){
-                cell!.textLabel?.textColor = UIColor.blue
+                cell?.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
             } else {
-                cell!.textLabel?.textColor = UIColor.black
+                cell!.textLabel?.textColor = defaultLabel.textColor
             }
         } else {
             

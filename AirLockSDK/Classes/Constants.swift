@@ -13,6 +13,7 @@ let CURRENT_AIRLOCK_VERSION                     = "V3.0"
 
 let LAST_FEATURES_RESULTS_KEY                   = "airlockLastFeaturesResults"
 let LAST_PULL_TIME_KEY                          = "airlockLastPullTime"
+let LAST_PULL_FAILURE_TIME_KEY                  = "airlockLastPullFailureTime"
 let LAST_RUNTIME_DOWNLOAD_TIME_KEY              = "airlockLastRuntimeDownloadTime"
 let LAST_EXPERIMENTS_RESULTS_KEY                = "airlockExperimentsResults"
 let LAST_MERGED_RUNTIME_KEY                     = "airlockLastMergedRunTime"
@@ -76,6 +77,7 @@ let AIRLOCK_SEASON_ID_KEY                       = "airlockSeasonID"
 let LAST_KNOWN_DEVICE_LANGUAGE                  = "lastKnownDeviceLanguage"
 
 let LAST_DATE_VARIANT_JOINED                    = "lastDateVariantJoined"
+let LAST_DATE_EXPERIMENT_JOINED                 = "lastDateExperimentJoined"
 
 let DOUBLE_LENGTH_STRINGS_KEY                   = "airlockDoubleLengthStrings"
 
@@ -173,10 +175,13 @@ let STREAMS_NAMES_LIST_KEY                      = "airlockStreamsNamesList"
 let STREAM_CACHE_KEY_PREFIX                     = "airlockStreamCache"
 let STREAM_RESULT_KEY_PREFIX                    = "airlockStreamResult"
 let STREAM_EVENTS_KEY_PREFIX                    = "airlockStreamEvents"
+let STREAM_PENDING_TO_HISTORY_EVENTS_KEY_PREFIX = "airlockStreamPendingToHistoryEvents"
 let STREAM_LAST_PROCESS_DATE_KEY_PREFIX         = "airlockStreamLastProcessDate"
 let STREAM_VERBOSE_KEY_PREFIX                   = "airlockStreamVerbose"
 let STREAM_IS_SUSPEND_EVENTS_KEY_PREFIX         = "airlockStreamSuspendEvents"
+let STREAM_SENT_INITIAL_RESULT_EVENT_KEY_PREFIX = "airlockStreamSentInitialResultEvent"
 let STREAM_PERCENTAGE_KEY_PREFIX                = "airlockStreamPercentage"
+let STREAM_HISTORY_INFO_KEY_PREFIX				= "airlockStreamHistoryInfo"
 let STREAMS_LIST_PROP                           = "streams"
 let STREAM_NAME_PROP                            = "name"
 let STREAM_FILTER_PROP                          = "filter"
@@ -189,6 +194,12 @@ let STREAM_ROLLOUTPERCENTAGE_PROP               = "rolloutPercentage"
 let STREAM_MAX_CACHE_SIZE_KB_PROP               = "cacheSizeKB"
 let STREAM_MAX_QUEUE_SIZE_KB_PROP               = "queueSizeKB"
 let STREAM_MAX_QUEUED_EVENTS_PROP               = "maxQueuedEvents"
+let STREAM_ANALYTICS_SYSTEM                     = "analyticsSystem"
+let STREAM_ANALYTICS_AIRLYTICS                  = "airlytics"
+let STREAM_OPERATE_ON_HISTORICAL_EVENTS			= "operateOnHistoricalEvents"
+let STREAM_HISTORY_START_DATE					= "limitByStartDate"
+let STREAM_HISTORY_END_DATE						= "limitByEndDate"
+let STREAM_HISTORY_PROCESS_LAST_DAYS			= "processEventsOfLastNumberOfDays"
 
 //----------------------------------------------------------------------
 let NOTIFS_LIST_PROP                            = "notifications"
@@ -231,7 +242,19 @@ let NOTIFICATION_FIRED_DATES_KEY                = "AirlockNotificationFiredDates
 let NOTIFICATION_GLOBAL_SCHEDULED_DATES_KEY     = "AirlockNotificationsGlobalScheduledDates"
 let NOTIFICATION_GLOBAL_FIRED_DATES_KEY         = "AirlockNotificationsGlobalFireDates"
 //----------------------------------------------------------------------
+let EVENTS_HISTORY_ENABLE_PROP					= "enableHistoricalEvents"
+let EVENTS_HISTORY_FILTER_PROP					= "filter"
+let EVENTS_HISTORY_MAX_FILE_SIZE_PROP			= "historyFileMaxSizeKB"
+let EVENTS_HISTORY_MAX_TOTAL_SIZE_PROP			= "maxHistoryTotalSizeKB"
+let EVENTS_HISTORY_EVENT_MAX_DAYS_PROP			= "keepHistoryOfLastNumberOfDays"
+let EVENTS_HISTORY_EVENT_BULK_SIZE_PROP			= "bulkSize"
+let EVENTS_HISTORY_EVENT_BUFFER_SIZE_PROP		= "historyBufferSize"
+//----------------------------------------------------------------------
 let AIRLOCK_USER_ID_KEY                         = "AirlockUserID"
-
+let IS_DEV_USER_KEY								= "AirlockIsDevUser"
+//-----------------------------------------------------------------------
+let USER_ID_KEY                                 = "userId"
+let DEVICE_ID_KEY                               = "deviceId"
+let VENDOR_ID_KEY                               = "vendorId"
 
 

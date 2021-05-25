@@ -16,6 +16,8 @@ class FeatureDetailsTableViewController: UITableViewController,UpdateFeatureDele
     var type:Type = Type.FEATURE
     var entitlement:Entitlement?
     
+    let defaultLabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -99,9 +101,9 @@ class FeatureDetailsTableViewController: UITableViewController,UpdateFeatureDele
                 cell.detailTextLabel?.text =  PercentageManager.rolloutPercentageToString(rolloutPercentage: data!.feature.rolloutPercentage)
                 
                 if (Airlock.sharedInstance.percentageFeaturesMgr.isOn(featureName:data!.feature.getName(), rolloutPercentage: data!.feature.rolloutPercentage, rolloutBitmap:data!.percentageBitMap)) {
-                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
                 } else {
-                    cell.detailTextLabel?.textColor = UIColor.black
+                    cell.detailTextLabel?.textColor = defaultLabel.textColor
                 }
                 break
             default:
@@ -116,7 +118,7 @@ class FeatureDetailsTableViewController: UITableViewController,UpdateFeatureDele
                     cell.isUserInteractionEnabled = premiumData
                     
                     if premiumData {
-                        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 224/255, alpha: 1.0)
+                        cell.backgroundColor = Utils.getDebugPremiumItemBackgroundColor(traitCollection.userInterfaceStyle)
                     }
                     
                 } else if type == .ENTITLEMENT || type == .PURCHASE_OPTIONS {

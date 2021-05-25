@@ -89,7 +89,7 @@ internal class AirlockNotificationsManager: NSObject {
     }
     
     func calculateNotifications(jsInvoker:JSScriptInvoker) {
-        let deviceGroups:Set<String>? = (stage == NotificationStage.DEVELOPMENT) ? UserGroups.getUserGroups() : nil
+        let deviceGroups:Set<String>? = (stage == NotificationStage.DEVELOPMENT) ? UserGroups.shared.getUserGroups() : nil
         // we make 2 iterations - 1 for canceling/marking scheduled all relevant notifications
         // and the second one for scheduling the notifications if necessary
         for notification in self.notificationsArr {

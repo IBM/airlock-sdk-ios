@@ -34,7 +34,7 @@ class BranchesTableViewController: UITableViewController {
     
     @IBAction func clearBranch(_ sender: Any) {
         
-        if let branchId = Airlock.sharedInstance.serversMgr.overridingBranchId {
+        if let _ = Airlock.sharedInstance.serversMgr.overridingBranchId {
             
             Airlock.sharedInstance.serversMgr.clearOverridingBranch()
             
@@ -105,7 +105,7 @@ class BranchesTableViewController: UITableViewController {
         
         guard let branchId = (nonNullBranch)["uniqueId"] as? String else { return cell! }
         
-        cell!.textLabel?.text = branchName
+        cell!.textLabel?.text = branchName == "MASTER" ? "MAIN" : branchName
         
         if (branchId == Airlock.sharedInstance.serversMgr.overridingBranchId) {
             cell!.accessoryType = UITableViewCell.AccessoryType.checkmark
@@ -280,7 +280,9 @@ class BranchesTableViewController: UITableViewController {
         filteredBranches = branches.filter { b in
             
             if let bName = b["name"] as? String {
-                return bName.lowercased().range(of: searchText.lowercased()) != nil
+                
+                let finalName = bName == "MASTER" ? "MAIN" : bName
+                return finalName.lowercased().range(of: searchText.lowercased()) != nil
             } else {
                 return false
             }

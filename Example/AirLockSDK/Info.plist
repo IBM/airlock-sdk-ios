@@ -25,18 +25,7 @@
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-		<key>airlock-dev3-adminapi.eu-west-1.elasticbeanstalk.com</key>
-		<dict>
-			<key>NSExceptionAllowsInsecureHTTPLoads</key>
-			<true/>
-			<key>NSExceptionMinimumTLSVersion</key>
-			<string>TLSv1.1</string>
-			<key>NSIncludesSubdomains</key>
-			<true/>
-			<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-			<true/>
-		</dict>
+		<false/>
 	</dict>
 	<key>UIBackgroundModes</key>
 	<array>

@@ -38,7 +38,9 @@ class StreamDetailsTableViewController: UITableViewController {
                 cell.detailTextLabel?.text = "\(stream.eventsArr.count) events"
             } else if indexPath.row == 2 { //Cache row
                 cell.detailTextLabel?.text = stream.getCacheSizeStr()
-            }
+			} else if indexPath.row == 4 {
+				cell.detailTextLabel?.text = stream.historyInfo.state.description
+			}
         } else if indexPath.section == 1 {
             if indexPath.row == 2 { // Process
                 if (stream.lastProcessDate == nullDate){
@@ -91,7 +93,7 @@ class StreamDetailsTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let cell =  sender as? UITableViewCell else {
+        guard let cell = sender as? UITableViewCell else {
             return
         }
 
@@ -112,6 +114,12 @@ class StreamDetailsTableViewController: UITableViewController {
                 traceView.mode = .DATA
                 traceView.stringArr = stream.eventsArr
             }
+		} else if segue.identifier == "showHistorySegue" {
+			
+			guard let historyDetailsTableView = segue.destination as? StreamHistoryDetailesTableViewController else {
+				return
+			}
+			historyDetailsTableView.stream = stream
         } else {
             
             guard let detailsView = segue.destination as? ContextViewController else {
@@ -133,7 +141,7 @@ class StreamDetailsTableViewController: UITableViewController {
             return
         }
         
-        stream.reset()
+		stream.reset(loadHistoryEvent: true, isOn: true)
         self.tableView.reloadData()
     }
     
@@ -150,8 +158,8 @@ class StreamDetailsTableViewController: UITableViewController {
             return
         }
         
-        stream.invokeProcess()
-        self.tableView.reloadData() 
+		Airlock.sharedInstance.streamsManager.processStream(stream)
+        self.tableView.reloadData()
     }
     
     @IBAction func onVerboseValueChanged(_ sender: UISwitch) {

@@ -14,6 +14,8 @@ class PurchaseOptionsTableViewController: UITableViewController {
     static let basePath:String = "\\"
     let cellIdentifier = "purchaseOptionId"
     var entitlement:Entitlement?
+    
+    let defaultLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,10 +47,6 @@ class PurchaseOptionsTableViewController: UITableViewController {
     }
     
     func doBulidPurchaseOptionsList(childreanArr:[Feature], basePath:String,outPurchaseOptions:inout [cellData],runTimeFeatures:FeaturesCache?)  {
-        
-//        guard let runTimeFeatures = runTimeFeatures else {
-//            return
-//        }
         
         for f:Feature in childreanArr {
             let percentage = getPurchaseOptionRolloutPercentage(feature:f,runTimeFeatures:runTimeFeatures)
@@ -91,13 +89,12 @@ class PurchaseOptionsTableViewController: UITableViewController {
             return UITableViewCell(style: UITableViewCell.CellStyle.default,reuseIdentifier:cellIdentifier)
         }
         
-        
         let data = purchaseOptions[indexPath.row]
         c.textLabel?.text = data.feature.getNameExcludeNamespace()
         if (data.feature.isOn()) {
-            c.textLabel?.textColor = UIColor.blue
+            c.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
         } else {
-            c.textLabel?.textColor = UIColor.black
+            c.textLabel?.textColor = defaultLabel.textColor
         }
         return c
     }

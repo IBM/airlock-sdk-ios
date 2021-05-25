@@ -25,7 +25,7 @@ Do the following steps to integrate the Airlock SDK with your iOS project:
 ## SDK Overview
 ![](SDK.jpg)
 
-The master list of features and configuration rules are stored on the Airlock server. Each feature definition includes rules that determine when the feature is enabled based the user profile, device context (locale, location, device type, etc.), and application defined context. An application that uses the Airlock SDK should provide all contextual data to the SDK. The SDK runs rules on that information and determines which features are on or off, and which output configurations are applied. In case of error or when feature and configuration information is not available on the server, the defaults file is used.
+The master list of features and configuration rules are stored on the Airlock server (AWS S3). Each feature definition includes rules that determine when the feature is enabled based the user profile, device context (locale, location, device type, etc.), and weather conditions. An application that uses the Airlock SDK provides the user profile, device context information, and weather data to the SDK. The SDK runs rules on that information and determines which features are on or off, and which output configurations are applied. In case of error or when feature and configuration information is not available on the server, the defaults file is used.
 
 ## Usage
 

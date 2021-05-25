@@ -1,7 +1,0 @@
-{
-  "configPath":"test_data\/NoRule\/EmptySeason\/empty\/",
-  "deviceContextFileName":"defaultDC.json",
-  "groupsFileName":"defaultG.json",
-  "profileFileName":"ProfileV1.json",
-  "defaultFileName":"AirlockDefaults.json"
-}

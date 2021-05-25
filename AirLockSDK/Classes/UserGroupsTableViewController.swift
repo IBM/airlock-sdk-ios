@@ -116,7 +116,7 @@ class UserGroupsTableViewController: UITableViewController {
     
     func updateGroupsData(allGroups:Array<String>) {
         
-        let userGroups = UserGroups.getUserGroups()
+        let userGroups = UserGroups.shared.getUserGroups()
         
         groupDataArr.removeAll()
         var groupThatAreON:Array<userGroupsData> = Array<userGroupsData>()
@@ -152,7 +152,7 @@ class UserGroupsTableViewController: UITableViewController {
     
     @IBAction func clearUserGroups(_ sender: Any) {
         
-        UserGroups.setUserGroups(groups: Set<String>())
+        UserGroups.shared.setUserGroups(groups: Set<String>())
         
         for g in groupDataArr {
             g.isOn = false
@@ -174,13 +174,13 @@ class UserGroupsTableViewController: UITableViewController {
             currUserGroup = groupDataArr[isGroupOnSwitch.tag]
         }
         
-        var userGroups:Set<String> = UserGroups.getUserGroups()
+        var userGroups:Set<String> = UserGroups.shared.getUserGroups()
         if (isGroupOnSwitch.isOn) {
             userGroups.insert(currUserGroup.name)
         } else {
             userGroups.remove(currUserGroup.name)
         }
-        UserGroups.setUserGroups(groups: userGroups)
+        UserGroups.shared.setUserGroups(groups: userGroups)
         
         currUserGroup.isOn = isGroupOnSwitch.isOn
     }

@@ -38,19 +38,27 @@ class FeaturesCache : NSObject,NSCoding,FeaturesMangement {
         "PURCHASE_OPTIONS":Type.PURCHASE_OPTIONS,
         "PURCHASE_OPTIONS_MUTUAL_EXCLUSION_GROUP":Type.PURCHASE_OPTIONS_MUTUAL_EXCLUSION_GROUP
     ]
+	
+	static let STREAMS_CONTEXT = "context.streams"
     
-    var version:String
-    var featuresDict:[String:Feature]
-    var configurationsDict:[String:Feature]
-    var contextFieldsToAnalytics: [String]
-    var branchesAndExperiments:BranchesAndExperiments?
-    var experimentsResults:ExperimentsResults?
-    var entitlements:Entitlements
-    
+	var version: String
+	var featuresDict: [String:Feature]
+	var configurationsDict: [String:Feature]
+	var branchesAndExperiments: BranchesAndExperiments?
+	var experimentsResults: ExperimentsResults?
+	var entitlements: Entitlements
+	private var contextFieldsStreamsToAnalytics: [String:[String]]
+	var contextFieldsToAnalytics: [String] = [] {
+		  didSet {
+			  updatecontextFieldsStreamsToAnalytics()
+		  }
+	}
+
     init(version:String,inputFieldsForAnalytics: [String] = []) {
         self.version = version
         featuresDict = [:]
         configurationsDict = [:]
+		contextFieldsStreamsToAnalytics = [:]
         contextFieldsToAnalytics = inputFieldsForAnalytics
         branchesAndExperiments = nil
         experimentsResults = nil
@@ -59,6 +67,7 @@ class FeaturesCache : NSObject,NSCoding,FeaturesMangement {
     
     init(other:FeaturesCache) {
         version = other.version
+		contextFieldsStreamsToAnalytics = other.contextFieldsStreamsToAnalytics
         contextFieldsToAnalytics = other.contextFieldsToAnalytics
         
         featuresDict = [:]
@@ -92,6 +101,7 @@ class FeaturesCache : NSObject,NSCoding,FeaturesMangement {
     }
     
     @objc public required init?(coder aDecoder: NSCoder) {
+		contextFieldsStreamsToAnalytics = [:]
         version  = aDecoder.decodeObject(forKey:FeaturesCache.VERSION) as? String ?? ""
         guard SUPPORTED_AIRLOCK_VERSIONS.contains(version) else {
             print("Not suported features cache version")
@@ -584,9 +594,13 @@ class FeaturesCache : NSObject,NSCoding,FeaturesMangement {
     }
     
     func fieldsForAnalytics() -> [String] {
-        return self.contextFieldsToAnalytics
+        return contextFieldsToAnalytics
     }
     
+	func fieldsForStreamsAnalytics() -> [String:[String]] {
+		return contextFieldsStreamsToAnalytics
+	}
+	
     func getBranchByName(name:String) -> [String:AnyObject]? {
         
         guard name != "" else {
@@ -607,10 +621,28 @@ class FeaturesCache : NSObject,NSCoding,FeaturesMangement {
                                                entitlementsDict:&self.entitlements.entitlementsDict,branche:branche)
             self.experimentsResults = experimentsResults
         }
-        
-        
     }
     
+	func updatecontextFieldsStreamsToAnalytics() {
+		contextFieldsStreamsToAnalytics = [:]
+		for contextField in contextFieldsToAnalytics {
+			if contextField.starts(with: FeaturesCache.STREAMS_CONTEXT) {
+				let streamContext = contextField[contextField.index(contextField.startIndex, offsetBy: FeaturesCache.STREAMS_CONTEXT.count + 1)...]
+				if let index = streamContext.firstIndex(of: ".") {
+					let streamName = String(streamContext[..<index])
+					let streamResultField = String(streamContext[contextField.index(index, offsetBy: 1)...])
+
+					if var resultsArr:[String] = contextFieldsStreamsToAnalytics[streamName] {
+						resultsArr.append(streamResultField)
+						contextFieldsStreamsToAnalytics[streamName] = resultsArr
+					} else {
+						contextFieldsStreamsToAnalytics[streamName] = [streamResultField]
+					}
+				}
+			}
+		}
+	}
+	
     static func isMX(_ type:Type) -> Bool {
         return isFeatureMX(type) || isConfigMX(type)
     }
@@ -651,7 +683,7 @@ class FeaturesCache : NSObject,NSCoding,FeaturesMangement {
         }
         
         // add deleted features
-        if let toRoot:Feature = to.getRoot(), toRoot.name == Feature.ROOT_NAME, UserGroups.getUserGroups().isEmpty {
+        if let toRoot:Feature = to.getRoot(), toRoot.name == Feature.ROOT_NAME, UserGroups.shared.getUserGroups().isEmpty {
             FeaturesCache.addDeletedFeatures(toFeature:toRoot,out:&out)
         }
         return out

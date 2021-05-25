@@ -1,9 +1,0 @@
-{
-  "apiVersion":"V2",
-  "version":"7.5",
-  "configPath":"test_data\/NoRule\/NoRuleGroups\/7.5_up\/",
-  "deviceContextFileName":"defaultDC.json",
-  "groupsFileName":"qa.json",
-  "profileFileName":"ProfileV1.json",
-  "defaultFileName":"NoRuleGroups__AirlockDefaults.json"
-}

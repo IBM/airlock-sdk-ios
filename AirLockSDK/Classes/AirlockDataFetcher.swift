@@ -15,6 +15,7 @@ internal class AirlockDataFetcher {
     private let serversMgr                              :ServersManager
     private let afManager                               :Alamofire.Session
     private var lastPullTime                            :NSDate
+    private var lastPullFailureTime                     :NSDate
     private var lastRuntimeDownloadTime                 :NSDate
     
     private var runtimeFileModificationTime             :String?
@@ -44,7 +45,7 @@ internal class AirlockDataFetcher {
     
     var runtimeFileSuffix: String {
         get {
-            return (UserGroups.getUserGroups().count > 0) ? SERVER_DEV_SUFFIX : SERVER_PROD_SUFFIX
+            return (UserGroups.shared.getUserGroups().count > 0) ? SERVER_DEV_SUFFIX : SERVER_PROD_SUFFIX
         }
     }
     
@@ -52,8 +53,9 @@ internal class AirlockDataFetcher {
         
         self.serversMgr = serversMgr
         
-        lastPullTime = UserDefaults.standard.object(forKey: LAST_PULL_TIME_KEY) as? NSDate ?? NSDate(timeIntervalSince1970:0)
-        lastRuntimeDownloadTime = UserDefaults.standard.object(forKey: LAST_RUNTIME_DOWNLOAD_TIME_KEY) as? NSDate ?? NSDate(timeIntervalSince1970:0)
+		lastPullTime = UserDefaults.standard.object(forKey: LAST_PULL_TIME_KEY) as? NSDate ?? Airlock.ZERO_TIME_SINCE_1970
+        lastPullFailureTime = UserDefaults.standard.object(forKey: LAST_PULL_FAILURE_TIME_KEY) as? NSDate ?? Airlock.ZERO_TIME_SINCE_1970
+        lastRuntimeDownloadTime = UserDefaults.standard.object(forKey: LAST_RUNTIME_DOWNLOAD_TIME_KEY) as? NSDate ?? Airlock.ZERO_TIME_SINCE_1970
         
         runtimeFileModificationTime = UserDefaults.standard.object(forKey: RUNTIME_FILE_MODIFICATION_TIME_KEY) as? String ?? nil
         translationFileModificationTime = UserDefaults.standard.object(forKey: TRANSLATION_FILE_MODIFICATION_TIME_KEY) as? String ?? nil
@@ -94,6 +96,7 @@ internal class AirlockDataFetcher {
     internal func clear() {
         
         UserDefaults.standard.removeObject(forKey:LAST_PULL_TIME_KEY)
+        UserDefaults.standard.removeObject(forKey:LAST_PULL_FAILURE_TIME_KEY)
         UserDefaults.standard.removeObject(forKey:LAST_RUNTIME_DOWNLOAD_TIME_KEY)
         
         UserDefaults.standard.removeObject(forKey:RUNTIME_FILE_NAME_KEY)
@@ -134,7 +137,7 @@ internal class AirlockDataFetcher {
         UserDefaults.standard.removeObject(forKey:NOTIFS_RUNTIME_FILE_MODIFICATION_TIME_KEY)
         notificationsRuntimeFileModificationTime = nil
         
-        lastPullTime = NSDate(timeIntervalSince1970:0)
+        lastPullTime = Airlock.ZERO_TIME_SINCE_1970
     }
     
     internal func clearNotifications() {
@@ -164,16 +167,25 @@ internal class AirlockDataFetcher {
     
     internal func getLastPullTime() -> NSDate {
         
-        var lastPullTime:NSDate = NSDate(timeIntervalSince1970:0)
+        var lastPullTime:NSDate = Airlock.ZERO_TIME_SINCE_1970
         lastPullTimeQueue.sync {
             lastPullTime = self.lastPullTime
         }
         return lastPullTime
     }
     
+    internal func getLastPullFailureTime() -> NSDate {
+        
+        var lastPullFailureTime:NSDate = Airlock.ZERO_TIME_SINCE_1970
+        lastPullTimeQueue.sync {
+            lastPullFailureTime = self.lastPullFailureTime
+        }
+        return lastPullFailureTime
+    }
+    
     internal func getLastRuntimeDownloadTime() -> NSDate {
         
-        var lastDownloadTime:NSDate = NSDate(timeIntervalSince1970:0)
+        var lastDownloadTime:NSDate = Airlock.ZERO_TIME_SINCE_1970
         lastRuntimeDownloadTimeQueue.sync {
             lastDownloadTime = self.lastRuntimeDownloadTime
         }
@@ -260,7 +272,7 @@ internal class AirlockDataFetcher {
                 .responseData(queue: DispatchQueue.global(qos: .default)) { response in
                     
                     branchTask.setResult(result: response as Any?)
-            }
+                }
             tasksMgr.appendTask(task: branchTask)
         }
         
@@ -269,7 +281,7 @@ internal class AirlockDataFetcher {
             .responseData(queue: DispatchQueue.global(qos: .default)) { response in
                 
                 runtimeFeaturesTask.setResult(result: response as Any?)
-        }
+            }
         tasksMgr.appendTask(task: runtimeFeaturesTask)
         
         // Downloading the translations file (json)
@@ -277,7 +289,7 @@ internal class AirlockDataFetcher {
             .responseData(queue: DispatchQueue.global(qos: .default)) { response in
                 
                 translationsTask.setResult(result: response as Any?)
-        }
+            }
         tasksMgr.appendTask(task: translationsTask)
         
         // Downloading the js utils file (text)
@@ -285,7 +297,7 @@ internal class AirlockDataFetcher {
             .responseData(queue: DispatchQueue.global(qos: .default)) { response in
                 
                 jsUtilsTask.setResult(result: response as Any?)
-        }
+            }
         tasksMgr.appendTask(task: jsUtilsTask)
         
         // Downloading the streams runtime file (json)
@@ -293,7 +305,7 @@ internal class AirlockDataFetcher {
             .responseData(queue: DispatchQueue.global(qos: .default)) { response in
                 
                 streamsRunTimeTask.setResult(result: response as Any?)
-        }
+            }
         tasksMgr.appendTask(task: streamsRunTimeTask)
         
         // Downloading the streams js utils file (text)
@@ -301,7 +313,7 @@ internal class AirlockDataFetcher {
             .responseData(queue: DispatchQueue.global(qos: .default)) { response in
                 
                 streamJSUtilsTask.setResult(result: response as Any?)
-        }
+            }
         tasksMgr.appendTask(task:streamJSUtilsTask)
         
         // Downloading the notificationss runtime file (json)
@@ -309,44 +321,44 @@ internal class AirlockDataFetcher {
             .responseData(queue: DispatchQueue.global(qos: .default)) { response in
                 
                 notificationsRunTimeTask.setResult(result: response as Any?)
-        }
+            }
         tasksMgr.appendTask(task: notificationsRunTimeTask)
         
         // Waiting for all download tasks to complete
-        tasksMgr.waitForTasks(onCompletion:{ 
+        tasksMgr.waitForTasks(onCompletion:{
             
-            guard let featuresResponse = runtimeFeaturesTask.result as? DataResponse<Data> else {
+            guard let featuresResponse = runtimeFeaturesTask.result as? AFDataResponse<Data> else {
                 onCompletion(false, nil)
                 return
             }
             
-            guard let translationsResponse = translationsTask.result as? DataResponse<Data> else {
+            guard let translationsResponse = translationsTask.result as? AFDataResponse<Data> else {
                 onCompletion(false, nil)
                 return
             }
             
-            guard let jsUtilsResponse = jsUtilsTask.result as? DataResponse<Data> else {
+            guard let jsUtilsResponse = jsUtilsTask.result as? AFDataResponse<Data> else {
                 onCompletion(false, nil)
                 return
             }
             
-            guard let streamsRunTimeResponse = streamsRunTimeTask.result as? DataResponse<Data> else {
+            guard let streamsRunTimeResponse = streamsRunTimeTask.result as? AFDataResponse<Data> else {
                 onCompletion(false, nil)
                 return
             }
             
-            guard let streamsJSUtilsResponse = streamJSUtilsTask.result as? DataResponse<Data> else {
+            guard let streamsJSUtilsResponse = streamJSUtilsTask.result as? AFDataResponse<Data> else {
                 onCompletion(false, nil)
                 return
             }
             
-            guard let notificationsRunTimeResponse = notificationsRunTimeTask.result as? DataResponse<Data> else {
+            guard let notificationsRunTimeResponse = notificationsRunTimeTask.result as? AFDataResponse<Data> else {
                 onCompletion(false, nil)
                 return
             }
-
+            
             if isOverridingBranch {
-                guard let branchResponse = branchTask.result as? DataResponse<Data> else {
+                guard let branchResponse = branchTask.result as? AFDataResponse<Data> else {
                     onCompletion(false, nil)
                     return
                 }
@@ -378,24 +390,24 @@ internal class AirlockDataFetcher {
             
             let streamRunTimeResponseSuccess = self.validateResponse(response: streamsRunTimeResponse)
             let streamsJSUtilsResponseSuccess = self.validateResponse(response: streamsJSUtilsResponse, allowForEmptyData:true)
-                
+            
             if validateStreams {
                 if !streamRunTimeResponseSuccess {
                     onCompletion(false, AirlockError.InvalidServerResponse(message: "Invalid response recieved from server while downloading the streams runtime file: \(streamsRunTimeResponse.response?.statusCode)"))
                     return
-                 } else if !streamsJSUtilsResponseSuccess {
+                } else if !streamsJSUtilsResponseSuccess {
                     onCompletion(false, AirlockError.InvalidServerResponse(message: "Invalid response recieved from server while downloading the streams js utils file: \(streamsJSUtilsResponse.response?.statusCode)"))
-                      return
-                 }
-              } else {
-                 if !streamRunTimeResponseSuccess && streamsJSUtilsResponseSuccess {
+                    return
+                }
+            } else {
+                if !streamRunTimeResponseSuccess && streamsJSUtilsResponseSuccess {
                     onCompletion(false, AirlockError.InvalidServerResponse(message: "Invalid response recieved from server while downloading the streams runtime file: \(streamsRunTimeResponse.response?.statusCode)"))
-                     return
-                  } else if !streamsJSUtilsResponseSuccess && streamRunTimeResponseSuccess {
+                    return
+                } else if !streamsJSUtilsResponseSuccess && streamRunTimeResponseSuccess {
                     onCompletion(false, AirlockError.InvalidServerResponse(message: "Invalid response recieved from server while downloading the streams js utils file: \(streamsJSUtilsResponse.response?.statusCode)"))
-                     return
-                  }
-              }
+                    return
+                }
+            }
             let notifictionsRunTimeResponseSuccess = self.validateResponse(response: notificationsRunTimeResponse)
             if !notifictionsRunTimeResponseSuccess && validateNotifications {
                 onCompletion(false, AirlockError.InvalidServerResponse(message: "Invalid response recieved from server while downloading the notifications runtime file: \(notificationsRunTimeResponse.response?.statusCode)"))
@@ -403,28 +415,28 @@ internal class AirlockDataFetcher {
             }
             
             // All requests succeeded
+            
+            if (featuresResponse.response?.statusCode == 200){
                 
-              if (featuresResponse.response?.statusCode == 200){
-                    
                 let resRuntimeJSON = Utils.convertDataToJSON(data:featuresResponse.data)
-                    
+                
                 guard let featuresResponseValue = resRuntimeJSON as? Dictionary<String, AnyObject> else {
                     onCompletion(false, nil)
                     return
                 }
-                    
+                
                 if (!AirlockDataFetcher.isSeasonInRange(season: featuresResponseValue, productVer:self.serversMgr.productVersion)) {
-                        
-                   print("version is not in the version ranges")
-                   self.updateSeason(onCompletion: { sucess, err in
-                            
-                   if (sucess) {
-                     print("version range updated")
-                     self.pullDataFromServer(featuresCacheManager:featuresCacheManager, forcePull:false, onCompletion: onCompletion)
-                   } else {
-                     onCompletion(false, err)
-                   }})
-                   return
+                    
+                    print("version is not in the version ranges")
+                    self.updateSeason(onCompletion: { sucess, err in
+                                        
+                                        if (sucess) {
+                                            print("version range updated")
+                                            self.pullDataFromServer(featuresCacheManager:featuresCacheManager, forcePull:false, onCompletion: onCompletion)
+                                        } else {
+                                            onCompletion(false, err)
+                                        }})
+                    return
                 }
                 
                 Airlock.sharedInstance.calculationPullQueue.sync {
@@ -438,14 +450,14 @@ internal class AirlockDataFetcher {
                     self.runtimeFileModificationTimeQueue.sync {
                         self.runtimeFileModificationTime = featuresResponse.response?.allHeaderFields["Date"] as! String?
                     }
-                
+                    
                     UserDefaults.standard.set(self.runtimeFileModificationTime, forKey:RUNTIME_FILE_MODIFICATION_TIME_KEY)
                     
                     self.updateLastRuntimeDownloadTimeToNow()
                 }
-              } else {
-                 // In case we got 304 and there is no data in memory (probably on startup) - read data from memory
-                 if (featuresCacheManager.runTimeFeatures == nil) {
+            } else {
+                // In case we got 304 and there is no data in memory (probably on startup) - read data from memory
+                if (featuresCacheManager.runTimeFeatures == nil) {
                     
                     Airlock.sharedInstance.calculationPullQueue.sync {
                         featuresCacheManager.loadFeatures(cache:&featuresCacheManager.runTimeFeatures, key:RUNTIME_FILE_NAME_KEY)
@@ -453,118 +465,117 @@ internal class AirlockDataFetcher {
                             featuresCacheManager.master = runTime.clone()
                         }
                     }
-                 }
-              }
+                }
+            }
+            
+            if (translationsResponse.response?.statusCode == 200){
                 
-              if (translationsResponse.response?.statusCode == 200){
-                    
-                 let resTranslationsJSON = Utils.convertDataToJSON(data:translationsResponse.data)
-                    
-                 guard let translationsResponseValue = resTranslationsJSON as? [String:Any?] else {
+                let resTranslationsJSON = Utils.convertDataToJSON(data:translationsResponse.data)
+                
+                guard let translationsResponseValue = resTranslationsJSON as? [String:Any?] else {
                     onCompletion(false, nil)
                     return
-                 }
-                    
-                 guard let stringsMap = translationsResponseValue["strings"] as? [String:String] else {
+                }
+                
+                guard let stringsMap = translationsResponseValue["strings"] as? [String:String] else {
                     onCompletion(false, nil)
                     return
-                 }
-                 UserDefaults.standard.set(stringsMap, forKey:TRANSLATION_FILE_NAME_KEY)
-                    
-                 // Updating translation related variables
-                 self.translationsMap = stringsMap
-                 do {
-                   let data = try JSONSerialization.data(withJSONObject:stringsMap, options:[])
-                   self.translationsString = String(data:data, encoding:String.Encoding.utf8) ?? "{}"
-                 } catch {
-                   self.translationsString = "{}"
-                 }
-                    
-                 self.translationFileModificationTimeQueue.sync {
-                   self.translationFileModificationTime = translationsResponse.response?.allHeaderFields["Date"] as! String?
-                 }
-                 UserDefaults.standard.set(self.translationFileModificationTime, forKey:TRANSLATION_FILE_MODIFICATION_TIME_KEY)
-              }
+                }
+                UserDefaults.standard.set(stringsMap, forKey:TRANSLATION_FILE_NAME_KEY)
                 
-              if (jsUtilsResponse.response?.statusCode == 200){
+                // Updating translation related variables
+                self.translationsMap = stringsMap
+                do {
+                    let data = try JSONSerialization.data(withJSONObject:stringsMap, options:[])
+                    self.translationsString = String(data:data, encoding:String.Encoding.utf8) ?? "{}"
+                } catch {
+                    self.translationsString = "{}"
+                }
+                
+                self.translationFileModificationTimeQueue.sync {
+                    self.translationFileModificationTime = translationsResponse.response?.allHeaderFields["Date"] as! String?
+                }
+                UserDefaults.standard.set(self.translationFileModificationTime, forKey:TRANSLATION_FILE_MODIFICATION_TIME_KEY)
+            }
+            
+            if (jsUtilsResponse.response?.statusCode == 200){
+                
+                // Convert the response data to string
+                if let data = jsUtilsResponse.data, let utf8Response = String(data: data, encoding: .utf8) {
                     
-                 // Convert the response data to string
-                 if let data = jsUtilsResponse.data, let utf8Response = String(data: data, encoding: .utf8) {
-                        
                     UserDefaults.standard.set(utf8Response, forKey:JS_UTILS_FILE_NAME_KEY)
-
+                    
                     self.utilsFileModificationTimeQueue.sync {
                         self.utilsFileModificationTime = jsUtilsResponse.response?.allHeaderFields["Date"] as! String?
                     }
                     UserDefaults.standard.set(self.utilsFileModificationTime,forKey:JS_UTILS_FILE_MODIFICATION_TIME_KEY)
-                    Airlock.sharedInstance.streamsManager.initJSEnverment()
-                  } else {
+                } else {
                     onCompletion(false, AirlockError.InvalidServerResponse(message: "Invalid response recieved from server while downloading the js utils file: \(jsUtilsResponse.response?.statusCode)"))
                     return
-                  }
-               }
+                }
+            }
+            
+            if (streamsRunTimeResponse.response?.statusCode == 200) {
+                Airlock.sharedInstance.streamsManager.load(data:streamsRunTimeResponse.data)
+                self.streamsRuntimeFileModificationTimeQueue.sync {
+                    self.streamsRuntimeFileModificationTime = streamsRunTimeResponse.response?.allHeaderFields["Date"] as! String?
+                }
+                UserDefaults.standard.set(self.streamsRuntimeFileModificationTime,forKey:STREAMS_RUNTIME_FILE_MODIFICATION_TIME_KEY)
+                UserDefaults.standard.set(streamsRunTimeResponse.data,forKey:STREAMS_RUNTIME_FILE_NAME_KEY)
+            }
+            
+            if (streamsJSUtilsResponse.response?.statusCode == 200){
                 
-               if (streamsRunTimeResponse.response?.statusCode == 200) {
-                    Airlock.sharedInstance.streamsManager.load(data:streamsRunTimeResponse.data)
-                    self.streamsRuntimeFileModificationTimeQueue.sync {
-                        self.streamsRuntimeFileModificationTime = streamsRunTimeResponse.response?.allHeaderFields["Date"] as! String?
-                    }
-                    UserDefaults.standard.set(self.streamsRuntimeFileModificationTime,forKey:STREAMS_RUNTIME_FILE_MODIFICATION_TIME_KEY)
-                    UserDefaults.standard.set(streamsRunTimeResponse.data,forKey:STREAMS_RUNTIME_FILE_NAME_KEY)
-               }
+                var streamUtilsStr = ""
                 
-               if (streamsJSUtilsResponse.response?.statusCode == 200){
+                // Convert the response data to string
+                if let data = streamsJSUtilsResponse.data, let utf8Response = String(data: data, encoding: .utf8) {
+                    
+                    streamUtilsStr = utf8Response
+                }
+                UserDefaults.standard.set(streamUtilsStr, forKey:STREAMS_JS_UTILS_FILE_NAME_KEY)
                 
-                    var streamUtilsStr = ""
+                self.streamsUtilsFileModificationTimeQueue.sync {
+                    self.streamsUtilsFileModificationTime = streamsJSUtilsResponse.response?.allHeaderFields["Date"] as! String?
+                }
+                UserDefaults.standard.set(self.streamsUtilsFileModificationTime, forKey:STREAMS_JS_UTILS_FILE_MODIFICATION_TIME_KEY)
                 
-                    // Convert the response data to string
-                    if let data = streamsJSUtilsResponse.data, let utf8Response = String(data: data, encoding: .utf8) {
-                        
-                        streamUtilsStr = utf8Response
-                    }
-                    UserDefaults.standard.set(streamUtilsStr, forKey:STREAMS_JS_UTILS_FILE_NAME_KEY)
-                
-                    self.streamsUtilsFileModificationTimeQueue.sync {
-                        self.streamsUtilsFileModificationTime = streamsJSUtilsResponse.response?.allHeaderFields["Date"] as! String?
-                    }
-                    UserDefaults.standard.set(self.streamsUtilsFileModificationTime, forKey:STREAMS_JS_UTILS_FILE_MODIFICATION_TIME_KEY)
-                
-                    Airlock.sharedInstance.streamsManager.initJSEnverment()
-               }
+                Airlock.sharedInstance.streamsManager.initJSEnverment()
+            }
             
             if (notificationsRunTimeResponse.response?.statusCode == 200) {
                 Airlock.sharedInstance.notificationsManager.load(data: notificationsRunTimeResponse.data)
                 self.notificationsRuntimeFileModificationTimeQueue.sync {
                     self.notificationsRuntimeFileModificationTime = notificationsRunTimeResponse.response?.allHeaderFields["Date"] as! String?
                 }
-            UserDefaults.standard.set(self.notificationsRuntimeFileModificationTime,forKey:NOTIFS_RUNTIME_FILE_MODIFICATION_TIME_KEY)
+                UserDefaults.standard.set(self.notificationsRuntimeFileModificationTime,forKey:NOTIFS_RUNTIME_FILE_MODIFICATION_TIME_KEY)
                 UserDefaults.standard.set(notificationsRunTimeResponse.data,forKey:NOTIFS_RUNTIME_FILE_NAME_KEY)
             }
             
-               if let branchResponse = branchTask.result as? DataResponse<Data> {
+            if let branchResponse = branchTask.result as? AFDataResponse<Data> {
+                
+                if (branchResponse.response?.statusCode == 200){
                     
-                    if (branchResponse.response?.statusCode == 200){
-                        
-                        let resBranchJSON = Utils.convertDataToJSON(data:branchResponse.data)
-                        
-                        guard let branchResponseValue = resBranchJSON as? Dictionary<String, AnyObject> else {
-                            onCompletion(false, nil)
-                            return
-                        }
-                        self.currentBranchDict = branchResponseValue
-                        UserDefaults.standard.set(branchResponse.data, forKey:BRANCH_FILE_NAME_KEY)
-                        
-                        self.branchFileModificationTimeQueue.sync {
-                            self.branchFileModificationTime = branchResponse.response?.allHeaderFields["Date"] as! String?
-                        }
-                        UserDefaults.standard.set(self.branchFileModificationTime, forKey:BRANCH_FILE_MODIFICATION_TIME_KEY)
-                        
-                        self.updateLastRuntimeDownloadTimeToNow()
+                    let resBranchJSON = Utils.convertDataToJSON(data:branchResponse.data)
+                    
+                    guard let branchResponseValue = resBranchJSON as? Dictionary<String, AnyObject> else {
+                        onCompletion(false, nil)
+                        return
                     }
+                    self.currentBranchDict = branchResponseValue
+                    UserDefaults.standard.set(branchResponse.data, forKey:BRANCH_FILE_NAME_KEY)
+                    
+                    self.branchFileModificationTimeQueue.sync {
+                        self.branchFileModificationTime = branchResponse.response?.allHeaderFields["Date"] as! String?
+                    }
+                    UserDefaults.standard.set(self.branchFileModificationTime, forKey:BRANCH_FILE_MODIFICATION_TIME_KEY)
+                    
+                    self.updateLastRuntimeDownloadTimeToNow()
                 }
-                self.updateLastPullTimeToNow()
-                UserDefaults.standard.synchronize()
-                onCompletion(true, nil)
+            }
+            self.updateLastPullTimeToNow()
+            UserDefaults.standard.synchronize()
+            onCompletion(true, nil)
             
             return
         })
@@ -868,7 +879,7 @@ internal class AirlockDataFetcher {
             (maxVer.isEmpty || (Utils.compareVersions(v1: productVer,v2: maxVer) < 0)) )
     }
     
-    private func validateResponse(response:DataResponse<Data>, allowForEmptyData:Bool = false) -> Bool {
+    private func validateResponse(response:AFDataResponse<Data>, allowForEmptyData:Bool = false) -> Bool {
         
         if (response.response?.statusCode == 200){
             if (allowForEmptyData){
@@ -1012,6 +1023,14 @@ internal class AirlockDataFetcher {
         UserDefaults.standard.set(self.lastPullTime, forKey:LAST_PULL_TIME_KEY)
     }
     
+    internal func updateLastPullFailureTimeToNow(){
+        
+        self.lastPullTimeQueue.sync {
+            self.lastPullFailureTime = NSDate()
+        }
+        UserDefaults.standard.set(self.lastPullFailureTime, forKey:LAST_PULL_FAILURE_TIME_KEY)
+    }
+    
     private func updateLastRuntimeDownloadTimeToNow() {
         
         self.lastRuntimeDownloadTimeQueue.sync {
@@ -1042,3 +1061,5 @@ internal class AirlockDataFetcher {
         return SERVER_TRANSLATION_FILE_PREFIX + translationLanguage + self.runtimeFileSuffix + ".json"
     }
 }
+
+

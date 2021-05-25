@@ -12,6 +12,8 @@ class NotificationsTableViewController: UITableViewController {
     var notificationsArr:[AirlockNotification] = []
     var backgroundFetches:[String] = []
     
+    let defaultLabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         notificationsArr = Airlock.sharedInstance.notificationsManager.notificationsArr
@@ -33,9 +35,9 @@ class NotificationsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier:"notificationCellIdentifer",for:indexPath)
         cell.textLabel?.text = notificationsArr[indexPath.row].name
         if notificationsArr[indexPath.row].status == .SCHEDULED {
-            cell.textLabel?.textColor = UIColor.blue
+            cell.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
         } else {
-            cell.textLabel?.textColor = UIColor.darkText
+            cell.textLabel?.textColor = defaultLabel.textColor
         }
         cell.tag = indexPath.row
         return cell

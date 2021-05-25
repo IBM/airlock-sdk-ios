@@ -1,7 +1,0 @@
-{
-  "configPath":"test_data\/NoRule\/NoRuleGroups\/1.0_up\/",
-  "deviceContextFileName":"defaultDC.json",
-  "groupsFileName":"dev.json",
-  "profileFileName":"ProfileV1.json",
-  "defaultFileName":"NoRuleGroups__AirlockDefaults.json"
-}

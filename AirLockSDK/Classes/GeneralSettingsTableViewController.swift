@@ -279,7 +279,7 @@ class GeneralSettingsTableViewController: UITableViewController, MFMailComposeVi
             bodyString += "Variant: \(Airlock.sharedInstance.currentVariantName() ?? "--")\n"
             bodyString += "Branch: \(Airlock.sharedInstance.currentBranchName() ?? "--")\n\n"
             
-            bodyString += "User groups: \(UserGroups.getUserGroups().description)\n\n"
+            bodyString += "User groups: \(UserGroups.shared.getUserGroups().description)\n\n"
             
             bodyString += "Last pull time: \(Airlock.sharedInstance.getLastPullTime())\n"
             bodyString += "Last calc time: \(Airlock.sharedInstance.getLastCalculateTime())\n"

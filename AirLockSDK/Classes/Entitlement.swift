@@ -148,6 +148,15 @@ public class Entitlement : Feature,FeaturesMangement {
         purchaseOptionsDict[newPurchaseOption.name.lowercased()] = newPurchaseOption
     }
     
+	func setPurchaseOptionsDict(newPurchaseOptionsDict:[String:PurchaseOption]) {
+		purchaseOptionsDict = newPurchaseOptionsDict
+		productIdsSet = []
+		
+		for (_, purchaseOption) in purchaseOptionsDict {
+			addProductIds(purchaseOption: purchaseOption)
+		}
+	}
+	
     //FeaturesMangement
     func addFeature(parentName:String?,newFeature:Feature) {
         guard let newPurchaseOption = newFeature as? PurchaseOption else {
@@ -172,3 +181,4 @@ public class Entitlement : Feature,FeaturesMangement {
         return root.getChildren()
     }
 }
+

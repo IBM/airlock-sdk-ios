@@ -177,7 +177,7 @@ class PercentageTableViewController: UITableViewController {
             }
             
         } else {
-            if let config:Feature = configurationsArr[sender.tag] {
+            if let config = configurationsArr[sender.tag] as? Feature {
                 featureName = config.getName()
             } else {
                print("item not found")
@@ -209,14 +209,16 @@ class PercentageTableViewController: UITableViewController {
     }
     
     func setPercentage(featureName:String,rolloutPercentage:Int,success:Bool,calculate:Bool) -> (_ alertAction:UIAlertAction) -> () {
-        return { alertAction in
+        return { [weak self] alertAction in
+            
+            guard let self = self else {return}
             let newFeatureNum:Int = PercentageManager.getSuccessNumberForFeature(rolloutPercentage:rolloutPercentage,success:success)
             self.percentageFeaturesMgr.setFeatureNumber(featureName:featureName,number:newFeatureNum)
             self.percentageFeaturesMgr.saveToDevice()
             
             if calculate {
                 Utils.calculateFeatures(delegate: self.delegate, vc: self)
-                self.data?.feature = Airlock.sharedInstance.getFeature(featureName: (self.data?.feature.getName())!)
+                self.data?.feature = Airlock.sharedInstance.getFeature(featureName: featureName)
                 if self.updateFeatureDelegate != nil {
                     self.updateFeatureDelegate!.updateFeature()
                 }

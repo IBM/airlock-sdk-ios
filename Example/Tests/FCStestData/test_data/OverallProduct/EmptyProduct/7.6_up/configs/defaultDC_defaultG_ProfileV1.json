@@ -1,9 +1,0 @@
-{
-  "apiVersion":"V2",
-  "version":"7.6",
-  "configPath":"test_data\/OverallProduct\/EmptyProduct\/7.6_up\/",
-  "deviceContextFileName":"defaultDC.json",
-  "groupsFileName":"defaultG.json",
-  "profileFileName":"ProfileV1.json",
-  "defaultFileName":"EmptyProduct__AirlockDefaults.json"
-}

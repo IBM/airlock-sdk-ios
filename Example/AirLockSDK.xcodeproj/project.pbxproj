@@ -7,115 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		500B9D101DFDB36F0031812F /* FCStestData in Resources */ = {isa = PBXBuildFile; fileRef = 500B9D0F1DFDB36F0031812F /* FCStestData */; };
-		500B9D141E0012040031812F /* FeatureTestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B9D121E0011CC0031812F /* FeatureTestExecutor.swift */; };
-		500B9D151E0048EA0031812F /* FCStestData in Resources */ = {isa = PBXBuildFile; fileRef = 500B9D0F1DFDB36F0031812F /* FCStestData */; };
-		50113E5E1E6C396F00212C7E /* E2EAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50113E5D1E6C396F00212C7E /* E2EAnalyticsTests.swift */; };
-		50187F161E7FEB9E00CDDDFD /* E2EAnalyticsCRAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 50187F151E7FEB9E00CDDDFD /* E2EAnalyticsCRAttributes.json */; };
-		50187F171E7FEE2B00CDDDFD /* E2EAnalyticsCRAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 50187F151E7FEB9E00CDDDFD /* E2EAnalyticsCRAttributes.json */; };
-		50187F191E8174E400CDDDFD /* ProfileForAnalyticTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 50187F181E8174E400CDDDFD /* ProfileForAnalyticTest.json */; };
-		50187F1A1E81862C00CDDDFD /* ProfileForAnalyticTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 50187F181E8174E400CDDDFD /* ProfileForAnalyticTest.json */; };
-		502F41A91E53417100381A5D /* AirlockRemoteActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F41A81E53417000381A5D /* AirlockRemoteActions.swift */; };
-		502F41AB1E598E6300381A5D /* E2EBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F41AA1E598E6200381A5D /* E2EBaseTest.swift */; };
-		503442C81F375C8400CE57DC /* FunctionalStreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442C71F375C8400CE57DC /* FunctionalStreamingTests.swift */; };
-		5034F3161F3A100800406569 /* StreamingTestData in Resources */ = {isa = PBXBuildFile; fileRef = 5034F3151F3A100800406569 /* StreamingTestData */; };
 		503858921EB2167B00D57334 /* AirlockDefaults.json in Resources */ = {isa = PBXBuildFile; fileRef = BD9182381E39EC070060C8ED /* AirlockDefaults.json */; };
-		5044E4A21DCF71BB0072C54F /* AirlockPullFeaturesFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044E4A11DCF71BB0072C54F /* AirlockPullFeaturesFunctions.swift */; };
-		5044E4AF1DCF91EB0072C54F /* AirlockDefaultFeaturesFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044E4AE1DCF91EB0072C54F /* AirlockDefaultFeaturesFunctions.swift */; };
-		5076E3691EA65501001B6DE0 /* ProfileForTimeFunctionsTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 5076E3681EA65501001B6DE0 /* ProfileForTimeFunctionsTests.json */; };
-		5076E36A1EA655AE001B6DE0 /* ProfileForTimeFunctionsTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 5076E3681EA65501001B6DE0 /* ProfileForTimeFunctionsTests.json */; };
-		507F22AB1E6F5BBA0010CFD4 /* inputSchema_Q4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50AD09021E6F417E008A2B60 /* inputSchema_Q4.txt */; };
-		50803DC91E504F1B00243A1F /* FunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50803DC81E504F1B00243A1F /* FunctionalityTests.swift */; };
-		5088407E1F0D332100AB187C /* AirlockStressCalculateSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5088407D1F0D332100AB187C /* AirlockStressCalculateSync.swift */; };
-		5099E5D71F52FD3C005D2DC7 /* StreamingStressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099E5D61F52FD3C005D2DC7 /* StreamingStressTest.swift */; };
-		5099E5D91F530D0A005D2DC7 /* StreamingTestBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099E5D81F530D0A005D2DC7 /* StreamingTestBaseClass.swift */; };
-		50AD09031E6F417E008A2B60 /* inputSchema_Q4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50AD09021E6F417E008A2B60 /* inputSchema_Q4.txt */; };
-		50B5C6811E507F0E000B8ACB /* OverallProduct__AirlockDefaults.json in Resources */ = {isa = PBXBuildFile; fileRef = 50B5C6801E507F0E000B8ACB /* OverallProduct__AirlockDefaults.json */; };
-		50B5C6821E507FB4000B8ACB /* OverallProduct__AirlockDefaults.json in Resources */ = {isa = PBXBuildFile; fileRef = 50B5C6801E507F0E000B8ACB /* OverallProduct__AirlockDefaults.json */; };
-		50B5C6841E50A0D3000B8ACB /* E2ETestScenarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5C6831E50A0D3000B8ACB /* E2ETestScenarios.swift */; };
-		50BCA2981DF6C5C500F9E073 /* NegativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21F45E1D894916004735DD /* NegativeTests.swift */; };
-		50BCA2991DF6C5D600F9E073 /* JSTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F695711D89AFCA001C32DF /* JSTest.swift */; };
-		50DA18DA1DCF99E300FF262F /* AirlockSyncFeatureFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA18D91DCF99E300FF262F /* AirlockSyncFeatureFunctions.swift */; };
-		50DA18E01DD0E58D00FF262F /* AirlockPullCalculateFeaturesFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA18D71DCF941000FF262F /* AirlockPullCalculateFeaturesFunctions.swift */; };
-		50DA18E21DD0E9AC00FF262F /* AirlockCalculateFeaturesFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA18E11DD0E9AC00FF262F /* AirlockCalculateFeaturesFunctions.swift */; };
-		50DA18E51DD0EE7800FF262F /* AirlockPullStress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA18E41DD0EE7800FF262F /* AirlockPullStress.swift */; };
-		50DA18E71DD0EF9F00FF262F /* AirlockCalculateStress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA18E61DD0EF9F00FF262F /* AirlockCalculateStress.swift */; };
-		50F022A61E27EF6000D9811B /* test_defaults2-Q4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50F022A51E27EF6000D9811B /* test_defaults2-Q4.txt */; };
-		50F022A71E27F00500D9811B /* test_defaults2-Q4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50F022A51E27EF6000D9811B /* test_defaults2-Q4.txt */; };
-		50F758871F02836D00ECE8C3 /* GetStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F758861F02836D00ECE8C3 /* GetStringTests.swift */; };
-		50F7588A1F03D97E00ECE8C3 /* GetStringTestsFr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F758881F03D8E200ECE8C3 /* GetStringTestsFr.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		92F914488F222785E37AAFBA /* Pods_AirLockSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45D144A17C681F94801A0F0 /* Pods_AirLockSDK_Tests.framework */; };
-		BD21F4591D8948A9004735DD /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21F4571D89487C004735DD /* TestUtils.swift */; };
 		BD21F46C1D8949A8004735DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		BD21F4711D894A3B004735DD /* airLockconfig.json in Resources */ = {isa = PBXBuildFile; fileRef = BD21F4661D894960004735DD /* airLockconfig.json */; };
-		BD21F4721D894A3B004735DD /* airlock_defaults.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD21F4511D8942A5004735DD /* airlock_defaults.txt */; };
-		BD21F4731D894A3B004735DD /* broken_airlock_defaults.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD21F4621D894943004735DD /* broken_airlock_defaults.txt */; };
-		BD21F4741D894A3B004735DD /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = BD21F46A1D894976004735DD /* sample.json */; };
-		BD21F4751D894A3B004735DD /* sample_broken.json in Resources */ = {isa = PBXBuildFile; fileRef = BD21F4681D89496E004735DD /* sample_broken.json */; };
-		BD21F4761D894A3B004735DD /* test_defaults2.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD21F4641D894951004735DD /* test_defaults2.txt */; };
 		BD91823B1E39EC120060C8ED /* AirlockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91823A1E39EC120060C8ED /* AirlockConstants.swift */; };
 		BD9504C91E473EDB0031E58A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9504C81E473EDB0031E58A /* MainTableViewController.swift */; };
-		BDE373571D8ADC9400DD10A6 /* test_defaults2_emptyurl.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4F6956B1D89912F001C32DF /* test_defaults2_emptyurl.txt */; };
-		BDE373581D8ADC9400DD10A6 /* test_defaults2_wrongurl.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4F6956C1D89912F001C32DF /* test_defaults2_wrongurl.txt */; };
-		C3159DED1FAA18A700EA632E /* NotificationTestsData in Resources */ = {isa = PBXBuildFile; fileRef = C3159DEC1FAA18A600EA632E /* NotificationTestsData */; };
-		C3159DEF1FAA19C900EA632E /* NotificationTestBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3159DEE1FAA19C900EA632E /* NotificationTestBaseClass.swift */; };
-		C3159DF11FAA26EB00EA632E /* NotificationFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3159DF01FAA26EB00EA632E /* NotificationFunctionalTests.swift */; };
-		C31A3E4F1FD83EAE00E4E198 /* FeatureTestData in Resources */ = {isa = PBXBuildFile; fileRef = C3E3DC041FD59D45005D275F /* FeatureTestData */; };
-		C36E65E21F5FF74B00A9A448 /* StreamingTest30August.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E65E11F5FF74B00A9A448 /* StreamingTest30August.swift */; };
-		C3AE603D1FB3580E0075C436 /* NotificationStressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE603C1FB3580E0075C436 /* NotificationStressTest.swift */; };
-		C3AE603F1FB488100075C436 /* NotificationSchedulersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE603E1FB4880F0075C436 /* NotificationSchedulersTests.swift */; };
-		C3E3DC031FD5847C005D275F /* NewFeatureExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3DC021FD5847B005D275F /* NewFeatureExecutor.swift */; };
-		C3E3DC051FD59D45005D275F /* FeatureTestData in Resources */ = {isa = PBXBuildFile; fileRef = C3E3DC041FD59D45005D275F /* FeatureTestData */; };
-		C3E7F28E1FCD4B42000B1BFA /* StreamingTestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E7F28D1FCD4B42000B1BFA /* StreamingTestExecutor.swift */; };
 		C4233A2347099C1B9F71F619 /* Pods_AirLockSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CE0C7B810C4C7FD826B377 /* Pods_AirLockSDK_Example.framework */; };
-		E4F6956D1D89912F001C32DF /* test_defaults2_emptyurl.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4F6956B1D89912F001C32DF /* test_defaults2_emptyurl.txt */; };
-		E4F6956E1D89912F001C32DF /* test_defaults2_wrongurl.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4F6956C1D89912F001C32DF /* test_defaults2_wrongurl.txt */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BD21F4771D894DC2004735DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = AirLockSDK_Example;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		16CC412B3C6852F00C1FDF9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		46A24F87C512177767E46090 /* Pods-AirLockSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirLockSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirLockSDK_Example/Pods-AirLockSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		500B9D0F1DFDB36F0031812F /* FCStestData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FCStestData; sourceTree = "<group>"; };
-		500B9D121E0011CC0031812F /* FeatureTestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTestExecutor.swift; sourceTree = "<group>"; };
-		50113E5D1E6C396F00212C7E /* E2EAnalyticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E2EAnalyticsTests.swift; sourceTree = "<group>"; };
-		50187F151E7FEB9E00CDDDFD /* E2EAnalyticsCRAttributes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = E2EAnalyticsCRAttributes.json; sourceTree = "<group>"; };
-		50187F181E8174E400CDDDFD /* ProfileForAnalyticTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProfileForAnalyticTest.json; sourceTree = "<group>"; };
-		502F41A81E53417000381A5D /* AirlockRemoteActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockRemoteActions.swift; sourceTree = "<group>"; };
-		502F41AA1E598E6200381A5D /* E2EBaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E2EBaseTest.swift; sourceTree = "<group>"; };
-		503442C71F375C8400CE57DC /* FunctionalStreamingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalStreamingTests.swift; sourceTree = "<group>"; };
-		5034F3151F3A100800406569 /* StreamingTestData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StreamingTestData; sourceTree = "<group>"; };
 		503F74E11F40B0DA0068FA64 /* Pods_AirLockSDK_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_AirLockSDK_Tests.framework; path = "../../../Library/Developer/Xcode/DerivedData/AirLockSDK-dyzdppaemaobcybwfkzszcpdovvv/Build/Products/Debug-iphonesimulator/Pods_AirLockSDK_Tests.framework"; sourceTree = "<group>"; };
-		5044E4A11DCF71BB0072C54F /* AirlockPullFeaturesFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockPullFeaturesFunctions.swift; sourceTree = "<group>"; };
-		5044E4AE1DCF91EB0072C54F /* AirlockDefaultFeaturesFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockDefaultFeaturesFunctions.swift; sourceTree = "<group>"; };
-		5076E3681EA65501001B6DE0 /* ProfileForTimeFunctionsTests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProfileForTimeFunctionsTests.json; sourceTree = "<group>"; };
-		50803DC81E504F1B00243A1F /* FunctionalityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalityTests.swift; sourceTree = "<group>"; };
-		5088407D1F0D332100AB187C /* AirlockStressCalculateSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockStressCalculateSync.swift; sourceTree = "<group>"; };
-		5099E5D61F52FD3C005D2DC7 /* StreamingStressTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingStressTest.swift; sourceTree = "<group>"; };
-		5099E5D81F530D0A005D2DC7 /* StreamingTestBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingTestBaseClass.swift; sourceTree = "<group>"; };
-		50AD09021E6F417E008A2B60 /* inputSchema_Q4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = inputSchema_Q4.txt; path = E2ETests/inputSchema_Q4.txt; sourceTree = "<group>"; };
-		50B5C6801E507F0E000B8ACB /* OverallProduct__AirlockDefaults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OverallProduct__AirlockDefaults.json; sourceTree = "<group>"; };
-		50B5C6831E50A0D3000B8ACB /* E2ETestScenarios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = E2ETestScenarios.swift; sourceTree = "<group>"; };
-		50DA18D71DCF941000FF262F /* AirlockPullCalculateFeaturesFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockPullCalculateFeaturesFunctions.swift; sourceTree = "<group>"; };
-		50DA18D91DCF99E300FF262F /* AirlockSyncFeatureFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockSyncFeatureFunctions.swift; sourceTree = "<group>"; };
-		50DA18E11DD0E9AC00FF262F /* AirlockCalculateFeaturesFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockCalculateFeaturesFunctions.swift; sourceTree = "<group>"; };
-		50DA18E41DD0EE7800FF262F /* AirlockPullStress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockPullStress.swift; sourceTree = "<group>"; };
-		50DA18E61DD0EF9F00FF262F /* AirlockCalculateStress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockCalculateStress.swift; sourceTree = "<group>"; };
-		50F022A51E27EF6000D9811B /* test_defaults2-Q4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test_defaults2-Q4.txt"; sourceTree = "<group>"; };
-		50F758861F02836D00ECE8C3 /* GetStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStringTests.swift; sourceTree = "<group>"; };
-		50F758881F03D8E200ECE8C3 /* GetStringTestsFr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStringTestsFr.swift; sourceTree = "<group>"; };
 		563AEEEE98D903235C54396D /* Pods-AirLockSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirLockSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirLockSDK_Tests/Pods-AirLockSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		593C929A652269F290D41242 /* AirLockSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AirLockSDK.podspec; path = ../AirLockSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* AirLockSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirLockSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,36 +29,13 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* AirLockSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirLockSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		718D585C4C206C8876938167 /* Pods-AirLockSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirLockSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirLockSDK_Example/Pods-AirLockSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BD21F4511D8942A5004735DD /* airlock_defaults.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airlock_defaults.txt; sourceTree = "<group>"; };
-		BD21F4571D89487C004735DD /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
-		BD21F45E1D894916004735DD /* NegativeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NegativeTests.swift; sourceTree = "<group>"; };
-		BD21F4621D894943004735DD /* broken_airlock_defaults.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = broken_airlock_defaults.txt; sourceTree = "<group>"; };
-		BD21F4641D894951004735DD /* test_defaults2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_defaults2.txt; sourceTree = "<group>"; };
-		BD21F4661D894960004735DD /* airLockconfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airLockconfig.json; sourceTree = "<group>"; };
-		BD21F4681D89496E004735DD /* sample_broken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_broken.json; sourceTree = "<group>"; };
-		BD21F46A1D894976004735DD /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		BD9182381E39EC070060C8ED /* AirlockDefaults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirlockDefaults.json; sourceTree = "<group>"; };
 		BD91823A1E39EC120060C8ED /* AirlockConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockConstants.swift; sourceTree = "<group>"; };
 		BD9504C81E473EDB0031E58A /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		C3159DEC1FAA18A600EA632E /* NotificationTestsData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NotificationTestsData; sourceTree = "<group>"; };
-		C3159DEE1FAA19C900EA632E /* NotificationTestBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTestBaseClass.swift; sourceTree = "<group>"; };
-		C3159DF01FAA26EB00EA632E /* NotificationFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFunctionalTests.swift; sourceTree = "<group>"; };
-		C36E65E11F5FF74B00A9A448 /* StreamingTest30August.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingTest30August.swift; sourceTree = "<group>"; };
-		C3AE603C1FB3580E0075C436 /* NotificationStressTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStressTest.swift; sourceTree = "<group>"; };
-		C3AE603E1FB4880F0075C436 /* NotificationSchedulersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSchedulersTests.swift; sourceTree = "<group>"; };
-		C3E3DC021FD5847B005D275F /* NewFeatureExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatureExecutor.swift; sourceTree = "<group>"; };
-		C3E3DC041FD59D45005D275F /* FeatureTestData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FeatureTestData; sourceTree = "<group>"; };
-		C3E7F28D1FCD4B42000B1BFA /* StreamingTestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingTestExecutor.swift; sourceTree = "<group>"; };
 		D4CE0C7B810C4C7FD826B377 /* Pods_AirLockSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirLockSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D12B9DEBB0B6B86D87C5E /* Pods-AirLockSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirLockSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirLockSDK_Tests/Pods-AirLockSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DF4D9C51150C141EDC6B2C6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E4F3E40D1D915DA0002A979B /* testData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = testData; sourceTree = "<group>"; };
-		E4F6956B1D89912F001C32DF /* test_defaults2_emptyurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_defaults2_emptyurl.txt; sourceTree = "<group>"; };
-		E4F6956C1D89912F001C32DF /* test_defaults2_wrongurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_defaults2_wrongurl.txt; sourceTree = "<group>"; };
-		E4F695711D89AFCA001C32DF /* JSTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSTest.swift; sourceTree = "<group>"; };
 		F45D144A17C681F94801A0F0 /* Pods_AirLockSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirLockSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,14 +45,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4233A2347099C1B9F71F619 /* Pods_AirLockSDK_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92F914488F222785E37AAFBA /* Pods_AirLockSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,66 +72,11 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		500B9D111E00119B0031812F /* featureConfigTest */ = {
-			isa = PBXGroup;
-			children = (
-				500B9D121E0011CC0031812F /* FeatureTestExecutor.swift */,
-				C3E3DC021FD5847B005D275F /* NewFeatureExecutor.swift */,
-			);
-			name = featureConfigTest;
-			sourceTree = "<group>";
-		};
-		50113E5C1E6C305300212C7E /* E2ETests */ = {
-			isa = PBXGroup;
-			children = (
-				50B5C6831E50A0D3000B8ACB /* E2ETestScenarios.swift */,
-				502F41A81E53417000381A5D /* AirlockRemoteActions.swift */,
-				502F41AA1E598E6200381A5D /* E2EBaseTest.swift */,
-				50113E5D1E6C396F00212C7E /* E2EAnalyticsTests.swift */,
-			);
-			name = E2ETests;
-			sourceTree = "<group>";
-		};
-		503442C61F375C6400CE57DC /* SteamingTests */ = {
-			isa = PBXGroup;
-			children = (
-				503442C71F375C8400CE57DC /* FunctionalStreamingTests.swift */,
-				5099E5D61F52FD3C005D2DC7 /* StreamingStressTest.swift */,
-				5099E5D81F530D0A005D2DC7 /* StreamingTestBaseClass.swift */,
-				C36E65E11F5FF74B00A9A448 /* StreamingTest30August.swift */,
-				C3E7F28D1FCD4B42000B1BFA /* StreamingTestExecutor.swift */,
-			);
-			name = SteamingTests;
-			sourceTree = "<group>";
-		};
-		5044E4AD1DCF91C10072C54F /* timeFunctions */ = {
-			isa = PBXGroup;
-			children = (
-				5044E4A11DCF71BB0072C54F /* AirlockPullFeaturesFunctions.swift */,
-				5044E4AE1DCF91EB0072C54F /* AirlockDefaultFeaturesFunctions.swift */,
-				50DA18D71DCF941000FF262F /* AirlockPullCalculateFeaturesFunctions.swift */,
-				50DA18D91DCF99E300FF262F /* AirlockSyncFeatureFunctions.swift */,
-				50DA18E11DD0E9AC00FF262F /* AirlockCalculateFeaturesFunctions.swift */,
-			);
-			name = timeFunctions;
-			sourceTree = "<group>";
-		};
-		50DA18E31DD0ECED00FF262F /* stressTests */ = {
-			isa = PBXGroup;
-			children = (
-				50DA18E41DD0EE7800FF262F /* AirlockPullStress.swift */,
-				50DA18E61DD0EF9F00FF262F /* AirlockCalculateStress.swift */,
-				5088407D1F0D332100AB187C /* AirlockStressCalculateSync.swift */,
-			);
-			name = stressTests;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AirLockSDK */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				4708992DB61C6732C081AED9 /* Pods */,
 				04942235ECAB720CAB648858 /* Frameworks */,
@@ -268,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* AirLockSDK_Example.app */,
-				607FACE51AFB9204008FA782 /* AirLockSDK_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,38 +115,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C3E3DC041FD59D45005D275F /* FeatureTestData */,
-				C3159DEC1FAA18A600EA632E /* NotificationTestsData */,
-				C3159DEB1FAA160800EA632E /* NotificationTests */,
-				5034F3151F3A100800406569 /* StreamingTestData */,
-				503442C61F375C6400CE57DC /* SteamingTests */,
-				500B9D0F1DFDB36F0031812F /* FCStestData */,
-				E4F3E40D1D915DA0002A979B /* testData */,
-				E4F695701D89AF5B001C32DF /* JSEngineTests */,
-				E4F6956F1D89AEE4001C32DF /* featureTests */,
-				BD21F4561D8947BE004735DD /* resources */,
-				BD21F45E1D894916004735DD /* NegativeTests.swift */,
-				50F758861F02836D00ECE8C3 /* GetStringTests.swift */,
-				50F758881F03D8E200ECE8C3 /* GetStringTestsFr.swift */,
-				50803DC81E504F1B00243A1F /* FunctionalityTests.swift */,
-				50113E5C1E6C305300212C7E /* E2ETests */,
-				BD21F4571D89487C004735DD /* TestUtils.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,62 +125,12 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		BD21F4561D8947BE004735DD /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				5076E3681EA65501001B6DE0 /* ProfileForTimeFunctionsTests.json */,
-				50187F181E8174E400CDDDFD /* ProfileForAnalyticTest.json */,
-				50187F151E7FEB9E00CDDDFD /* E2EAnalyticsCRAttributes.json */,
-				50AD09021E6F417E008A2B60 /* inputSchema_Q4.txt */,
-				50B5C6801E507F0E000B8ACB /* OverallProduct__AirlockDefaults.json */,
-				50F022A51E27EF6000D9811B /* test_defaults2-Q4.txt */,
-				E4F6956B1D89912F001C32DF /* test_defaults2_emptyurl.txt */,
-				E4F6956C1D89912F001C32DF /* test_defaults2_wrongurl.txt */,
-				BD21F4661D894960004735DD /* airLockconfig.json */,
-				BD21F4511D8942A5004735DD /* airlock_defaults.txt */,
-				BD21F4621D894943004735DD /* broken_airlock_defaults.txt */,
-				BD21F46A1D894976004735DD /* sample.json */,
-				BD21F4681D89496E004735DD /* sample_broken.json */,
-				BD21F4641D894951004735DD /* test_defaults2.txt */,
-			);
-			name = resources;
-			sourceTree = "<group>";
-		};
 		BDE373511D8AC37200DD10A6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				BD9182381E39EC070060C8ED /* AirlockDefaults.json */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		C3159DEB1FAA160800EA632E /* NotificationTests */ = {
-			isa = PBXGroup;
-			children = (
-				C3159DEE1FAA19C900EA632E /* NotificationTestBaseClass.swift */,
-				C3159DF01FAA26EB00EA632E /* NotificationFunctionalTests.swift */,
-				C3AE603C1FB3580E0075C436 /* NotificationStressTest.swift */,
-				C3AE603E1FB4880F0075C436 /* NotificationSchedulersTests.swift */,
-			);
-			path = NotificationTests;
-			sourceTree = "<group>";
-		};
-		E4F6956F1D89AEE4001C32DF /* featureTests */ = {
-			isa = PBXGroup;
-			children = (
-				500B9D111E00119B0031812F /* featureConfigTest */,
-				50DA18E31DD0ECED00FF262F /* stressTests */,
-				5044E4AD1DCF91C10072C54F /* timeFunctions */,
-			);
-			name = featureTests;
-			sourceTree = "<group>";
-		};
-		E4F695701D89AF5B001C32DF /* JSEngineTests */ = {
-			isa = PBXGroup;
-			children = (
-				E4F695711D89AFCA001C32DF /* JSTest.swift */,
-			);
-			name = JSEngineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +145,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				F1F8BE16B3B0604EE38415B3 /* [CP] Embed Pods Frameworks */,
+				863B53F3287C53F58D52113A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,25 +155,6 @@
 			productName = AirLockSDK;
 			productReference = 607FACD01AFB9204008FA782 /* AirLockSDK_Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		607FACE41AFB9204008FA782 /* AirLockSDK_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AirLockSDK_Tests" */;
-			buildPhases = (
-				6397091DD0F5E2210AA68AA5 /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BD21F4781D894DC2004735DD /* PBXTargetDependency */,
-			);
-			name = AirLockSDK_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* AirLockSDK_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -458,12 +176,6 @@
 							};
 						};
 					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 54VVTD24DT;
-						LastSwiftMigration = 1020;
-						TestTargetID = 607FACCF1AFB9204008FA782;
-					};
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AirLockSDK" */;
@@ -481,7 +193,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* AirLockSDK_Example */,
-				607FACE41AFB9204008FA782 /* AirLockSDK_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -492,66 +203,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				503858921EB2167B00D57334 /* AirlockDefaults.json in Resources */,
-				5076E3691EA65501001B6DE0 /* ProfileForTimeFunctionsTests.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				50B5C6811E507F0E000B8ACB /* OverallProduct__AirlockDefaults.json in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				C3E3DC051FD59D45005D275F /* FeatureTestData in Resources */,
-				50187F191E8174E400CDDDFD /* ProfileForAnalyticTest.json in Resources */,
-				50187F161E7FEB9E00CDDDFD /* E2EAnalyticsCRAttributes.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				500B9D101DFDB36F0031812F /* FCStestData in Resources */,
-				50AD09031E6F417E008A2B60 /* inputSchema_Q4.txt in Resources */,
-				E4F6956D1D89912F001C32DF /* test_defaults2_emptyurl.txt in Resources */,
-				E4F6956E1D89912F001C32DF /* test_defaults2_wrongurl.txt in Resources */,
-				50F022A61E27EF6000D9811B /* test_defaults2-Q4.txt in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C31A3E4F1FD83EAE00E4E198 /* FeatureTestData in Resources */,
-				5076E36A1EA655AE001B6DE0 /* ProfileForTimeFunctionsTests.json in Resources */,
-				50187F1A1E81862C00CDDDFD /* ProfileForAnalyticTest.json in Resources */,
-				50187F171E7FEE2B00CDDDFD /* E2EAnalyticsCRAttributes.json in Resources */,
-				507F22AB1E6F5BBA0010CFD4 /* inputSchema_Q4.txt in Resources */,
-				50B5C6821E507FB4000B8ACB /* OverallProduct__AirlockDefaults.json in Resources */,
-				5034F3161F3A100800406569 /* StreamingTestData in Resources */,
-				50F022A71E27F00500D9811B /* test_defaults2-Q4.txt in Resources */,
-				500B9D151E0048EA0031812F /* FCStestData in Resources */,
-				C3159DED1FAA18A700EA632E /* NotificationTestsData in Resources */,
-				BDE373571D8ADC9400DD10A6 /* test_defaults2_emptyurl.txt in Resources */,
-				BDE373581D8ADC9400DD10A6 /* test_defaults2_wrongurl.txt in Resources */,
-				BD21F4711D894A3B004735DD /* airLockconfig.json in Resources */,
-				BD21F4721D894A3B004735DD /* airlock_defaults.txt in Resources */,
-				BD21F4731D894A3B004735DD /* broken_airlock_defaults.txt in Resources */,
-				BD21F4741D894A3B004735DD /* sample.json in Resources */,
-				BD21F4751D894A3B004735DD /* sample_broken.json in Resources */,
-				BD21F4761D894A3B004735DD /* test_defaults2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6397091DD0F5E2210AA68AA5 /* [CP] Check Pods Manifest.lock */ = {
+		863B53F3287C53F58D52113A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-AirLockSDK_Example/Pods-AirLockSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AirLockSDK/AirLockSDK.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AirLockSDK_Tests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AirLockSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirLockSDK_Example/Pods-AirLockSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9167B3995A76D1770ADFBE9C /* [CP] Check Pods Manifest.lock */ = {
@@ -579,13 +255,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AirLockSDK_Example/Pods-AirLockSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AirLockSDK/AirLockSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirLockSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -607,51 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3159DF11FAA26EB00EA632E /* NotificationFunctionalTests.swift in Sources */,
-				502F41AB1E598E6300381A5D /* E2EBaseTest.swift in Sources */,
-				C3AE603D1FB3580E0075C436 /* NotificationStressTest.swift in Sources */,
-				C36E65E21F5FF74B00A9A448 /* StreamingTest30August.swift in Sources */,
-				5099E5D71F52FD3C005D2DC7 /* StreamingStressTest.swift in Sources */,
-				C3AE603F1FB488100075C436 /* NotificationSchedulersTests.swift in Sources */,
-				50BCA2981DF6C5C500F9E073 /* NegativeTests.swift in Sources */,
-				BD21F4591D8948A9004735DD /* TestUtils.swift in Sources */,
-				50DA18E51DD0EE7800FF262F /* AirlockPullStress.swift in Sources */,
-				C3E3DC031FD5847C005D275F /* NewFeatureExecutor.swift in Sources */,
-				50DA18DA1DCF99E300FF262F /* AirlockSyncFeatureFunctions.swift in Sources */,
-				50DA18E01DD0E58D00FF262F /* AirlockPullCalculateFeaturesFunctions.swift in Sources */,
-				C3E7F28E1FCD4B42000B1BFA /* StreamingTestExecutor.swift in Sources */,
-				5088407E1F0D332100AB187C /* AirlockStressCalculateSync.swift in Sources */,
-				50DA18E21DD0E9AC00FF262F /* AirlockCalculateFeaturesFunctions.swift in Sources */,
-				C3159DEF1FAA19C900EA632E /* NotificationTestBaseClass.swift in Sources */,
-				503442C81F375C8400CE57DC /* FunctionalStreamingTests.swift in Sources */,
-				50BCA2991DF6C5D600F9E073 /* JSTest.swift in Sources */,
-				502F41A91E53417100381A5D /* AirlockRemoteActions.swift in Sources */,
-				50113E5E1E6C396F00212C7E /* E2EAnalyticsTests.swift in Sources */,
-				5044E4AF1DCF91EB0072C54F /* AirlockDefaultFeaturesFunctions.swift in Sources */,
-				50DA18E71DD0EF9F00FF262F /* AirlockCalculateStress.swift in Sources */,
-				50B5C6841E50A0D3000B8ACB /* E2ETestScenarios.swift in Sources */,
-				500B9D141E0012040031812F /* FeatureTestExecutor.swift in Sources */,
-				5044E4A21DCF71BB0072C54F /* AirlockPullFeaturesFunctions.swift in Sources */,
-				5099E5D91F530D0A005D2DC7 /* StreamingTestBaseClass.swift in Sources */,
-				50803DC91E504F1B00243A1F /* FunctionalityTests.swift in Sources */,
-				50F758871F02836D00ECE8C3 /* GetStringTests.swift in Sources */,
-				50F7588A1F03D97E00ECE8C3 /* GetStringTestsFr.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BD21F4781D894DC2004735DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* AirLockSDK_Example */;
-			targetProxy = BD21F4771D894DC2004735DD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -714,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -756,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -774,7 +404,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 54VVTD24DT;
 				INFOPLIST_FILE = AirLockSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -792,63 +422,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 54VVTD24DT;
 				INFOPLIST_FILE = AirLockSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 563AEEEE98D903235C54396D /* Pods-AirLockSDK_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 54VVTD24DT;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
-				EVENT_FILE = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"EVENT_FILE=$(EVENT_FILE)",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirLockSDK_Example.app/AirLockSDK_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD2D12B9DEBB0B6B86D87C5E /* Pods-AirLockSDK_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 54VVTD24DT;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
-				EVENT_FILE = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirLockSDK_Example.app/AirLockSDK_Example";
 			};
 			name = Release;
 		};
@@ -869,15 +448,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AirLockSDK_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

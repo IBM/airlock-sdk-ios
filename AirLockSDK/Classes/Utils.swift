@@ -255,4 +255,24 @@ internal class Utils {
         
         vc.present(alert,animated:true,completion:nil)
     }
+    
+    static func getDebugItemONColor(_ interfaceStyle: UIUserInterfaceStyle) -> UIColor {
+        if interfaceStyle == .dark {
+            return UIColor.cyan
+        } else {
+            return UIColor.blue
+        }
+    }
+    
+    static func getDebugPremiumItemBackgroundColor(_ interfaceStyle: UIUserInterfaceStyle) -> UIColor {
+        if interfaceStyle == .dark {
+            return UIColor.darkGray
+        } else {
+            return UIColor(red: 255/255, green: 255/255, blue: 224/255, alpha: 1.0)
+        }
+    }
+
+	static func getEpochMillis(_ date: Date) -> TimeInterval {
+		return (date.timeIntervalSince1970 * 1000.0).rounded()
+	}
 }

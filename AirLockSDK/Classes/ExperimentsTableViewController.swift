@@ -16,6 +16,8 @@ class ExperimentsTableViewController: UITableViewController {
     var expsArray: [Feature]            = []
     var filteredExpsArray: [Feature]    = []
     
+    let defaultLabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 
@@ -74,9 +76,9 @@ class ExperimentsTableViewController: UITableViewController {
             cell.textLabel?.text = Utils.removePrefix(str: currExp.getName())
             
             if currExp.isOn() {
-                cell.textLabel?.textColor = UIColor.blue
+                cell.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
             } else {
-                cell.textLabel?.textColor = UIColor.black
+                cell.textLabel?.textColor = defaultLabel.textColor
             }
             
             guard let b:Bundle? = ExperimentsTableViewController.bundle else {
@@ -88,12 +90,15 @@ class ExperimentsTableViewController: UITableViewController {
             let currVariant = currExp.children[indexPath.row - 1]
             
             cell.textLabel?.text = Utils.removePrefix(str: currVariant.getName())
-            cell.detailTextLabel?.text = "branch: \(currVariant.configString)"
+            
+            let branchName = currVariant.configString == "MASTER" ? "MAIN" : currVariant.configString
+            
+            cell.detailTextLabel?.text = "branch: \(branchName)"
             
             if currVariant.isOn() {
-                cell.textLabel?.textColor = UIColor.blue
+                cell.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
             } else {
-                cell.textLabel?.textColor = UIColor.black
+                cell.textLabel?.textColor = defaultLabel.textColor
             }
         }
         return cell

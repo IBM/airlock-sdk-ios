@@ -121,8 +121,7 @@ internal class ServersManager {
             }
         }
         
-        guard let serverInfo = self.serversInfo[serverName], let serverURL:String = serverInfo.cdnOverride else {
-            
+        guard let serverInfo = self.serversInfo[serverName], let serverURL = serverInfo.cdnOverride as? String else {
             onCompletion(false, nil)
             return
         }

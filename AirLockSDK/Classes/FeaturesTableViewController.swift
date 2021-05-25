@@ -52,6 +52,9 @@ class FeaturesTableViewController: UITableViewController {
     var rootFeature:Feature? = nil
     var basePath:String = "\\"
     
+    let defaultLabel = UILabel()
+    let defaultCell = UITableViewCell()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -161,16 +164,16 @@ class FeaturesTableViewController: UITableViewController {
         
         cell!.textLabel?.text = data.feature.getName()
         if (data.feature.isOn()) {
-            cell!.textLabel?.textColor = UIColor.blue
+            cell!.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
         } else {
-            cell!.textLabel?.textColor = UIColor.black
+            cell!.textLabel?.textColor = defaultLabel.textColor
         }
         cell!.detailTextLabel?.text = data.path
         
         if data.feature.isPremiumOn() {
-            cell!.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 224/255, alpha: 1.0)
+            cell!.backgroundColor = Utils.getDebugPremiumItemBackgroundColor(traitCollection.userInterfaceStyle)
         } else {
-            cell!.backgroundColor = .white
+            cell!.backgroundColor = defaultCell.backgroundColor
         }
         return cell!
     }

@@ -14,6 +14,8 @@ class EntitlementsTableViewController: UITableViewController {
     static let basePath:String = "\\"
     let cellIdentifier = "entitlementsId"
     var rootForIncludedEntitlements:Entitlement?
+    
+    let defaultLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,10 +89,11 @@ class EntitlementsTableViewController: UITableViewController {
         }
         
         let data = entitlements[indexPath.row]
+        
         if (data.feature.isOn()) {
-            c.textLabel?.textColor = UIColor.blue
+            c.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
         } else {
-            c.textLabel?.textColor = UIColor.black
+            c.textLabel?.textColor = defaultLabel.textColor
         }
         c.detailTextLabel?.text = data.path
         

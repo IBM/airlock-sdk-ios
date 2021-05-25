@@ -670,13 +670,15 @@ class BranchesAndExperiments: NSObject, NSCoding {
             }
         }
         
+		mergedEntitlement.setPurchaseOptionsDict(newPurchaseOptionsDict: purchaseOptionsDict)
+		
         guard let rootPurchaseOptions = mergedEntitlement.getRoot() else {
             return nil
         }
         
         rootPurchaseOptions.children = []
         for purchaseOptionsChildName in purchaseOptionsChildreanNames {
-            if let childPurchaseOption = purchaseOptionsDict[purchaseOptionsChildName.lowercased()] {
+            if let childPurchaseOption = mergedEntitlement.purchaseOptionsDict[purchaseOptionsChildName.lowercased()] {
                 rootPurchaseOptions.children.append(childPurchaseOption)
                 childPurchaseOption.parentName = rootPurchaseOptions.name
                 updateOldParent(mergedFeature:childPurchaseOption)
@@ -694,5 +696,4 @@ class BranchesAndExperiments: NSObject, NSCoding {
             getConfigurationDict(origFeature:configRule,configDict:&configDict,isConfiguration:isConfiguration)
         }
     }
-    
 }

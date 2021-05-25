@@ -19,6 +19,8 @@ public enum storyBoardType : String {
     case streams        = "streams"
     case notifications  = "notifications"
     case entitlements   = "entitlements"
+    case airlytics      = "airlytics"
+	case eventsHistory  = "eventsHistory"
 }
 
 public class AirLockSegue : NSObject {
@@ -26,7 +28,7 @@ public class AirLockSegue : NSObject {
     public static func performSegue(caller: UIViewController, storyBoardType:storyBoardType, delegate:AnyObject? = nil) {
         
         if storyBoardType == .multiServer {
-            let alert = UIAlertController(title: "", message: "Airlock not support multiple servers", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "", message: "Airlock does not support multiple servers", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             caller.present(alert, animated: true, completion: nil)
             return
@@ -42,10 +44,10 @@ public class AirLockSegue : NSObject {
             return
         }
         
-        if(delegate != nil) {
-            AirLockSegue.prepareVC(vc:&vc,storyBoardType:storyBoardType,delegate:delegate!)
+        if delegate != nil {
+            AirLockSegue.prepareVC(vc: &vc, storyBoardType: storyBoardType, delegate: delegate!)
         }
-        caller.navigationController?.pushViewController(vc, animated:true)
+        caller.navigationController?.pushViewController(vc, animated: true)
     }
     
     private static func prepareVC(vc:inout UIViewController, storyBoardType:storyBoardType, delegate:AnyObject) {
@@ -81,6 +83,12 @@ public class AirLockSegue : NSObject {
             guard let dest:EntitlementsTableViewController = vc as? EntitlementsTableViewController else { return }
             dest.delegate = del
             break
+        case .airlytics:
+            guard let dest:AirlyticsTableViewController = vc as? AirlyticsTableViewController else { return }
+            dest.delegate = del
+            break
+		case .eventsHistory:
+			guard let _ = vc as? EventsHistoryTableViewController else { return }
         default:
             break
         }

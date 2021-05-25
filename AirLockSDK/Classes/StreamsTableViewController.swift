@@ -10,10 +10,14 @@ import UIKit
 
 class StreamsTableViewController: UITableViewController {
     
-    var streamsArr:[Stream] = []
+    var streamsArr: [Stream] = []
+	var deviceGroups = Set<String>()
+    let defaultLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		deviceGroups = UserGroups.shared.getUserGroups()
         streamsArr = Airlock.sharedInstance.streamsManager.streamsArr
     }
 
@@ -31,11 +35,12 @@ class StreamsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier:"streamCellIdentifer",for:indexPath)
-        cell.textLabel?.text = streamsArr[indexPath.row].name
-        if streamsArr[indexPath.row].isActive {
-            cell.textLabel?.textColor = UIColor.blue
+		let stream = streamsArr[indexPath.row]
+        cell.textLabel?.text = stream.name
+		if stream.checkPreconditions(deviceGroups: deviceGroups) {
+            cell.textLabel?.textColor = Utils.getDebugItemONColor(traitCollection.userInterfaceStyle)
         } else {
-            cell.textLabel?.textColor = UIColor.darkText
+            cell.textLabel?.textColor = defaultLabel.textColor
         }
         cell.tag = indexPath.row
         return cell
@@ -68,5 +73,5 @@ class StreamsTableViewController: UITableViewController {
         }
         streamDetailsView.stream = streamsArr[cell.tag]
     }
-
 }
+
