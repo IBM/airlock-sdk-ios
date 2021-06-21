@@ -192,7 +192,7 @@
 		020BDC1E9946E08AD7DD491AB16AE46B /* EventsHistoryFileManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventsHistoryFileManager.swift; path = Sources/AirLockSDK/Classes/EventsHistoryFileManager.swift; sourceTree = "<group>"; };
 		0532DA1CEDC152E326EEBE16FB23CB32 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		080DB73A18C786A5EC55D5C2D349D355 /* notifications.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = notifications.storyboard; path = Sources/AirLockSDK/Classes/notifications.storyboard; sourceTree = "<group>"; };
-		095D96A489FFAD8A9F958C506032E81D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		095D96A489FFAD8A9F958C506032E81D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0A5E05C6697D42E2B4D841FE2AE7E850 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		0AAE02DC7D1754EA574E377712BCFF28 /* StreamDetailsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamDetailsTableViewController.swift; path = Sources/AirLockSDK/Classes/StreamDetailsTableViewController.swift; sourceTree = "<group>"; };
 		0B066CBCBE98B585F9D65468E781AAAC /* AirlockFileManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AirlockFileManager.swift; path = Sources/AirLockSDK/Classes/AirlockFileManager.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		59A82356902DC76FBEBF54489DA86FB0 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		59C9918DA42FC84EE5C84BD1B267944C /* NotificationsPercentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationsPercentage.swift; path = Sources/AirLockSDK/Classes/NotificationsPercentage.swift; sourceTree = "<group>"; };
 		5BD70041C0782398B10D4B52BA223399 /* Percentile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Percentile.swift; path = Sources/AirLockSDK/Classes/Percentile.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFEEDA8AFF65F86DE4B830136720B77 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		5E7C052B0BA0603FB063D2E0854865EE /* AirLockSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AirLockSDK-prefix.pch"; sourceTree = "<group>"; };
 		63813D9CFFC545429DC892326B9F7999 /* AirLockSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AirLockSDK.release.xcconfig; sourceTree = "<group>"; };
@@ -270,12 +270,12 @@
 		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		921F550CEAA359ECCC7FBB278E18F18E /* Pods-AirLockSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AirLockSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93F771967C1DEB90FB2EECA60EFBC4AB /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/AirLockSDK/Classes/Constants.swift; sourceTree = "<group>"; };
-		942844A4C0178130D4E97C3486863739 /* AirLockSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirLockSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		942844A4C0178130D4E97C3486863739 /* AirLockSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AirLockSDK.framework; path = AirLockSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F13F2D895E88C1460D98E9D5BCAD51 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		97770D296BF5D6E5096BE566CCA3D79E /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationsTableViewController.swift; path = Sources/AirLockSDK/Classes/NotificationsTableViewController.swift; sourceTree = "<group>"; };
 		978E340CC90EF2278D2CD19D912904D9 /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = Sources/AirLockSDK/Classes/images.xcassets; sourceTree = "<group>"; };
 		98471F10F874A92881D10439299DB1A5 /* PremiumDetailsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PremiumDetailsTableViewController.swift; path = Sources/AirLockSDK/Classes/PremiumDetailsTableViewController.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DDFC57D9C08BC8B3ECC9FA51C967B4F /* JSErrorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSErrorInfo.swift; path = Sources/AirLockSDK/Classes/JSErrorInfo.swift; sourceTree = "<group>"; };
 		9EF508FA3E820992D5B4E90B4228AC1F /* StreamTrace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamTrace.swift; path = Sources/AirLockSDK/Classes/StreamTrace.swift; sourceTree = "<group>"; };
 		9FE3C089381E309295D7C2F63FFE71D3 /* Pods-AirLockSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirLockSDK_Example-dummy.m"; sourceTree = "<group>"; };
@@ -288,13 +288,13 @@
 		A9EBF1C64FE52536089DFD8605935AB1 /* PurchaseOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseOption.swift; path = Sources/AirLockSDK/Classes/PurchaseOption.swift; sourceTree = "<group>"; };
 		AB16BCCE51DB56CA96A4D1976A969350 /* Airlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Airlock.swift; path = Sources/AirLockSDK/Classes/Airlock.swift; sourceTree = "<group>"; };
 		ADDF1FDF795ECC61E004894EA800E572 /* features.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = features.storyboard; path = Sources/AirLockSDK/Classes/features.storyboard; sourceTree = "<group>"; };
-		AE5848293C587A6186EA44A4E3DBCD4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE5848293C587A6186EA44A4E3DBCD4F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		AFC0219AC62EDD8093EE4FDAB168FE04 /* FeatureAnalyticsDetailsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureAnalyticsDetailsTableViewController.swift; path = Sources/AirLockSDK/Classes/FeatureAnalyticsDetailsTableViewController.swift; sourceTree = "<group>"; };
 		B119F2A9C7F4A63EDA1774A8B1405AA2 /* PercentageTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PercentageTableViewController.swift; path = Sources/AirLockSDK/Classes/PercentageTableViewController.swift; sourceTree = "<group>"; };
-		B2B1476E7C30442CC5018B656F3FF345 /* AirLockSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AirLockSDK.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		B2B1476E7C30442CC5018B656F3FF345 /* AirLockSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AirLockSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4197D35D04E3A9A01AED705048E5B29 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		B5335EC5BDB22F4018CB440BED12978C /* EventsHistoryTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventsHistoryTableViewController.swift; path = Sources/AirLockSDK/Classes/EventsHistoryTableViewController.swift; sourceTree = "<group>"; };
-		B5A354AD9240EB18A878DE5F825BB609 /* Pods_AirLockSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirLockSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A354AD9240EB18A878DE5F825BB609 /* Pods_AirLockSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirLockSDK_Example.framework; path = "Pods-AirLockSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FE535C98354FA5874819C61FE125B5 /* EntitlementsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntitlementsTableViewController.swift; path = Sources/AirLockSDK/Classes/EntitlementsTableViewController.swift; sourceTree = "<group>"; };
 		B70E2DA969A777D11FCF0A0F7CAD0BF6 /* FeatureDetailsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureDetailsTableViewController.swift; path = Sources/AirLockSDK/Classes/FeatureDetailsTableViewController.swift; sourceTree = "<group>"; };
 		B9FB54BCAECB66DA4FBBFB9279DA7512 /* AirlyticsEventRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AirlyticsEventRegistry.swift; path = Sources/AirLockSDK/Classes/AirlyticsEventRegistry.swift; sourceTree = "<group>"; };
@@ -317,7 +317,7 @@
 		D3EE92E944E800E558AEC7F97401809F /* AirlockPullTasksManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AirlockPullTasksManager.swift; path = Sources/AirLockSDK/Classes/AirlockPullTasksManager.swift; sourceTree = "<group>"; };
 		D571268F1307D534EB8CE1AFE6A9599D /* JSScriptInvoker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSScriptInvoker.swift; path = Sources/AirLockSDK/Classes/JSScriptInvoker.swift; sourceTree = "<group>"; };
 		D75C4F2F8BB86DB639F4394E09B287A5 /* Entitlements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entitlements.swift; path = Sources/AirLockSDK/Classes/Entitlements.swift; sourceTree = "<group>"; };
-		D936FCA181CAC5325DCDC25FC3AEA879 /* AirLockSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirLockSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D936FCA181CAC5325DCDC25FC3AEA879 /* AirLockSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AirLockSDK.bundle; path = "AirLockSDK-AirLockSDK.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AB75E46EA568144B45B0522E601995 /* StreamsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamsTableViewController.swift; path = Sources/AirLockSDK/Classes/StreamsTableViewController.swift; sourceTree = "<group>"; };
 		D9B59D6FFBF9A46119702F4788D50976 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
 		DADF6D54D95C96BADBA660778964318D /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
@@ -329,7 +329,7 @@
 		DF0EEA19A5EEB3C17A33A1A728A40951 /* BranchesTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BranchesTableViewController.swift; path = Sources/AirLockSDK/Classes/BranchesTableViewController.swift; sourceTree = "<group>"; };
 		DF1DB500937656A7076F488B715C3B21 /* StoreProductId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreProductId.swift; path = Sources/AirLockSDK/Classes/StoreProductId.swift; sourceTree = "<group>"; };
 		E20D3E5AA32CD8BF31D0D72D6BBA0FFC /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48D3A079FC0CECC9C2C861DFE6A41D4 /* JSClientEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSClientEngine.swift; path = Sources/AirLockSDK/Classes/JSClientEngine.swift; sourceTree = "<group>"; };
 		E4E3B31EC3F55EF4BF9E60E699A7AA96 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductsTableViewController.swift; path = Sources/AirLockSDK/Classes/ProductsTableViewController.swift; sourceTree = "<group>"; };
 		E525D8895B566E9E1E94D668A016B9CB /* SwiftyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.release.xcconfig; sourceTree = "<group>"; };
@@ -523,6 +523,7 @@
 				1DE3F966116A5C15DB1E9812B23DDF1A /* SwiftyJSON.swift */,
 				89784D676E2B46D079DD92FD8A90A9DE /* Support Files */,
 			);
+			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -629,6 +630,7 @@
 				77199AE2092661909E32F79062D3B84A /* Validation.swift */,
 				7DBCD63D565AEE611491CD1C80C8B002 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1099,7 +1101,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
@@ -1130,7 +1132,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
@@ -1317,7 +1319,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
