@@ -25,15 +25,15 @@
   ],
   "requires_arc": true,
   "compiler_flags": "-fmodules",
-  "source_files": "AirLockSDK/Classes/**/*.{swift,m,h}",
+  "source_files": "Sources/AirLockSDK/Classes/**/*.{swift,m,h}",
   "frameworks": [
     "UIKit",
     "Foundation"
   ],
   "resource_bundles": {
     "AirLockSDK": [
-      "AirLockSDK/Classes/**/*.{storyboard}",
-      "AirLockSDK/Classes/images.xcassets"
+      "Sources/AirLockSDK/Classes/**/*.{storyboard}",
+      "Sources/AirLockSDK/Classes/images.xcassets"
     ]
   },
   "static_framework": true,
