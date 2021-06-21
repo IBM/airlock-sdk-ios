@@ -5,12 +5,8 @@ import PackageDescription
 
 let package = Package(
     name: "AirLockSDK",
-    platforms: [
-        .iOS(.v10),
-        .tvOS(.v12),
-        .watchOS(.v5),
-        .macOS(.v10_15)
-    ], products: [
+    platforms: [.iOS(.v11), .macOS(.v10_12), .tvOS(.v10), .watchOS(.v7)],
+    products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AirLockSDK",
