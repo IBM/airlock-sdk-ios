@@ -26,5 +26,11 @@ let package = Package(
         .testTarget(
             name: "AirLockSDKTests",
             dependencies: ["AirLockSDK"]),
+    ],
+platforms: [
+        .iOS(.v10),
+        .tvOS(.v12),
+        .watchOS(.v5),
+        .macOS(.v10_15)
     ]
 )
