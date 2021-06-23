@@ -53,7 +53,7 @@ internal class AirlockPullTasksManager {
      */
     public func waitForTasks(onCompletion:@escaping () -> Void){
         
-        self.dispatchGroup.notify(queue: DispatchQueue.main) {
+        self.dispatchGroup.notify(queue: DispatchQueue.global(qos: .default)) {
             onCompletion()
         }
     }
