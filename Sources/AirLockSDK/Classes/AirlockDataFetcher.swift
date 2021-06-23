@@ -323,10 +323,6 @@ internal class AirlockDataFetcher {
                 notificationsRunTimeTask.setResult(result: response as Any?)
             }
         tasksMgr.appendTask(task: notificationsRunTimeTask)
-
-        print("SHIKIKI: \(Thread.isMainThread)")
-        
-        
         
         // Waiting for all download tasks to complete
         tasksMgr.waitForTasks(onCompletion:{
