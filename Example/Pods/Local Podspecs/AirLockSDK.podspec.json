@@ -39,7 +39,7 @@
   "static_framework": true,
   "dependencies": {
     "Alamofire": [
-      "5.4.0"
+      "5.4.3"
     ],
     "SwiftyJSON": [
       "~> 5.0.0"

@@ -8,7 +8,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'AirLockSDK_Example' do
   pod 'AirLockSDK',     :path => '../'
-  pod 'Alamofire',      '5.4.0'
+  pod 'Alamofire',      '5.4.3'
   pod 'SwiftyJSON',     '~> 5.0.0'
 end
 

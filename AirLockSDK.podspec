@@ -30,6 +30,6 @@ Pod::Spec.new do |s|
     s.frameworks            = 'UIKit', 'Foundation'
     s.resource_bundles      = { 'AirLockSDK' => ['Sources/AirLockSDK/Classes/**/*.{storyboard}', 'Sources/AirLockSDK/Classes/images.xcassets'] }
     s.static_framework 		= true
-    s.dependency 'Alamofire',   '5.4.0'
+    s.dependency 'Alamofire',   '5.4.3'
     s.dependency 'SwiftyJSON',  '~> 5.0.0'
 end
