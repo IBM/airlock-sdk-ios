@@ -1,0 +1,60 @@
+# TODO: replace the contents of this file with the defaults file from your Airlock server
+
+{
+    "devS3Path": "https://*****/******/*****/",
+    "entitlementsRoot": {
+        "type": "ROOT",
+        "uniqueId": "********-****-****-****-********"
+    },
+    "defaultLanguage": "en",
+    "productId": "********-****-****-****-********",
+    "s3Path": "https://*******/******/******/",
+    "supportedLanguages": [
+        "en",
+        "ar",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en_AU",
+        "en_GB",
+        "es",
+        "fi",
+        "fr",
+        "fr_CA",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ko",
+        "ms",
+        "nb",
+        "nl",
+        "pl",
+        "pt",
+        "pt_BR",
+        "ro",
+        "ru",
+        "sk",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "vi",
+        "zh_Hans",
+        "zh_Hant"
+    ],
+    "seasonId": "********-****-****-****-********",
+    "root": {
+        "entitlements": [],
+        "features": [],
+        "type": "ROOT",
+        "uniqueId": "********-****-****-****-********"
+    },
+    "version": "V2.5",
+    "productName": "iOS App"
+}

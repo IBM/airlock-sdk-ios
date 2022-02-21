@@ -1,0 +1,6 @@
+framework module Pods_AirlockSDK {
+  umbrella header "Pods-AirlockSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
