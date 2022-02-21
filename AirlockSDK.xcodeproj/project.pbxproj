@@ -1,0 +1,1462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C2BF72BA44F7323CCB37F5F /* Pods_AirlockSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B5955A2443F2072DB40752 /* Pods_AirlockSDK.framework */; };
+		7379538F27A95E860092D0A6 /* BannersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379538B27A95E860092D0A6 /* BannersManager.swift */; };
+		7379539027A95E860092D0A6 /* BannerQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379538C27A95E860092D0A6 /* BannerQueue.swift */; };
+		7379539127A95E860092D0A6 /* DebugUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7379538D27A95E860092D0A6 /* DebugUI.storyboard */; };
+		7379539227A95E860092D0A6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379538E27A95E860092D0A6 /* Banner.swift */; };
+		7379539527A95EBA0092D0A6 /* DebugDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379539427A95EBA0092D0A6 /* DebugDetailViewController.swift */; };
+		738C5CAF27A93E380018EC34 /* AirLockSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4927A93E360018EC34 /* AirLockSegue.swift */; };
+		738C5CB027A93E380018EC34 /* PercentageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4A27A93E360018EC34 /* PercentageManager.swift */; };
+		738C5CB127A93E380018EC34 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4B27A93E360018EC34 /* NotificationsTableViewController.swift */; };
+		738C5CB227A93E380018EC34 /* Entitlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4C27A93E360018EC34 /* Entitlement.swift */; };
+		738C5CB327A93E380018EC34 /* FeaturesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4D27A93E360018EC34 /* FeaturesCache.swift */; };
+		738C5CB427A93E380018EC34 /* StreamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4E27A93E360018EC34 /* StreamsTableViewController.swift */; };
+		738C5CB527A93E380018EC34 /* AirlyticsEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4F27A93E360018EC34 /* AirlyticsEventDetailsViewController.swift */; };
+		738C5CB627A93E380018EC34 /* PollDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5027A93E360018EC34 /* PollDetailsTableViewController.swift */; };
+		738C5CB727A93E380018EC34 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5127A93E360018EC34 /* ProductsTableViewController.swift */; };
+		738C5CB827A93E380018EC34 /* StreamTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5227A93E360018EC34 /* StreamTrace.swift */; };
+		738C5CB927A93E380018EC34 /* StreamPercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5327A93E360018EC34 /* StreamPercentage.swift */; };
+		738C5CBA27A93E380018EC34 /* PollResultsVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5427A93E360018EC34 /* PollResultsVisualization.swift */; };
+		738C5CBB27A93E380018EC34 /* entitlements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C5527A93E360018EC34 /* entitlements.storyboard */; };
+		738C5CBC27A93E380018EC34 /* EventsHistoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5627A93E360018EC34 /* EventsHistoryInfo.swift */; };
+		738C5CBD27A93E380018EC34 /* PollsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5727A93E360018EC34 /* PollsManager.swift */; };
+		738C5CBE27A93E380018EC34 /* PollPercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5827A93E360018EC34 /* PollPercentage.swift */; };
+		738C5CBF27A93E380018EC34 /* StoreProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5927A93E360018EC34 /* StoreProductsTableViewController.swift */; };
+		738C5CC027A93E380018EC34 /* EventsHistoryFilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5A27A93E360018EC34 /* EventsHistoryFilesTableViewController.swift */; };
+		738C5CC127A93E380018EC34 /* StreamDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5B27A93E360018EC34 /* StreamDetailsTableViewController.swift */; };
+		738C5CC227A93E380018EC34 /* UserGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5C27A93E360018EC34 /* UserGroupsTableViewCell.swift */; };
+		738C5CC327A93E380018EC34 /* EventsHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5D27A93E360018EC34 /* EventsHistoryTableViewController.swift */; };
+		738C5CC427A93E380018EC34 /* PercentageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5E27A93E360018EC34 /* PercentageTableViewController.swift */; };
+		738C5CC527A93E380018EC34 /* PollOpenAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C5F27A93E360018EC34 /* PollOpenAnswer.swift */; };
+		738C5CC627A93E380018EC34 /* branches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C6027A93E360018EC34 /* branches.storyboard */; };
+		738C5CC727A93E380018EC34 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6127A93E360018EC34 /* Poll.swift */; };
+		738C5CC827A93E380018EC34 /* ServersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6227A93E360018EC34 /* ServersTableViewController.swift */; };
+		738C5CC927A93E380018EC34 /* PollPredefinedAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6327A93E360018EC34 /* PollPredefinedAnswer.swift */; };
+		738C5CCA27A93E380018EC34 /* StreamsTraceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6427A93E360018EC34 /* StreamsTraceTableViewController.swift */; };
+		738C5CCB27A93E380018EC34 /* BranchesAndExperiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6527A93E360018EC34 /* BranchesAndExperiments.swift */; };
+		738C5CCC27A93E380018EC34 /* airlytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C6627A93E360018EC34 /* airlytics.storyboard */; };
+		738C5CCD27A93E380018EC34 /* features.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C6727A93E360018EC34 /* features.storyboard */; };
+		738C5CCE27A93E380018EC34 /* PollQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6827A93E360018EC34 /* PollQuestion.swift */; };
+		738C5CCF27A93E380018EC34 /* NotificationsPercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6927A93E360018EC34 /* NotificationsPercentage.swift */; };
+		738C5CD027A93E380018EC34 /* ExperimentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6A27A93E360018EC34 /* ExperimentsTableViewController.swift */; };
+		738C5CD127A93E380018EC34 /* userGroups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C6B27A93E370018EC34 /* userGroups.storyboard */; };
+		738C5CD227A93E380018EC34 /* FeatureChildrenOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6C27A93E370018EC34 /* FeatureChildrenOrderTableViewController.swift */; };
+		738C5CD327A93E380018EC34 /* general.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C6D27A93E370018EC34 /* general.storyboard */; };
+		738C5CD427A93E380018EC34 /* eventsHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C6E27A93E370018EC34 /* eventsHistory.storyboard */; };
+		738C5CD527A93E380018EC34 /* PremiumDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C6F27A93E370018EC34 /* PremiumDetailsTableViewController.swift */; };
+		738C5CD627A93E380018EC34 /* NotificationsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7027A93E370018EC34 /* NotificationsConstants.swift */; };
+		738C5CD727A93E380018EC34 /* PurchaseOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7127A93E370018EC34 /* PurchaseOption.swift */; };
+		738C5CD827A93E380018EC34 /* StoreProductId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7227A93E370018EC34 /* StoreProductId.swift */; };
+		738C5CD927A93E380018EC34 /* GeneralSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7327A93E370018EC34 /* GeneralSettingsTableViewController.swift */; };
+		738C5CDA27A93E380018EC34 /* StreamHistoryDetailesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7427A93E370018EC34 /* StreamHistoryDetailesTableViewController.swift */; };
+		738C5CDB27A93E380018EC34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7527A93E370018EC34 /* Constants.swift */; };
+		738C5CDC27A93E380018EC34 /* polls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C7627A93E370018EC34 /* polls.storyboard */; };
+		738C5CDD27A93E380018EC34 /* PollsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7727A93E370018EC34 /* PollsTableViewController.swift */; };
+		738C5CDE27A93E380018EC34 /* streams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C7827A93E370018EC34 /* streams.storyboard */; };
+		738C5CDF27A93E380018EC34 /* EventsHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7927A93E370018EC34 /* EventsHistory.swift */; };
+		738C5CE027A93E380018EC34 /* FeaturesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7A27A93E370018EC34 /* FeaturesTableViewController.swift */; };
+		738C5CE127A93E380018EC34 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7B27A93E370018EC34 /* Feature.swift */; };
+		738C5CE227A93E380018EC34 /* multiServer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C7C27A93E370018EC34 /* multiServer.storyboard */; };
+		738C5CE327A93E380018EC34 /* Airlytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7D27A93E370018EC34 /* Airlytics.swift */; };
+		738C5CE427A93E380018EC34 /* NotificationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7E27A93E370018EC34 /* NotificationDetailsTableViewController.swift */; };
+		738C5CE527A93E380018EC34 /* PollItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C7F27A93E370018EC34 /* PollItemsTableViewController.swift */; };
+		738C5CE627A93E380018EC34 /* EventsHistoryRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8027A93E370018EC34 /* EventsHistoryRequestStatus.swift */; };
+		738C5CE727A93E380018EC34 /* UserGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8127A93E370018EC34 /* UserGroups.swift */; };
+		738C5CE827A93E380018EC34 /* PurchaseOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8227A93E370018EC34 /* PurchaseOptionsTableViewController.swift */; };
+		738C5CE927A93E380018EC34 /* FeaturePremiumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8327A93E370018EC34 /* FeaturePremiumData.swift */; };
+		738C5CEA27A93E380018EC34 /* Entitlements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8427A93E370018EC34 /* Entitlements.swift */; };
+		738C5CEB27A93E380018EC34 /* AirlockDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8527A93E370018EC34 /* AirlockDataFetcher.swift */; };
+		738C5CEC27A93E380018EC34 /* ExperimentsResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8627A93E370018EC34 /* ExperimentsResults.swift */; };
+		738C5CED27A93E380018EC34 /* EventsHistoryFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8727A93E370018EC34 /* EventsHistoryFileManager.swift */; };
+		738C5CEE27A93E380018EC34 /* FeaturesCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8827A93E370018EC34 /* FeaturesCacheManager.swift */; };
+		738C5CEF27A93E380018EC34 /* EventsHistoryFilePropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8927A93E370018EC34 /* EventsHistoryFilePropertiesTableViewController.swift */; };
+		738C5CF027A93E380018EC34 /* AirlyticsStreamEventsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8A27A93E370018EC34 /* AirlyticsStreamEventsProvider.swift */; };
+		738C5CF127A93E380018EC34 /* EntitlementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8B27A93E370018EC34 /* EntitlementsTableViewController.swift */; };
+		738C5CF227A93E380018EC34 /* PollAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8C27A93E370018EC34 /* PollAnswer.swift */; };
+		738C5CF327A93E380018EC34 /* JSScriptInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8D27A93E370018EC34 /* JSScriptInvoker.swift */; };
+		738C5CF427A93E380018EC34 /* FeatureDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C8E27A93E370018EC34 /* FeatureDetailsTableViewController.swift */; };
+		738C5CF527A93E380018EC34 /* experiments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C8F27A93E370018EC34 /* experiments.storyboard */; };
+		738C5CF627A93E380018EC34 /* AirlyticsLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9027A93E370018EC34 /* AirlyticsLogViewController.swift */; };
+		738C5CF727A93E380018EC34 /* Percentile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9127A93E370018EC34 /* Percentile.swift */; };
+		738C5CF827A93E380018EC34 /* StreamsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9227A93E370018EC34 /* StreamsManager.swift */; };
+		738C5CF927A93E380018EC34 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738C5C9327A93E370018EC34 /* images.xcassets */; };
+		738C5CFA27A93E380018EC34 /* ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9427A93E370018EC34 /* ContextViewController.swift */; };
+		738C5CFB27A93E380018EC34 /* JSClientEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9527A93E370018EC34 /* JSClientEngine.swift */; };
+		738C5CFC27A93E380018EC34 /* PollCalculatedBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9627A93E380018EC34 /* PollCalculatedBase.swift */; };
+		738C5CFD27A93E380018EC34 /* Airlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9727A93E380018EC34 /* Airlock.swift */; };
+		738C5CFE27A93E380018EC34 /* ServersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9827A93E380018EC34 /* ServersManager.swift */; };
+		738C5CFF27A93E380018EC34 /* DisplayPurchasesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9927A93E380018EC34 /* DisplayPurchasesTableViewController.swift */; };
+		738C5D0027A93E380018EC34 /* AirlockNotificationsLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9A27A93E380018EC34 /* AirlockNotificationsLimit.swift */; };
+		738C5D0127A93E380018EC34 /* StremTraceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9B27A93E380018EC34 /* StremTraceTableViewCell.swift */; };
+		738C5D0227A93E380018EC34 /* PercentageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9C27A93E380018EC34 /* PercentageTableViewCell.swift */; };
+		738C5D0327A93E380018EC34 /* FeatureAnalyticsDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9D27A93E380018EC34 /* FeatureAnalyticsDetailsTableViewController.swift */; };
+		738C5D0427A93E380018EC34 /* AirlyticsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9E27A93E380018EC34 /* AirlyticsTableViewController.swift */; };
+		738C5D0527A93E380018EC34 /* AirlyticsEventRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C9F27A93E380018EC34 /* AirlyticsEventRegistry.swift */; };
+		738C5D0627A93E380018EC34 /* AirlockFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA027A93E380018EC34 /* AirlockFileManager.swift */; };
+		738C5D0727A93E380018EC34 /* AirlockNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA127A93E380018EC34 /* AirlockNotification.swift */; };
+		738C5D0827A93E380018EC34 /* UserGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA227A93E380018EC34 /* UserGroupsTableViewController.swift */; };
+		738C5D0927A93E380018EC34 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA327A93E380018EC34 /* Utils.swift */; };
+		738C5D0A27A93E380018EC34 /* ExperimentDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA427A93E380018EC34 /* ExperimentDetailTableViewController.swift */; };
+		738C5D0B27A93E380018EC34 /* PollQuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA527A93E380018EC34 /* PollQuestionsTableViewController.swift */; };
+		738C5D0C27A93E380018EC34 /* notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738C5CA627A93E380018EC34 /* notifications.storyboard */; };
+		738C5D0D27A93E380018EC34 /* AirlockPullTasksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA727A93E380018EC34 /* AirlockPullTasksManager.swift */; };
+		738C5D0E27A93E380018EC34 /* VariantDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA827A93E380018EC34 /* VariantDetailTableViewController.swift */; };
+		738C5D0F27A93E380018EC34 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CA927A93E380018EC34 /* Stream.swift */; };
+		738C5D1027A93E380018EC34 /* AirlockNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CAA27A93E380018EC34 /* AirlockNotificationsManager.swift */; };
+		738C5D1127A93E380018EC34 /* PollsResultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CAB27A93E380018EC34 /* PollsResultsManager.swift */; };
+		738C5D1227A93E380018EC34 /* JSErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CAC27A93E380018EC34 /* JSErrorInfo.swift */; };
+		738C5D1327A93E380018EC34 /* BranchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CAD27A93E380018EC34 /* BranchesTableViewController.swift */; };
+		738C5D1427A93E380018EC34 /* AirlyticsEnvironmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5CAE27A93E380018EC34 /* AirlyticsEnvironmentTableViewController.swift */; };
+		738C5D1627A93E420018EC34 /* AirlockSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 738C5D1527A93E420018EC34 /* AirlockSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		738C5D2027A93E760018EC34 /* EventsRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1827A93E760018EC34 /* EventsRegistry.swift */; };
+		738C5D2127A93E760018EC34 /* ALEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1927A93E760018EC34 /* ALEvent.swift */; };
+		738C5D2227A93E760018EC34 /* ALProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1A27A93E760018EC34 /* ALProvider.swift */; };
+		738C5D2327A93E760018EC34 /* ALSendingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1B27A93E760018EC34 /* ALSendingProvider.swift */; };
+		738C5D2427A93E760018EC34 /* ALEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1C27A93E760018EC34 /* ALEnvironment.swift */; };
+		738C5D2527A93E760018EC34 /* ALSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1D27A93E760018EC34 /* ALSession.swift */; };
+		738C5D2627A93E760018EC34 /* AL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1E27A93E760018EC34 /* AL.swift */; };
+		738C5D2727A93E760018EC34 /* AirlyticsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D1F27A93E760018EC34 /* AirlyticsConstants.swift */; };
+		738C5D2F27A93EED0018EC34 /* EventLogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D2C27A93EED0018EC34 /* EventLogProvider.swift */; };
+		738C5D3027A93EED0018EC34 /* DebugBannersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D2D27A93EED0018EC34 /* DebugBannersProvider.swift */; };
+		738C5D3127A93EED0018EC34 /* RestEventProxyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D2E27A93EED0018EC34 /* RestEventProxyProvider.swift */; };
+		738C5D3A27A93EF90018EC34 /* ALFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3227A93EF90018EC34 /* ALFileManager.swift */; };
+		738C5D3B27A93EF90018EC34 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3327A93EF90018EC34 /* RepeatingTimer.swift */; };
+		738C5D3C27A93EF90018EC34 /* AirlyticsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3427A93EF90018EC34 /* AirlyticsUtils.swift */; };
+		738C5D3D27A93EF90018EC34 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3527A93EF90018EC34 /* Logger.swift */; };
+		738C5D3E27A93EF90018EC34 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3627A93EF90018EC34 /* Network.swift */; };
+		738C5D3F27A93EF90018EC34 /* UserAttributesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3727A93EF90018EC34 /* UserAttributesStore.swift */; };
+		738C5D4027A93EF90018EC34 /* Date+Aux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3827A93EF90018EC34 /* Date+Aux.swift */; };
+		738C5D4127A93EF90018EC34 /* AirlyticsJSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D3927A93EF90018EC34 /* AirlyticsJSEngine.swift */; };
+		738C5D4927A93F040018EC34 /* UserDefaultsAttributeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D4227A93F040018EC34 /* UserDefaultsAttributeConfig.swift */; };
+		738C5D4A27A93F040018EC34 /* ALEnvironmentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D4327A93F040018EC34 /* ALEnvironmentConfig.swift */; };
+		738C5D4B27A93F040018EC34 /* ALEventConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D4427A93F040018EC34 /* ALEventConfig.swift */; };
+		738C5D4C27A93F040018EC34 /* ALEventProviderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D4527A93F040018EC34 /* ALEventProviderConfig.swift */; };
+		738C5D4D27A93F040018EC34 /* ALProviderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D4627A93F040018EC34 /* ALProviderConfig.swift */; };
+		738C5D4E27A93F040018EC34 /* ALUserAttributeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D4727A93F040018EC34 /* ALUserAttributeConfig.swift */; };
+		738C5D4F27A93F040018EC34 /* TrackingPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5D4827A93F040018EC34 /* TrackingPolicy.swift */; };
+		73A991C527B0143C00679C75 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A991C427B0143C00679C75 /* MainTableViewController.swift */; };
+		73A991C827B016DA00679C75 /* AirlockDefaults.json in Resources */ = {isa = PBXBuildFile; fileRef = 73A991C727B016DA00679C75 /* AirlockDefaults.json */; };
+		73FE6D2127A8211200BE0AD1 /* AirlockSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FE6D1827A8211200BE0AD1 /* AirlockSDK.framework */; };
+		73FE6D2627A8211200BE0AD1 /* AirlockSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE6D2527A8211200BE0AD1 /* AirlockSDKTests.swift */; };
+		73FE6D3727A8222000BE0AD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE6D3627A8222000BE0AD1 /* AppDelegate.swift */; };
+		73FE6D3927A8222000BE0AD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE6D3827A8222000BE0AD1 /* SceneDelegate.swift */; };
+		73FE6D3B27A8222000BE0AD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE6D3A27A8222000BE0AD1 /* ViewController.swift */; };
+		73FE6D3E27A8222000BE0AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FE6D3C27A8222000BE0AD1 /* Main.storyboard */; };
+		73FE6D4027A8222100BE0AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FE6D3F27A8222100BE0AD1 /* Assets.xcassets */; };
+		73FE6D4327A8222100BE0AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FE6D4127A8222100BE0AD1 /* LaunchScreen.storyboard */; };
+		9B67B1C6E8DC1AEDB3303CBC /* Pods_AirlockSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56345412C1648AE7CD0F335C /* Pods_AirlockSDKTests.framework */; };
+		E90190F57FC56EBF4F80F690 /* Pods_AirlockSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A552A28D64F42149EC77F9CC /* Pods_AirlockSDKExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7379538527A9516E0092D0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73FE6D0F27A8211200BE0AD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73FE6D1727A8211200BE0AD1;
+			remoteInfo = AirlockSDK;
+		};
+		7379538727A951750092D0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73FE6D0F27A8211200BE0AD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73FE6D1727A8211200BE0AD1;
+			remoteInfo = AirlockSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220803B85F4FF4F9039F8255 /* Pods-AirlockSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDK.release.xcconfig"; path = "Target Support Files/Pods-AirlockSDK/Pods-AirlockSDK.release.xcconfig"; sourceTree = "<group>"; };
+		373C9D75B799FFD7C84D9D70 /* Pods-AirlockSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDK.debug.xcconfig"; path = "Target Support Files/Pods-AirlockSDK/Pods-AirlockSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		471CE275FDB29583FC5EE3E8 /* Pods-AirlockSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDKExample.debug.xcconfig"; path = "Target Support Files/Pods-AirlockSDKExample/Pods-AirlockSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
+		56345412C1648AE7CD0F335C /* Pods_AirlockSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirlockSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B5955A2443F2072DB40752 /* Pods_AirlockSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirlockSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7379538B27A95E860092D0A6 /* BannersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannersManager.swift; sourceTree = "<group>"; };
+		7379538C27A95E860092D0A6 /* BannerQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerQueue.swift; sourceTree = "<group>"; };
+		7379538D27A95E860092D0A6 /* DebugUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DebugUI.storyboard; sourceTree = "<group>"; };
+		7379538E27A95E860092D0A6 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		7379539427A95EBA0092D0A6 /* DebugDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugDetailViewController.swift; sourceTree = "<group>"; };
+		738C5C4927A93E360018EC34 /* AirLockSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirLockSegue.swift; sourceTree = "<group>"; };
+		738C5C4A27A93E360018EC34 /* PercentageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageManager.swift; sourceTree = "<group>"; };
+		738C5C4B27A93E360018EC34 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C4C27A93E360018EC34 /* Entitlement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entitlement.swift; sourceTree = "<group>"; };
+		738C5C4D27A93E360018EC34 /* FeaturesCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesCache.swift; sourceTree = "<group>"; };
+		738C5C4E27A93E360018EC34 /* StreamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C4F27A93E360018EC34 /* AirlyticsEventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsEventDetailsViewController.swift; sourceTree = "<group>"; };
+		738C5C5027A93E360018EC34 /* PollDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollDetailsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C5127A93E360018EC34 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C5227A93E360018EC34 /* StreamTrace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTrace.swift; sourceTree = "<group>"; };
+		738C5C5327A93E360018EC34 /* StreamPercentage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamPercentage.swift; sourceTree = "<group>"; };
+		738C5C5427A93E360018EC34 /* PollResultsVisualization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollResultsVisualization.swift; sourceTree = "<group>"; };
+		738C5C5527A93E360018EC34 /* entitlements.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = entitlements.storyboard; sourceTree = "<group>"; };
+		738C5C5627A93E360018EC34 /* EventsHistoryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHistoryInfo.swift; sourceTree = "<group>"; };
+		738C5C5727A93E360018EC34 /* PollsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsManager.swift; sourceTree = "<group>"; };
+		738C5C5827A93E360018EC34 /* PollPercentage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollPercentage.swift; sourceTree = "<group>"; };
+		738C5C5927A93E360018EC34 /* StoreProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreProductsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C5A27A93E360018EC34 /* EventsHistoryFilesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHistoryFilesTableViewController.swift; sourceTree = "<group>"; };
+		738C5C5B27A93E360018EC34 /* StreamDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDetailsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C5C27A93E360018EC34 /* UserGroupsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGroupsTableViewCell.swift; sourceTree = "<group>"; };
+		738C5C5D27A93E360018EC34 /* EventsHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHistoryTableViewController.swift; sourceTree = "<group>"; };
+		738C5C5E27A93E360018EC34 /* PercentageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageTableViewController.swift; sourceTree = "<group>"; };
+		738C5C5F27A93E360018EC34 /* PollOpenAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollOpenAnswer.swift; sourceTree = "<group>"; };
+		738C5C6027A93E360018EC34 /* branches.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = branches.storyboard; sourceTree = "<group>"; };
+		738C5C6127A93E360018EC34 /* Poll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
+		738C5C6227A93E360018EC34 /* ServersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServersTableViewController.swift; sourceTree = "<group>"; };
+		738C5C6327A93E360018EC34 /* PollPredefinedAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollPredefinedAnswer.swift; sourceTree = "<group>"; };
+		738C5C6427A93E360018EC34 /* StreamsTraceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsTraceTableViewController.swift; sourceTree = "<group>"; };
+		738C5C6527A93E360018EC34 /* BranchesAndExperiments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchesAndExperiments.swift; sourceTree = "<group>"; };
+		738C5C6627A93E360018EC34 /* airlytics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = airlytics.storyboard; sourceTree = "<group>"; };
+		738C5C6727A93E360018EC34 /* features.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = features.storyboard; sourceTree = "<group>"; };
+		738C5C6827A93E360018EC34 /* PollQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollQuestion.swift; sourceTree = "<group>"; };
+		738C5C6927A93E360018EC34 /* NotificationsPercentage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsPercentage.swift; sourceTree = "<group>"; };
+		738C5C6A27A93E360018EC34 /* ExperimentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperimentsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C6B27A93E370018EC34 /* userGroups.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = userGroups.storyboard; sourceTree = "<group>"; };
+		738C5C6C27A93E370018EC34 /* FeatureChildrenOrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureChildrenOrderTableViewController.swift; sourceTree = "<group>"; };
+		738C5C6D27A93E370018EC34 /* general.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = general.storyboard; sourceTree = "<group>"; };
+		738C5C6E27A93E370018EC34 /* eventsHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = eventsHistory.storyboard; sourceTree = "<group>"; };
+		738C5C6F27A93E370018EC34 /* PremiumDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PremiumDetailsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C7027A93E370018EC34 /* NotificationsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsConstants.swift; sourceTree = "<group>"; };
+		738C5C7127A93E370018EC34 /* PurchaseOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseOption.swift; sourceTree = "<group>"; };
+		738C5C7227A93E370018EC34 /* StoreProductId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreProductId.swift; sourceTree = "<group>"; };
+		738C5C7327A93E370018EC34 /* GeneralSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C7427A93E370018EC34 /* StreamHistoryDetailesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamHistoryDetailesTableViewController.swift; sourceTree = "<group>"; };
+		738C5C7527A93E370018EC34 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		738C5C7627A93E370018EC34 /* polls.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = polls.storyboard; sourceTree = "<group>"; };
+		738C5C7727A93E370018EC34 /* PollsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C7827A93E370018EC34 /* streams.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = streams.storyboard; sourceTree = "<group>"; };
+		738C5C7927A93E370018EC34 /* EventsHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHistory.swift; sourceTree = "<group>"; };
+		738C5C7A27A93E370018EC34 /* FeaturesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesTableViewController.swift; sourceTree = "<group>"; };
+		738C5C7B27A93E370018EC34 /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		738C5C7C27A93E370018EC34 /* multiServer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = multiServer.storyboard; sourceTree = "<group>"; };
+		738C5C7D27A93E370018EC34 /* Airlytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airlytics.swift; sourceTree = "<group>"; };
+		738C5C7E27A93E370018EC34 /* NotificationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDetailsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C7F27A93E370018EC34 /* PollItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollItemsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C8027A93E370018EC34 /* EventsHistoryRequestStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHistoryRequestStatus.swift; sourceTree = "<group>"; };
+		738C5C8127A93E370018EC34 /* UserGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGroups.swift; sourceTree = "<group>"; };
+		738C5C8227A93E370018EC34 /* PurchaseOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseOptionsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C8327A93E370018EC34 /* FeaturePremiumData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturePremiumData.swift; sourceTree = "<group>"; };
+		738C5C8427A93E370018EC34 /* Entitlements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entitlements.swift; sourceTree = "<group>"; };
+		738C5C8527A93E370018EC34 /* AirlockDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockDataFetcher.swift; sourceTree = "<group>"; };
+		738C5C8627A93E370018EC34 /* ExperimentsResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperimentsResults.swift; sourceTree = "<group>"; };
+		738C5C8727A93E370018EC34 /* EventsHistoryFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHistoryFileManager.swift; sourceTree = "<group>"; };
+		738C5C8827A93E370018EC34 /* FeaturesCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesCacheManager.swift; sourceTree = "<group>"; };
+		738C5C8927A93E370018EC34 /* EventsHistoryFilePropertiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHistoryFilePropertiesTableViewController.swift; sourceTree = "<group>"; };
+		738C5C8A27A93E370018EC34 /* AirlyticsStreamEventsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsStreamEventsProvider.swift; sourceTree = "<group>"; };
+		738C5C8B27A93E370018EC34 /* EntitlementsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitlementsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C8C27A93E370018EC34 /* PollAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollAnswer.swift; sourceTree = "<group>"; };
+		738C5C8D27A93E370018EC34 /* JSScriptInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSScriptInvoker.swift; sourceTree = "<group>"; };
+		738C5C8E27A93E370018EC34 /* FeatureDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureDetailsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C8F27A93E370018EC34 /* experiments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = experiments.storyboard; sourceTree = "<group>"; };
+		738C5C9027A93E370018EC34 /* AirlyticsLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsLogViewController.swift; sourceTree = "<group>"; };
+		738C5C9127A93E370018EC34 /* Percentile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentile.swift; sourceTree = "<group>"; };
+		738C5C9227A93E370018EC34 /* StreamsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsManager.swift; sourceTree = "<group>"; };
+		738C5C9327A93E370018EC34 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		738C5C9427A93E370018EC34 /* ContextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextViewController.swift; sourceTree = "<group>"; };
+		738C5C9527A93E370018EC34 /* JSClientEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSClientEngine.swift; sourceTree = "<group>"; };
+		738C5C9627A93E380018EC34 /* PollCalculatedBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollCalculatedBase.swift; sourceTree = "<group>"; };
+		738C5C9727A93E380018EC34 /* Airlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airlock.swift; sourceTree = "<group>"; };
+		738C5C9827A93E380018EC34 /* ServersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServersManager.swift; sourceTree = "<group>"; };
+		738C5C9927A93E380018EC34 /* DisplayPurchasesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayPurchasesTableViewController.swift; sourceTree = "<group>"; };
+		738C5C9A27A93E380018EC34 /* AirlockNotificationsLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockNotificationsLimit.swift; sourceTree = "<group>"; };
+		738C5C9B27A93E380018EC34 /* StremTraceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StremTraceTableViewCell.swift; sourceTree = "<group>"; };
+		738C5C9C27A93E380018EC34 /* PercentageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageTableViewCell.swift; sourceTree = "<group>"; };
+		738C5C9D27A93E380018EC34 /* FeatureAnalyticsDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureAnalyticsDetailsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C9E27A93E380018EC34 /* AirlyticsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsTableViewController.swift; sourceTree = "<group>"; };
+		738C5C9F27A93E380018EC34 /* AirlyticsEventRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsEventRegistry.swift; sourceTree = "<group>"; };
+		738C5CA027A93E380018EC34 /* AirlockFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockFileManager.swift; sourceTree = "<group>"; };
+		738C5CA127A93E380018EC34 /* AirlockNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockNotification.swift; sourceTree = "<group>"; };
+		738C5CA227A93E380018EC34 /* UserGroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserGroupsTableViewController.swift; sourceTree = "<group>"; };
+		738C5CA327A93E380018EC34 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		738C5CA427A93E380018EC34 /* ExperimentDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperimentDetailTableViewController.swift; sourceTree = "<group>"; };
+		738C5CA527A93E380018EC34 /* PollQuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollQuestionsTableViewController.swift; sourceTree = "<group>"; };
+		738C5CA627A93E380018EC34 /* notifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = notifications.storyboard; sourceTree = "<group>"; };
+		738C5CA727A93E380018EC34 /* AirlockPullTasksManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockPullTasksManager.swift; sourceTree = "<group>"; };
+		738C5CA827A93E380018EC34 /* VariantDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantDetailTableViewController.swift; sourceTree = "<group>"; };
+		738C5CA927A93E380018EC34 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		738C5CAA27A93E380018EC34 /* AirlockNotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockNotificationsManager.swift; sourceTree = "<group>"; };
+		738C5CAB27A93E380018EC34 /* PollsResultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsResultsManager.swift; sourceTree = "<group>"; };
+		738C5CAC27A93E380018EC34 /* JSErrorInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSErrorInfo.swift; sourceTree = "<group>"; };
+		738C5CAD27A93E380018EC34 /* BranchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchesTableViewController.swift; sourceTree = "<group>"; };
+		738C5CAE27A93E380018EC34 /* AirlyticsEnvironmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsEnvironmentTableViewController.swift; sourceTree = "<group>"; };
+		738C5D1527A93E420018EC34 /* AirlockSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirlockSDK.h; sourceTree = "<group>"; };
+		738C5D1827A93E760018EC34 /* EventsRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRegistry.swift; sourceTree = "<group>"; };
+		738C5D1927A93E760018EC34 /* ALEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALEvent.swift; sourceTree = "<group>"; };
+		738C5D1A27A93E760018EC34 /* ALProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProvider.swift; sourceTree = "<group>"; };
+		738C5D1B27A93E760018EC34 /* ALSendingProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSendingProvider.swift; sourceTree = "<group>"; };
+		738C5D1C27A93E760018EC34 /* ALEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALEnvironment.swift; sourceTree = "<group>"; };
+		738C5D1D27A93E760018EC34 /* ALSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSession.swift; sourceTree = "<group>"; };
+		738C5D1E27A93E760018EC34 /* AL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AL.swift; sourceTree = "<group>"; };
+		738C5D1F27A93E760018EC34 /* AirlyticsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsConstants.swift; sourceTree = "<group>"; };
+		738C5D2C27A93EED0018EC34 /* EventLogProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLogProvider.swift; sourceTree = "<group>"; };
+		738C5D2D27A93EED0018EC34 /* DebugBannersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugBannersProvider.swift; sourceTree = "<group>"; };
+		738C5D2E27A93EED0018EC34 /* RestEventProxyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestEventProxyProvider.swift; sourceTree = "<group>"; };
+		738C5D3227A93EF90018EC34 /* ALFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALFileManager.swift; sourceTree = "<group>"; };
+		738C5D3327A93EF90018EC34 /* RepeatingTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		738C5D3427A93EF90018EC34 /* AirlyticsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsUtils.swift; sourceTree = "<group>"; };
+		738C5D3527A93EF90018EC34 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		738C5D3627A93EF90018EC34 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		738C5D3727A93EF90018EC34 /* UserAttributesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAttributesStore.swift; sourceTree = "<group>"; };
+		738C5D3827A93EF90018EC34 /* Date+Aux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Aux.swift"; sourceTree = "<group>"; };
+		738C5D3927A93EF90018EC34 /* AirlyticsJSEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlyticsJSEngine.swift; sourceTree = "<group>"; };
+		738C5D4227A93F040018EC34 /* UserDefaultsAttributeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsAttributeConfig.swift; sourceTree = "<group>"; };
+		738C5D4327A93F040018EC34 /* ALEnvironmentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALEnvironmentConfig.swift; sourceTree = "<group>"; };
+		738C5D4427A93F040018EC34 /* ALEventConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALEventConfig.swift; sourceTree = "<group>"; };
+		738C5D4527A93F040018EC34 /* ALEventProviderConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALEventProviderConfig.swift; sourceTree = "<group>"; };
+		738C5D4627A93F040018EC34 /* ALProviderConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALProviderConfig.swift; sourceTree = "<group>"; };
+		738C5D4727A93F040018EC34 /* ALUserAttributeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALUserAttributeConfig.swift; sourceTree = "<group>"; };
+		738C5D4827A93F040018EC34 /* TrackingPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingPolicy.swift; sourceTree = "<group>"; };
+		73A991C427B0143C00679C75 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		73A991C727B016DA00679C75 /* AirlockDefaults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirlockDefaults.json; sourceTree = "<group>"; };
+		73FE6D1827A8211200BE0AD1 /* AirlockSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirlockSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FE6D2027A8211200BE0AD1 /* AirlockSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirlockSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FE6D2527A8211200BE0AD1 /* AirlockSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlockSDKTests.swift; sourceTree = "<group>"; };
+		73FE6D3427A8222000BE0AD1 /* AirlockSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirlockSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FE6D3627A8222000BE0AD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73FE6D3827A8222000BE0AD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		73FE6D3A27A8222000BE0AD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73FE6D3D27A8222000BE0AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73FE6D3F27A8222100BE0AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73FE6D4227A8222100BE0AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73FE6D4427A8222100BE0AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A552A28D64F42149EC77F9CC /* Pods_AirlockSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirlockSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0221700BCBDFF5877F1F4C2 /* Pods-AirlockSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDKExample.release.xcconfig"; path = "Target Support Files/Pods-AirlockSDKExample/Pods-AirlockSDKExample.release.xcconfig"; sourceTree = "<group>"; };
+		F323EB666C3DD215AE78D694 /* Pods-AirlockSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDKTests.release.xcconfig"; path = "Target Support Files/Pods-AirlockSDKTests/Pods-AirlockSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA2811F09D90BCCC6654AF84 /* Pods-AirlockSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-AirlockSDKTests/Pods-AirlockSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73FE6D1527A8211200BE0AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2BF72BA44F7323CCB37F5F /* Pods_AirlockSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FE6D1D27A8211200BE0AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FE6D2127A8211200BE0AD1 /* AirlockSDK.framework in Frameworks */,
+				9B67B1C6E8DC1AEDB3303CBC /* Pods_AirlockSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FE6D3127A8222000BE0AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90190F57FC56EBF4F80F690 /* Pods_AirlockSDKExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AF0B2184E1953962EE03FB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				373C9D75B799FFD7C84D9D70 /* Pods-AirlockSDK.debug.xcconfig */,
+				220803B85F4FF4F9039F8255 /* Pods-AirlockSDK.release.xcconfig */,
+				471CE275FDB29583FC5EE3E8 /* Pods-AirlockSDKExample.debug.xcconfig */,
+				F0221700BCBDFF5877F1F4C2 /* Pods-AirlockSDKExample.release.xcconfig */,
+				FA2811F09D90BCCC6654AF84 /* Pods-AirlockSDKTests.debug.xcconfig */,
+				F323EB666C3DD215AE78D694 /* Pods-AirlockSDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73501E0A27A9399B0096EF0D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7379538927A952560092D0A6 /* Entitlements */,
+				738C5D5627A947B70018EC34 /* Events History */,
+				738C5D5527A947720018EC34 /* Notifications */,
+				738C5D5427A945D10018EC34 /* Streams */,
+				738C5D5227A9450B0018EC34 /* Polls */,
+				738C5D5027A943D10018EC34 /* Debug UI */,
+				738C5D1727A93E490018EC34 /* Airlytics */,
+				738C5C9727A93E380018EC34 /* Airlock.swift */,
+				738C5C8527A93E370018EC34 /* AirlockDataFetcher.swift */,
+				738C5CA027A93E380018EC34 /* AirlockFileManager.swift */,
+				738C5CA727A93E380018EC34 /* AirlockPullTasksManager.swift */,
+				738C5C6527A93E360018EC34 /* BranchesAndExperiments.swift */,
+				738C5C7527A93E370018EC34 /* Constants.swift */,
+				738C5C8627A93E370018EC34 /* ExperimentsResults.swift */,
+				738C5C7B27A93E370018EC34 /* Feature.swift */,
+				738C5C8327A93E370018EC34 /* FeaturePremiumData.swift */,
+				738C5C4D27A93E360018EC34 /* FeaturesCache.swift */,
+				738C5C8827A93E370018EC34 /* FeaturesCacheManager.swift */,
+				738C5C9527A93E370018EC34 /* JSClientEngine.swift */,
+				738C5CAC27A93E380018EC34 /* JSErrorInfo.swift */,
+				738C5C8D27A93E370018EC34 /* JSScriptInvoker.swift */,
+				738C5C4A27A93E360018EC34 /* PercentageManager.swift */,
+				738C5C9127A93E370018EC34 /* Percentile.swift */,
+				738C5C9827A93E380018EC34 /* ServersManager.swift */,
+				738C5C8127A93E370018EC34 /* UserGroups.swift */,
+				738C5CA327A93E380018EC34 /* Utils.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		73501E0B27A939FA0096EF0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				738C5D1527A93E420018EC34 /* AirlockSDK.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7379538927A952560092D0A6 /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C8427A93E370018EC34 /* Entitlements.swift */,
+				738C5C7227A93E370018EC34 /* StoreProductId.swift */,
+				738C5C7127A93E370018EC34 /* PurchaseOption.swift */,
+				738C5C4C27A93E360018EC34 /* Entitlement.swift */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		7379538A27A95E650092D0A6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7379539327A95E910092D0A6 /* View Controllers */,
+				7379538E27A95E860092D0A6 /* Banner.swift */,
+				7379538C27A95E860092D0A6 /* BannerQueue.swift */,
+				7379538B27A95E860092D0A6 /* BannersManager.swift */,
+				7379538D27A95E860092D0A6 /* DebugUI.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7379539327A95E910092D0A6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7379539427A95EBA0092D0A6 /* DebugDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		738C5D1727A93E490018EC34 /* Airlytics */ = {
+			isa = PBXGroup;
+			children = (
+				7379538A27A95E650092D0A6 /* UI */,
+				738C5D2A27A93E950018EC34 /* Providers */,
+				738C5D2927A93E8A0018EC34 /* Infrastructure */,
+				738C5D2827A93E7B0018EC34 /* Configuration */,
+				738C5D1E27A93E760018EC34 /* AL.swift */,
+				738C5D1C27A93E760018EC34 /* ALEnvironment.swift */,
+				738C5D1927A93E760018EC34 /* ALEvent.swift */,
+				738C5D1A27A93E760018EC34 /* ALProvider.swift */,
+				738C5D1B27A93E760018EC34 /* ALSendingProvider.swift */,
+				738C5D1D27A93E760018EC34 /* ALSession.swift */,
+				738C5D1F27A93E760018EC34 /* AirlyticsConstants.swift */,
+				738C5D1827A93E760018EC34 /* EventsRegistry.swift */,
+				738C5C9F27A93E380018EC34 /* AirlyticsEventRegistry.swift */,
+				738C5C7D27A93E370018EC34 /* Airlytics.swift */,
+			);
+			path = Airlytics;
+			sourceTree = "<group>";
+		};
+		738C5D2827A93E7B0018EC34 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				738C5D4327A93F040018EC34 /* ALEnvironmentConfig.swift */,
+				738C5D4427A93F040018EC34 /* ALEventConfig.swift */,
+				738C5D4527A93F040018EC34 /* ALEventProviderConfig.swift */,
+				738C5D4627A93F040018EC34 /* ALProviderConfig.swift */,
+				738C5D4727A93F040018EC34 /* ALUserAttributeConfig.swift */,
+				738C5D4827A93F040018EC34 /* TrackingPolicy.swift */,
+				738C5D4227A93F040018EC34 /* UserDefaultsAttributeConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		738C5D2927A93E8A0018EC34 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				738C5D3227A93EF90018EC34 /* ALFileManager.swift */,
+				738C5D3827A93EF90018EC34 /* Date+Aux.swift */,
+				738C5D3927A93EF90018EC34 /* AirlyticsJSEngine.swift */,
+				738C5D3527A93EF90018EC34 /* Logger.swift */,
+				738C5D3627A93EF90018EC34 /* Network.swift */,
+				738C5D3327A93EF90018EC34 /* RepeatingTimer.swift */,
+				738C5D3727A93EF90018EC34 /* UserAttributesStore.swift */,
+				738C5D3427A93EF90018EC34 /* AirlyticsUtils.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		738C5D2A27A93E950018EC34 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C8A27A93E370018EC34 /* AirlyticsStreamEventsProvider.swift */,
+				738C5D2D27A93EED0018EC34 /* DebugBannersProvider.swift */,
+				738C5D2C27A93EED0018EC34 /* EventLogProvider.swift */,
+				738C5D2E27A93EED0018EC34 /* RestEventProxyProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		738C5D5027A943D10018EC34 /* Debug UI */ = {
+			isa = PBXGroup;
+			children = (
+				738C5D5727A948DE0018EC34 /* Assets */,
+				738C5C4927A93E360018EC34 /* AirLockSegue.swift */,
+				738C5D5327A945470018EC34 /* View Controllers */,
+				738C5D5127A944180018EC34 /* Storyboards */,
+			);
+			path = "Debug UI";
+			sourceTree = "<group>";
+		};
+		738C5D5127A944180018EC34 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C6B27A93E370018EC34 /* userGroups.storyboard */,
+				738C5C7827A93E370018EC34 /* streams.storyboard */,
+				738C5C6027A93E360018EC34 /* branches.storyboard */,
+				738C5C6E27A93E370018EC34 /* eventsHistory.storyboard */,
+				738C5C6727A93E360018EC34 /* features.storyboard */,
+				738C5C5527A93E360018EC34 /* entitlements.storyboard */,
+				738C5C6D27A93E370018EC34 /* general.storyboard */,
+				738C5C7C27A93E370018EC34 /* multiServer.storyboard */,
+				738C5CA627A93E380018EC34 /* notifications.storyboard */,
+				738C5C7627A93E370018EC34 /* polls.storyboard */,
+				738C5C8F27A93E370018EC34 /* experiments.storyboard */,
+				738C5C6627A93E360018EC34 /* airlytics.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		738C5D5227A9450B0018EC34 /* Polls */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C6127A93E360018EC34 /* Poll.swift */,
+				738C5C8C27A93E370018EC34 /* PollAnswer.swift */,
+				738C5C9627A93E380018EC34 /* PollCalculatedBase.swift */,
+				738C5C5F27A93E360018EC34 /* PollOpenAnswer.swift */,
+				738C5C5827A93E360018EC34 /* PollPercentage.swift */,
+				738C5C6327A93E360018EC34 /* PollPredefinedAnswer.swift */,
+				738C5C6827A93E360018EC34 /* PollQuestion.swift */,
+				738C5CA527A93E380018EC34 /* PollQuestionsTableViewController.swift */,
+				738C5C5427A93E360018EC34 /* PollResultsVisualization.swift */,
+				738C5C5727A93E360018EC34 /* PollsManager.swift */,
+				738C5CAB27A93E380018EC34 /* PollsResultsManager.swift */,
+				738C5C7727A93E370018EC34 /* PollsTableViewController.swift */,
+			);
+			path = Polls;
+			sourceTree = "<group>";
+		};
+		738C5D5327A945470018EC34 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C4E27A93E360018EC34 /* StreamsTableViewController.swift */,
+				738C5C6427A93E360018EC34 /* StreamsTraceTableViewController.swift */,
+				738C5C5C27A93E360018EC34 /* UserGroupsTableViewCell.swift */,
+				738C5CA827A93E380018EC34 /* VariantDetailTableViewController.swift */,
+				738C5C9B27A93E380018EC34 /* StremTraceTableViewCell.swift */,
+				738C5CA227A93E380018EC34 /* UserGroupsTableViewController.swift */,
+				738C5CAE27A93E380018EC34 /* AirlyticsEnvironmentTableViewController.swift */,
+				738C5C9927A93E380018EC34 /* DisplayPurchasesTableViewController.swift */,
+				738C5C8927A93E370018EC34 /* EventsHistoryFilePropertiesTableViewController.swift */,
+				738C5C5A27A93E360018EC34 /* EventsHistoryFilesTableViewController.swift */,
+				738C5C8B27A93E370018EC34 /* EntitlementsTableViewController.swift */,
+				738C5C9427A93E370018EC34 /* ContextViewController.swift */,
+				738C5CA427A93E380018EC34 /* ExperimentDetailTableViewController.swift */,
+				738C5C6A27A93E360018EC34 /* ExperimentsTableViewController.swift */,
+				738C5CAD27A93E380018EC34 /* BranchesTableViewController.swift */,
+				738C5C8E27A93E370018EC34 /* FeatureDetailsTableViewController.swift */,
+				738C5C4F27A93E360018EC34 /* AirlyticsEventDetailsViewController.swift */,
+				738C5C6C27A93E370018EC34 /* FeatureChildrenOrderTableViewController.swift */,
+				738C5C9D27A93E380018EC34 /* FeatureAnalyticsDetailsTableViewController.swift */,
+				738C5C7A27A93E370018EC34 /* FeaturesTableViewController.swift */,
+				738C5C7327A93E370018EC34 /* GeneralSettingsTableViewController.swift */,
+				738C5C9C27A93E380018EC34 /* PercentageTableViewCell.swift */,
+				738C5C5D27A93E360018EC34 /* EventsHistoryTableViewController.swift */,
+				738C5C9E27A93E380018EC34 /* AirlyticsTableViewController.swift */,
+				738C5C9027A93E370018EC34 /* AirlyticsLogViewController.swift */,
+				738C5C7F27A93E370018EC34 /* PollItemsTableViewController.swift */,
+				738C5C5E27A93E360018EC34 /* PercentageTableViewController.swift */,
+				738C5C4B27A93E360018EC34 /* NotificationsTableViewController.swift */,
+				738C5C6F27A93E370018EC34 /* PremiumDetailsTableViewController.swift */,
+				738C5C7E27A93E370018EC34 /* NotificationDetailsTableViewController.swift */,
+				738C5C8227A93E370018EC34 /* PurchaseOptionsTableViewController.swift */,
+				738C5C5B27A93E360018EC34 /* StreamDetailsTableViewController.swift */,
+				738C5C5127A93E360018EC34 /* ProductsTableViewController.swift */,
+				738C5C6227A93E360018EC34 /* ServersTableViewController.swift */,
+				738C5C7427A93E370018EC34 /* StreamHistoryDetailesTableViewController.swift */,
+				738C5C5027A93E360018EC34 /* PollDetailsTableViewController.swift */,
+				738C5C5927A93E360018EC34 /* StoreProductsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		738C5D5427A945D10018EC34 /* Streams */ = {
+			isa = PBXGroup;
+			children = (
+				738C5CA927A93E380018EC34 /* Stream.swift */,
+				738C5C5327A93E360018EC34 /* StreamPercentage.swift */,
+				738C5C5227A93E360018EC34 /* StreamTrace.swift */,
+				738C5C9227A93E370018EC34 /* StreamsManager.swift */,
+			);
+			path = Streams;
+			sourceTree = "<group>";
+		};
+		738C5D5527A947720018EC34 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C9A27A93E380018EC34 /* AirlockNotificationsLimit.swift */,
+				738C5CAA27A93E380018EC34 /* AirlockNotificationsManager.swift */,
+				738C5C6927A93E360018EC34 /* NotificationsPercentage.swift */,
+				738C5C7027A93E370018EC34 /* NotificationsConstants.swift */,
+				738C5CA127A93E380018EC34 /* AirlockNotification.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		738C5D5627A947B70018EC34 /* Events History */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C8727A93E370018EC34 /* EventsHistoryFileManager.swift */,
+				738C5C5627A93E360018EC34 /* EventsHistoryInfo.swift */,
+				738C5C7927A93E370018EC34 /* EventsHistory.swift */,
+				738C5C8027A93E370018EC34 /* EventsHistoryRequestStatus.swift */,
+			);
+			path = "Events History";
+			sourceTree = "<group>";
+		};
+		738C5D5727A948DE0018EC34 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				738C5C9327A93E370018EC34 /* images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		73A991C627B0144400679C75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73A991C727B016DA00679C75 /* AirlockDefaults.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73FE6D0E27A8211200BE0AD1 = {
+			isa = PBXGroup;
+			children = (
+				73FE6D1A27A8211200BE0AD1 /* AirlockSDK */,
+				73FE6D2427A8211200BE0AD1 /* AirlockSDKTests */,
+				73FE6D3527A8222000BE0AD1 /* AirlockSDKExample */,
+				73FE6D1927A8211200BE0AD1 /* Products */,
+				5AF0B2184E1953962EE03FB5 /* Pods */,
+				EFA9DCBD8FC5998A3D6A3E50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		73FE6D1927A8211200BE0AD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73FE6D1827A8211200BE0AD1 /* AirlockSDK.framework */,
+				73FE6D2027A8211200BE0AD1 /* AirlockSDKTests.xctest */,
+				73FE6D3427A8222000BE0AD1 /* AirlockSDKExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73FE6D1A27A8211200BE0AD1 /* AirlockSDK */ = {
+			isa = PBXGroup;
+			children = (
+				73501E0B27A939FA0096EF0D /* Supporting Files */,
+				73501E0A27A9399B0096EF0D /* Shared */,
+			);
+			path = AirlockSDK;
+			sourceTree = "<group>";
+		};
+		73FE6D2427A8211200BE0AD1 /* AirlockSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				73FE6D2527A8211200BE0AD1 /* AirlockSDKTests.swift */,
+			);
+			path = AirlockSDKTests;
+			sourceTree = "<group>";
+		};
+		73FE6D3527A8222000BE0AD1 /* AirlockSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				73A991C627B0144400679C75 /* Resources */,
+				73A991C427B0143C00679C75 /* MainTableViewController.swift */,
+				73FE6D3627A8222000BE0AD1 /* AppDelegate.swift */,
+				73FE6D3827A8222000BE0AD1 /* SceneDelegate.swift */,
+				73FE6D3A27A8222000BE0AD1 /* ViewController.swift */,
+				73FE6D3C27A8222000BE0AD1 /* Main.storyboard */,
+				73FE6D3F27A8222100BE0AD1 /* Assets.xcassets */,
+				73FE6D4127A8222100BE0AD1 /* LaunchScreen.storyboard */,
+				73FE6D4427A8222100BE0AD1 /* Info.plist */,
+			);
+			path = AirlockSDKExample;
+			sourceTree = "<group>";
+		};
+		EFA9DCBD8FC5998A3D6A3E50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62B5955A2443F2072DB40752 /* Pods_AirlockSDK.framework */,
+				A552A28D64F42149EC77F9CC /* Pods_AirlockSDKExample.framework */,
+				56345412C1648AE7CD0F335C /* Pods_AirlockSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73FE6D1327A8211200BE0AD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738C5D1627A93E420018EC34 /* AirlockSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73FE6D1727A8211200BE0AD1 /* AirlockSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73FE6D2A27A8211200BE0AD1 /* Build configuration list for PBXNativeTarget "AirlockSDK" */;
+			buildPhases = (
+				2BE8C38ABC9A7F7FC14E8383 /* [CP] Check Pods Manifest.lock */,
+				73FE6D1327A8211200BE0AD1 /* Headers */,
+				73FE6D1427A8211200BE0AD1 /* Sources */,
+				73FE6D1527A8211200BE0AD1 /* Frameworks */,
+				73FE6D1627A8211200BE0AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirlockSDK;
+			productName = AirlockSDK;
+			productReference = 73FE6D1827A8211200BE0AD1 /* AirlockSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73FE6D1F27A8211200BE0AD1 /* AirlockSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73FE6D2D27A8211200BE0AD1 /* Build configuration list for PBXNativeTarget "AirlockSDKTests" */;
+			buildPhases = (
+				E72C34D213F0BF6CEB583BC5 /* [CP] Check Pods Manifest.lock */,
+				73FE6D1C27A8211200BE0AD1 /* Sources */,
+				73FE6D1D27A8211200BE0AD1 /* Frameworks */,
+				73FE6D1E27A8211200BE0AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7379538627A9516E0092D0A6 /* PBXTargetDependency */,
+			);
+			name = AirlockSDKTests;
+			productName = AirlockSDKTests;
+			productReference = 73FE6D2027A8211200BE0AD1 /* AirlockSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73FE6D3327A8222000BE0AD1 /* AirlockSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73FE6D4527A8222100BE0AD1 /* Build configuration list for PBXNativeTarget "AirlockSDKExample" */;
+			buildPhases = (
+				B748BA32E08C8172C7A4DAE2 /* [CP] Check Pods Manifest.lock */,
+				73FE6D3027A8222000BE0AD1 /* Sources */,
+				73FE6D3127A8222000BE0AD1 /* Frameworks */,
+				73FE6D3227A8222000BE0AD1 /* Resources */,
+				25AEA0CDE5A5B1FDE55580F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7379538827A951750092D0A6 /* PBXTargetDependency */,
+			);
+			name = AirlockSDKExample;
+			productName = AirlockSDKExample;
+			productReference = 73FE6D3427A8222000BE0AD1 /* AirlockSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73FE6D0F27A8211200BE0AD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					73FE6D1727A8211200BE0AD1 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					73FE6D1F27A8211200BE0AD1 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					73FE6D3327A8222000BE0AD1 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 73FE6D1227A8211200BE0AD1 /* Build configuration list for PBXProject "AirlockSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73FE6D0E27A8211200BE0AD1;
+			productRefGroup = 73FE6D1927A8211200BE0AD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73FE6D1727A8211200BE0AD1 /* AirlockSDK */,
+				73FE6D1F27A8211200BE0AD1 /* AirlockSDKTests */,
+				73FE6D3327A8222000BE0AD1 /* AirlockSDKExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73FE6D1627A8211200BE0AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738C5CD127A93E380018EC34 /* userGroups.storyboard in Resources */,
+				738C5CDC27A93E380018EC34 /* polls.storyboard in Resources */,
+				738C5CDE27A93E380018EC34 /* streams.storyboard in Resources */,
+				738C5CD427A93E380018EC34 /* eventsHistory.storyboard in Resources */,
+				738C5D0C27A93E380018EC34 /* notifications.storyboard in Resources */,
+				738C5CC627A93E380018EC34 /* branches.storyboard in Resources */,
+				738C5CCD27A93E380018EC34 /* features.storyboard in Resources */,
+				738C5CCC27A93E380018EC34 /* airlytics.storyboard in Resources */,
+				738C5CBB27A93E380018EC34 /* entitlements.storyboard in Resources */,
+				738C5CD327A93E380018EC34 /* general.storyboard in Resources */,
+				7379539127A95E860092D0A6 /* DebugUI.storyboard in Resources */,
+				738C5CF927A93E380018EC34 /* images.xcassets in Resources */,
+				738C5CF527A93E380018EC34 /* experiments.storyboard in Resources */,
+				738C5CE227A93E380018EC34 /* multiServer.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FE6D1E27A8211200BE0AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FE6D3227A8222000BE0AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FE6D4327A8222100BE0AD1 /* LaunchScreen.storyboard in Resources */,
+				73A991C827B016DA00679C75 /* AirlockDefaults.json in Resources */,
+				73FE6D4027A8222100BE0AD1 /* Assets.xcassets in Resources */,
+				73FE6D3E27A8222000BE0AD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25AEA0CDE5A5B1FDE55580F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirlockSDKExample/Pods-AirlockSDKExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirlockSDKExample/Pods-AirlockSDKExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirlockSDKExample/Pods-AirlockSDKExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BE8C38ABC9A7F7FC14E8383 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirlockSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B748BA32E08C8172C7A4DAE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirlockSDKExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72C34D213F0BF6CEB583BC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirlockSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73FE6D1427A8211200BE0AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738C5D1427A93E380018EC34 /* AirlyticsEnvironmentTableViewController.swift in Sources */,
+				738C5CE927A93E380018EC34 /* FeaturePremiumData.swift in Sources */,
+				738C5D2327A93E760018EC34 /* ALSendingProvider.swift in Sources */,
+				738C5D2727A93E760018EC34 /* AirlyticsConstants.swift in Sources */,
+				738C5CF127A93E380018EC34 /* EntitlementsTableViewController.swift in Sources */,
+				738C5D3E27A93EF90018EC34 /* Network.swift in Sources */,
+				738C5CCB27A93E380018EC34 /* BranchesAndExperiments.swift in Sources */,
+				738C5CE827A93E380018EC34 /* PurchaseOptionsTableViewController.swift in Sources */,
+				738C5D0B27A93E380018EC34 /* PollQuestionsTableViewController.swift in Sources */,
+				738C5CDB27A93E380018EC34 /* Constants.swift in Sources */,
+				738C5CB327A93E380018EC34 /* FeaturesCache.swift in Sources */,
+				738C5CE427A93E380018EC34 /* NotificationDetailsTableViewController.swift in Sources */,
+				738C5D0627A93E380018EC34 /* AirlockFileManager.swift in Sources */,
+				738C5CAF27A93E380018EC34 /* AirLockSegue.swift in Sources */,
+				738C5CB427A93E380018EC34 /* StreamsTableViewController.swift in Sources */,
+				738C5D0E27A93E380018EC34 /* VariantDetailTableViewController.swift in Sources */,
+				738C5CD027A93E380018EC34 /* ExperimentsTableViewController.swift in Sources */,
+				738C5CB627A93E380018EC34 /* PollDetailsTableViewController.swift in Sources */,
+				738C5CC227A93E380018EC34 /* UserGroupsTableViewCell.swift in Sources */,
+				7379539227A95E860092D0A6 /* Banner.swift in Sources */,
+				738C5D0127A93E380018EC34 /* StremTraceTableViewCell.swift in Sources */,
+				738C5D3027A93EED0018EC34 /* DebugBannersProvider.swift in Sources */,
+				738C5CC127A93E380018EC34 /* StreamDetailsTableViewController.swift in Sources */,
+				738C5CF627A93E380018EC34 /* AirlyticsLogViewController.swift in Sources */,
+				738C5D0727A93E380018EC34 /* AirlockNotification.swift in Sources */,
+				738C5CDD27A93E380018EC34 /* PollsTableViewController.swift in Sources */,
+				738C5CBD27A93E380018EC34 /* PollsManager.swift in Sources */,
+				738C5D0227A93E380018EC34 /* PercentageTableViewCell.swift in Sources */,
+				7379538F27A95E860092D0A6 /* BannersManager.swift in Sources */,
+				738C5D2127A93E760018EC34 /* ALEvent.swift in Sources */,
+				738C5CCE27A93E380018EC34 /* PollQuestion.swift in Sources */,
+				738C5D3F27A93EF90018EC34 /* UserAttributesStore.swift in Sources */,
+				738C5D0327A93E380018EC34 /* FeatureAnalyticsDetailsTableViewController.swift in Sources */,
+				738C5CC427A93E380018EC34 /* PercentageTableViewController.swift in Sources */,
+				738C5D2227A93E760018EC34 /* ALProvider.swift in Sources */,
+				738C5CD627A93E380018EC34 /* NotificationsConstants.swift in Sources */,
+				738C5CC827A93E380018EC34 /* ServersTableViewController.swift in Sources */,
+				738C5CFE27A93E380018EC34 /* ServersManager.swift in Sources */,
+				738C5D0D27A93E380018EC34 /* AirlockPullTasksManager.swift in Sources */,
+				738C5CB727A93E380018EC34 /* ProductsTableViewController.swift in Sources */,
+				738C5D0527A93E380018EC34 /* AirlyticsEventRegistry.swift in Sources */,
+				738C5CFC27A93E380018EC34 /* PollCalculatedBase.swift in Sources */,
+				738C5D4E27A93F040018EC34 /* ALUserAttributeConfig.swift in Sources */,
+				738C5CBC27A93E380018EC34 /* EventsHistoryInfo.swift in Sources */,
+				738C5D0027A93E380018EC34 /* AirlockNotificationsLimit.swift in Sources */,
+				738C5CD827A93E380018EC34 /* StoreProductId.swift in Sources */,
+				738C5D1327A93E380018EC34 /* BranchesTableViewController.swift in Sources */,
+				738C5CEC27A93E380018EC34 /* ExperimentsResults.swift in Sources */,
+				738C5CD527A93E380018EC34 /* PremiumDetailsTableViewController.swift in Sources */,
+				738C5CF227A93E380018EC34 /* PollAnswer.swift in Sources */,
+				738C5CFA27A93E380018EC34 /* ContextViewController.swift in Sources */,
+				738C5D4A27A93F040018EC34 /* ALEnvironmentConfig.swift in Sources */,
+				738C5D2527A93E760018EC34 /* ALSession.swift in Sources */,
+				738C5CE527A93E380018EC34 /* PollItemsTableViewController.swift in Sources */,
+				738C5D3127A93EED0018EC34 /* RestEventProxyProvider.swift in Sources */,
+				738C5CEA27A93E380018EC34 /* Entitlements.swift in Sources */,
+				738C5CF727A93E380018EC34 /* Percentile.swift in Sources */,
+				738C5CB827A93E380018EC34 /* StreamTrace.swift in Sources */,
+				738C5D1127A93E380018EC34 /* PollsResultsManager.swift in Sources */,
+				738C5CB227A93E380018EC34 /* Entitlement.swift in Sources */,
+				738C5D4027A93EF90018EC34 /* Date+Aux.swift in Sources */,
+				738C5D2427A93E760018EC34 /* ALEnvironment.swift in Sources */,
+				738C5D4B27A93F040018EC34 /* ALEventConfig.swift in Sources */,
+				738C5CFF27A93E380018EC34 /* DisplayPurchasesTableViewController.swift in Sources */,
+				738C5CBF27A93E380018EC34 /* StoreProductsTableViewController.swift in Sources */,
+				738C5CD727A93E380018EC34 /* PurchaseOption.swift in Sources */,
+				738C5D0927A93E380018EC34 /* Utils.swift in Sources */,
+				738C5D3C27A93EF90018EC34 /* AirlyticsUtils.swift in Sources */,
+				738C5D1027A93E380018EC34 /* AirlockNotificationsManager.swift in Sources */,
+				738C5CD927A93E380018EC34 /* GeneralSettingsTableViewController.swift in Sources */,
+				738C5CF327A93E380018EC34 /* JSScriptInvoker.swift in Sources */,
+				738C5D0A27A93E380018EC34 /* ExperimentDetailTableViewController.swift in Sources */,
+				738C5CD227A93E380018EC34 /* FeatureChildrenOrderTableViewController.swift in Sources */,
+				738C5D0427A93E380018EC34 /* AirlyticsTableViewController.swift in Sources */,
+				738C5CE727A93E380018EC34 /* UserGroups.swift in Sources */,
+				738C5CC927A93E380018EC34 /* PollPredefinedAnswer.swift in Sources */,
+				738C5D3B27A93EF90018EC34 /* RepeatingTimer.swift in Sources */,
+				738C5D0F27A93E380018EC34 /* Stream.swift in Sources */,
+				738C5CBE27A93E380018EC34 /* PollPercentage.swift in Sources */,
+				738C5CED27A93E380018EC34 /* EventsHistoryFileManager.swift in Sources */,
+				738C5D0827A93E380018EC34 /* UserGroupsTableViewController.swift in Sources */,
+				738C5D4F27A93F040018EC34 /* TrackingPolicy.swift in Sources */,
+				738C5D2027A93E760018EC34 /* EventsRegistry.swift in Sources */,
+				738C5CB027A93E380018EC34 /* PercentageManager.swift in Sources */,
+				738C5CE327A93E380018EC34 /* Airlytics.swift in Sources */,
+				738C5CBA27A93E380018EC34 /* PollResultsVisualization.swift in Sources */,
+				738C5CE627A93E380018EC34 /* EventsHistoryRequestStatus.swift in Sources */,
+				738C5CDF27A93E380018EC34 /* EventsHistory.swift in Sources */,
+				738C5CC527A93E380018EC34 /* PollOpenAnswer.swift in Sources */,
+				738C5D4927A93F040018EC34 /* UserDefaultsAttributeConfig.swift in Sources */,
+				738C5D4C27A93F040018EC34 /* ALEventProviderConfig.swift in Sources */,
+				738C5D1227A93E380018EC34 /* JSErrorInfo.swift in Sources */,
+				738C5CEF27A93E380018EC34 /* EventsHistoryFilePropertiesTableViewController.swift in Sources */,
+				738C5CDA27A93E380018EC34 /* StreamHistoryDetailesTableViewController.swift in Sources */,
+				738C5CFD27A93E380018EC34 /* Airlock.swift in Sources */,
+				738C5D4D27A93F040018EC34 /* ALProviderConfig.swift in Sources */,
+				738C5CCA27A93E380018EC34 /* StreamsTraceTableViewController.swift in Sources */,
+				738C5D2627A93E760018EC34 /* AL.swift in Sources */,
+				738C5CC327A93E380018EC34 /* EventsHistoryTableViewController.swift in Sources */,
+				738C5D3D27A93EF90018EC34 /* Logger.swift in Sources */,
+				7379539027A95E860092D0A6 /* BannerQueue.swift in Sources */,
+				7379539527A95EBA0092D0A6 /* DebugDetailViewController.swift in Sources */,
+				738C5CB527A93E380018EC34 /* AirlyticsEventDetailsViewController.swift in Sources */,
+				738C5CF827A93E380018EC34 /* StreamsManager.swift in Sources */,
+				738C5CF027A93E380018EC34 /* AirlyticsStreamEventsProvider.swift in Sources */,
+				738C5CB927A93E380018EC34 /* StreamPercentage.swift in Sources */,
+				738C5CE127A93E380018EC34 /* Feature.swift in Sources */,
+				738C5CCF27A93E380018EC34 /* NotificationsPercentage.swift in Sources */,
+				738C5CEB27A93E380018EC34 /* AirlockDataFetcher.swift in Sources */,
+				738C5D2F27A93EED0018EC34 /* EventLogProvider.swift in Sources */,
+				738C5CEE27A93E380018EC34 /* FeaturesCacheManager.swift in Sources */,
+				738C5CF427A93E380018EC34 /* FeatureDetailsTableViewController.swift in Sources */,
+				738C5CC727A93E380018EC34 /* Poll.swift in Sources */,
+				738C5CE027A93E380018EC34 /* FeaturesTableViewController.swift in Sources */,
+				738C5CFB27A93E380018EC34 /* JSClientEngine.swift in Sources */,
+				738C5D4127A93EF90018EC34 /* AirlyticsJSEngine.swift in Sources */,
+				738C5D3A27A93EF90018EC34 /* ALFileManager.swift in Sources */,
+				738C5CB127A93E380018EC34 /* NotificationsTableViewController.swift in Sources */,
+				738C5CC027A93E380018EC34 /* EventsHistoryFilesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FE6D1C27A8211200BE0AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73FE6D2627A8211200BE0AD1 /* AirlockSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73FE6D3027A8222000BE0AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A991C527B0143C00679C75 /* MainTableViewController.swift in Sources */,
+				73FE6D3B27A8222000BE0AD1 /* ViewController.swift in Sources */,
+				73FE6D3727A8222000BE0AD1 /* AppDelegate.swift in Sources */,
+				73FE6D3927A8222000BE0AD1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7379538627A9516E0092D0A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73FE6D1727A8211200BE0AD1 /* AirlockSDK */;
+			targetProxy = 7379538527A9516E0092D0A6 /* PBXContainerItemProxy */;
+		};
+		7379538827A951750092D0A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73FE6D1727A8211200BE0AD1 /* AirlockSDK */;
+			targetProxy = 7379538727A951750092D0A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73FE6D3C27A8222000BE0AD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73FE6D3D27A8222000BE0AD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73FE6D4127A8222100BE0AD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73FE6D4227A8222100BE0AD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73FE6D2827A8211200BE0AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73FE6D2927A8211200BE0AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73FE6D2B27A8211200BE0AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373C9D75B799FFD7C84D9D70 /* Pods-AirlockSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 54VVTD24DT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AirlockSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73FE6D2C27A8211200BE0AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220803B85F4FF4F9039F8255 /* Pods-AirlockSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 54VVTD24DT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AirlockSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73FE6D2E27A8211200BE0AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2811F09D90BCCC6654AF84 /* Pods-AirlockSDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54VVTD24DT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AirlockSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73FE6D2F27A8211200BE0AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F323EB666C3DD215AE78D694 /* Pods-AirlockSDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54VVTD24DT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AirlockSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73FE6D4627A8222100BE0AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471CE275FDB29583FC5EE3E8 /* Pods-AirlockSDKExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54VVTD24DT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirlockSDKExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AirlockSDKExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73FE6D4727A8222100BE0AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0221700BCBDFF5877F1F4C2 /* Pods-AirlockSDKExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 54VVTD24DT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirlockSDKExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AirlockSDKExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73FE6D1227A8211200BE0AD1 /* Build configuration list for PBXProject "AirlockSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73FE6D2827A8211200BE0AD1 /* Debug */,
+				73FE6D2927A8211200BE0AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73FE6D2A27A8211200BE0AD1 /* Build configuration list for PBXNativeTarget "AirlockSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73FE6D2B27A8211200BE0AD1 /* Debug */,
+				73FE6D2C27A8211200BE0AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73FE6D2D27A8211200BE0AD1 /* Build configuration list for PBXNativeTarget "AirlockSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73FE6D2E27A8211200BE0AD1 /* Debug */,
+				73FE6D2F27A8211200BE0AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73FE6D4527A8222100BE0AD1 /* Build configuration list for PBXNativeTarget "AirlockSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73FE6D4627A8222100BE0AD1 /* Debug */,
+				73FE6D4727A8222100BE0AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73FE6D0F27A8211200BE0AD1 /* Project object */;
+}

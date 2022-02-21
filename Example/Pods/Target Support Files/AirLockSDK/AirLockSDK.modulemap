@@ -1,6 +1,0 @@
-framework module AirLockSDK {
-  umbrella header "AirLockSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
