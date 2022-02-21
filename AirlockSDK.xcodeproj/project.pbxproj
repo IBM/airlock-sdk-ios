@@ -13,7 +13,6 @@
 		7379539127A95E860092D0A6 /* DebugUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7379538D27A95E860092D0A6 /* DebugUI.storyboard */; };
 		7379539227A95E860092D0A6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379538E27A95E860092D0A6 /* Banner.swift */; };
 		7379539527A95EBA0092D0A6 /* DebugDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379539427A95EBA0092D0A6 /* DebugDetailViewController.swift */; };
-		738C5CAF27A93E380018EC34 /* tempSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4927A93E360018EC34 /* tempSegue.swift */; };
 		738C5CB027A93E380018EC34 /* PercentageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4A27A93E360018EC34 /* PercentageManager.swift */; };
 		738C5CB127A93E380018EC34 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4B27A93E360018EC34 /* NotificationsTableViewController.swift */; };
 		738C5CB227A93E380018EC34 /* Entitlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4C27A93E360018EC34 /* Entitlement.swift */; };
@@ -153,6 +152,7 @@
 		73FE6D4027A8222100BE0AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FE6D3F27A8222100BE0AD1 /* Assets.xcassets */; };
 		73FE6D4327A8222100BE0AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FE6D4127A8222100BE0AD1 /* LaunchScreen.storyboard */; };
 		9B67B1C6E8DC1AEDB3303CBC /* Pods_AirlockSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56345412C1648AE7CD0F335C /* Pods_AirlockSDKTests.framework */; };
+		BD67288427C3E19A00E352D4 /* AirlockSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67288327C3E19A00E352D4 /* AirlockSegue.swift */; };
 		E90190F57FC56EBF4F80F690 /* Pods_AirlockSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A552A28D64F42149EC77F9CC /* Pods_AirlockSDKExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -184,7 +184,6 @@
 		7379538D27A95E860092D0A6 /* DebugUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DebugUI.storyboard; sourceTree = "<group>"; };
 		7379538E27A95E860092D0A6 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		7379539427A95EBA0092D0A6 /* DebugDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugDetailViewController.swift; sourceTree = "<group>"; };
-		738C5C4927A93E360018EC34 /* tempSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tempSegue.swift; sourceTree = "<group>"; };
 		738C5C4A27A93E360018EC34 /* PercentageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageManager.swift; sourceTree = "<group>"; };
 		738C5C4B27A93E360018EC34 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
 		738C5C4C27A93E360018EC34 /* Entitlement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entitlement.swift; sourceTree = "<group>"; };
@@ -327,6 +326,7 @@
 		73FE6D4227A8222100BE0AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73FE6D4427A8222100BE0AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A552A28D64F42149EC77F9CC /* Pods_AirlockSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirlockSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD67288327C3E19A00E352D4 /* AirlockSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirlockSegue.swift; sourceTree = "<group>"; };
 		F0221700BCBDFF5877F1F4C2 /* Pods-AirlockSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDKExample.release.xcconfig"; path = "Target Support Files/Pods-AirlockSDKExample/Pods-AirlockSDKExample.release.xcconfig"; sourceTree = "<group>"; };
 		F323EB666C3DD215AE78D694 /* Pods-AirlockSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDKTests.release.xcconfig"; path = "Target Support Files/Pods-AirlockSDKTests/Pods-AirlockSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		FA2811F09D90BCCC6654AF84 /* Pods-AirlockSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirlockSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-AirlockSDKTests/Pods-AirlockSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -510,8 +510,8 @@
 		738C5D5027A943D10018EC34 /* Debug UI */ = {
 			isa = PBXGroup;
 			children = (
+				BD67288327C3E19A00E352D4 /* AirlockSegue.swift */,
 				738C5D5727A948DE0018EC34 /* Assets */,
-				738C5C4927A93E360018EC34 /* tempSegue.swift */,
 				738C5D5327A945470018EC34 /* View Controllers */,
 				738C5D5127A944180018EC34 /* Storyboards */,
 			);
@@ -975,7 +975,6 @@
 				738C5CB327A93E380018EC34 /* FeaturesCache.swift in Sources */,
 				738C5CE427A93E380018EC34 /* NotificationDetailsTableViewController.swift in Sources */,
 				738C5D0627A93E380018EC34 /* AirlockFileManager.swift in Sources */,
-				738C5CAF27A93E380018EC34 /* tempSegue.swift in Sources */,
 				738C5CB427A93E380018EC34 /* StreamsTableViewController.swift in Sources */,
 				738C5D0E27A93E380018EC34 /* VariantDetailTableViewController.swift in Sources */,
 				738C5CD027A93E380018EC34 /* ExperimentsTableViewController.swift in Sources */,
@@ -985,6 +984,7 @@
 				738C5D0127A93E380018EC34 /* StremTraceTableViewCell.swift in Sources */,
 				738C5D3027A93EED0018EC34 /* DebugBannersProvider.swift in Sources */,
 				738C5CC127A93E380018EC34 /* StreamDetailsTableViewController.swift in Sources */,
+				BD67288427C3E19A00E352D4 /* AirlockSegue.swift in Sources */,
 				738C5CF627A93E380018EC34 /* AirlyticsLogViewController.swift in Sources */,
 				738C5D0727A93E380018EC34 /* AirlockNotification.swift in Sources */,
 				738C5CDD27A93E380018EC34 /* PollsTableViewController.swift in Sources */,
