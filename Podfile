@@ -13,7 +13,6 @@ use_frameworks!
 use_modular_headers!
 
 source 'https://github.com/CocoaPods/Specs.git'
-source 'git@github.com:TheWeatherCompany/twcios-podspecs.git'
 
 target :'AirlockSDK' do
 

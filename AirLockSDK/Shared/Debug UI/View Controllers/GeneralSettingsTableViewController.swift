@@ -287,8 +287,6 @@ class GeneralSettingsTableViewController: UITableViewController, MFMailComposeVi
             
             bodyString += "Responsive mode: \(Airlock.sharedInstance.serversMgr.shouldUseDirectURL)\n\n"
             
-            bodyString += "(c) Copyright TWC Product and Technology LLC  2011, 2018. All rights reserved.\n"
-            
             mailComposerVC.setMessageBody(bodyString, isHTML: false)
             
             // Add attachements
@@ -385,8 +383,6 @@ class GeneralSettingsTableViewController: UITableViewController, MFMailComposeVi
         let monthSymbol = months?[calendar.component(.month, from: date) - 1]
         
         let subject = "Airlock \(String(describing: monthSymbol)) \(calendar.component(.day, from: date)), \(calendar.component(.year, from: date)), \(hourString)"
-        
-        //mailComposerVC.setToRecipients(["someone@weather.com"])
         mailComposerVC.setSubject(subject)
         
         return mailComposerVC

@@ -1,4 +1,4 @@
-# Airlock Defaults.json is auto-generate file and should downloaded from Airlock server
+# TODO: replace the contents of this file with the defaults file from your Airlock server
 
 {
     "devS3Path": "https://*****/******/*****/",
