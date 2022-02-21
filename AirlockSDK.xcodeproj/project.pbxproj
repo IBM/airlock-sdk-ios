@@ -13,7 +13,7 @@
 		7379539127A95E860092D0A6 /* DebugUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7379538D27A95E860092D0A6 /* DebugUI.storyboard */; };
 		7379539227A95E860092D0A6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379538E27A95E860092D0A6 /* Banner.swift */; };
 		7379539527A95EBA0092D0A6 /* DebugDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379539427A95EBA0092D0A6 /* DebugDetailViewController.swift */; };
-		738C5CAF27A93E380018EC34 /* AirLockSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4927A93E360018EC34 /* AirLockSegue.swift */; };
+		738C5CAF27A93E380018EC34 /* tempSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4927A93E360018EC34 /* tempSegue.swift */; };
 		738C5CB027A93E380018EC34 /* PercentageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4A27A93E360018EC34 /* PercentageManager.swift */; };
 		738C5CB127A93E380018EC34 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4B27A93E360018EC34 /* NotificationsTableViewController.swift */; };
 		738C5CB227A93E380018EC34 /* Entitlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738C5C4C27A93E360018EC34 /* Entitlement.swift */; };
@@ -184,7 +184,7 @@
 		7379538D27A95E860092D0A6 /* DebugUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DebugUI.storyboard; sourceTree = "<group>"; };
 		7379538E27A95E860092D0A6 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		7379539427A95EBA0092D0A6 /* DebugDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugDetailViewController.swift; sourceTree = "<group>"; };
-		738C5C4927A93E360018EC34 /* AirLockSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirLockSegue.swift; sourceTree = "<group>"; };
+		738C5C4927A93E360018EC34 /* tempSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tempSegue.swift; sourceTree = "<group>"; };
 		738C5C4A27A93E360018EC34 /* PercentageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageManager.swift; sourceTree = "<group>"; };
 		738C5C4B27A93E360018EC34 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
 		738C5C4C27A93E360018EC34 /* Entitlement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entitlement.swift; sourceTree = "<group>"; };
@@ -511,7 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				738C5D5727A948DE0018EC34 /* Assets */,
-				738C5C4927A93E360018EC34 /* AirLockSegue.swift */,
+				738C5C4927A93E360018EC34 /* tempSegue.swift */,
 				738C5D5327A945470018EC34 /* View Controllers */,
 				738C5D5127A944180018EC34 /* Storyboards */,
 			);
@@ -975,7 +975,7 @@
 				738C5CB327A93E380018EC34 /* FeaturesCache.swift in Sources */,
 				738C5CE427A93E380018EC34 /* NotificationDetailsTableViewController.swift in Sources */,
 				738C5D0627A93E380018EC34 /* AirlockFileManager.swift in Sources */,
-				738C5CAF27A93E380018EC34 /* AirLockSegue.swift in Sources */,
+				738C5CAF27A93E380018EC34 /* tempSegue.swift in Sources */,
 				738C5CB427A93E380018EC34 /* StreamsTableViewController.swift in Sources */,
 				738C5D0E27A93E380018EC34 /* VariantDetailTableViewController.swift in Sources */,
 				738C5CD027A93E380018EC34 /* ExperimentsTableViewController.swift in Sources */,

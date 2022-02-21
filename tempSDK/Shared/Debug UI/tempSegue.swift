@@ -1,5 +1,5 @@
 //
-//  AirLockSegue.swift
+//  AirlockSegue.swift
 //  Pods
 //
 //  Created by Gil Fuchs on 15/09/2016.
@@ -20,7 +20,7 @@ public enum storyBoardType : String {
     case notifications  = "notifications"
     case entitlements   = "entitlements"
     case airlytics      = "airlytics"
-	case eventsHistory  = "eventsHistory"
+    case eventsHistory  = "eventsHistory"
     case polls          = "polls"
 }
 
