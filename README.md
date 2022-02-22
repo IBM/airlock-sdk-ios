@@ -9,7 +9,7 @@ The Airlock SDK determines which features are enabled for a particular applicati
 The Airlock SDK is available as a CocoaPod. To install, add the following line to your Podfile:
 
 ```ruby
-pod 'AirLockSDK'
+pod 'Airlock'
 ```
 
 ## Configuring your application to use the Airlock SDK
