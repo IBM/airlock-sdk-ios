@@ -241,7 +241,7 @@ class EventsHistoryInfo {
 	private func writeFilesInfo() {
         
         do {
-            let data = try NSKeyedArchiver.archivedData(withRootObject: filesInfoDict, requiringSecureCoding: true)
+            let data = try NSKeyedArchiver.archivedData(withRootObject: filesInfoDict, requiringSecureCoding: false)
             UserDefaults.standard.set(data, forKey: filesInfoDictKey)
         } catch {
             print("Fail to archive events history files info dictionary. error: \(error)")

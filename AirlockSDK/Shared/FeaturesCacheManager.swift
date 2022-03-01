@@ -38,7 +38,7 @@ internal class FeaturesCacheManager {
     static func saveFeatures(cache:FeaturesCache,key:String) {
         
         do {
-            let data = try NSKeyedArchiver.archivedData(withRootObject: cache, requiringSecureCoding: true)
+            let data = try NSKeyedArchiver.archivedData(withRootObject: cache, requiringSecureCoding: false)
             AirlockFileManager.writeData(data: data, fileName: key)
         } catch {
             print("Fail to archive features cache. error: \(error)")

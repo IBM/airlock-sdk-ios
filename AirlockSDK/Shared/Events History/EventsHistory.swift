@@ -847,7 +847,7 @@ class EventsHistory {
     
     private func writeRequestStatucDict() {
         do {
-            let data = try NSKeyedArchiver.archivedData(withRootObject: self.requestStatusDict, requiringSecureCoding: true)
+            let data = try NSKeyedArchiver.archivedData(withRootObject: self.requestStatusDict, requiringSecureCoding: false)
             UserDefaults.standard.set(data, forKey: requestStatusDictKey)
         } catch {
             print("Fail to archive events history request status dictionary. error: \(error)")

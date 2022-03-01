@@ -28,7 +28,7 @@ internal class UserGroups {
         
         var data: Data?
         do {
-            data = try NSKeyedArchiver.archivedData(withRootObject: groups, requiringSecureCoding: true)
+            data = try NSKeyedArchiver.archivedData(withRootObject: groups, requiringSecureCoding: false)
         } catch {
             print("Fail to archive user groups. error: \(error)")
             return
